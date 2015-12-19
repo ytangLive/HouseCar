@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>SinaCar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>SinaCarDebug.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>SinaCarInHouse.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>11204A0318FE305C00DEF8ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>116CDE2C17868D6300BCD47D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>117896DA195194610052891F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>11789A15195195730052891F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A4F10A01B2FCDFA008C97E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A76313071A5A679E006E7EC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

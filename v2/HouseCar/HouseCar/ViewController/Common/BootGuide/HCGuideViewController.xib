@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HCGuideViewController">
+            <connections>
+                <outlet property="lastView" destination="aaR-zV-Hv7" id="iTJ-ib-Z7i"/>
+                <outlet property="pageControl" destination="Yxv-BO-9RD" id="4eV-pA-Tkj"/>
+                <outlet property="scrollview" destination="4" id="e6N-XI-R7e"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ku3-27-7bn" userLabel="anchor view">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                            <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="doFinishAction:" destination="-1" eventType="touchUpInside" id="22"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQs-ii-W6h" userLabel="container view">
+                            <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" image="guide_large_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="9" customClass="HCGuideImageViewFit">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" image="guide_large_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="10" customClass="HCGuideImageViewFit">
+                                    <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_large_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="ygs-HK-vsv" customClass="HCGuideImageViewFit">
+                                    <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaR-zV-Hv7">
+                                    <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" image="guide_large_4.png" translatesAutoresizingMaskIntoConstraints="NO" id="11" customClass="HCGuideImageViewFit">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="11" firstAttribute="top" secondItem="aaR-zV-Hv7" secondAttribute="top" id="595-ar-XQT"/>
+                                        <constraint firstItem="11" firstAttribute="leading" secondItem="aaR-zV-Hv7" secondAttribute="leading" id="94B-rk-95U"/>
+                                        <constraint firstAttribute="trailing" secondItem="11" secondAttribute="trailing" id="pAD-h1-GeV"/>
+                                        <constraint firstAttribute="bottom" secondItem="11" secondAttribute="bottom" id="s1P-IG-8F1"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="aaR-zV-Hv7" secondAttribute="trailing" id="0bd-6B-Vmt"/>
+                                <constraint firstItem="aaR-zV-Hv7" firstAttribute="top" secondItem="VQs-ii-W6h" secondAttribute="top" id="2mv-aW-uBC"/>
+                                <constraint firstAttribute="bottom" secondItem="ygs-HK-vsv" secondAttribute="bottom" id="366-ns-XGw"/>
+                                <constraint firstItem="ygs-HK-vsv" firstAttribute="leading" secondItem="10" secondAttribute="trailing" id="FGr-D8-jf1"/>
+                                <constraint firstAttribute="bottom" secondItem="9" secondAttribute="bottom" id="HT3-ij-Whw"/>
+                                <constraint firstItem="9" firstAttribute="top" secondItem="VQs-ii-W6h" secondAttribute="top" id="Hqz-e3-GfT"/>
+                                <constraint firstAttribute="bottom" secondItem="aaR-zV-Hv7" secondAttribute="bottom" id="VUt-3s-uP7"/>
+                                <constraint firstItem="ygs-HK-vsv" firstAttribute="top" secondItem="VQs-ii-W6h" secondAttribute="top" id="Z3P-t4-D2u"/>
+                                <constraint firstItem="10" firstAttribute="leading" secondItem="9" secondAttribute="trailing" id="ZIs-c2-Ehq"/>
+                                <constraint firstItem="aaR-zV-Hv7" firstAttribute="leading" secondItem="ygs-HK-vsv" secondAttribute="trailing" id="jKT-5d-w9x"/>
+                                <constraint firstAttribute="bottom" secondItem="10" secondAttribute="bottom" id="m9p-eG-yhL"/>
+                                <constraint firstItem="9" firstAttribute="leading" secondItem="VQs-ii-W6h" secondAttribute="leading" id="qWu-Xd-2lI"/>
+                                <constraint firstItem="10" firstAttribute="top" secondItem="VQs-ii-W6h" secondAttribute="top" id="xf6-zr-qJc"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="16" secondAttribute="bottom" id="8X3-HW-ufD"/>
+                        <constraint firstItem="VQs-ii-W6h" firstAttribute="top" secondItem="4" secondAttribute="top" id="Bta-1b-MnS"/>
+                        <constraint firstAttribute="bottom" secondItem="VQs-ii-W6h" secondAttribute="bottom" id="Dej-rE-woo"/>
+                        <constraint firstItem="16" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="JSI-SQ-cyw"/>
+                        <constraint firstItem="16" firstAttribute="top" secondItem="4" secondAttribute="top" id="Ms9-ts-CVu"/>
+                        <constraint firstAttribute="centerY" secondItem="VQs-ii-W6h" secondAttribute="centerY" id="OIf-Su-Vvr"/>
+                        <constraint firstItem="VQs-ii-W6h" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="bSh-Rb-sO8"/>
+                        <constraint firstAttribute="trailing" secondItem="16" secondAttribute="trailing" id="iOT-4D-Avt"/>
+                        <constraint firstAttribute="trailing" secondItem="VQs-ii-W6h" secondAttribute="trailing" id="mTH-sH-xaX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                            <size key="value" width="960" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="12"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Yxv-BO-9RD" customClass="SNPageControl">
+                    <rect key="frame" x="0.0" y="519" width="320" height="37"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="pageIndicatorTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="pageControlValueChanged:" destination="-1" eventType="valueChanged" id="gPi-x0-nCm"/>
+                    </connections>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Yxv-BO-9RD" secondAttribute="centerX" id="2aP-OE-tgY"/>
+                <constraint firstItem="ygs-HK-vsv" firstAttribute="width" secondItem="Ku3-27-7bn" secondAttribute="width" id="2p4-Mk-jEI"/>
+                <constraint firstItem="Ku3-27-7bn" firstAttribute="width" secondItem="aaR-zV-Hv7" secondAttribute="width" id="4Co-hV-7m7"/>
+                <constraint firstAttribute="bottom" secondItem="4" secondAttribute="bottom" id="5wg-NU-shI"/>
+                <constraint firstItem="Ku3-27-7bn" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="7MI-fh-hbe"/>
+                <constraint firstAttribute="trailing" secondItem="Ku3-27-7bn" secondAttribute="trailing" id="7VZ-8K-tBs"/>
+                <constraint firstAttribute="centerX" secondItem="Ku3-27-7bn" secondAttribute="centerX" id="Iyz-RJ-Kje"/>
+                <constraint firstAttribute="trailing" secondItem="Yxv-BO-9RD" secondAttribute="trailing" id="PSj-FV-919"/>
+                <constraint firstAttribute="bottom" secondItem="Yxv-BO-9RD" secondAttribute="bottom" constant="12" id="Pa3-rh-rMw"/>
+                <constraint firstItem="Ku3-27-7bn" firstAttribute="top" secondItem="1" secondAttribute="top" id="QgQ-ee-IUi"/>
+                <constraint firstItem="10" firstAttribute="width" secondItem="Ku3-27-7bn" secondAttribute="width" id="T0u-fe-lzR"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="1" secondAttribute="top" id="Uqy-ku-pRy"/>
+                <constraint firstAttribute="bottom" secondItem="Ku3-27-7bn" secondAttribute="bottom" id="VXi-iT-lIL"/>
+                <constraint firstAttribute="centerY" secondItem="Ku3-27-7bn" secondAttribute="centerY" id="X0h-qE-BX7"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="bhU-ph-reK"/>
+                <constraint firstAttribute="centerY" secondItem="4" secondAttribute="centerY" id="eWy-oj-ogW"/>
+                <constraint firstAttribute="centerX" secondItem="4" secondAttribute="centerX" id="efG-Pk-CPc"/>
+                <constraint firstItem="9" firstAttribute="width" secondItem="Ku3-27-7bn" secondAttribute="width" id="hsk-lK-5sS"/>
+                <constraint firstItem="Yxv-BO-9RD" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="pHr-uc-sTm"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" id="uY4-3E-DOR"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="guide_large_1.png" width="375" height="667"/>
+        <image name="guide_large_2.png" width="375" height="667"/>
+        <image name="guide_large_3.png" width="375" height="667"/>
+        <image name="guide_large_4.png" width="375" height="667"/>
+    </resources>
+</document>

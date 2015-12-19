@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIViewController">
+            <connections>
+                <outlet property="view" destination="gWw-8p-HYY" id="3Os-eZ-NXE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gWw-8p-HYY" customClass="VTTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gWw-8p-HYY" id="PTp-9U-d4i">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dvd-To-fu8" customClass="VTButton">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="cell_bg_act.png"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="cellSelected"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/carBase/campPaly"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="doAction:" destination="gWw-8p-HYY" eventType="touchUpInside" id="Eyf-Xh-brU"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HCImageView" id="iny-K3-4At" customClass="HCImageView">
+                        <rect key="frame" x="10" y="5" width="300" height="190"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="iscornerRound" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="defaultImageStr" value="info_loading.png"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dataOutletContainer" destination="ReS-cK-8m0" id="w7w-3K-Kn1"/>
+            </connections>
+            <point key="canvasLocation" x="293" y="317"/>
+        </tableViewCell>
+        <customObject id="ReS-cK-8m0" customClass="VTDataOutletContainer">
+            <connections>
+                <outletCollection property="dataOutlets" destination="If7-cS-DRO" id="GtI-ru-yYZ"/>
+            </connections>
+        </customObject>
+        <customObject id="If7-cS-DRO" userLabel="Imageview Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="src"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.thumbnail_images.medium.url"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="iny-K3-4At" id="4eE-Pq-mlb"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <image name="HCImageView" width="213" height="1"/>
+        <image name="cell_bg_act.png" width="320" height="45"/>
+    </resources>
+</document>

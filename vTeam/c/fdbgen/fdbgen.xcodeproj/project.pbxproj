@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC339DB5176BF89E00EC2DAC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DB4176BF89E00EC2DAC /* main.c */; };
+		AC339DB7176BF89E00EC2DAC /* fdbgen.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC339DB6176BF89E00EC2DAC /* fdbgen.1 */; };
+		AC339E25176BF93200EC2DAC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC339E24176BF93200EC2DAC /* libz.dylib */; };
+		AC339E27176BF93A00EC2DAC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC339E26176BF93A00EC2DAC /* libxml2.dylib */; };
+		AC339E59176BF97600EC2DAC /* hactree.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DBF176BF90700EC2DAC /* hactree.c */; };
+		AC339E5A176BF97600EC2DAC /* hbase64.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DC1176BF90700EC2DAC /* hbase64.c */; };
+		AC339E5B176BF97600EC2DAC /* hbtree.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DC3176BF90700EC2DAC /* hbtree.c */; };
+		AC339E5C176BF97600EC2DAC /* hbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DC5176BF90700EC2DAC /* hbuffer.c */; };
+		AC339E5D176BF97600EC2DAC /* hbytes.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DC7176BF90700EC2DAC /* hbytes.c */; };
+		AC339E5E176BF97600EC2DAC /* hclass.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DCA176BF90700EC2DAC /* hclass.c */; };
+		AC339E5F176BF97600EC2DAC /* hconfig.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DCC176BF90700EC2DAC /* hconfig.c */; };
+		AC339E60176BF97600EC2DAC /* hdata.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DCE176BF90700EC2DAC /* hdata.c */; };
+		AC339E61176BF97600EC2DAC /* hdata_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DD0176BF90700EC2DAC /* hdata_alloc.c */; };
+		AC339E62176BF97600EC2DAC /* hdata_binary.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DD2176BF90700EC2DAC /* hdata_binary.c */; };
+		AC339E63176BF97600EC2DAC /* hdata_json.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DD4176BF90700EC2DAC /* hdata_json.c */; };
+		AC339E64176BF97600EC2DAC /* hdata_set.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DD6176BF90700EC2DAC /* hdata_set.c */; };
+		AC339E65176BF97600EC2DAC /* hdata_storage.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DD8176BF90700EC2DAC /* hdata_storage.c */; };
+		AC339E66176BF97600EC2DAC /* hdata_xml.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DDA176BF90700EC2DAC /* hdata_xml.c */; };
+		AC339E67176BF97600EC2DAC /* hdebug.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DDC176BF90700EC2DAC /* hdebug.c */; };
+		AC339E68176BF97600EC2DAC /* hdevice.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DDE176BF90700EC2DAC /* hdevice.c */; };
+		AC339E69176BF97600EC2DAC /* hext_obj.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DE0176BF90700EC2DAC /* hext_obj.c */; };
+		AC339E6A176BF97600EC2DAC /* hfile.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DE2176BF90700EC2DAC /* hfile.c */; };
+		AC339E6B176BF97600EC2DAC /* hinifile.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DE4176BF90700EC2DAC /* hinifile.c */; };
+		AC339E6C176BF97600EC2DAC /* hjson.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DE6176BF90700EC2DAC /* hjson.c */; };
+		AC339E6D176BF97600EC2DAC /* hlibrary.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DE8176BF90700EC2DAC /* hlibrary.c */; };
+		AC339E6E176BF97600EC2DAC /* hlist.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DEA176BF90700EC2DAC /* hlist.c */; };
+		AC339E6F176BF97600EC2DAC /* hlog.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DEC176BF90700EC2DAC /* hlog.c */; };
+		AC339E71176BF97600EC2DAC /* hmap2.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DF0176BF90700EC2DAC /* hmap2.c */; };
+		AC339E72176BF97600EC2DAC /* hmem.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DF1176BF90700EC2DAC /* hmem.c */; };
+		AC339E73176BF97600EC2DAC /* hmutex.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DF3176BF90700EC2DAC /* hmutex.c */; };
+		AC339E74176BF97600EC2DAC /* hnetbios.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DF5176BF90700EC2DAC /* hnetbios.c */; };
+		AC339E75176BF97600EC2DAC /* hprocess.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DF7176BF90700EC2DAC /* hprocess.c */; };
+		AC339E76176BF97600EC2DAC /* hqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DF9176BF90700EC2DAC /* hqueue.c */; };
+		AC339E78176BF97600EC2DAC /* hrwlock.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DFD176BF90700EC2DAC /* hrwlock.c */; };
+		AC339E79176BF97600EC2DAC /* hserial_list.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339DFF176BF90700EC2DAC /* hserial_list.c */; };
+		AC339E7A176BF97600EC2DAC /* hserial_map.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E01176BF90700EC2DAC /* hserial_map.c */; };
+		AC339E7B176BF97600EC2DAC /* hstack.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E03176BF90700EC2DAC /* hstack.c */; };
+		AC339E7C176BF97600EC2DAC /* hstr.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E05176BF90700EC2DAC /* hstr.c */; };
+		AC339E7D176BF97600EC2DAC /* hstruct_list.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E07176BF90700EC2DAC /* hstruct_list.c */; };
+		AC339E7E176BF97600EC2DAC /* hthread.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E09176BF90700EC2DAC /* hthread.c */; };
+		AC339E7F176BF97600EC2DAC /* htime.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E0B176BF90700EC2DAC /* htime.c */; };
+		AC339E80176BF97600EC2DAC /* htypes.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E0D176BF90700EC2DAC /* htypes.c */; };
+		AC339E81176BF97600EC2DAC /* huniquekey.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E0F176BF90700EC2DAC /* huniquekey.c */; };
+		AC339E82176BF97600EC2DAC /* hurl.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E11176BF90700EC2DAC /* hurl.c */; };
+		AC339E83176BF97600EC2DAC /* hwaiter.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E13176BF90700EC2DAC /* hwaiter.c */; };
+		AC339E84176BF97600EC2DAC /* hxml_scanf.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E15176BF90700EC2DAC /* hxml_scanf.c */; };
+		AC339E86176BF97600EC2DAC /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E19176BF90700EC2DAC /* md5.c */; };
+		AC339E88176BF97600EC2DAC /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E1C176BF90700EC2DAC /* sha1.c */; };
+		AC339E89176BF9A400EC2DAC /* hfdb.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E20176BF90700EC2DAC /* hfdb.c */; };
+		AC339E8A176BF9A400EC2DAC /* hfdb_index.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E22176BF90700EC2DAC /* hfdb_index.c */; };
+		AC339E8D176BFA2500EC2DAC /* hfdb_cfg.c in Sources */ = {isa = PBXBuildFile; fileRef = AC339E8C176BFA2500EC2DAC /* hfdb_cfg.c */; };
+		AC339E8F176C072300EC2DAC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AC339E8E176C072300EC2DAC /* libsqlite3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC339DAF176BF89E00EC2DAC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				AC339DB7176BF89E00EC2DAC /* fdbgen.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC339DB1176BF89E00EC2DAC /* fdbgen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fdbgen; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC339DB4176BF89E00EC2DAC /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		AC339DB6176BF89E00EC2DAC /* fdbgen.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = fdbgen.1; sourceTree = "<group>"; };
+		AC339DBF176BF90700EC2DAC /* hactree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hactree.c; sourceTree = "<group>"; };
+		AC339DC0176BF90700EC2DAC /* hactree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hactree.h; sourceTree = "<group>"; };
+		AC339DC1176BF90700EC2DAC /* hbase64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hbase64.c; sourceTree = "<group>"; };
+		AC339DC2176BF90700EC2DAC /* hbase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hbase64.h; sourceTree = "<group>"; };
+		AC339DC3176BF90700EC2DAC /* hbtree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hbtree.c; sourceTree = "<group>"; };
+		AC339DC4176BF90700EC2DAC /* hbtree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hbtree.h; sourceTree = "<group>"; };
+		AC339DC5176BF90700EC2DAC /* hbuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hbuffer.c; sourceTree = "<group>"; };
+		AC339DC6176BF90700EC2DAC /* hbuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hbuffer.h; sourceTree = "<group>"; };
+		AC339DC7176BF90700EC2DAC /* hbytes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hbytes.c; sourceTree = "<group>"; };
+		AC339DC8176BF90700EC2DAC /* hbytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hbytes.h; sourceTree = "<group>"; };
+		AC339DC9176BF90700EC2DAC /* hcgi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hcgi.h; sourceTree = "<group>"; };
+		AC339DCA176BF90700EC2DAC /* hclass.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hclass.c; sourceTree = "<group>"; };
+		AC339DCB176BF90700EC2DAC /* hclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hclass.h; sourceTree = "<group>"; };
+		AC339DCC176BF90700EC2DAC /* hconfig.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hconfig.c; sourceTree = "<group>"; };
+		AC339DCD176BF90700EC2DAC /* hconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hconfig.h; sourceTree = "<group>"; };
+		AC339DCE176BF90700EC2DAC /* hdata.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hdata.c; sourceTree = "<group>"; };
+		AC339DCF176BF90700EC2DAC /* hdata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hdata.h; sourceTree = "<group>"; };
+		AC339DD0176BF90700EC2DAC /* hdata_alloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hdata_alloc.c; sourceTree = "<group>"; };
+		AC339DD1176BF90700EC2DAC /* hdata_alloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hdata_alloc.h; sourceTree = "<group>"; };
+		AC339DD2176BF90700EC2DAC /* hdata_binary.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hdata_binary.c; sourceTree = "<group>"; };
+		AC339DD3176BF90700EC2DAC /* hdata_binary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hdata_binary.h; sourceTree = "<group>"; };
+		AC339DD4176BF90700EC2DAC /* hdata_json.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hdata_json.c; sourceTree = "<group>"; };
+		AC339DD5176BF90700EC2DAC /* hdata_json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hdata_json.h; sourceTree = "<group>"; };
+		AC339DD6176BF90700EC2DAC /* hdata_set.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hdata_set.c; sourceTree = "<group>"; };
+		AC339DD7176BF90700EC2DAC /* hdata_set.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hdata_set.h; sourceTree = "<group>"; };
+		AC339DD8176BF90700EC2DAC /* hdata_storage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hdata_storage.c; sourceTree = "<group>"; };
+		AC339DD9176BF90700EC2DAC /* hdata_storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hdata_storage.h; sourceTree = "<group>"; };
+		AC339DDA176BF90700EC2DAC /* hdata_xml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hdata_xml.c; sourceTree = "<group>"; };
+		AC339DDB176BF90700EC2DAC /* hdata_xml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hdata_xml.h; sourceTree = "<group>"; };
+		AC339DDC176BF90700EC2DAC /* hdebug.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hdebug.c; sourceTree = "<group>"; };
+		AC339DDD176BF90700EC2DAC /* hdebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hdebug.h; sourceTree = "<group>"; };
+		AC339DDE176BF90700EC2DAC /* hdevice.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hdevice.c; sourceTree = "<group>"; };
+		AC339DDF176BF90700EC2DAC /* hdevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hdevice.h; sourceTree = "<group>"; };
+		AC339DE0176BF90700EC2DAC /* hext_obj.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hext_obj.c; sourceTree = "<group>"; };
+		AC339DE1176BF90700EC2DAC /* hext_obj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hext_obj.h; sourceTree = "<group>"; };
+		AC339DE2176BF90700EC2DAC /* hfile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hfile.c; sourceTree = "<group>"; };
+		AC339DE3176BF90700EC2DAC /* hfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hfile.h; sourceTree = "<group>"; };
+		AC339DE4176BF90700EC2DAC /* hinifile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hinifile.c; sourceTree = "<group>"; };
+		AC339DE5176BF90700EC2DAC /* hinifile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hinifile.h; sourceTree = "<group>"; };
+		AC339DE6176BF90700EC2DAC /* hjson.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hjson.c; sourceTree = "<group>"; };
+		AC339DE7176BF90700EC2DAC /* hjson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hjson.h; sourceTree = "<group>"; };
+		AC339DE8176BF90700EC2DAC /* hlibrary.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hlibrary.c; sourceTree = "<group>"; };
+		AC339DE9176BF90700EC2DAC /* hlibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hlibrary.h; sourceTree = "<group>"; };
+		AC339DEA176BF90700EC2DAC /* hlist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hlist.c; sourceTree = "<group>"; };
+		AC339DEB176BF90700EC2DAC /* hlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hlist.h; sourceTree = "<group>"; };
+		AC339DEC176BF90700EC2DAC /* hlog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hlog.c; sourceTree = "<group>"; };
+		AC339DED176BF90700EC2DAC /* hlog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hlog.h; sourceTree = "<group>"; };
+		AC339DEE176BF90700EC2DAC /* hmap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hmap.c; sourceTree = "<group>"; };
+		AC339DEF176BF90700EC2DAC /* hmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hmap.h; sourceTree = "<group>"; };
+		AC339DF0176BF90700EC2DAC /* hmap2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hmap2.c; sourceTree = "<group>"; };
+		AC339DF1176BF90700EC2DAC /* hmem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hmem.c; sourceTree = "<group>"; };
+		AC339DF2176BF90700EC2DAC /* hmem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hmem.h; sourceTree = "<group>"; };
+		AC339DF3176BF90700EC2DAC /* hmutex.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hmutex.c; sourceTree = "<group>"; };
+		AC339DF4176BF90700EC2DAC /* hmutex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hmutex.h; sourceTree = "<group>"; };
+		AC339DF5176BF90700EC2DAC /* hnetbios.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hnetbios.c; sourceTree = "<group>"; };
+		AC339DF6176BF90700EC2DAC /* hnetbios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hnetbios.h; sourceTree = "<group>"; };
+		AC339DF7176BF90700EC2DAC /* hprocess.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hprocess.c; sourceTree = "<group>"; };
+		AC339DF8176BF90700EC2DAC /* hprocess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hprocess.h; sourceTree = "<group>"; };
+		AC339DF9176BF90700EC2DAC /* hqueue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hqueue.c; sourceTree = "<group>"; };
+		AC339DFA176BF90700EC2DAC /* hqueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hqueue.h; sourceTree = "<group>"; };
+		AC339DFB176BF90700EC2DAC /* hrecursive.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hrecursive.c; sourceTree = "<group>"; };
+		AC339DFC176BF90700EC2DAC /* hrecursive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hrecursive.h; sourceTree = "<group>"; };
+		AC339DFD176BF90700EC2DAC /* hrwlock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hrwlock.c; sourceTree = "<group>"; };
+		AC339DFE176BF90700EC2DAC /* hrwlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hrwlock.h; sourceTree = "<group>"; };
+		AC339DFF176BF90700EC2DAC /* hserial_list.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hserial_list.c; sourceTree = "<group>"; };
+		AC339E00176BF90700EC2DAC /* hserial_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hserial_list.h; sourceTree = "<group>"; };
+		AC339E01176BF90700EC2DAC /* hserial_map.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hserial_map.c; sourceTree = "<group>"; };
+		AC339E02176BF90700EC2DAC /* hserial_map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hserial_map.h; sourceTree = "<group>"; };
+		AC339E03176BF90700EC2DAC /* hstack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hstack.c; sourceTree = "<group>"; };
+		AC339E04176BF90700EC2DAC /* hstack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hstack.h; sourceTree = "<group>"; };
+		AC339E05176BF90700EC2DAC /* hstr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hstr.c; sourceTree = "<group>"; };
+		AC339E06176BF90700EC2DAC /* hstr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hstr.h; sourceTree = "<group>"; };
+		AC339E07176BF90700EC2DAC /* hstruct_list.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hstruct_list.c; sourceTree = "<group>"; };
+		AC339E08176BF90700EC2DAC /* hstruct_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hstruct_list.h; sourceTree = "<group>"; };
+		AC339E09176BF90700EC2DAC /* hthread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hthread.c; sourceTree = "<group>"; };
+		AC339E0A176BF90700EC2DAC /* hthread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hthread.h; sourceTree = "<group>"; };
+		AC339E0B176BF90700EC2DAC /* htime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = htime.c; sourceTree = "<group>"; };
+		AC339E0C176BF90700EC2DAC /* htime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = htime.h; sourceTree = "<group>"; };
+		AC339E0D176BF90700EC2DAC /* htypes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = htypes.c; sourceTree = "<group>"; };
+		AC339E0E176BF90700EC2DAC /* htypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = htypes.h; sourceTree = "<group>"; };
+		AC339E0F176BF90700EC2DAC /* huniquekey.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = huniquekey.c; sourceTree = "<group>"; };
+		AC339E10176BF90700EC2DAC /* huniquekey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = huniquekey.h; sourceTree = "<group>"; };
+		AC339E11176BF90700EC2DAC /* hurl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hurl.c; sourceTree = "<group>"; };
+		AC339E12176BF90700EC2DAC /* hurl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hurl.h; sourceTree = "<group>"; };
+		AC339E13176BF90700EC2DAC /* hwaiter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hwaiter.c; sourceTree = "<group>"; };
+		AC339E14176BF90700EC2DAC /* hwaiter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hwaiter.h; sourceTree = "<group>"; };
+		AC339E15176BF90700EC2DAC /* hxml_scanf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hxml_scanf.c; sourceTree = "<group>"; };
+		AC339E16176BF90700EC2DAC /* hxml_scanf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hxml_scanf.h; sourceTree = "<group>"; };
+		AC339E17176BF90700EC2DAC /* hxpath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hxpath.c; sourceTree = "<group>"; };
+		AC339E18176BF90700EC2DAC /* hxpath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hxpath.h; sourceTree = "<group>"; };
+		AC339E19176BF90700EC2DAC /* md5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		AC339E1A176BF90700EC2DAC /* md5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		AC339E1B176BF90700EC2DAC /* sha.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sha.c; sourceTree = "<group>"; };
+		AC339E1C176BF90700EC2DAC /* sha1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		AC339E1D176BF90700EC2DAC /* sha1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		AC339E1E176BF90700EC2DAC /* shatest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = shatest.c; sourceTree = "<group>"; };
+		AC339E20176BF90700EC2DAC /* hfdb.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hfdb.c; sourceTree = "<group>"; };
+		AC339E21176BF90700EC2DAC /* hfdb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hfdb.h; sourceTree = "<group>"; };
+		AC339E22176BF90700EC2DAC /* hfdb_index.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hfdb_index.c; sourceTree = "<group>"; };
+		AC339E23176BF90700EC2DAC /* hfdb_index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hfdb_index.h; sourceTree = "<group>"; };
+		AC339E24176BF93200EC2DAC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AC339E26176BF93A00EC2DAC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		AC339E8B176BFA1600EC2DAC /* hfdb_cfg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hfdb_cfg.h; sourceTree = "<group>"; };
+		AC339E8C176BFA2500EC2DAC /* hfdb_cfg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hfdb_cfg.c; sourceTree = "<group>"; };
+		AC339E8E176C072300EC2DAC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC339DAE176BF89E00EC2DAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC339E8F176C072300EC2DAC /* libsqlite3.dylib in Frameworks */,
+				AC339E27176BF93A00EC2DAC /* libxml2.dylib in Frameworks */,
+				AC339E25176BF93200EC2DAC /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC339DA8176BF89E00EC2DAC = {
+			isa = PBXGroup;
+			children = (
+				AC339DB3176BF89E00EC2DAC /* fdbgen */,
+				AC339E28176BF94300EC2DAC /* Frameworks */,
+				AC339DB2176BF89E00EC2DAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC339DB2176BF89E00EC2DAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC339DB1176BF89E00EC2DAC /* fdbgen */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC339DB3176BF89E00EC2DAC /* fdbgen */ = {
+			isa = PBXGroup;
+			children = (
+				AC339DBE176BF90700EC2DAC /* core */,
+				AC339E1F176BF90700EC2DAC /* db */,
+				AC339DB4176BF89E00EC2DAC /* main.c */,
+				AC339DB6176BF89E00EC2DAC /* fdbgen.1 */,
+			);
+			path = fdbgen;
+			sourceTree = "<group>";
+		};
+		AC339DBE176BF90700EC2DAC /* core */ = {
+			isa = PBXGroup;
+			children = (
+				AC339DBF176BF90700EC2DAC /* hactree.c */,
+				AC339DC0176BF90700EC2DAC /* hactree.h */,
+				AC339DC1176BF90700EC2DAC /* hbase64.c */,
+				AC339DC2176BF90700EC2DAC /* hbase64.h */,
+				AC339DC3176BF90700EC2DAC /* hbtree.c */,
+				AC339DC4176BF90700EC2DAC /* hbtree.h */,
+				AC339DC5176BF90700EC2DAC /* hbuffer.c */,
+				AC339DC6176BF90700EC2DAC /* hbuffer.h */,
+				AC339DC7176BF90700EC2DAC /* hbytes.c */,
+				AC339DC8176BF90700EC2DAC /* hbytes.h */,
+				AC339DC9176BF90700EC2DAC /* hcgi.h */,
+				AC339DCA176BF90700EC2DAC /* hclass.c */,
+				AC339DCB176BF90700EC2DAC /* hclass.h */,
+				AC339DCC176BF90700EC2DAC /* hconfig.c */,
+				AC339DCD176BF90700EC2DAC /* hconfig.h */,
+				AC339DCE176BF90700EC2DAC /* hdata.c */,
+				AC339DCF176BF90700EC2DAC /* hdata.h */,
+				AC339DD0176BF90700EC2DAC /* hdata_alloc.c */,
+				AC339DD1176BF90700EC2DAC /* hdata_alloc.h */,
+				AC339DD2176BF90700EC2DAC /* hdata_binary.c */,
+				AC339DD3176BF90700EC2DAC /* hdata_binary.h */,
+				AC339DD4176BF90700EC2DAC /* hdata_json.c */,
+				AC339DD5176BF90700EC2DAC /* hdata_json.h */,
+				AC339DD6176BF90700EC2DAC /* hdata_set.c */,
+				AC339DD7176BF90700EC2DAC /* hdata_set.h */,
+				AC339DD8176BF90700EC2DAC /* hdata_storage.c */,
+				AC339DD9176BF90700EC2DAC /* hdata_storage.h */,
+				AC339DDA176BF90700EC2DAC /* hdata_xml.c */,
+				AC339DDB176BF90700EC2DAC /* hdata_xml.h */,
+				AC339DDC176BF90700EC2DAC /* hdebug.c */,
+				AC339DDD176BF90700EC2DAC /* hdebug.h */,
+				AC339DDE176BF90700EC2DAC /* hdevice.c */,
+				AC339DDF176BF90700EC2DAC /* hdevice.h */,
+				AC339DE0176BF90700EC2DAC /* hext_obj.c */,
+				AC339DE1176BF90700EC2DAC /* hext_obj.h */,
+				AC339DE2176BF90700EC2DAC /* hfile.c */,
+				AC339DE3176BF90700EC2DAC /* hfile.h */,
+				AC339DE4176BF90700EC2DAC /* hinifile.c */,
+				AC339DE5176BF90700EC2DAC /* hinifile.h */,
+				AC339DE6176BF90700EC2DAC /* hjson.c */,
+				AC339DE7176BF90700EC2DAC /* hjson.h */,
+				AC339DE8176BF90700EC2DAC /* hlibrary.c */,
+				AC339DE9176BF90700EC2DAC /* hlibrary.h */,
+				AC339DEA176BF90700EC2DAC /* hlist.c */,
+				AC339DEB176BF90700EC2DAC /* hlist.h */,
+				AC339DEC176BF90700EC2DAC /* hlog.c */,
+				AC339DED176BF90700EC2DAC /* hlog.h */,
+				AC339DEE176BF90700EC2DAC /* hmap.c */,
+				AC339DEF176BF90700EC2DAC /* hmap.h */,
+				AC339DF0176BF90700EC2DAC /* hmap2.c */,
+				AC339DF1176BF90700EC2DAC /* hmem.c */,
+				AC339DF2176BF90700EC2DAC /* hmem.h */,
+				AC339DF3176BF90700EC2DAC /* hmutex.c */,
+				AC339DF4176BF90700EC2DAC /* hmutex.h */,
+				AC339DF5176BF90700EC2DAC /* hnetbios.c */,
+				AC339DF6176BF90700EC2DAC /* hnetbios.h */,
+				AC339DF7176BF90700EC2DAC /* hprocess.c */,
+				AC339DF8176BF90700EC2DAC /* hprocess.h */,
+				AC339DF9176BF90700EC2DAC /* hqueue.c */,
+				AC339DFA176BF90700EC2DAC /* hqueue.h */,
+				AC339DFB176BF90700EC2DAC /* hrecursive.c */,
+				AC339DFC176BF90700EC2DAC /* hrecursive.h */,
+				AC339DFD176BF90700EC2DAC /* hrwlock.c */,
+				AC339DFE176BF90700EC2DAC /* hrwlock.h */,
+				AC339DFF176BF90700EC2DAC /* hserial_list.c */,
+				AC339E00176BF90700EC2DAC /* hserial_list.h */,
+				AC339E01176BF90700EC2DAC /* hserial_map.c */,
+				AC339E02176BF90700EC2DAC /* hserial_map.h */,
+				AC339E03176BF90700EC2DAC /* hstack.c */,
+				AC339E04176BF90700EC2DAC /* hstack.h */,
+				AC339E05176BF90700EC2DAC /* hstr.c */,
+				AC339E06176BF90700EC2DAC /* hstr.h */,
+				AC339E07176BF90700EC2DAC /* hstruct_list.c */,
+				AC339E08176BF90700EC2DAC /* hstruct_list.h */,
+				AC339E09176BF90700EC2DAC /* hthread.c */,
+				AC339E0A176BF90700EC2DAC /* hthread.h */,
+				AC339E0B176BF90700EC2DAC /* htime.c */,
+				AC339E0C176BF90700EC2DAC /* htime.h */,
+				AC339E0D176BF90700EC2DAC /* htypes.c */,
+				AC339E0E176BF90700EC2DAC /* htypes.h */,
+				AC339E0F176BF90700EC2DAC /* huniquekey.c */,
+				AC339E10176BF90700EC2DAC /* huniquekey.h */,
+				AC339E11176BF90700EC2DAC /* hurl.c */,
+				AC339E12176BF90700EC2DAC /* hurl.h */,
+				AC339E13176BF90700EC2DAC /* hwaiter.c */,
+				AC339E14176BF90700EC2DAC /* hwaiter.h */,
+				AC339E15176BF90700EC2DAC /* hxml_scanf.c */,
+				AC339E16176BF90700EC2DAC /* hxml_scanf.h */,
+				AC339E17176BF90700EC2DAC /* hxpath.c */,
+				AC339E18176BF90700EC2DAC /* hxpath.h */,
+				AC339E19176BF90700EC2DAC /* md5.c */,
+				AC339E1A176BF90700EC2DAC /* md5.h */,
+				AC339E1B176BF90700EC2DAC /* sha.c */,
+				AC339E1C176BF90700EC2DAC /* sha1.c */,
+				AC339E1D176BF90700EC2DAC /* sha1.h */,
+				AC339E1E176BF90700EC2DAC /* shatest.c */,
+			);
+			name = core;
+			path = ../../core;
+			sourceTree = "<group>";
+		};
+		AC339E1F176BF90700EC2DAC /* db */ = {
+			isa = PBXGroup;
+			children = (
+				AC339E20176BF90700EC2DAC /* hfdb.c */,
+				AC339E21176BF90700EC2DAC /* hfdb.h */,
+				AC339E22176BF90700EC2DAC /* hfdb_index.c */,
+				AC339E23176BF90700EC2DAC /* hfdb_index.h */,
+				AC339E8B176BFA1600EC2DAC /* hfdb_cfg.h */,
+				AC339E8C176BFA2500EC2DAC /* hfdb_cfg.c */,
+			);
+			name = db;
+			path = ../../db;
+			sourceTree = "<group>";
+		};
+		AC339E28176BF94300EC2DAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC339E8E176C072300EC2DAC /* libsqlite3.dylib */,
+				AC339E26176BF93A00EC2DAC /* libxml2.dylib */,
+				AC339E24176BF93200EC2DAC /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC339DB0176BF89E00EC2DAC /* fdbgen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC339DBA176BF89E00EC2DAC /* Build configuration list for PBXNativeTarget "fdbgen" */;
+			buildPhases = (
+				AC339DAD176BF89E00EC2DAC /* Sources */,
+				AC339DAE176BF89E00EC2DAC /* Frameworks */,
+				AC339DAF176BF89E00EC2DAC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fdbgen;
+			productName = fdbgen;
+			productReference = AC339DB1176BF89E00EC2DAC /* fdbgen */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC339DA9176BF89E00EC2DAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = hailong.org;
+			};
+			buildConfigurationList = AC339DAC176BF89E00EC2DAC /* Build configuration list for PBXProject "fdbgen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC339DA8176BF89E00EC2DAC;
+			productRefGroup = AC339DB2176BF89E00EC2DAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC339DB0176BF89E00EC2DAC /* fdbgen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC339DAD176BF89E00EC2DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC339DB5176BF89E00EC2DAC /* main.c in Sources */,
+				AC339E59176BF97600EC2DAC /* hactree.c in Sources */,
+				AC339E5A176BF97600EC2DAC /* hbase64.c in Sources */,
+				AC339E5B176BF97600EC2DAC /* hbtree.c in Sources */,
+				AC339E5C176BF97600EC2DAC /* hbuffer.c in Sources */,
+				AC339E5D176BF97600EC2DAC /* hbytes.c in Sources */,
+				AC339E5E176BF97600EC2DAC /* hclass.c in Sources */,
+				AC339E5F176BF97600EC2DAC /* hconfig.c in Sources */,
+				AC339E60176BF97600EC2DAC /* hdata.c in Sources */,
+				AC339E61176BF97600EC2DAC /* hdata_alloc.c in Sources */,
+				AC339E62176BF97600EC2DAC /* hdata_binary.c in Sources */,
+				AC339E63176BF97600EC2DAC /* hdata_json.c in Sources */,
+				AC339E64176BF97600EC2DAC /* hdata_set.c in Sources */,
+				AC339E65176BF97600EC2DAC /* hdata_storage.c in Sources */,
+				AC339E66176BF97600EC2DAC /* hdata_xml.c in Sources */,
+				AC339E67176BF97600EC2DAC /* hdebug.c in Sources */,
+				AC339E68176BF97600EC2DAC /* hdevice.c in Sources */,
+				AC339E69176BF97600EC2DAC /* hext_obj.c in Sources */,
+				AC339E6A176BF97600EC2DAC /* hfile.c in Sources */,
+				AC339E6B176BF97600EC2DAC /* hinifile.c in Sources */,
+				AC339E6C176BF97600EC2DAC /* hjson.c in Sources */,
+				AC339E6D176BF97600EC2DAC /* hlibrary.c in Sources */,
+				AC339E6E176BF97600EC2DAC /* hlist.c in Sources */,
+				AC339E6F176BF97600EC2DAC /* hlog.c in Sources */,
+				AC339E71176BF97600EC2DAC /* hmap2.c in Sources */,
+				AC339E72176BF97600EC2DAC /* hmem.c in Sources */,
+				AC339E73176BF97600EC2DAC /* hmutex.c in Sources */,
+				AC339E74176BF97600EC2DAC /* hnetbios.c in Sources */,
+				AC339E75176BF97600EC2DAC /* hprocess.c in Sources */,
+				AC339E76176BF97600EC2DAC /* hqueue.c in Sources */,
+				AC339E78176BF97600EC2DAC /* hrwlock.c in Sources */,
+				AC339E79176BF97600EC2DAC /* hserial_list.c in Sources */,
+				AC339E7A176BF97600EC2DAC /* hserial_map.c in Sources */,
+				AC339E7B176BF97600EC2DAC /* hstack.c in Sources */,
+				AC339E7C176BF97600EC2DAC /* hstr.c in Sources */,
+				AC339E7D176BF97600EC2DAC /* hstruct_list.c in Sources */,
+				AC339E7E176BF97600EC2DAC /* hthread.c in Sources */,
+				AC339E7F176BF97600EC2DAC /* htime.c in Sources */,
+				AC339E80176BF97600EC2DAC /* htypes.c in Sources */,
+				AC339E81176BF97600EC2DAC /* huniquekey.c in Sources */,
+				AC339E82176BF97600EC2DAC /* hurl.c in Sources */,
+				AC339E83176BF97600EC2DAC /* hwaiter.c in Sources */,
+				AC339E84176BF97600EC2DAC /* hxml_scanf.c in Sources */,
+				AC339E86176BF97600EC2DAC /* md5.c in Sources */,
+				AC339E88176BF97600EC2DAC /* sha1.c in Sources */,
+				AC339E89176BF9A400EC2DAC /* hfdb.c in Sources */,
+				AC339E8A176BF9A400EC2DAC /* hfdb_index.c in Sources */,
+				AC339E8D176BFA2500EC2DAC /* hfdb_cfg.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AC339DB8176BF89E00EC2DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AC339DB9176BF89E00EC2DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AC339DBB176BF89E00EC2DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					__MACOS__,
+					__MACOSX__,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC339DBC176BF89E00EC2DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__MACOS__,
+					__MACOSX__,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC339DAC176BF89E00EC2DAC /* Build configuration list for PBXProject "fdbgen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC339DB8176BF89E00EC2DAC /* Debug */,
+				AC339DB9176BF89E00EC2DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC339DBA176BF89E00EC2DAC /* Build configuration list for PBXNativeTarget "fdbgen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC339DBB176BF89E00EC2DAC /* Debug */,
+				AC339DBC176BF89E00EC2DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC339DA9176BF89E00EC2DAC /* Project object */;
+}

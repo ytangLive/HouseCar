@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "31ebd91e-9bc7-4023-9772-ff8ce07e86b4++5162",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "31ebd91e-9bc7-4023-9772-ff8ce07e86b4++5162" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "31ebd91e-9bc7-4023-9772-ff8ce07e86b4++5162" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F6745306-9AB8-4BAD-A5A7-07916B3A902D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "31ebd91e-9bc7-4023-9772-ff8ce07e86b4++5162" : "iOS"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SinaFinance",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "v2\/SinaFinance\/SinaFinance.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn1.intra.sina.com.cn\/Portal_Biz",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31ebd91e-9bc7-4023-9772-ff8ce07e86b4++5162"
+    }
+  ]
+}

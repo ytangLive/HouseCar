@@ -1,0 +1,27 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "31ebd91e-9bc7-4023-9772-ff8ce07e86b4++5162",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "31ebd91e-9bc7-4023-9772-ff8ce07e86b4++5162" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "Finance\/branches",
+      "DVTSourceControlWorkingCopyRepositoryTagsLocationKey" : "Finance\/tags",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "Finance\/trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "31ebd91e-9bc7-4023-9772-ff8ce07e86b4++5162" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AA554E48-D53F-4564-8E5A-ED979D5AB43D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "31ebd91e-9bc7-4023-9772-ff8ce07e86b4++5162" : "iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SinaCar",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "v2\/SinaFinance\/SinaCar.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn1.intra.sina.com.cn\/Portal_Biz",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31ebd91e-9bc7-4023-9772-ff8ce07e86b4++5162"
+    }
+  ]
+}

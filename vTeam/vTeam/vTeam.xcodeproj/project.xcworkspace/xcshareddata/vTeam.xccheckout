@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8C5CA058-C51E-410D-B4E6-6FD8866791FA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>vTeam</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>31ebd91e-9bc7-4023-9772-ff8ce07e86b4++2082</key>
+		<string>https://svn1.intra.sina.com.cn/finance_mobile/iphone/trunk</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>vTeam/vTeam/vTeam.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>31ebd91e-9bc7-4023-9772-ff8ce07e86b4++2082</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>31ebd91e-9bc7-4023-9772-ff8ce07e86b4++2082</key>
+		<string>https://svn1.intra.sina.com.cn/finance_mobile</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://svn1.intra.sina.com.cn/finance_mobile/iphone/trunk/vTeam/vTeam/vTeam.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>31ebd91e-9bc7-4023-9772-ff8ce07e86b4++2082</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>31ebd91e-9bc7-4023-9772-ff8ce07e86b4++2082</string>
+			<key>IDESourceControlWCCName</key>
+			<string>trunk3</string>
+		</dict>
+	</array>
+</dict>
+</plist>
