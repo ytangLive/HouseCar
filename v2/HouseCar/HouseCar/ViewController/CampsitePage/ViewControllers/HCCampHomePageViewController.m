@@ -33,15 +33,15 @@
     
     [self initSearchMenuWithData:[NSArray arrayWithObjects:@{@"classifyID":@"City",@"classifyName":@"城市"},@{@"classifyID":@"Theme",@"classifyName":@"主题"},@{@"classifyID":@"PlayWay",@"classifyName":@"玩法"}, nil]];
     
-    UITableViewCell *headerCell = [self getHeaderCellWidthTitle:@"营地游玩"];
-    self.tableDataController.headerCells = @[headerCell];
+//    UITableViewCell *headerCell = [self getHeaderCellWidthTitle:@"营地游玩"];
+//    self.tableDataController.headerCells = @[headerCell];
     
     
     [_tableDataController setContext:self.context];
     self.dataSource.delegate = self.tableDataController;
     self.tableDataController.delegate = self;
     self.tableDataController.tableDatadelegate = self;
-    self.tableDataController.tableView.rowHeight = 200;
+    self.tableDataController.tableView.backgroundColor = DefaultBackgroundColor;
     
     self.tableDataController.dataUrlKey = @"carlist-interface";
     
@@ -177,12 +177,12 @@
 
 - (UITableViewCell *)getHeaderCellWidthTitle:(NSString *)title
 {
-    UITableViewCell *headerCell = [[UITableViewCell alloc] initLineWithFrame:CGRectMake(0, 0, KScreenWidth, 50) color:[UIColor whiteColor]];
-    CGRect lineRect = CGRectMake(10, 16, 6, 20);
+    UITableViewCell *headerCell = [[UITableViewCell alloc] initLineWithFrame:CGRectMake(0, 0, KScreenWidth, 50) color:[UIColor clearColor]];
+    CGRect lineRect = CGRectMake(15, 16, 5, 20);
     UIView *lineView = [UIView initTitleLineWidthFrame:lineRect];
-    UIFont *labelFont = [UIFont boldSystemFontOfSize:14];
+    UIFont *labelFont = [UIFont systemFontOfSize:15];
     CGSize textSize = [title VTSizeWithFont:labelFont constrainedToSize:CGSizeMake(CGFLOAT_MAX, lineRect.size.height) lineBreakMode:NSLineBreakByWordWrapping];
-    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(lineRect) + 5, lineRect.origin.y, textSize.width, lineRect.size.height)];
+    UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(lineRect) + 6, lineRect.origin.y, textSize.width, lineRect.size.height)];
     titleLabel.font = labelFont;
     titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     titleLabel.textColor = COLOR_HEX(0x666666);

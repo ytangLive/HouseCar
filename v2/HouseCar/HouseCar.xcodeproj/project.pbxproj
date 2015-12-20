@@ -54,6 +54,9 @@
 		9C4FC90A1C256EBD006B3840 /* icon_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4FC9091C256EBD006B3840 /* icon_scan@2x.png */; };
 		9C4FC90B1C256EBD006B3840 /* icon_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4FC9091C256EBD006B3840 /* icon_scan@2x.png */; };
 		9C4FC90C1C256EBD006B3840 /* icon_scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4FC9091C256EBD006B3840 /* icon_scan@2x.png */; };
+		9C4FC9121C26769E006B3840 /* HCMenusSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FC9111C26769E006B3840 /* HCMenusSwitchView.m */; };
+		9C4FC9131C26769E006B3840 /* HCMenusSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FC9111C26769E006B3840 /* HCMenusSwitchView.m */; };
+		9C4FC9141C26769E006B3840 /* HCMenusSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FC9111C26769E006B3840 /* HCMenusSwitchView.m */; };
 		A75FD438199E493200FE7EDC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713FEF2199E274A00EA7525 /* MessageUI.framework */; };
 		A75FD439199E494800FE7EDC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713FF0A199E328A00EA7525 /* CoreTelephony.framework */; };
 		A75FD43A199E494F00FE7EDC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713FEF2199E274A00EA7525 /* MessageUI.framework */; };
@@ -760,6 +763,8 @@
 		9C41D1F51C255DCB0038331B /* HCTravelNotesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTravelNotesDataSource.m; sourceTree = "<group>"; };
 		9C4FC9041C256736006B3840 /* HCTravelNotesItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCTravelNotesItemCell.xib; sourceTree = "<group>"; };
 		9C4FC9091C256EBD006B3840 /* icon_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_scan@2x.png"; sourceTree = "<group>"; };
+		9C4FC9101C26769E006B3840 /* HCMenusSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCMenusSwitchView.h; sourceTree = "<group>"; };
+		9C4FC9111C26769E006B3840 /* HCMenusSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCMenusSwitchView.m; sourceTree = "<group>"; };
 		A76313091A5A679E006E7EC9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		A790E8891AD6900300F0A95D /* debug-Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "debug-Images.xcassets"; sourceTree = "<group>"; };
 		A790E88D1AD690CD00F0A95D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -1555,6 +1560,8 @@
 				F63EAD251C23BAFD0070A26A /* HCCampPlayItemCell.xib */,
 				F63EAD261C23BAFD0070A26A /* HCCampPlayLocationItem.xib */,
 				F63EAD271C23BAFD0070A26A /* HCCampPlayTitleItem.xib */,
+				9C4FC9101C26769E006B3840 /* HCMenusSwitchView.h */,
+				9C4FC9111C26769E006B3840 /* HCMenusSwitchView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2651,6 +2658,7 @@
 				F6409D941C0D8353002AB471 /* EasyJSWebView.m in Sources */,
 				F6498A2A1BF5F1C600AB2BF7 /* HCGuideViewController.m in Sources */,
 				F6C29A161BF4C57800A88B5E /* HCShell.m in Sources */,
+				9C4FC9121C26769E006B3840 /* HCMenusSwitchView.m in Sources */,
 				F62249701C059E5500F818B6 /* HCFilterMenusView.m in Sources */,
 				F66525911C10494A008E18D4 /* KalDataSource.m in Sources */,
 				F6C299A11BF4C57800A88B5E /* UIDevice+IPAddress.m in Sources */,
@@ -2733,6 +2741,7 @@
 				F6498A391BF5F21200AB2BF7 /* HCFocusCell.m in Sources */,
 				F6409D981C0D8353002AB471 /* EasyJSWebViewProxyDelegate.m in Sources */,
 				F6FC33871BF9B96200B81B45 /* HCTableDataController.m in Sources */,
+				9C4FC9131C26769E006B3840 /* HCMenusSwitchView.m in Sources */,
 				F6C299991BF4C57800A88B5E /* HCTabBar.m in Sources */,
 				F6C299B11BF4C57800A88B5E /* NSError+SFError.m in Sources */,
 				F665258F1C10494A008E18D4 /* UIViewAdditions.m in Sources */,
@@ -2803,6 +2812,7 @@
 				F6498A3A1BF5F21200AB2BF7 /* HCFocusCell.m in Sources */,
 				F6409D991C0D8353002AB471 /* EasyJSWebViewProxyDelegate.m in Sources */,
 				F6FC33881BF9B96200B81B45 /* HCTableDataController.m in Sources */,
+				9C4FC9141C26769E006B3840 /* HCMenusSwitchView.m in Sources */,
 				F6C2999A1BF4C57800A88B5E /* HCTabBar.m in Sources */,
 				F6C299B21BF4C57800A88B5E /* NSError+SFError.m in Sources */,
 				F66525901C10494A008E18D4 /* UIViewAdditions.m in Sources */,

@@ -51,7 +51,7 @@ typedef enum {
 #define DefaultNavBarColor COLOR_RGB(51,187,235)
 #define DefaultTabBarColor COLOR_RGB(237,238,240)
 #define DefaultBackgroundColor COLOR_HEX(0xefefef)
-#define TableViewBackgroundColor COLOR_HEX(0xf5f1ed)
+#define TableViewBackgroundColor COLOR_HEX(0xfaf6f2)
 #define DefaultColor COLOR_RGB(0,188,212)
 
 // rgb颜色转换（16进制->10进制）

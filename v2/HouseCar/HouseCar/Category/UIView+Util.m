@@ -188,7 +188,7 @@
 {
     UIView *verticalLine = [[UIView alloc] initWithFrame:frame];
     verticalLine.backgroundColor = DefaultNavBarColor;
-    verticalLine.layer.cornerRadius = 3.0;
+    verticalLine.layer.cornerRadius = 2.0;
     verticalLine.layer.masksToBounds = YES;
     return verticalLine;
 }

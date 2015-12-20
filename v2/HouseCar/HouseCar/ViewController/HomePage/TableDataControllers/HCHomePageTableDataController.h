@@ -40,8 +40,7 @@ typedef NS_ENUM(NSInteger,TableSectionType){
 @property (strong, nonatomic) IBOutlet HCTableFocusViewController *focusController;
 @property (strong,nonatomic) NSString *dataUrlKey;
 
-@property(nonatomic,retain) IBOutletCollection(HCHomePageTableDataControllerSection) NSArray * sections;
-
+@property(nonatomic,strong) IBOutletCollection(HCHomePageTableDataControllerSection) NSArray * sections;
 
 @property (strong, nonatomic) IBOutlet HCHotActivitiesDataSource *hotActivitiesDataSource;
 

@@ -19,20 +19,6 @@
 
 @implementation HCCampPlayTableDataController
 
--(void)setContext:(id<IVTUIContext>)context
-{
-    [super setContext:context];
-    
-    DeviceScreenType deviceType = [(id<HCContext>)self.context deviceType];
-    if (deviceType == AppleIphone6plus) {
-        self.tableView.rowHeight = 81;
-    }else if(deviceType == AppleIphone6){
-        self.tableView.rowHeight = 74;
-    }else{
-        self.tableView.rowHeight = 65;
-    }
-}
-
 -(void)reloadData
 {
     if(![self.focusController.dataSource isLoading]){

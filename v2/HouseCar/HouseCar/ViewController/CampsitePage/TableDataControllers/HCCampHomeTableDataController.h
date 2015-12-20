@@ -10,6 +10,13 @@
 #import "HCTableFocusViewController.h"
 #import "HCTableDataController.h"
 
+@interface  HCCampHomeTableDataControllerSection : NSObject
+
+@property(nonatomic,retain) IBOutlet UIView *headerView;
+@property(nonatomic,assign) NSInteger index;
+
+@end
+
 @class HCCampHomeTableDataController;
 
 @protocol HCCampHomeTableDataDelegate <NSObject>
@@ -26,5 +33,7 @@
 @property (strong,nonatomic) NSString *dataUrlKey;
 
 @property (strong, nonatomic)NSDateFormatter *defaultDateFormatter;
+
+@property(nonatomic,strong) IBOutletCollection(HCCampHomeTableDataControllerSection) NSArray * sections;
 
 @end

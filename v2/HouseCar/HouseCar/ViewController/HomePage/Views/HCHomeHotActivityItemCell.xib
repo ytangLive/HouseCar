@@ -288,7 +288,7 @@
                     </view>
                 </subviews>
             </tableViewCellContentView>
-            <color key="backgroundColor" red="0.96078431369999995" green="0.94509803920000002" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.96470588235294119" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="dataOutletContainer" destination="ReS-cK-8m0" id="w7w-3K-Kn1"/>
             </connections>

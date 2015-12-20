@@ -8,26 +8,18 @@
 
 #import "HCCampHomeTableDataController.h"
 
+#define Section_headerView(section) [[_sections objectAtIndex:section] headerView]
+
+@implementation HCCampHomeTableDataControllerSection
+
+@end
+
 @interface HCCampHomeTableDataController()
 @property(nonatomic,strong)NSMutableArray *suspends;//需要悬停的cell集合,目前支持1个
 @property(nonatomic,strong)UIView *suspendView;;//需要悬停的View
 @end
 
 @implementation HCCampHomeTableDataController
-
--(void)setContext:(id<IVTUIContext>)context
-{
-    [super setContext:context];
-    
-    DeviceScreenType deviceType = [(id<HCContext>)self.context deviceType];
-    if (deviceType == AppleIphone6plus) {
-        self.tableView.rowHeight = 81;
-    }else if(deviceType == AppleIphone6){
-        self.tableView.rowHeight = 74;
-    }else{
-        self.tableView.rowHeight = 65;
-    }
-}
 
 #pragma mark - Property
 
@@ -154,11 +146,18 @@
 
 #pragma mark - table view delegate
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    self.itemViewNib = @"HCCampPlayItemCell";
+-(CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return Section_headerView(section) ? [Section_headerView(section) frame].size.height : 0;
+}
 
-    return [super tableView:tableView cellForRowAtIndexPath:indexPath];
+-(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    return Section_headerView(section) ? Section_headerView(section) : nil;
+}
+
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
+    return [_sections count] ? [_sections count] : 1;
 }
 
 @end

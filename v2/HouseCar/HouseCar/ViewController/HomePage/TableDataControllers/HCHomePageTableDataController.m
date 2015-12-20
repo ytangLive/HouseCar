@@ -62,13 +62,9 @@
 -(void)HCTableFocusCellDownloaded:(NSArray *)data error:(NSError *)error
 {
     if (!error) {
-        NSDictionary *dic = nil;
-        if (data) {
-            dic = [NSDictionary dictionaryWithObject:data forKey:@"posts"];
-        }
-        [self.dataSource vtDownlinkTaskDidLoaded:dic forTaskType:nil];
+        [self reloadTableHeaderViewData];
     }else{
-        [self.dataSource vtDownlinkTaskDidFitalError:error forTaskType:nil];
+        NSLog(@"加载轮播图失败");
     }
 }
 
@@ -95,12 +91,6 @@
 {
     [self reloadTableHeaderViewData];
     [super vtDataSourceDidLoadedFromCache:dataSource timestamp:timestamp];
-}
-
--(void) vtDataSourceDidLoaded:(VTDataSource *) dataSource
-{
-    [self reloadTableHeaderViewData];
-    [super vtDataSourceDidLoaded:dataSource];
 }
 
 -(void)reloadTableHeaderViewData
