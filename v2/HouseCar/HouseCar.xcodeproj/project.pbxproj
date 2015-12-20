@@ -45,6 +45,15 @@
 		11CA7F8E17E2F43C002C87E4 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CA7F8D17E2F43C002C87E4 /* CoreImage.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2713FEF3199E274A00EA7525 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713FEF2199E274A00EA7525 /* MessageUI.framework */; };
 		2713FF0B199E328A00EA7525 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713FF0A199E328A00EA7525 /* CoreTelephony.framework */; };
+		9C301D461C26F222002C69C9 /* icon_starSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C301D441C26F222002C69C9 /* icon_starSelected@2x.png */; };
+		9C301D471C26F222002C69C9 /* icon_starSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C301D441C26F222002C69C9 /* icon_starSelected@2x.png */; };
+		9C301D481C26F222002C69C9 /* icon_starSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C301D441C26F222002C69C9 /* icon_starSelected@2x.png */; };
+		9C301D491C26F222002C69C9 /* icon_starUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C301D451C26F222002C69C9 /* icon_starUnselected@2x.png */; };
+		9C301D4A1C26F222002C69C9 /* icon_starUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C301D451C26F222002C69C9 /* icon_starUnselected@2x.png */; };
+		9C301D4B1C26F222002C69C9 /* icon_starUnselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C301D451C26F222002C69C9 /* icon_starUnselected@2x.png */; };
+		9C301D511C26F328002C69C9 /* HCRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C301D501C26F328002C69C9 /* HCRatingView.m */; };
+		9C301D521C26F328002C69C9 /* HCRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C301D501C26F328002C69C9 /* HCRatingView.m */; };
+		9C301D531C26F328002C69C9 /* HCRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C301D501C26F328002C69C9 /* HCRatingView.m */; };
 		9C41D1F61C255DCB0038331B /* HCTravelNotesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41D1F51C255DCB0038331B /* HCTravelNotesDataSource.m */; };
 		9C41D1F71C255DCB0038331B /* HCTravelNotesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41D1F51C255DCB0038331B /* HCTravelNotesDataSource.m */; };
 		9C41D1F81C255DCB0038331B /* HCTravelNotesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C41D1F51C255DCB0038331B /* HCTravelNotesDataSource.m */; };
@@ -759,6 +768,10 @@
 		2713FEF2199E274A00EA7525 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		2713FF0A199E328A00EA7525 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		8A9BEAE61BF4634800CEF8F4 /* HouseCarInHouse.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HouseCarInHouse.plist; sourceTree = "<group>"; };
+		9C301D441C26F222002C69C9 /* icon_starSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_starSelected@2x.png"; sourceTree = "<group>"; };
+		9C301D451C26F222002C69C9 /* icon_starUnselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_starUnselected@2x.png"; sourceTree = "<group>"; };
+		9C301D4F1C26F328002C69C9 /* HCRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCRatingView.h; sourceTree = "<group>"; };
+		9C301D501C26F328002C69C9 /* HCRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCRatingView.m; sourceTree = "<group>"; };
 		9C41D1F41C255DCB0038331B /* HCTravelNotesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTravelNotesDataSource.h; sourceTree = "<group>"; };
 		9C41D1F51C255DCB0038331B /* HCTravelNotesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTravelNotesDataSource.m; sourceTree = "<group>"; };
 		9C4FC9041C256736006B3840 /* HCTravelNotesItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCTravelNotesItemCell.xib; sourceTree = "<group>"; };
@@ -1511,6 +1524,8 @@
 		F63EAD0C1C23B8A90070A26A /* Resorce */ = {
 			isa = PBXGroup;
 			children = (
+				9C301D441C26F222002C69C9 /* icon_starSelected@2x.png */,
+				9C301D451C26F222002C69C9 /* icon_starUnselected@2x.png */,
 			);
 			path = Resorce;
 			sourceTree = "<group>";
@@ -1909,6 +1924,8 @@
 				F6C299691BF4C57800A88B5E /* HCViewController.m */,
 				F6CB1DD81C0EE17D00718746 /* HCCardView.h */,
 				F6CB1DD91C0EE17D00718746 /* HCCardView.m */,
+				9C301D4F1C26F328002C69C9 /* HCRatingView.h */,
+				9C301D501C26F328002C69C9 /* HCRatingView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -2199,6 +2216,7 @@
 				F61F59121BFAD8C800698BBD /* test3.png in Resources */,
 				F63EAD7D1C23F03E0070A26A /* ico_desc.png in Resources */,
 				F61572F71C16AD05002507AC /* HCServicePageViewController.xib in Resources */,
+				9C301D461C26F222002C69C9 /* icon_starSelected@2x.png in Resources */,
 				9C4FC90A1C256EBD006B3840 /* icon_scan@2x.png in Resources */,
 				F6E06BFD1C03430B00D95554 /* cell_bg_act@2x.png in Resources */,
 				F63EAD951C23F03E0070A26A /* ico_r@2x.png in Resources */,
@@ -2289,6 +2307,7 @@
 				F63EAD741C23F03E0070A26A /* ico_back@3x.png in Resources */,
 				F6C29A041BF4C57800A88B5E /* tab_ico5@2x.png in Resources */,
 				F63EAD681C23F03E0070A26A /* ico_back.png in Resources */,
+				9C301D491C26F222002C69C9 /* icon_starUnselected@2x.png in Resources */,
 				F6001A451C06B4B100D83C88 /* split_line@2x.png in Resources */,
 				F61F59211BFAD8C800698BBD /* test8.png in Resources */,
 				F6409D7D1C0D5294002AB471 /* icon_filter@2x.png in Resources */,
@@ -2356,6 +2375,7 @@
 				F61F59131BFAD8C800698BBD /* test3.png in Resources */,
 				F63EAD7E1C23F03E0070A26A /* ico_desc.png in Resources */,
 				F61572F81C16AD05002507AC /* HCServicePageViewController.xib in Resources */,
+				9C301D471C26F222002C69C9 /* icon_starSelected@2x.png in Resources */,
 				9C4FC90B1C256EBD006B3840 /* icon_scan@2x.png in Resources */,
 				F6E06BFE1C03430B00D95554 /* cell_bg_act@2x.png in Resources */,
 				F63EAD961C23F03E0070A26A /* ico_r@2x.png in Resources */,
@@ -2446,6 +2466,7 @@
 				F63EAD751C23F03E0070A26A /* ico_back@3x.png in Resources */,
 				F6C29A051BF4C57800A88B5E /* tab_ico5@2x.png in Resources */,
 				F63EAD691C23F03E0070A26A /* ico_back.png in Resources */,
+				9C301D4A1C26F222002C69C9 /* icon_starUnselected@2x.png in Resources */,
 				F6001A461C06B4B100D83C88 /* split_line@2x.png in Resources */,
 				F61F59221BFAD8C800698BBD /* test8.png in Resources */,
 				F6409D7E1C0D5294002AB471 /* icon_filter@2x.png in Resources */,
@@ -2513,6 +2534,7 @@
 				F61F59141BFAD8C800698BBD /* test3.png in Resources */,
 				F63EAD7F1C23F03E0070A26A /* ico_desc.png in Resources */,
 				F61572F91C16AD05002507AC /* HCServicePageViewController.xib in Resources */,
+				9C301D481C26F222002C69C9 /* icon_starSelected@2x.png in Resources */,
 				9C4FC90C1C256EBD006B3840 /* icon_scan@2x.png in Resources */,
 				F6E06BFF1C03430B00D95554 /* cell_bg_act@2x.png in Resources */,
 				F63EAD971C23F03E0070A26A /* ico_r@2x.png in Resources */,
@@ -2603,6 +2625,7 @@
 				F63EAD761C23F03E0070A26A /* ico_back@3x.png in Resources */,
 				F6C299D61BF4C57800A88B5E /* tab_ico2_act.png in Resources */,
 				F63EAD6A1C23F03E0070A26A /* ico_back.png in Resources */,
+				9C301D4B1C26F222002C69C9 /* icon_starUnselected@2x.png in Resources */,
 				F6001A471C06B4B100D83C88 /* split_line@2x.png in Resources */,
 				F61F59231BFAD8C800698BBD /* test8.png in Resources */,
 				F6409D7F1C0D5294002AB471 /* icon_filter@2x.png in Resources */,
@@ -2682,6 +2705,7 @@
 				F6C299921BF4C57800A88B5E /* HCAutoLabel.m in Sources */,
 				F6D5A4BF1BFC1C73006CA72F /* HCNavigationTitleBar.m in Sources */,
 				F665259A1C10494A008E18D4 /* KalMonthView.m in Sources */,
+				9C301D511C26F328002C69C9 /* HCRatingView.m in Sources */,
 				F6FC33901BFA012A00B81B45 /* HCTableFocusViewController.m in Sources */,
 				F63EAD3F1C23DEC60070A26A /* HCCampHomeTableDataController.m in Sources */,
 				F6C29A281BF4C57800A88B5E /* HCViewController.m in Sources */,
@@ -2790,6 +2814,7 @@
 				F6498A281BF5F1C600AB2BF7 /* HCGuideImageViewFit.m in Sources */,
 				F62249711C059E5500F818B6 /* HCFilterMenusView.m in Sources */,
 				F6424C0B1C0448F000D0F08D /* HCAnimationView.m in Sources */,
+				9C301D521C26F328002C69C9 /* HCRatingView.m in Sources */,
 				F6C2998D1BF4C57800A88B5E /* NSDate+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2861,6 +2886,7 @@
 				F6498A291BF5F1C600AB2BF7 /* HCGuideImageViewFit.m in Sources */,
 				F62249721C059E5500F818B6 /* HCFilterMenusView.m in Sources */,
 				F6424C0C1C0448F000D0F08D /* HCAnimationView.m in Sources */,
+				9C301D531C26F328002C69C9 /* HCRatingView.m in Sources */,
 				F6C2998E1BF4C57800A88B5E /* NSDate+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
