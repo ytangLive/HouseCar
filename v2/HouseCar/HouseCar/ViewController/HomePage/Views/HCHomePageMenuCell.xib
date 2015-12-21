@@ -94,7 +94,7 @@
                         </subviews>
                     </view>
                     <view contentMode="scaleToFill" id="HSQ-H8-yHP">
-                        <rect key="frame" x="236.00000001254836" y="0.0" width="76" height="92"/>
+                        <rect key="frame" x="236" y="0.0" width="76.000000012548355" height="92"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vgg-OI-EEz" customClass="VTButton">
@@ -110,7 +110,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单管理" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e53-VU-19l">
-                                <rect key="frame" x="0.0" y="67" width="76" height="25"/>
+                                <rect key="frame" x="0.0" y="67" width="76.000000012548355" height="25"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>

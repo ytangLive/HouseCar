@@ -7,7 +7,13 @@
 //
 
 #import "HCViewController.h"
+#import "HCTableDataController.h"
 
 @interface HCMyPageViewController : HCViewController
+
+@property (strong, nonatomic) IBOutlet HCTableDataController *tableDataController;
+@property (strong, nonatomic) IBOutlet VTDataSource *dataSource;
+
+@property (weak, nonatomic) IBOutlet UIView *tableViewHeaderView;
 
 @end
