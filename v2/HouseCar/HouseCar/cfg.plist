@@ -167,7 +167,7 @@
 					<key>url</key>
 					<string>view:///servicePage</string>
 					<key>title</key>
-					<string>服务</string>
+					<string>专区</string>
 					<key>image</key>
 					<string>tab_ico4.png</string>
 				</dict>
@@ -224,16 +224,16 @@
 			<key>view</key>
 			<string>HCActivityPageViewController</string>
 			<key>title</key>
-			<string>主页</string>
+			<string>活动</string>
 		</dict>
 		<key>servicePage</key>
 		<dict>
 			<key>class</key>
-			<string>HCServicePageViewController</string>
+			<string>HCRegionPageViewController</string>
 			<key>view</key>
-			<string>HCServicePageViewController</string>
+			<string>HCRegionPageViewController</string>
 			<key>title</key>
-			<string>服务</string>
+			<string>专区</string>
 		</dict>
 		<key>myPage</key>
 		<dict>

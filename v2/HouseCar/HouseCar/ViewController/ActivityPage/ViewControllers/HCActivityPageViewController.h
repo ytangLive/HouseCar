@@ -7,7 +7,11 @@
 //
 
 #import "HCViewController.h"
+#import "HCActivityTableDataController.h"
 
-@interface HCActivityPageViewController : HCViewController
+@interface HCActivityPageViewController : HCViewController <VTTableDataControllerDelegate>
+
+@property (strong, nonatomic) IBOutlet HCActivityTableDataController *tableDataController;
+@property (strong, nonatomic) IBOutlet VTDataSource *dataSource;
 
 @end

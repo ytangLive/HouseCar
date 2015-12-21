@@ -8,11 +8,9 @@
 
 #import "HCTableFocusViewController.h"
 
-@interface HCTableFocusViewController ()
-{
-    NSInteger focusCount;
-}
+#define DefaultCount 3
 
+@interface HCTableFocusViewController ()
 
 @end
 
@@ -47,6 +45,14 @@
 {
     [self.focusCell stopAutoPage];
     self.dataSource.delegate = nil;
+}
+
+- (NSUInteger)focusCount
+{
+    if(!_focusCount){
+        _focusCount = DefaultCount;
+    }
+    return _focusCount;
 }
 
 -(void)loadCoreView
@@ -89,11 +95,10 @@
 {
     if (!error) {
         NSArray* dataObjects = self.dataSource.dataObjects;
-        focusCount = 3;
         NSMutableArray *tFocusArray = [NSMutableArray array];
         
         for (int i = 0; i < [dataObjects count]; i ++) {
-            if(i > focusCount){
+            if(i > (self.focusCount - 1)){
                 break;
             }
             NSDictionary *dataObject = dataObjects[i];

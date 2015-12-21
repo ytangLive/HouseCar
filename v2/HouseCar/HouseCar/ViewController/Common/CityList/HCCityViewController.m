@@ -138,8 +138,10 @@
     
     if([_parentType isEqualToString:@"HomePage"]){
         [(id<HCContext>)self.context setFocusValue:cityName forKey:@"cityName"];
-    }else if([_parentType isEqualToString:@"CartBook"]){
-        [(id<HCContext>)self.context setFocusValue:cityName forKey:@"cartBookCity"];
+    }else if([_parentType isEqualToString:@"CampPage"]){
+        [(id<HCContext>)self.context setFocusValue:cityName forKey:@"campCity"];
+    }else if([_parentType isEqualToString:@"ActivityPage"]){
+        [(id<HCContext>)self.context setFocusValue:cityName forKey:@"activityCity"];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

@@ -5,11 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HCCampHomePageViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HCRegionPageViewController">
             <connections>
-                <outlet property="dataSource" destination="NXG-8f-gEK" id="qhP-XX-vxU"/>
-                <outlet property="tableDataController" destination="Kd7-iJ-WOI" id="IvK-3a-GGL"/>
-                <outlet property="titleLabel" destination="bNS-ar-RvD" id="4oH-cf-xzW"/>
+                <outlet property="dataSource" destination="NXG-8f-gEK" id="RG0-CJ-Z60"/>
+                <outlet property="tableDataController" destination="Kd7-iJ-WOI" id="omR-vy-8fp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,7 +21,7 @@
                     <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="200" sectionHeaderHeight="22" sectionFooterHeight="22" id="cro-J0-RAg" userLabel="tableView" customClass="VTTableView">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="310" sectionHeaderHeight="22" sectionFooterHeight="22" id="cro-J0-RAg" userLabel="tableView" customClass="VTTableView">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -39,32 +38,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="营地游玩" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bNS-ar-RvD">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专区活动" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bNS-ar-RvD">
                             <rect key="frame" x="0.0" y="16" width="320" height="49"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="D3M-Du-jPp" customClass="VTButton">
-                            <rect key="frame" x="266" y="20" width="50" height="45"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="ico_part.png"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="filterCar"/>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="doAction:" destination="-1" eventType="touchUpInside" id="hMb-IK-i9y"/>
-                            </connections>
-                        </button>
-                        <view contentMode="scaleToFill" id="H8G-PE-X2T" customClass="HCSearchBarView">
-                            <rect key="frame" x="17" y="22" width="256" height="25"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <outlet property="delegate" destination="-1" id="8oL-tx-SXz"/>
-                            </connections>
-                        </view>
                     </subviews>
                     <color key="backgroundColor" red="0.20000000000000001" green="0.73333333333333328" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
@@ -78,16 +58,16 @@
                 <userDefinedRuntimeAttribute type="string" keyPath="dataKey" value="posts"/>
             </userDefinedRuntimeAttributes>
         </customObject>
-        <customObject id="Kd7-iJ-WOI" customClass="HCCampHomeTableDataController">
+        <customObject id="Kd7-iJ-WOI" customClass="HCRegionTableDataController">
             <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="string" keyPath="itemViewNib" value="HCCampPlayItemCell"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="itemViewNib" value="HCRegionItemCell"/>
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="bottomLoadingView" destination="9Ce-Dq-IK7" id="NhD-sX-m8T"/>
-                <outlet property="dataSource" destination="NXG-8f-gEK" id="vnm-Dw-WE8"/>
+                <outlet property="dataSource" destination="NXG-8f-gEK" id="npT-zW-HOV"/>
                 <outlet property="tableView" destination="cro-J0-RAg" id="JUZ-k1-S5M"/>
                 <outlet property="topLoadingView" destination="rv0-5A-d8a" id="a0h-nD-b8B"/>
-                <outletCollection property="sections" destination="qnI-qg-paS" id="Fp4-qA-QRi"/>
+                <outletCollection property="headerCells" destination="U79-x6-d5i" id="BgC-jj-Pmi"/>
             </connections>
         </customObject>
         <view contentMode="scaleToFill" id="9Ce-Dq-IK7" userLabel="bottom loading" customClass="VTDragLoadingView">
@@ -202,103 +182,34 @@
             </connections>
             <point key="canvasLocation" x="-73" y="322"/>
         </view>
-        <view contentMode="scaleToFill" id="Lph-vI-AX2" userLabel="headview" customClass="HCMenusSwitchView">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="U79-x6-d5i">
             <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <button opaque="NO" tag="100" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wAt-AU-Jvo" customClass="VTButton">
-                    <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="精选推荐">
-                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="selected">
-                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="doAction:" destination="Lph-vI-AX2" eventType="touchUpInside" id="DSI-JB-RQA"/>
-                    </connections>
-                </button>
-                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sEL-mf-V0L" customClass="VTButton">
-                    <rect key="frame" x="80" y="0.0" width="80" height="45"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="热门地点">
-                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="selected">
-                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="doAction:" destination="Lph-vI-AX2" eventType="touchUpInside" id="mcT-Hb-sii"/>
-                    </connections>
-                </button>
-                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Rn-oE-ug9" customClass="VTButton">
-                    <rect key="frame" x="160" y="0.0" width="80" height="45"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="蔚蓝海岛">
-                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="selected">
-                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="doAction:" destination="Lph-vI-AX2" eventType="touchUpInside" id="Zlg-p5-vKQ"/>
-                    </connections>
-                </button>
-                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zmb-u2-nlr" customClass="VTButton">
-                    <rect key="frame" x="240" y="0.0" width="80" height="45"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="探寻美食">
-                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="selected">
-                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="highlighted">
-                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="doAction:" destination="Lph-vI-AX2" eventType="touchUpInside" id="aQa-7q-jUv"/>
-                    </connections>
-                </button>
-                <view contentMode="scaleToFill" id="vpY-Nq-pA1">
-                    <rect key="frame" x="0.0" y="42" width="80" height="3"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
-            </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="bottomLineView" destination="vpY-Nq-pA1" id="Qef-gU-Al0"/>
-                <outletCollection property="menuButtons" destination="wAt-AU-Jvo" id="dkr-qi-dgk"/>
-                <outletCollection property="menuButtons" destination="sEL-mf-V0L" id="NrQ-jS-tkG"/>
-                <outletCollection property="menuButtons" destination="9Rn-oE-ug9" id="8JO-P3-IHI"/>
-                <outletCollection property="menuButtons" destination="zmb-u2-nlr" id="5d7-pF-1h9"/>
-            </connections>
-            <point key="canvasLocation" x="697" y="229.5"/>
-        </view>
-        <customObject id="qnI-qg-paS" customClass="HCCampHomeTableDataControllerSection">
-            <connections>
-                <outlet property="headerView" destination="Lph-vI-AX2" id="DxP-7C-4O6"/>
-            </connections>
-        </customObject>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U79-x6-d5i" id="nem-Rd-C17">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="XWt-XX-eAW">
+                        <rect key="frame" x="15" y="18" width="5" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.19904470220000001" green="0.73292859909999997" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本周推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ere-dZ-t7H">
+                        <rect key="frame" x="28" y="17" width="135" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="689" y="319.5"/>
+        </tableViewCell>
     </objects>
-    <resources>
-        <image name="ico_part.png" width="22" height="22"/>
-    </resources>
 </document>

@@ -22,7 +22,8 @@
 
 @property (strong, nonatomic) NSString* focusNibNameOrNil;
 @property (strong, nonatomic) NSBundle* nibBundleOrNil;
-
+//自定义焦点图数量
+@property (nonatomic) NSUInteger focusCount;
 
 @property (strong, nonatomic)  HCFocusCell *focusCell;
 @property (strong, nonatomic)  NSMutableArray *zxCellArray;

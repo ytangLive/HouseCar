@@ -13,7 +13,6 @@
 @interface HCCampHomePageViewController () <HCFilterMenusViewDelegate, HCSearchBarViewViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet HCSearchBarView *searchBar;
 
 @end
 
@@ -29,7 +28,6 @@
     // Do any additional setup after loading the view from its nib.
     
     self.titleLabel.text = @"";
-    self.searchBar.hidden = NO;
     
     [self initSearchMenuWithData:[NSArray arrayWithObjects:@{@"classifyID":@"City",@"classifyName":@"城市"},@{@"classifyID":@"Theme",@"classifyName":@"主题"},@{@"classifyID":@"PlayWay",@"classifyName":@"玩法"}, nil]];
     
@@ -168,10 +166,20 @@
 
 - (void)openCityList
 {
-    NSDictionary *pageInfo = @{@"parentType":@"CartBook"};
+    NSDictionary *pageInfo = @{@"parentType":@"CampPage"};
     [self openUrl:[NSURL URLWithString:@"present://root/cityList"
                          relativeToURL:self.url
                            queryValues:pageInfo] animated:YES];
+}
+
+#pragma mark - HCSearchBarViewViewDelegate
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    [self openUrl:[NSURL URLWithString:@"root:///root/tab/searchpage"
+                         relativeToURL:self.url
+                           queryValues:nil] animated:YES ];
 }
 
 

@@ -139,7 +139,7 @@ static const CGFloat TableCellHeight = 44.0f;
 {
     NSDictionary *menuItem = self.filterMenus[indexPath.row];
     NSString *classifyID = [menuItem stringValueForKey:@"classifyID"];
-    if([classifyID isEqualToString:@"TCDD"]){
+    if([classifyID isEqualToString:@"City"]){
         
         if(_delegate && [_delegate respondsToSelector:@selector(openCityList)]){
             [self.delegate openCityList];

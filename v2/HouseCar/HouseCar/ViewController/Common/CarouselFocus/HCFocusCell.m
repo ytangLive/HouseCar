@@ -94,6 +94,12 @@
     [self setCurrentPage:0];
     
     [self startAutoPage];
+    
+    if(count <= 1){
+        _pageControl.hidden = YES;
+    }else{
+        _pageControl.hidden = NO;
+    }
 }
 
 -(void)startAutoPage

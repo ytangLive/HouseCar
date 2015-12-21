@@ -1,40 +1,22 @@
 //
-//  SFInfoVer2FinanTableDataController.m
+//  HCRegionTableDataController.m
 //  HouseCar
 //
-//  Created by shieh fabo on 14-9-10.
-//  Copyright (c) 2014年 ytang.com. All rights reserved.
+//  Created by tangyin on 15/12/21.
+//  Copyright © 2015年 sina.com. All rights reserved.
 //
 
-#import "HCCampHomeTableDataController.h"
+#import "HCRegionTableDataController.h"
 
-#define Section_headerView(section) [[_sections objectAtIndex:section] headerView]
-
-@implementation HCCampHomeTableDataControllerSection
-
-@end
-
-@interface HCCampHomeTableDataController()
-
-@end
-
-@implementation HCCampHomeTableDataController
+@implementation HCRegionTableDataController
 
 #pragma mark - Property
-
-- (NSDateFormatter *)defaultDateFormatter
-{
-    if(!_defaultDateFormatter){
-        _defaultDateFormatter = [[NSDateFormatter alloc] init];
-        [_defaultDateFormatter setDateFormat:@"MM.dd"];
-    }
-    return _defaultDateFormatter;
-}
 
 - (HCTableFocusViewController *)focusController
 {
     if(!_focusController){
         _focusController = [[HCTableFocusViewController alloc] init];
+        _focusController.focusCount = 1;
     }
     return _focusController;
 }
@@ -49,16 +31,16 @@
 
 -(void)refreshData
 {
-
+    
     [super refreshData];
-
+    
 }
 
 #pragma mark =========delegate========
 -(void)HCTableFocusCellClickedWithData:(NSDictionary*)data
 {
-    if ([self.tableDatadelegate conformsToProtocol:@protocol(HCCampHomeTableDataDelegate)]) {
-        [self.tableDatadelegate HCCampHomeTableDataClickedWithData:data];
+    if ([self.tableDatadelegate conformsToProtocol:@protocol(HCRegionTableDataDelegate)]) {
+        [self.tableDatadelegate HCRegionTableDataClickedWithData:data];
     }
 }
 
@@ -122,22 +104,6 @@
 -(void) vtDataSource:(VTDataSource *) dataSource didFitalError:(NSError *) error
 {
     [super vtDataSource:dataSource didFitalError:error];
-}
-
-#pragma mark - table view delegate
-
--(CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
-    return Section_headerView(section) ? [Section_headerView(section) frame].size.height : 0;
-}
-
--(UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    
-    return Section_headerView(section) ? Section_headerView(section) : nil;
-}
-
--(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
-    return [_sections count] ? [_sections count] : 1;
 }
 
 @end
