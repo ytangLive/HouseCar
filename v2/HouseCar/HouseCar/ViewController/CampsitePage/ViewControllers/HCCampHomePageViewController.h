@@ -8,10 +8,13 @@
 
 #import "HCViewController.h"
 #import "HCCampHomeTableDataController.h"
+#import "HCMenusSwitchView.h"
 
 @interface HCCampHomePageViewController : HCViewController <VTTableDataControllerDelegate, HCCampHomeTableDataDelegate>
 
 @property (strong, nonatomic) IBOutlet HCCampHomeTableDataController *tableDataController;
 @property (strong, nonatomic) IBOutlet VTDataSource *dataSource;
+
+@property (weak, nonatomic) IBOutlet HCMenusSwitchView *menusSwitchView;
 
 @end

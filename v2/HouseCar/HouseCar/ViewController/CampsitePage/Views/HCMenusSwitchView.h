@@ -16,6 +16,6 @@
 
 @interface HCMenusSwitchView : UIView
 
-@property (weak, nonatomic) id <HCMenusSwitchViewDelegate> delegate;
+@property (weak, nonatomic)IBOutlet id <HCMenusSwitchViewDelegate> delegate;
 
 @end

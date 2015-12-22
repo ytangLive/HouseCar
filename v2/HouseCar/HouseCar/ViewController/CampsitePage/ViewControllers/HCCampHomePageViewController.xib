@@ -285,6 +285,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bottomLineView" destination="vpY-Nq-pA1" id="Qef-gU-Al0"/>
+                <outlet property="delegate" destination="-1" id="o7C-mA-qjC"/>
                 <outletCollection property="menuButtons" destination="wAt-AU-Jvo" id="dkr-qi-dgk"/>
                 <outletCollection property="menuButtons" destination="sEL-mf-V0L" id="NrQ-jS-tkG"/>
                 <outletCollection property="menuButtons" destination="9Rn-oE-ug9" id="8JO-P3-IHI"/>

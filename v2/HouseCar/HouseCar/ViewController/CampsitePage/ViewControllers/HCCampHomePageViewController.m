@@ -10,7 +10,7 @@
 #import "HCFilterMenusView.h"
 #import "HCSearchBarView.h"
 
-@interface HCCampHomePageViewController () <HCFilterMenusViewDelegate, HCSearchBarViewViewDelegate>
+@interface HCCampHomePageViewController () <HCFilterMenusViewDelegate, HCSearchBarViewViewDelegate,HCMenusSwitchViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
@@ -199,6 +199,11 @@
     [headerCell.contentView addSubview:titleLabel];
     
     return headerCell;
+}
+
+- (void)menusDoAction:(NSUInteger)buttonIndex
+{
+    //[_tableDataController reloadData];
 }
 
 @end

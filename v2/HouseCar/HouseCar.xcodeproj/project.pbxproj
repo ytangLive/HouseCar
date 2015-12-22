@@ -469,6 +469,15 @@
 		F6AB7ECC1C280D910031D58D /* icon_setup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AB7ECB1C280D910031D58D /* icon_setup@2x.png */; };
 		F6AB7ECD1C280D910031D58D /* icon_setup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AB7ECB1C280D910031D58D /* icon_setup@2x.png */; };
 		F6AB7ECE1C280D910031D58D /* icon_setup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AB7ECB1C280D910031D58D /* icon_setup@2x.png */; };
+		F6AF521E1C28FF840064D099 /* HCMyPageTableDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF521D1C28FF840064D099 /* HCMyPageTableDataController.m */; };
+		F6AF521F1C28FF840064D099 /* HCMyPageTableDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF521D1C28FF840064D099 /* HCMyPageTableDataController.m */; };
+		F6AF52201C28FF840064D099 /* HCMyPageTableDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF521D1C28FF840064D099 /* HCMyPageTableDataController.m */; };
+		F6AF52261C293E3F0064D099 /* icon_order@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AF52251C293E3F0064D099 /* icon_order@2x.png */; };
+		F6AF52271C293E3F0064D099 /* icon_order@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AF52251C293E3F0064D099 /* icon_order@2x.png */; };
+		F6AF52281C293E3F0064D099 /* icon_order@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AF52251C293E3F0064D099 /* icon_order@2x.png */; };
+		F6AF522C1C29615C0064D099 /* HCCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF522B1C29615C0064D099 /* HCCircleView.m */; };
+		F6AF522D1C29615C0064D099 /* HCCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF522B1C29615C0064D099 /* HCCircleView.m */; };
+		F6AF522E1C29615C0064D099 /* HCCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF522B1C29615C0064D099 /* HCCircleView.m */; };
 		F6C299891BF4C57800A88B5E /* cfg.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6C299161BF4C57800A88B5E /* cfg.plist */; };
 		F6C2998A1BF4C57800A88B5E /* cfg.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6C299161BF4C57800A88B5E /* cfg.plist */; };
 		F6C2998B1BF4C57800A88B5E /* cfg.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6C299161BF4C57800A88B5E /* cfg.plist */; };
@@ -978,6 +987,11 @@
 		F6AB7EB41C27EC1D0031D58D /* HCRegionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCRegionItemCell.xib; sourceTree = "<group>"; };
 		F6AB7EC71C280C190031D58D /* default_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_background.png; sourceTree = "<group>"; };
 		F6AB7ECB1C280D910031D58D /* icon_setup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_setup@2x.png"; sourceTree = "<group>"; };
+		F6AF521C1C28FF840064D099 /* HCMyPageTableDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCMyPageTableDataController.h; sourceTree = "<group>"; };
+		F6AF521D1C28FF840064D099 /* HCMyPageTableDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCMyPageTableDataController.m; sourceTree = "<group>"; };
+		F6AF52251C293E3F0064D099 /* icon_order@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_order@2x.png"; sourceTree = "<group>"; };
+		F6AF522A1C29615C0064D099 /* HCCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCCircleView.h; sourceTree = "<group>"; };
+		F6AF522B1C29615C0064D099 /* HCCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCCircleView.m; sourceTree = "<group>"; };
 		F6C299161BF4C57800A88B5E /* cfg.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cfg.plist; sourceTree = "<group>"; };
 		F6C299181BF4C57800A88B5E /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
 		F6C299191BF4C57800A88B5E /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
@@ -1345,6 +1359,7 @@
 		F61572D11C16AC75002507AC /* Resorce */ = {
 			isa = PBXGroup;
 			children = (
+				F6AF52251C293E3F0064D099 /* icon_order@2x.png */,
 				F6AB7EC71C280C190031D58D /* default_background.png */,
 				F6AB7ECB1C280D910031D58D /* icon_setup@2x.png */,
 			);
@@ -1361,6 +1376,8 @@
 		F61572D31C16AC75002507AC /* TableDataControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F6AF521C1C28FF840064D099 /* HCMyPageTableDataController.h */,
+				F6AF521D1C28FF840064D099 /* HCMyPageTableDataController.m */,
 			);
 			path = TableDataControllers;
 			sourceTree = "<group>";
@@ -1385,6 +1402,8 @@
 		F61572D61C16AC75002507AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6AF522A1C29615C0064D099 /* HCCircleView.h */,
+				F6AF522B1C29615C0064D099 /* HCCircleView.m */,
 				9C4FC9041C256736006B3840 /* HCTravelNotesItemCell.xib */,
 			);
 			path = Views;
@@ -2245,6 +2264,7 @@
 				F6C299C51BF4C57800A88B5E /* tab_ico1_act@2x.png in Resources */,
 				F665261E1C1055B7008E18D4 /* Localizable.strings in Resources */,
 				F6C299EF1BF4C57800A88B5E /* tab_ico4.png in Resources */,
+				F6AF52261C293E3F0064D099 /* icon_order@2x.png in Resources */,
 				F63EAD801C23F03E0070A26A /* ico_desc@2x.png in Resources */,
 				F6C299FE1BF4C57800A88B5E /* tab_ico4_act@3x.png in Resources */,
 				F6FC33931BFA012A00B81B45 /* HCTableFocusViewController.xib in Resources */,
@@ -2404,6 +2424,7 @@
 				F6C299C61BF4C57800A88B5E /* tab_ico1_act@2x.png in Resources */,
 				F665261F1C1055B7008E18D4 /* Localizable.strings in Resources */,
 				F6C299F01BF4C57800A88B5E /* tab_ico4.png in Resources */,
+				F6AF52271C293E3F0064D099 /* icon_order@2x.png in Resources */,
 				F63EAD811C23F03E0070A26A /* ico_desc@2x.png in Resources */,
 				F6C299FF1BF4C57800A88B5E /* tab_ico4_act@3x.png in Resources */,
 				F6FC33941BFA012A00B81B45 /* HCTableFocusViewController.xib in Resources */,
@@ -2563,6 +2584,7 @@
 				F6C299C71BF4C57800A88B5E /* tab_ico1_act@2x.png in Resources */,
 				F66526201C1055B7008E18D4 /* Localizable.strings in Resources */,
 				F6C299F11BF4C57800A88B5E /* tab_ico4.png in Resources */,
+				F6AF52281C293E3F0064D099 /* icon_order@2x.png in Resources */,
 				F63EAD821C23F03E0070A26A /* ico_desc@2x.png in Resources */,
 				F6C29A001BF4C57800A88B5E /* tab_ico4_act@3x.png in Resources */,
 				F6FC33951BFA012A00B81B45 /* HCTableFocusViewController.xib in Resources */,
@@ -2733,10 +2755,12 @@
 				F61572FD1C16AD27002507AC /* HCMyPageViewController.m in Sources */,
 				F6D5A4C71BFC60AA006CA72F /* HCSearchBarView.m in Sources */,
 				F6C299AD1BF4C57800A88B5E /* main.m in Sources */,
+				F6AF522C1C29615C0064D099 /* HCCircleView.m in Sources */,
 				F6AB7E961C27AD470031D58D /* HCActivityTableDataController.m in Sources */,
 				F6FC337C1BF9B7A900B81B45 /* HCHomePageTableDataController.m in Sources */,
 				F6409DBF1C0D9EE3002AB471 /* HCCarOrderViewcontroller.m in Sources */,
 				F6498A241BF5F1C600AB2BF7 /* HCAppImageAnimationController.m in Sources */,
+				F6AF521E1C28FF840064D099 /* HCMyPageTableDataController.m in Sources */,
 				F6578C001C1ABFCD00280453 /* HCSearchDataSource.m in Sources */,
 				F63EAD1E1C23BAD30070A26A /* HCCampPlayViewController.m in Sources */,
 				F6CB1DDF1C0F1CB000718746 /* HCCarOrderItemCell.m in Sources */,
@@ -2771,7 +2795,9 @@
 				F6C299B11BF4C57800A88B5E /* NSError+SFError.m in Sources */,
 				F665258F1C10494A008E18D4 /* UIViewAdditions.m in Sources */,
 				F6C299961BF4C57800A88B5E /* HCMainWindow.m in Sources */,
+				F6AF521F1C28FF840064D099 /* HCMyPageTableDataController.m in Sources */,
 				F6D5A4C81BFC60AA006CA72F /* HCSearchBarView.m in Sources */,
+				F6AF522D1C29615C0064D099 /* HCCircleView.m in Sources */,
 				F622497F1C05B48500F818B6 /* UIView+Util.m in Sources */,
 				F63EAD1F1C23BAD30070A26A /* HCCampPlayViewController.m in Sources */,
 				F665258C1C10494A008E18D4 /* NSDateAdditions.m in Sources */,
@@ -2845,7 +2871,9 @@
 				F6C299B21BF4C57800A88B5E /* NSError+SFError.m in Sources */,
 				F66525901C10494A008E18D4 /* UIViewAdditions.m in Sources */,
 				F6C299971BF4C57800A88B5E /* HCMainWindow.m in Sources */,
+				F6AF52201C28FF840064D099 /* HCMyPageTableDataController.m in Sources */,
 				F6D5A4C91BFC60AA006CA72F /* HCSearchBarView.m in Sources */,
+				F6AF522E1C29615C0064D099 /* HCCircleView.m in Sources */,
 				F62249801C05B48500F818B6 /* UIView+Util.m in Sources */,
 				F63EAD201C23BAD30070A26A /* HCCampPlayViewController.m in Sources */,
 				F665258D1C10494A008E18D4 /* NSDateAdditions.m in Sources */,

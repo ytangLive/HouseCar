@@ -18,8 +18,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self.tableDataController.tableView setTableHeaderView:_tableViewHeaderView];
+    [_tableDataController setContext:self.context];
+    self.dataSource.delegate = self.tableDataController;
+    self.tableDataController.delegate = self;
     
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    if(![_tableDataController.dataSource isLoading] && ![_tableDataController.dataSource isLoaded]){
+        [_tableDataController reloadData];
+    }else{
+        [[_tableDataController tableView] reloadData];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
