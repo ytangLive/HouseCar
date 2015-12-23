@@ -11,6 +11,6 @@
 @interface HCSearchDataSource : VTDataSource
 
 @property(nonatomic, strong) NSMutableArray * hotSearchArr;
-@property(nonatomic, strong) NSMutableArray * historySearchKeys;
+@property(nonatomic, strong) NSArray * historySearchKeys;
 
 @end

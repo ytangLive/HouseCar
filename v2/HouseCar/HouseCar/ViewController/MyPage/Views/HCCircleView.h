@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HCCircleView : UIView
+@interface HCCircleView : VTImageView
 
 @end

@@ -112,6 +112,16 @@
 			<key>carlist-interface</key>
 			<string>http://elephantrv.cn-hangzhou.aliapp.com?json=1</string>
 		</dict>
+		<dict>
+			<key>class</key>
+			<string>HCHandleNativeDataService</string>
+			<key>taskTypes</key>
+			<array>
+				<string>IHCHistorySearchAddTask</string>
+				<string>IHCHistorySearchGetTask</string>
+				<string>IHCHistorySearchClearTask</string>
+			</array>
+		</dict>
 	</array>
 	<key>ui</key>
 	<dict>
@@ -343,7 +353,7 @@
 	</dict>
 	<key>app-db</key>
 	<array>
-		<string>HCStockObject</string>
+		<string>HCHistorySearchDataObject</string>
 	</array>
 	<key>user-db</key>
 	<array>

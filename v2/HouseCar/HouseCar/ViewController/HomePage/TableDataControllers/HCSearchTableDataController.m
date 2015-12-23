@@ -8,6 +8,9 @@
 
 #import "HCSearchTableDataController.h"
 #import "HCSearchDataSource.h"
+#import "HCHistorySearchGetTask.h"
+#import "HCHistorySearchDataObject.h"
+#import "IHCHistorySearchClearTask.h"
 
 #define Section_headerViewCell(section) [[_sections objectAtIndex:section] headerViewCell]
 
@@ -17,7 +20,7 @@
 #define HOT_SEARCH_BUTTON_WIDTH 25
 #define HOT_SEARCH_BUTTON_TOTAL_WIDTH KScreenWidth - 50 //热词需要展示的总体宽度
 #define HOT_SEARCH_CELL_HEIGHT 40
-#define HISTORY_SEARCH_CELL_HEIGHT 44
+#define HISTORY_SEARCH_CELL_HEIGHT 50
 
 @implementation HCSearchTableDataControllerSection
 
@@ -70,12 +73,29 @@
     return _hotSearchKeyArray;
 }
 
+- (void)reloadData
+{
+    [super reloadData];
+    
+    HCHistorySearchGetTask *getTask = [[HCHistorySearchGetTask alloc] init];
+    [self.context handle:@protocol(IHCHistorySearchGetTask) task:getTask priority:0];
+    
+    [(HCSearchDataSource *)self.dataSource setHistorySearchKeys:[getTask searchKeys]];
+    
+    [self stopLoading];
+}
+
 - (void)refreshData
 {
-    [super refreshData];
-    if(_hotSearchKeyArray){
-        [_hotSearchKeyArray removeAllObjects];
-    }
+    
+    HCHistorySearchGetTask *getTask = [[HCHistorySearchGetTask alloc] init];
+    [self.context handle:@protocol(IHCHistorySearchGetTask) task:getTask priority:0];
+    
+    [(HCSearchDataSource *)self.dataSource setHistorySearchKeys:[getTask searchKeys]];
+    
+    [self.tableView reloadData];
+    
+    [self stopLoading];
 }
 
 #pragma mark - Table view delegate
@@ -92,7 +112,7 @@
     }
     
     if (section == TableSectionTypeHistory) {
-        count = [[(HCSearchDataSource *)self.dataSource historySearchKeys] count] ? [[(HCSearchDataSource *)self.dataSource historySearchKeys] count] : 1;
+        count = [[(HCSearchDataSource *)self.dataSource historySearchKeys] count] ? [[(HCSearchDataSource *)self.dataSource historySearchKeys] count] + 1 : 0;
     }
     
     if(count){
@@ -138,7 +158,12 @@
             
         }else if(indexPath.section == TableSectionTypeHistory){
             
-            identifier = @"HistorySearchTableViewCell";
+            NSArray *historySearchKeys = [(HCSearchDataSource *)self.dataSource historySearchKeys];
+            if(indexPath.row > [historySearchKeys count]){
+                identifier = @"HistoryClearButtonTableViewCell";
+            }else{
+                identifier = @"HistorySearchTableViewCell";
+            }
             
         }
         
@@ -153,8 +178,6 @@
                 [(VTTableViewCell *) cell setDelegate:self];
             }
         }
-        
-        id data = nil;
         
         if(indexPath.row > 0){
             if(indexPath.section == TableSectionTypeHot){
@@ -186,17 +209,59 @@
             }else if(indexPath.section == TableSectionTypeHistory){
                 NSArray *historySearchKeys = [(HCSearchDataSource *)self.dataSource historySearchKeys];
                 if([historySearchKeys count] > 0){
-                    data = [historySearchKeys objectAtIndex:indexPath.row - 1];
-                }else{
+                    if(indexPath.row > [historySearchKeys count]){
+                        UIButton *clearButton = [cell viewWithTag:999];
+                        if(!clearButton){
+                            clearButton = [UIButton buttonWithType:UIButtonTypeCustom];
+                            CGSize buttonSize = CGSizeMake(180, 30);
+                            clearButton.frame = CGRectMake(KScreenWidth/2 - buttonSize.width/2 , HISTORY_SEARCH_CELL_HEIGHT/2, buttonSize.width, buttonSize.height);
+                            [clearButton setTitle:@"清除历史" forState:UIControlStateNormal];
+                            clearButton.titleLabel.font = [UIFont systemFontOfSize:14];
+                            [clearButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+                            clearButton.backgroundColor = DefaultNavBarColor;
+                            clearButton.layer.cornerRadius = 3.0f;
+                            clearButton.tag = 999;
+                            [clearButton addTarget:self action:@selector(clearHistorySearch:) forControlEvents:UIControlEventTouchUpInside];
+                            
+                            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                            
+                            [cell addSubview:clearButton];
+                        }
+                        
+                        return cell;
+                        
+                    }else{
+                        HCHistorySearchDataObject *dataObject = [historySearchKeys objectAtIndex:indexPath.row - 1];
+                        UIView *lineView = [cell viewWithTag:998];
+                        UIButton *clearButton = [cell viewWithTag:999];
+                        if(clearButton){
+                            [clearButton removeFromSuperview];
+                        }
+                        if(!lineView){
+                            lineView = [UIView initLineWidthFrame:CGRectMake(15, HISTORY_SEARCH_CELL_HEIGHT - 1, KScreenWidth - 30, 1)];
+                            lineView.tag = 998;
+                            [cell addSubview:lineView];
+                        }
+                        cell.textLabel.text = dataObject.searchKey;
+                        
+                        return cell;
+                    }
                     
                 }
-                
             }
         
         }
         
         return cell;
     }
+}
+
+- (void)clearHistorySearch:(id)sender
+{
+    [self.context handle:@protocol(IHCHistorySearchClearTask) task:nil priority:0];
+    [(HCSearchDataSource *)self.dataSource setHistorySearchKeys:nil];
+    
+    [self.tableView reloadData];
 }
 
 - (void)hotSearchButtonTouchUpInside:(id)sender

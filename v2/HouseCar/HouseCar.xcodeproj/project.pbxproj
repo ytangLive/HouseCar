@@ -640,6 +640,18 @@
 		F6C29A281BF4C57800A88B5E /* HCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C299691BF4C57800A88B5E /* HCViewController.m */; };
 		F6C29A291BF4C57800A88B5E /* HCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C299691BF4C57800A88B5E /* HCViewController.m */; };
 		F6C29A2A1BF4C57800A88B5E /* HCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C299691BF4C57800A88B5E /* HCViewController.m */; };
+		F6C4F4401C2A548100561D56 /* HCHandleNativeDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F43F1C2A548100561D56 /* HCHandleNativeDataService.m */; };
+		F6C4F4411C2A548100561D56 /* HCHandleNativeDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F43F1C2A548100561D56 /* HCHandleNativeDataService.m */; };
+		F6C4F4421C2A548100561D56 /* HCHandleNativeDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F43F1C2A548100561D56 /* HCHandleNativeDataService.m */; };
+		F6C4F4461C2A771400561D56 /* HCHistorySearchAddTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F4451C2A771400561D56 /* HCHistorySearchAddTask.m */; };
+		F6C4F4471C2A771400561D56 /* HCHistorySearchAddTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F4451C2A771400561D56 /* HCHistorySearchAddTask.m */; };
+		F6C4F4481C2A771400561D56 /* HCHistorySearchAddTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F4451C2A771400561D56 /* HCHistorySearchAddTask.m */; };
+		F6C4F44B1C2A791200561D56 /* HCHistorySearchDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F44A1C2A791200561D56 /* HCHistorySearchDataObject.m */; };
+		F6C4F44C1C2A791200561D56 /* HCHistorySearchDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F44A1C2A791200561D56 /* HCHistorySearchDataObject.m */; };
+		F6C4F44D1C2A791200561D56 /* HCHistorySearchDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F44A1C2A791200561D56 /* HCHistorySearchDataObject.m */; };
+		F6C4F4501C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F44F1C2A874A00561D56 /* HCHistorySearchGetTask.m */; };
+		F6C4F4511C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F44F1C2A874A00561D56 /* HCHistorySearchGetTask.m */; };
+		F6C4F4521C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C4F44F1C2A874A00561D56 /* HCHistorySearchGetTask.m */; };
 		F6CB0D981C11393E0093BB38 /* icon_favorite_ white.png in Resources */ = {isa = PBXBuildFile; fileRef = F6CB0D921C11393E0093BB38 /* icon_favorite_ white.png */; };
 		F6CB0D991C11393E0093BB38 /* icon_favorite_ white.png in Resources */ = {isa = PBXBuildFile; fileRef = F6CB0D921C11393E0093BB38 /* icon_favorite_ white.png */; };
 		F6CB0D9A1C11393E0093BB38 /* icon_favorite_ white.png in Resources */ = {isa = PBXBuildFile; fileRef = F6CB0D921C11393E0093BB38 /* icon_favorite_ white.png */; };
@@ -1064,6 +1076,15 @@
 		F6C299681BF4C57800A88B5E /* HCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCViewController.h; sourceTree = "<group>"; };
 		F6C299691BF4C57800A88B5E /* HCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCViewController.m; sourceTree = "<group>"; };
 		F6C299881BF4C57800A88B5E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		F6C4F43E1C2A548100561D56 /* HCHandleNativeDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCHandleNativeDataService.h; sourceTree = "<group>"; };
+		F6C4F43F1C2A548100561D56 /* HCHandleNativeDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCHandleNativeDataService.m; sourceTree = "<group>"; };
+		F6C4F4441C2A771400561D56 /* HCHistorySearchAddTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCHistorySearchAddTask.h; sourceTree = "<group>"; };
+		F6C4F4451C2A771400561D56 /* HCHistorySearchAddTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCHistorySearchAddTask.m; sourceTree = "<group>"; };
+		F6C4F4491C2A791200561D56 /* HCHistorySearchDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCHistorySearchDataObject.h; path = HouseCar/Tasks/HCHistorySearchDataObject.h; sourceTree = SOURCE_ROOT; };
+		F6C4F44A1C2A791200561D56 /* HCHistorySearchDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCHistorySearchDataObject.m; path = HouseCar/Tasks/HCHistorySearchDataObject.m; sourceTree = SOURCE_ROOT; };
+		F6C4F44E1C2A874A00561D56 /* HCHistorySearchGetTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCHistorySearchGetTask.h; sourceTree = "<group>"; };
+		F6C4F44F1C2A874A00561D56 /* HCHistorySearchGetTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCHistorySearchGetTask.m; sourceTree = "<group>"; };
+		F6C4F4531C2AA30700561D56 /* IHCHistorySearchClearTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHCHistorySearchClearTask.h; sourceTree = "<group>"; };
 		F6CB0D921C11393E0093BB38 /* icon_favorite_ white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_favorite_ white.png"; sourceTree = "<group>"; };
 		F6CB0D931C11393E0093BB38 /* icon_favorite_ white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_favorite_ white@2x.png"; sourceTree = "<group>"; };
 		F6CB0D941C11393E0093BB38 /* icon_lefthand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_lefthand.png; sourceTree = "<group>"; };
@@ -1811,6 +1832,8 @@
 		F6C299281BF4C57800A88B5E /* DataEntitys */ = {
 			isa = PBXGroup;
 			children = (
+				F6C4F4491C2A791200561D56 /* HCHistorySearchDataObject.h */,
+				F6C4F44A1C2A791200561D56 /* HCHistorySearchDataObject.m */,
 			);
 			path = DataEntitys;
 			sourceTree = "<group>";
@@ -1901,6 +1924,8 @@
 		F6C299551BF4C57800A88B5E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F6C4F43E1C2A548100561D56 /* HCHandleNativeDataService.h */,
+				F6C4F43F1C2A548100561D56 /* HCHandleNativeDataService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1908,6 +1933,11 @@
 		F6C2995D1BF4C57800A88B5E /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				F6C4F4441C2A771400561D56 /* HCHistorySearchAddTask.h */,
+				F6C4F4451C2A771400561D56 /* HCHistorySearchAddTask.m */,
+				F6C4F44E1C2A874A00561D56 /* HCHistorySearchGetTask.h */,
+				F6C4F44F1C2A874A00561D56 /* HCHistorySearchGetTask.m */,
+				F6C4F4531C2AA30700561D56 /* IHCHistorySearchClearTask.h */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -2714,6 +2744,7 @@
 				F6C299981BF4C57800A88B5E /* HCTabBar.m in Sources */,
 				F63EAD151C23B8A90070A26A /* HCCampHomePageViewController.m in Sources */,
 				F66525A31C10494A008E18D4 /* KalViewController.m in Sources */,
+				F6C4F44B1C2A791200561D56 /* HCHistorySearchDataObject.m in Sources */,
 				F66525971C10494A008E18D4 /* KalLogic.m in Sources */,
 				F6AB7EB51C27EC1D0031D58D /* HCRegionTableDataController.m in Sources */,
 				F665258E1C10494A008E18D4 /* UIViewAdditions.m in Sources */,
@@ -2722,6 +2753,7 @@
 				F6C299951BF4C57800A88B5E /* HCMainWindow.m in Sources */,
 				F665259D1C10494A008E18D4 /* KalTileView.m in Sources */,
 				F6C29A191BF4C57800A88B5E /* HCNavigationController.m in Sources */,
+				F6C4F4501C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */,
 				F6C299921BF4C57800A88B5E /* HCAutoLabel.m in Sources */,
 				F6D5A4BF1BFC1C73006CA72F /* HCNavigationTitleBar.m in Sources */,
 				F665259A1C10494A008E18D4 /* KalMonthView.m in Sources */,
@@ -2732,6 +2764,7 @@
 				F6409DB51C0D8F7E002AB471 /* HCCarBaseDetailViewController.m in Sources */,
 				F6409DCC1C0DBB40002AB471 /* HCCarOrderDataSource.m in Sources */,
 				F6C2999B1BF4C57800A88B5E /* HCXMLParserHelper.m in Sources */,
+				F6C4F4461C2A771400561D56 /* HCHistorySearchAddTask.m in Sources */,
 				F6C2999E1BF4C57800A88B5E /* SNPageControl.m in Sources */,
 				9C41D1F61C255DCB0038331B /* HCTravelNotesDataSource.m in Sources */,
 				F6D016351BFB54AB00ACCD33 /* HCImageView.m in Sources */,
@@ -2756,6 +2789,7 @@
 				F6D5A4C71BFC60AA006CA72F /* HCSearchBarView.m in Sources */,
 				F6C299AD1BF4C57800A88B5E /* main.m in Sources */,
 				F6AF522C1C29615C0064D099 /* HCCircleView.m in Sources */,
+				F6C4F4401C2A548100561D56 /* HCHandleNativeDataService.m in Sources */,
 				F6AB7E961C27AD470031D58D /* HCActivityTableDataController.m in Sources */,
 				F6FC337C1BF9B7A900B81B45 /* HCHomePageTableDataController.m in Sources */,
 				F6409DBF1C0D9EE3002AB471 /* HCCarOrderViewcontroller.m in Sources */,
@@ -2779,6 +2813,7 @@
 				F66525A41C10494A008E18D4 /* KalViewController.m in Sources */,
 				F6C29A171BF4C57800A88B5E /* HCShell.m in Sources */,
 				F66525A11C10494A008E18D4 /* KalView.m in Sources */,
+				F6C4F4471C2A771400561D56 /* HCHistorySearchAddTask.m in Sources */,
 				F66525891C10494A008E18D4 /* NSDate+Convenience.m in Sources */,
 				F6578BF11C1AB64A00280453 /* HCSearchViewController.m in Sources */,
 				F6C299A21BF4C57800A88B5E /* UIDevice+IPAddress.m in Sources */,
@@ -2802,6 +2837,7 @@
 				F63EAD1F1C23BAD30070A26A /* HCCampPlayViewController.m in Sources */,
 				F665258C1C10494A008E18D4 /* NSDateAdditions.m in Sources */,
 				F66526181C104CFD008E18D4 /* HCCalendarViewController.m in Sources */,
+				F6C4F4511C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */,
 				F6409DB61C0D8F7E002AB471 /* HCCarBaseDetailViewController.m in Sources */,
 				F6CB1DDB1C0EE17D00718746 /* HCCardView.m in Sources */,
 				F6409D921C0D8353002AB471 /* EasyJSDataFunction.m in Sources */,
@@ -2832,10 +2868,12 @@
 				F6FC33751BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */,
 				F6C29A231BF4C57800A88B5E /* HCTabViewController.m in Sources */,
 				F6C299AE1BF4C57800A88B5E /* main.m in Sources */,
+				F6C4F44C1C2A791200561D56 /* HCHistorySearchDataObject.m in Sources */,
 				F6AB7EB91C27EC1D0031D58D /* HCRegionPageViewController.m in Sources */,
 				F665259B1C10494A008E18D4 /* KalMonthView.m in Sources */,
 				F61572E31C16ACBC002507AC /* HCActivityPageViewController.m in Sources */,
 				9C41D1F71C255DCB0038331B /* HCTravelNotesDataSource.m in Sources */,
+				F6C4F4411C2A548100561D56 /* HCHandleNativeDataService.m in Sources */,
 				F6FC337D1BF9B7A900B81B45 /* HCHomePageTableDataController.m in Sources */,
 				F6409DCD1C0DBB40002AB471 /* HCCarOrderDataSource.m in Sources */,
 				F6498A251BF5F1C600AB2BF7 /* HCAppImageAnimationController.m in Sources */,
@@ -2855,6 +2893,7 @@
 				F66525A51C10494A008E18D4 /* KalViewController.m in Sources */,
 				F6C29A181BF4C57800A88B5E /* HCShell.m in Sources */,
 				F66525A21C10494A008E18D4 /* KalView.m in Sources */,
+				F6C4F4481C2A771400561D56 /* HCHistorySearchAddTask.m in Sources */,
 				F665258A1C10494A008E18D4 /* NSDate+Convenience.m in Sources */,
 				F6578BF21C1AB64A00280453 /* HCSearchViewController.m in Sources */,
 				F6C299A31BF4C57800A88B5E /* UIDevice+IPAddress.m in Sources */,
@@ -2878,6 +2917,7 @@
 				F63EAD201C23BAD30070A26A /* HCCampPlayViewController.m in Sources */,
 				F665258D1C10494A008E18D4 /* NSDateAdditions.m in Sources */,
 				F66526191C104CFD008E18D4 /* HCCalendarViewController.m in Sources */,
+				F6C4F4521C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */,
 				F6409DB71C0D8F7E002AB471 /* HCCarBaseDetailViewController.m in Sources */,
 				F6CB1DDC1C0EE17D00718746 /* HCCardView.m in Sources */,
 				F6409D931C0D8353002AB471 /* EasyJSDataFunction.m in Sources */,
@@ -2908,10 +2948,12 @@
 				F6FC33761BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */,
 				F6C29A241BF4C57800A88B5E /* HCTabViewController.m in Sources */,
 				F6C299AF1BF4C57800A88B5E /* main.m in Sources */,
+				F6C4F44D1C2A791200561D56 /* HCHistorySearchDataObject.m in Sources */,
 				F6AB7EBA1C27EC1D0031D58D /* HCRegionPageViewController.m in Sources */,
 				F665259C1C10494A008E18D4 /* KalMonthView.m in Sources */,
 				F61572E41C16ACBC002507AC /* HCActivityPageViewController.m in Sources */,
 				9C41D1F81C255DCB0038331B /* HCTravelNotesDataSource.m in Sources */,
+				F6C4F4421C2A548100561D56 /* HCHandleNativeDataService.m in Sources */,
 				F6FC337E1BF9B7A900B81B45 /* HCHomePageTableDataController.m in Sources */,
 				F6409DCE1C0DBB40002AB471 /* HCCarOrderDataSource.m in Sources */,
 				F6498A261BF5F1C600AB2BF7 /* HCAppImageAnimationController.m in Sources */,

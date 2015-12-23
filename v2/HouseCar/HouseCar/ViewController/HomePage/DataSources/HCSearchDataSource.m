@@ -18,10 +18,10 @@
     return _hotSearchArr;
 }
 
-- (NSMutableArray *)historySearchKeys
+- (NSArray *)historySearchKeys
 {
     if(!_historySearchKeys){
-        _historySearchKeys = [NSMutableArray array];
+        _historySearchKeys = [NSArray array];
     }
     return _historySearchKeys;
 }

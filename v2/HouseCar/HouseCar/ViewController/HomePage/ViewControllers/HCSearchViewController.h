@@ -11,7 +11,7 @@
 #import "HCSearchDataSource.h"
 #import "HCSearchTableDataController.h"
 
-@interface HCSearchViewController : HCViewController <VTTableDataControllerDelegate>
+@interface HCSearchViewController : HCViewController <VTTableDataControllerDelegate , HCSearchBarViewViewDelegate>
 
 @property (strong, nonatomic) IBOutlet HCSearchTableDataController *tableDataController;
 @property (strong, nonatomic) IBOutlet HCSearchDataSource *dataSource;
