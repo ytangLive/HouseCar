@@ -144,7 +144,7 @@
     return tableView.rowHeight;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if(indexPath.section == TableSectionTypeTitle){
         if(indexPath.row == 0){
