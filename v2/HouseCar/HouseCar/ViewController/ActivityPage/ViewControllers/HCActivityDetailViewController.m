@@ -9,7 +9,7 @@
 #import "HCActivityDetailViewController.h"
 
 @interface HCActivityDetailViewController ()
-
+@property (weak ,nonatomic) IBOutlet HCTableHeaderView *tableHeaderView;
 @end
 
 @implementation HCActivityDetailViewController

@@ -10,11 +10,13 @@
 
 @interface HCActivityDetailDataSource : VTURLDataSource
 
-@property (nonatomic,strong)NSString *headerViewUrl;
+@property (nonatomic,strong)NSDictionary *headerViewDic;
 
-@property (nonatomic,strong)NSMutableDictionary *locationInfos;
+@property (nonatomic,strong)NSMutableArray *attendUsers;
 
-@property (nonatomic,strong)NSMutableDictionary *attendInfos;
+@property (nonatomic,strong)NSMutableArray *locationInfos;
+
+@property (nonatomic,strong)NSMutableArray *attendInfos;
 
 @property (nonatomic,strong)NSMutableArray *travelRouteInfos;
 

@@ -14,26 +14,50 @@
 {
     [super loadResultsData:resultsData];
     
+    NSArray *resultPosts = [resultsData arrayValueForKey:@"posts"];
+    if(resultPosts && [resultPosts count] > 0){
+        NSDictionary *resultPost = [resultPosts lastObject];
+        NSString *fullImgUrl = [resultPost stringValueForKeyPath:@"thumbnail_images.full.url"];
+        NSString *title = [resultPost stringValueForKey:@"title"];
+        NSDictionary *headerViewDic = @{@"title":title,@"imgUrl":fullImgUrl};
+        self.headerViewDic = headerViewDic;
+    }
+    
 }
 
-- (NSMutableDictionary *)locationInfos
+- (NSMutableArray *)attendUsers
+{
+    if(!_attendUsers){
+        _attendUsers = [[NSMutableArray alloc] init];
+        NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+        [userInfo setValue:@"50" forKey:@"totalUser"];
+        [userInfo setValue:@"6" forKey:@"attendUser"];
+        [userInfo setValue:[NSArray arrayWithObjects:@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""}, nil] forKey:@"usersInfo"];
+        [_attendUsers addObject:userInfo];
+    }
+    return _attendUsers;
+}
+
+- (NSMutableArray *)locationInfos
 {
     if(!_locationInfos){
-        _locationInfos = [[NSMutableDictionary alloc] init];
-        [_locationInfos setValue:@"6/50" forKey:@"userNum"];
-        [_locationInfos setValue:@"北京市海淀区" forKey:@"location"];
-        [_locationInfos setValue:[NSArray arrayWithObjects:@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""}, nil] forKey:@"userInfo"];
+        _locationInfos = [[NSMutableArray alloc] init];
+        NSMutableDictionary *locationInfo = [NSMutableDictionary dictionary];
+        [locationInfo setValue:@"北京市海淀区" forKey:@"location"];
+        [_locationInfos addObject:locationInfo];
     }
     return _locationInfos;
 }
 
-- (NSMutableDictionary *)attendInfos
+- (NSMutableArray *)attendInfos
 {
     if(!_attendInfos){
-        _attendInfos = [[NSMutableDictionary alloc] init];
-        [_attendInfos setValue:@"2015年12月10日—2016年3月15日" forKey:@"activityDate"];
-        [_attendInfos setValue:@"2015年11月10日—2016年1月15日" forKey:@"attendDate"];
-        [_attendInfos setValue:@"￥10000/人" forKey:@"activityCost"];
+        _attendInfos = [[NSMutableArray alloc] init];
+        NSMutableDictionary *attendInfo = [NSMutableDictionary dictionary];
+        [attendInfo setValue:@"2015年12月10日—2016年3月15日" forKey:@"activityDate"];
+        [attendInfo setValue:@"2015年11月10日—2016年1月15日" forKey:@"attendDate"];
+        [attendInfo setValue:@"￥10000/人" forKey:@"activityCost"];
+        [_attendInfos addObject:attendInfo];
     }
     return _attendInfos;
 }

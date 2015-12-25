@@ -238,6 +238,15 @@
 			<key>title</key>
 			<string>活动</string>
 		</dict>
+		<key>activityDetail</key>
+		<dict>
+			<key>class</key>
+			<string>HCActivityDetailViewController</string>
+			<key>view</key>
+			<string>HCActivityDetailViewController</string>
+			<key>title</key>
+			<string>搜索页面</string>
+		</dict>
 		<key>servicePage</key>
 		<dict>
 			<key>class</key>
@@ -264,13 +273,6 @@
 			<string>HCCityViewController</string>
 			<key>class</key>
 			<string>HCCityViewController</string>
-			<key>iOS7</key>
-			<dict>
-				<key>class</key>
-				<string>HCCityViewController</string>
-				<key>view</key>
-				<string>HCCityViewController</string>
-			</dict>
 		</dict>
 		<key>carBookDetail</key>
 		<dict>
@@ -280,13 +282,6 @@
 			<string>HCCarBaseDetailViewController</string>
 			<key>class</key>
 			<string>HCCarBaseDetailViewController</string>
-			<key>iOS7</key>
-			<dict>
-				<key>class</key>
-				<string>HCCarBaseDetailViewController</string>
-				<key>view</key>
-				<string>HCCarBaseDetailViewController</string>
-			</dict>
 		</dict>
 		<key>carOrder</key>
 		<dict>
@@ -296,13 +291,6 @@
 			<string>HCCarOrderViewcontroller</string>
 			<key>class</key>
 			<string>HCCarOrderViewcontroller</string>
-			<key>iOS7</key>
-			<dict>
-				<key>class</key>
-				<string>HCCarOrderViewcontroller</string>
-				<key>view</key>
-				<string>HCCarOrderViewcontroller</string>
-			</dict>
 		</dict>
 		<key>calendarSelect</key>
 		<dict>
@@ -312,13 +300,6 @@
 			<string>HCCalendarViewController</string>
 			<key>class</key>
 			<string>HCCalendarViewController</string>
-			<key>iOS7</key>
-			<dict>
-				<key>class</key>
-				<string>HCCalendarViewController</string>
-				<key>view</key>
-				<string>HCCalendarViewController</string>
-			</dict>
 		</dict>
 		<key>campPaly</key>
 		<dict>
@@ -328,13 +309,6 @@
 			<string>HCCampPlayViewController</string>
 			<key>class</key>
 			<string>HCCampPlayViewController</string>
-			<key>iOS7</key>
-			<dict>
-				<key>class</key>
-				<string>HCCampPlayViewController</string>
-				<key>view</key>
-				<string>HCCampPlayViewController</string>
-			</dict>
 		</dict>
 		<key>searchpage</key>
 		<dict>
@@ -344,13 +318,6 @@
 			<string>HCSearchViewController</string>
 			<key>class</key>
 			<string>HCSearchViewController</string>
-			<key>iOS7</key>
-			<dict>
-				<key>class</key>
-				<string>HCSearchViewController</string>
-				<key>view</key>
-				<string>HCSearchViewController</string>
-			</dict>
 		</dict>
 	</dict>
 	<key>app-db</key>

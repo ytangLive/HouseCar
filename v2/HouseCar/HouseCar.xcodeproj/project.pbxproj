@@ -737,6 +737,21 @@
 		F6E06C021C0345B700D95554 /* HCAutoFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06C011C0345B700D95554 /* HCAutoFontLabel.m */; };
 		F6E06C031C0345B700D95554 /* HCAutoFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06C011C0345B700D95554 /* HCAutoFontLabel.m */; };
 		F6E06C041C0345B700D95554 /* HCAutoFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E06C011C0345B700D95554 /* HCAutoFontLabel.m */; };
+		F6E41FC81C2CF3DE00800631 /* HCTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E41FC71C2CF3DE00800631 /* HCTableHeaderView.m */; };
+		F6E41FC91C2CF3DE00800631 /* HCTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E41FC71C2CF3DE00800631 /* HCTableHeaderView.m */; };
+		F6E41FCA1C2CF3DE00800631 /* HCTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E41FC71C2CF3DE00800631 /* HCTableHeaderView.m */; };
+		F6E41FCD1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FCC1C2D16BC00800631 /* HCActivityDetailLocationCell.xib */; };
+		F6E41FCE1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FCC1C2D16BC00800631 /* HCActivityDetailLocationCell.xib */; };
+		F6E41FCF1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FCC1C2D16BC00800631 /* HCActivityDetailLocationCell.xib */; };
+		F6E41FD31C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FD01C2D174400800631 /* HCActivityDetailAttendInfoCell.xib */; };
+		F6E41FD41C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FD01C2D174400800631 /* HCActivityDetailAttendInfoCell.xib */; };
+		F6E41FD51C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FD01C2D174400800631 /* HCActivityDetailAttendInfoCell.xib */; };
+		F6E41FD61C2D174400800631 /* HCActivityDetailTravelRouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FD11C2D174400800631 /* HCActivityDetailTravelRouteCell.xib */; };
+		F6E41FD71C2D174400800631 /* HCActivityDetailTravelRouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FD11C2D174400800631 /* HCActivityDetailTravelRouteCell.xib */; };
+		F6E41FD81C2D174400800631 /* HCActivityDetailTravelRouteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FD11C2D174400800631 /* HCActivityDetailTravelRouteCell.xib */; };
+		F6E41FD91C2D174400800631 /* HCActivityDetailCostActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FD21C2D174400800631 /* HCActivityDetailCostActivityCell.xib */; };
+		F6E41FDA1C2D174400800631 /* HCActivityDetailCostActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FD21C2D174400800631 /* HCActivityDetailCostActivityCell.xib */; };
+		F6E41FDB1C2D174400800631 /* HCActivityDetailCostActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E41FD21C2D174400800631 /* HCActivityDetailCostActivityCell.xib */; };
 		F6FC33741BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FC33711BF9B4AB00B81B45 /* HCHomePageViewController.m */; };
 		F6FC33751BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FC33711BF9B4AB00B81B45 /* HCHomePageViewController.m */; };
 		F6FC33761BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FC33711BF9B4AB00B81B45 /* HCHomePageViewController.m */; };
@@ -1138,6 +1153,12 @@
 		F6E06C011C0345B700D95554 /* HCAutoFontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAutoFontLabel.m; sourceTree = "<group>"; };
 		F6E06C0A1C035D2800D95554 /* NSString+VTDOMSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VTDOMSource.h"; sourceTree = "<group>"; };
 		F6E06C0B1C035D2800D95554 /* NSString+VTDOMStringSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VTDOMStringSize.h"; sourceTree = "<group>"; };
+		F6E41FC61C2CF3DE00800631 /* HCTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTableHeaderView.h; sourceTree = "<group>"; };
+		F6E41FC71C2CF3DE00800631 /* HCTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTableHeaderView.m; sourceTree = "<group>"; };
+		F6E41FCC1C2D16BC00800631 /* HCActivityDetailLocationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCActivityDetailLocationCell.xib; sourceTree = "<group>"; };
+		F6E41FD01C2D174400800631 /* HCActivityDetailAttendInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCActivityDetailAttendInfoCell.xib; sourceTree = "<group>"; };
+		F6E41FD11C2D174400800631 /* HCActivityDetailTravelRouteCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCActivityDetailTravelRouteCell.xib; sourceTree = "<group>"; };
+		F6E41FD21C2D174400800631 /* HCActivityDetailCostActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCActivityDetailCostActivityCell.xib; sourceTree = "<group>"; };
 		F6FC33701BF9B4AB00B81B45 /* HCHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCHomePageViewController.h; sourceTree = "<group>"; };
 		F6FC33711BF9B4AB00B81B45 /* HCHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCHomePageViewController.m; sourceTree = "<group>"; };
 		F6FC33721BF9B4AB00B81B45 /* HCHomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCHomePageViewController.xib; sourceTree = "<group>"; };
@@ -1376,6 +1397,12 @@
 			isa = PBXGroup;
 			children = (
 				F6AB7E991C27AD740031D58D /* HCActivityItemCell.xib */,
+				F6E41FCC1C2D16BC00800631 /* HCActivityDetailLocationCell.xib */,
+				F6E41FD01C2D174400800631 /* HCActivityDetailAttendInfoCell.xib */,
+				F6E41FD11C2D174400800631 /* HCActivityDetailTravelRouteCell.xib */,
+				F6E41FD21C2D174400800631 /* HCActivityDetailCostActivityCell.xib */,
+				F6E41FC61C2CF3DE00800631 /* HCTableHeaderView.h */,
+				F6E41FC71C2CF3DE00800631 /* HCTableHeaderView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2337,6 +2364,7 @@
 				F61F59271BFAD8C800698BBD /* test10.png in Resources */,
 				F6C299FB1BF4C57800A88B5E /* tab_ico4_act@2x.png in Resources */,
 				F6C299F21BF4C57800A88B5E /* tab_ico4@2x.png in Resources */,
+				F6E41FD31C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */,
 				F6C299B91BF4C57800A88B5E /* tab_ico1.png in Resources */,
 				F61F592A1BFAD8C800698BBD /* test11.png in Resources */,
 				A790E88F1AD690CD00F0A95D /* Images.xcassets in Resources */,
@@ -2347,6 +2375,8 @@
 				F6C299A41BF4C57800A88B5E /* InfoPlist.strings in Resources */,
 				F63EAD891C23F03E0070A26A /* ico_dw@3x.png in Resources */,
 				F62119ED1C19A618000C0DA1 /* UMSCommentInputControlleriPad.xib in Resources */,
+				F6E41FD61C2D174400800631 /* HCActivityDetailTravelRouteCell.xib in Resources */,
+				F6E41FD91C2D174400800631 /* HCActivityDetailCostActivityCell.xib in Resources */,
 				A790E88A1AD6900300F0A95D /* debug-Images.xcassets in Resources */,
 				F6D016451BFB5FB400ACCD33 /* HCCityViewController.xib in Resources */,
 				F62249791C05AF8600F818B6 /* button_confirmgray@2x.png in Resources */,
@@ -2408,6 +2438,7 @@
 				F61F59241BFAD8C800698BBD /* test9.png in Resources */,
 				F6C299C21BF4C57800A88B5E /* tab_ico1_act.png in Resources */,
 				F615730D1C16B8D1002507AC /* phone@2x.png in Resources */,
+				F6E41FCD1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */,
 				F6D016491BFB5FCA00ACCD33 /* citydict.plist in Resources */,
 				F6AB7EBB1C27EC1D0031D58D /* HCRegionPageViewController.xib in Resources */,
 				F6C299B61BF4C57800A88B5E /* tab_bg@2x.png in Resources */,
@@ -2498,6 +2529,7 @@
 				F61F59281BFAD8C800698BBD /* test10.png in Resources */,
 				F6C299FC1BF4C57800A88B5E /* tab_ico4_act@2x.png in Resources */,
 				F6C299F31BF4C57800A88B5E /* tab_ico4@2x.png in Resources */,
+				F6E41FD41C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */,
 				F6C299BA1BF4C57800A88B5E /* tab_ico1.png in Resources */,
 				F61F592B1BFAD8C800698BBD /* test11.png in Resources */,
 				A790E8901AD690CD00F0A95D /* Images.xcassets in Resources */,
@@ -2508,6 +2540,8 @@
 				F6C299A51BF4C57800A88B5E /* InfoPlist.strings in Resources */,
 				F63EAD8A1C23F03E0070A26A /* ico_dw@3x.png in Resources */,
 				F62119EE1C19A618000C0DA1 /* UMSCommentInputControlleriPad.xib in Resources */,
+				F6E41FD71C2D174400800631 /* HCActivityDetailTravelRouteCell.xib in Resources */,
+				F6E41FDA1C2D174400800631 /* HCActivityDetailCostActivityCell.xib in Resources */,
 				A790E88B1AD6900300F0A95D /* debug-Images.xcassets in Resources */,
 				F6D016461BFB5FB400ACCD33 /* HCCityViewController.xib in Resources */,
 				F622497A1C05AF8600F818B6 /* button_confirmgray@2x.png in Resources */,
@@ -2569,6 +2603,7 @@
 				F61F59251BFAD8C800698BBD /* test9.png in Resources */,
 				F6C299C31BF4C57800A88B5E /* tab_ico1_act.png in Resources */,
 				F615730E1C16B8D1002507AC /* phone@2x.png in Resources */,
+				F6E41FCE1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */,
 				F6D0164A1BFB5FCA00ACCD33 /* citydict.plist in Resources */,
 				F6AB7EBC1C27EC1D0031D58D /* HCRegionPageViewController.xib in Resources */,
 				F6C299B71BF4C57800A88B5E /* tab_bg@2x.png in Resources */,
@@ -2659,6 +2694,7 @@
 				F61F59291BFAD8C800698BBD /* test10.png in Resources */,
 				F6C299FD1BF4C57800A88B5E /* tab_ico4_act@2x.png in Resources */,
 				F6C299F41BF4C57800A88B5E /* tab_ico4@2x.png in Resources */,
+				F6E41FD51C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */,
 				F6C299BB1BF4C57800A88B5E /* tab_ico1.png in Resources */,
 				F61F592C1BFAD8C800698BBD /* test11.png in Resources */,
 				A790E8911AD690CD00F0A95D /* Images.xcassets in Resources */,
@@ -2669,6 +2705,8 @@
 				F6C299A61BF4C57800A88B5E /* InfoPlist.strings in Resources */,
 				F63EAD8B1C23F03E0070A26A /* ico_dw@3x.png in Resources */,
 				F62119EF1C19A618000C0DA1 /* UMSCommentInputControlleriPad.xib in Resources */,
+				F6E41FD81C2D174400800631 /* HCActivityDetailTravelRouteCell.xib in Resources */,
+				F6E41FDB1C2D174400800631 /* HCActivityDetailCostActivityCell.xib in Resources */,
 				F6C29A031BF4C57800A88B5E /* tab_ico5.png in Resources */,
 				F6D016471BFB5FB400ACCD33 /* HCCityViewController.xib in Resources */,
 				F622497B1C05AF8600F818B6 /* button_confirmgray@2x.png in Resources */,
@@ -2730,6 +2768,7 @@
 				F61F59261BFAD8C800698BBD /* test9.png in Resources */,
 				F6C299C41BF4C57800A88B5E /* tab_ico1_act.png in Resources */,
 				F615730F1C16B8D1002507AC /* phone@2x.png in Resources */,
+				F6E41FCF1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */,
 				F6D0164B1BFB5FCA00ACCD33 /* citydict.plist in Resources */,
 				F6AB7EBD1C27EC1D0031D58D /* HCRegionPageViewController.xib in Resources */,
 				F6C299B81BF4C57800A88B5E /* tab_bg@2x.png in Resources */,
@@ -2772,6 +2811,7 @@
 				F6FC33861BF9B96200B81B45 /* HCTableDataController.m in Sources */,
 				F66525881C10494A008E18D4 /* NSDate+Convenience.m in Sources */,
 				F6C299981BF4C57800A88B5E /* HCTabBar.m in Sources */,
+				F6E41FC81C2CF3DE00800631 /* HCTableHeaderView.m in Sources */,
 				F63EAD151C23B8A90070A26A /* HCCampHomePageViewController.m in Sources */,
 				F66525A31C10494A008E18D4 /* KalViewController.m in Sources */,
 				F6C4F44B1C2A791200561D56 /* HCHistorySearchDataObject.m in Sources */,
@@ -2894,6 +2934,7 @@
 				F6C2999F1BF4C57800A88B5E /* SNPageControl.m in Sources */,
 				F6D016361BFB54AB00ACCD33 /* HCImageView.m in Sources */,
 				F6D016431BFB5FB400ACCD33 /* HCCityViewController.m in Sources */,
+				F6E41FC91C2CF3DE00800631 /* HCTableHeaderView.m in Sources */,
 				F66525951C10494A008E18D4 /* KalGridView.m in Sources */,
 				F6578BFB1C1ABF7900280453 /* HCSearchTableDataController.m in Sources */,
 				F6E06C031C0345B700D95554 /* HCAutoFontLabel.m in Sources */,
@@ -2977,6 +3018,7 @@
 				F6C299A01BF4C57800A88B5E /* SNPageControl.m in Sources */,
 				F6D016371BFB54AB00ACCD33 /* HCImageView.m in Sources */,
 				F6D016441BFB5FB400ACCD33 /* HCCityViewController.m in Sources */,
+				F6E41FCA1C2CF3DE00800631 /* HCTableHeaderView.m in Sources */,
 				F66525961C10494A008E18D4 /* KalGridView.m in Sources */,
 				F6578BFC1C1ABF7900280453 /* HCSearchTableDataController.m in Sources */,
 				F6E06C041C0345B700D95554 /* HCAutoFontLabel.m in Sources */,

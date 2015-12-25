@@ -10,4 +10,6 @@
 
 @interface HCCircleView : VTImageView
 
+@property(nonatomic,strong)NSString* defaultImageStr;
+
 @end

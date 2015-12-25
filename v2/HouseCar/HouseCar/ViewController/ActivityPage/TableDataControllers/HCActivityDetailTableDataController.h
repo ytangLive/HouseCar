@@ -7,8 +7,10 @@
 //
 
 #import "HCTableDataController.h"
+#import "HCTableHeaderView.h"
 
 typedef NS_ENUM(NSInteger,TableSectionType){
+    TableSectionTypeAttendUser,//报名用户section
     TableSectionTypeLocation,//地图定位section
     TableSectionTypeAttendInfo,//活动信息section
     TableSectionTypetravelRoute,//活动路线section
@@ -16,5 +18,7 @@ typedef NS_ENUM(NSInteger,TableSectionType){
 };
 
 @interface HCActivityDetailTableDataController : HCTableDataController
+
+@property (strong ,nonatomic) IBOutlet HCTableHeaderView *tableHeaderView;
 
 @end

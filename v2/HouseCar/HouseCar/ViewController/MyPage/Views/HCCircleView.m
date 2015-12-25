@@ -25,4 +25,21 @@
     return self;
 }
 
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if(self){
+        self.layer.cornerRadius     = CGRectGetWidth(self.bounds)/2.f;
+        self.layer.masksToBounds    = NO;
+        self.clipsToBounds          = YES;
+    }
+    return self;
+}
+
+-(void)setDefaultImageStr:(NSString *)defaultImageStr
+{
+    UIImage* tempImage = [UIImage imageNamed:defaultImageStr];
+    self.defaultImage = tempImage;
+}
+
 @end

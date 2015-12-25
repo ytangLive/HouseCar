@@ -77,6 +77,38 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <point key="canvasLocation" x="364" y="356"/>
         </view>
+        <view contentMode="scaleToFill" id="NBR-oH-kgk" userLabel="headview" customClass="HCTableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dm8-wo-3ht" customClass="VTImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="198"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="defaultImageStr" value="info_loading.png"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dbt-BY-lDw" customClass="HCAutoFontLabel">
+                    <rect key="frame" x="15" y="165" width="290" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="defaultFontSize" value="13"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="miniFontSize" value="12"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="dm8-wo-3ht" id="p7W-FA-zAj"/>
+                <outlet property="label" destination="dbt-BY-lDw" id="cDw-yC-Yyw"/>
+            </connections>
+            <point key="canvasLocation" x="769" y="233"/>
+        </view>
         <view contentMode="scaleToFill" id="Tce-DJ-niv" userLabel="top loading" customClass="VTDragLoadingView">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -147,7 +179,9 @@
         <customObject id="tX5-hM-Ifg" customClass="HCActivityDetailTableDataController">
             <connections>
                 <outlet property="dataSource" destination="p0G-fA-CCN" id="nMg-yl-GGx"/>
+                <outlet property="tableHeaderView" destination="NBR-oH-kgk" id="2u1-tq-ogZ"/>
                 <outlet property="tableView" destination="Tvz-qA-BeD" id="NSa-tK-GGw"/>
+                <outlet property="topLoadingView" destination="Tce-DJ-niv" id="Ndl-ER-mUn"/>
             </connections>
         </customObject>
     </objects>
