@@ -63,6 +63,9 @@
 		9C4FC9121C26769E006B3840 /* HCMenusSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FC9111C26769E006B3840 /* HCMenusSwitchView.m */; };
 		9C4FC9131C26769E006B3840 /* HCMenusSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FC9111C26769E006B3840 /* HCMenusSwitchView.m */; };
 		9C4FC9141C26769E006B3840 /* HCMenusSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4FC9111C26769E006B3840 /* HCMenusSwitchView.m */; };
+		9C7AE2E41C37A18600C18CBE /* flag-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C7AE2E31C37A18600C18CBE /* flag-blue@2x.png */; };
+		9C7AE2E51C37A18600C18CBE /* flag-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C7AE2E31C37A18600C18CBE /* flag-blue@2x.png */; };
+		9C7AE2E61C37A18600C18CBE /* flag-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C7AE2E31C37A18600C18CBE /* flag-blue@2x.png */; };
 		A75FD438199E493200FE7EDC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713FEF2199E274A00EA7525 /* MessageUI.framework */; };
 		A75FD439199E494800FE7EDC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713FF0A199E328A00EA7525 /* CoreTelephony.framework */; };
 		A75FD43A199E494F00FE7EDC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2713FEF2199E274A00EA7525 /* MessageUI.framework */; };
@@ -831,6 +834,7 @@
 		9C4FC9091C256EBD006B3840 /* icon_scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_scan@2x.png"; sourceTree = "<group>"; };
 		9C4FC9101C26769E006B3840 /* HCMenusSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCMenusSwitchView.h; sourceTree = "<group>"; };
 		9C4FC9111C26769E006B3840 /* HCMenusSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCMenusSwitchView.m; sourceTree = "<group>"; };
+		9C7AE2E31C37A18600C18CBE /* flag-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flag-blue@2x.png"; sourceTree = "<group>"; };
 		A76313091A5A679E006E7EC9 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		A790E8891AD6900300F0A95D /* debug-Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "debug-Images.xcassets"; sourceTree = "<group>"; };
 		A790E88D1AD690CD00F0A95D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -1931,6 +1935,7 @@
 				F6CB0D951C11393E0093BB38 /* icon_lefthand@2x.png */,
 				F6CB0D961C11393E0093BB38 /* icon_slide.png */,
 				F6CB0D971C11393E0093BB38 /* position.png */,
+				9C7AE2E31C37A18600C18CBE /* flag-blue@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -2427,6 +2432,7 @@
 				F63EAD311C23BAFD0070A26A /* HCCampPlayTitleItem.xib in Resources */,
 				F61F591E1BFAD8C800698BBD /* test7.png in Resources */,
 				F61F591B1BFAD8C800698BBD /* test6.png in Resources */,
+				9C7AE2E41C37A18600C18CBE /* flag-blue@2x.png in Resources */,
 				F6424C161C04704D00D0F08D /* icon_next@2x.png in Resources */,
 				F6C299EC1BF4C57800A88B5E /* tab_ico3_act@3x.png in Resources */,
 				F63EAD6E1C23F03E0070A26A /* ico_back2@2x.png in Resources */,
@@ -2592,6 +2598,7 @@
 				F63EAD321C23BAFD0070A26A /* HCCampPlayTitleItem.xib in Resources */,
 				F61F591F1BFAD8C800698BBD /* test7.png in Resources */,
 				F61F591C1BFAD8C800698BBD /* test6.png in Resources */,
+				9C7AE2E51C37A18600C18CBE /* flag-blue@2x.png in Resources */,
 				F6424C171C04704D00D0F08D /* icon_next@2x.png in Resources */,
 				F6C299ED1BF4C57800A88B5E /* tab_ico3_act@3x.png in Resources */,
 				F63EAD6F1C23F03E0070A26A /* ico_back2@2x.png in Resources */,
@@ -2757,6 +2764,7 @@
 				F63EAD331C23BAFD0070A26A /* HCCampPlayTitleItem.xib in Resources */,
 				F61F59201BFAD8C800698BBD /* test7.png in Resources */,
 				F61F591D1BFAD8C800698BBD /* test6.png in Resources */,
+				9C7AE2E61C37A18600C18CBE /* flag-blue@2x.png in Resources */,
 				F6424C181C04704D00D0F08D /* icon_next@2x.png in Resources */,
 				A790E88C1AD6900300F0A95D /* debug-Images.xcassets in Resources */,
 				F63EAD701C23F03E0070A26A /* ico_back2@2x.png in Resources */,

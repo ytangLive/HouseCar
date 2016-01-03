@@ -46,6 +46,7 @@ typedef enum {
 
 //默认头部和底部导航颜色
 #define COLOR_RGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define COLOR_RGB_ALPHA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define COLOR_HEX(hex)  [UIColor colorWithRed:((hex & 0xFF0000) >> 16) / 255.f green:((hex & 0xFF00) >> 8) / 255.f blue:(hex & 0xFF) / 255.f alpha:1]
 
 #define DefaultNavBarColor COLOR_RGB(51,187,235)

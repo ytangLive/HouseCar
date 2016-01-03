@@ -32,7 +32,7 @@
         NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
         [userInfo setValue:@"50" forKey:@"totalUser"];
         [userInfo setValue:@"6" forKey:@"attendUser"];
-        [userInfo setValue:[NSArray arrayWithObjects:@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""}, nil] forKey:@"usersInfo"];
+        [userInfo setValue:[NSArray arrayWithObjects:@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""},@{@"userID":@"222",@"pUrl":@""}, nil] forKey:@"usersInfo"];
         [_attendUsers addObject:userInfo];
     }
     return _attendUsers;
@@ -66,9 +66,9 @@
 {
     if(!_travelRouteInfos){
         _travelRouteInfos = [[NSMutableArray alloc] init];
-        [_travelRouteInfos addObject:@{@"title":@"D1—D2", @"describe":@"搭乘国航航班直接飞往墨尔本。抵达后，一起前去提车点提车，并就地讲解自驾注意事项，手台使用方法等。" ,@"imgInfo":@[@"",@""]}];
-        [_travelRouteInfos addObject:@{@"title":@"D3：墨尔本——菲利普岛（约140公里2小时）", @"describe":@"驾车前往菲利普岛，它又称企鹅岛是墨尔本最著名的野生动物岛。" ,@"imgInfo":@[@"",@""]}];
-        [_travelRouteInfos addObject:@{@"title":@"D4 墨尔本—悉尼", @"describe":@"抵达后，专车接机。前往海鲜市场“鱼市场”，品尝生猛海鲜（费用自理）。之后前往澳大利亚的象征,——悉尼歌剧院（外观）。您还会在此看到悉尼大桥。随后游览皇家植物园。接着游览风光旖旎的双湾和玫瑰湾。随后我们将游览悉尼的海滩之王——著名的邦迪海滩。" ,@"imgInfo":@[@"",@""]}];
+        [_travelRouteInfos addObject:@{@"title":@"D1—D2", @"describe":@"搭乘国航航班直接飞往墨尔本。抵达后，一起前去提车点提车，并就地讲解自驾注意事项，手台使用方法等。" ,@"imageInfo":@[@"http://elephantrv.cn-hangzhou.aliapp.com/wp-content/uploads/2015/12/1-140429111HB49.jpg",@"http://elephantrv.cn-hangzhou.aliapp.com/wp-content/uploads/2015/12/1-140429111HB49.jpg"]}];
+        [_travelRouteInfos addObject:@{@"title":@"D3：墨尔本——菲利普岛（约140公里2小时）", @"describe":@"驾车前往菲利普岛，它又称企鹅岛是墨尔本最著名的野生动物岛。" ,@"imageInfo":@[@"http://elephantrv.cn-hangzhou.aliapp.com/wp-content/uploads/2015/12/1-140429111HB49.jpg"]}];
+        [_travelRouteInfos addObject:@{@"title":@"D4 墨尔本—悉尼", @"describe":@"抵达后，专车接机。前往海鲜市场“鱼市场”，品尝生猛海鲜（费用自理）。之后前往澳大利亚的象征,——悉尼歌剧院（外观）。您还会在此看到悉尼大桥。随后游览皇家植物园。接着游览风光旖旎的双湾和玫瑰湾。随后我们将游览悉尼的海滩之王——著名的邦迪海滩。" ,@"imageInfo":@[@"http://elephantrv.cn-hangzhou.aliapp.com/wp-content/uploads/2015/12/1-140429111HB49.jpg",@"http://elephantrv.cn-hangzhou.aliapp.com/wp-content/uploads/2015/12/1-140429111HB49.jpg"]}];
     }
     return _travelRouteInfos;
 }

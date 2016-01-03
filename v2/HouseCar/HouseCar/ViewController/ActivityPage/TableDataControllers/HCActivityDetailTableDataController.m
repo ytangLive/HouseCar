@@ -10,7 +10,11 @@
 #import "HCActivityDetailDataSource.h"
 #import "HCCircleView.h"
 
-#define AttendUserCellHeight 65
+#define ActivityAttendUserCellHeight 65
+#define ActivityDetailLocationCellHeight 200
+#define ActivityDetailAttendInfoCellHeight 220
+
+#define TravelRouteImageHeight 220
 
 @implementation HCActivityDetailTableDataController
 
@@ -78,19 +82,44 @@
 {
     if (indexPath.section == TableSectionTypeAttendUser) {
         
-        return AttendUserCellHeight;
+        return ActivityAttendUserCellHeight;
         
     }else if (indexPath.section == TableSectionTypeLocation) {
         
-        return 100;
+        return ActivityDetailLocationCellHeight;
         
     }else if (indexPath.section == TableSectionTypeAttendInfo) {
         
-        return 100;
+        return ActivityDetailAttendInfoCellHeight;
         
     }else if(indexPath.section == TableSectionTypetravelRoute){
         
-        return 100;
+        UITableViewCell *cell = [VTTableViewCell tableViewCellWithNibName:@"HCActivityDetailTravelRouteCell" bundle:nil];
+        
+        id data = [[(HCActivityDetailDataSource *)self.dataSource travelRouteInfos] objectAtIndex:indexPath.row];
+        
+        NSString *describe = [data stringValueForKey:@"describe"];
+        NSArray *imageInfo = [data arrayValueForKey:@"imageInfo"];
+        
+        UIView *describeView = [cell.contentView viewWithTag:991];
+        UILabel *describeLabel = [cell.contentView viewWithTag:993];
+        
+        CGFloat defaultHeight = describeLabel.height;
+        CGFloat gapSpace = 8;
+        CGFloat describeViewWith = KScreenWidth - describeView.minX - gapSpace;
+        CGFloat regularLabelW = describeViewWith - 2*gapSpace;
+        
+        CGSize describeSize = [describe VTSizeWithFont:describeLabel.font constrainedToSize:CGSizeMake(regularLabelW, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
+        
+        CGFloat variables = describeSize.height - defaultHeight;
+        CGFloat cellHeight = cell.height + variables;
+        CGFloat imageHeight = 0;
+        
+        if(imageInfo && [imageInfo count] > 0){
+            imageHeight = TravelRouteImageHeight * imageInfo.count + gapSpace * (imageInfo.count - 1);
+        }
+        
+        return cellHeight + imageHeight;
         
     }else if(indexPath.section == TableSectionTypeCostActivity){
         
@@ -98,7 +127,7 @@
         
     }
     
-    return 100;
+    return tableView.rowHeight;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -165,9 +194,11 @@
         [cell.contentView addSubview:textLabel];
         
         
-        NSUInteger imageCount = (KScreenWidth - 3 * edgeSpace - CGRectGetMaxX(textLabel.frame)) /  (userImageSize.width + imageGapSpace);
+        CGFloat floatNum = (KScreenWidth - 2 * edgeSpace - CGRectGetMaxX(textLabel.frame) + imageGapSpace) /  (userImageSize.width + imageGapSpace);
         
-        imageCount = imageCount > [usersInfo count] ? [usersInfo count] : (imageCount - 1);
+        NSInteger imageCount = [[self decimalwithFormat:@"0" floatV:floatNum] integerValue];
+        
+        imageCount = imageCount > [usersInfo count] ? [usersInfo count] : imageCount;
         
         for(int i = 0; i < imageCount; i++){
             NSDictionary *userInfo = [usersInfo objectAtIndex:i];
@@ -184,10 +215,23 @@
                 [self.context handle:@protocol(IVTImageTask) task:imageView priority:0];
             }
             
-             [cell.contentView addSubview:imageView];
+            [cell.contentView addSubview:imageView];
+            
+            if(imageCount < [usersInfo count] && i == (imageCount - 1)){
+                UIButton *moreUserBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+                moreUserBtn.backgroundColor = COLOR_RGB_ALPHA(0, 0, 0, 0.5);
+                moreUserBtn.frame = imageView.frame;
+                moreUserBtn.layer.cornerRadius = userImageSize.width / 2.f;
+                moreUserBtn.layer.masksToBounds = NO;
+                moreUserBtn.clipsToBounds = YES;
+                [moreUserBtn setTitle:@"•••" forState:UIControlStateNormal];
+                [moreUserBtn addTarget:self action:@selector(moreUserInfo:) forControlEvents:UIControlEventTouchUpInside];
+                
+                [cell.contentView addSubview:moreUserBtn];
+            }else{
+                [imageView addGestureRecognizer:[[UIGestureRecognizer alloc] initWithTarget:self action:@selector(userDetailInfo:)]];
+            }
         }
-        
-        
         
         return cell;
         
@@ -229,6 +273,59 @@
             
             data = [[(HCActivityDetailDataSource *)self.dataSource travelRouteInfos] objectAtIndex:indexPath.row];
             
+            NSString *title = [data stringValueForKey:@"title"];
+            NSString *describe = [data stringValueForKey:@"describe"];
+            NSArray *imageInfo = [data arrayValueForKey:@"imageInfo"];
+            
+            UILabel *dayLabel = [cell.contentView viewWithTag:990];
+            UIView *describeView = [cell.contentView viewWithTag:991];
+            UILabel *titleLabel = [cell.contentView viewWithTag:992];
+            UILabel *describeLabel = [cell.contentView viewWithTag:993];
+            
+            CGFloat defaultHeight = describeLabel.height;
+            CGFloat gapSpace = 8;
+            CGFloat describeViewWith = KScreenWidth - describeView.minX - gapSpace;
+            CGFloat regularLabelW = describeViewWith - 2*gapSpace;
+            
+            CGSize describeSize = [describe VTSizeWithFont:describeLabel.font constrainedToSize:CGSizeMake(regularLabelW, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
+            
+            CGFloat variables = describeSize.height - defaultHeight;
+            CGFloat regularHeight = describeView.height + variables;
+            
+            describeLabel.frame = CGRectMake(describeLabel.minX, describeLabel.minY, describeSize.width, describeSize.height);
+            describeLabel.text = describe;
+            dayLabel.frame = CGRectMake(dayLabel.minX, dayLabel.minY, dayLabel.width, regularHeight);
+            describeView.frame = CGRectMake(describeView.minX, describeView.minY, describeViewWith, regularHeight);
+            
+            dayLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row + 1];
+            titleLabel.text = title;
+            describeLabel.text = describe;
+            
+            for (UIView *view in [cell.contentView subviews]) {
+                if([view isKindOfClass:[VTImageView class]]){
+                    [view removeFromSuperview];
+                }
+            }
+            
+            if(imageInfo && [imageInfo count] > 0){
+                
+                for (int i = 0; i < [imageInfo count]; i++) {
+                    NSString *imageUrl = [imageInfo objectValueAtIndex:i];
+                    
+                    VTImageView *imageView = [[VTImageView alloc] initWithFrame:CGRectMake(dayLabel.minX , dayLabel.maxY + gapSpace + (TravelRouteImageHeight + gapSpace) * i, KScreenWidth - 2*gapSpace, TravelRouteImageHeight)];
+                    imageView.src = imageUrl;
+                    
+                    if([imageView isLoading]){
+                        [self.context cancelHandle:@protocol(IVTImageTask) task:imageView];
+                    }
+                    if(![imageView isLoaded]&&![imageView isLoading]){
+                        [self.context handle:@protocol(IVTImageTask) task:imageView priority:0];
+                    }
+                    
+                    [cell.contentView addSubview:imageView];
+                }
+            }
+            
         }else if(indexPath.section == TableSectionTypeCostActivity){
             
             data = [[(HCActivityDetailDataSource *)self.dataSource costActivityInfos] objectAtIndex:indexPath.row];
@@ -236,9 +333,12 @@
         }
         
         if(data){
-            if([cell isKindOfClass:[VTTableViewCell class]]){
+            if([cell isKindOfClass:[VTTableViewCell class]] &&
+               indexPath.section != TableSectionTypetravelRoute){
+                
                 [(VTTableViewCell *) cell setContext:self.context];
                 [(VTTableViewCell *) cell setDataItem:data];
+                
             }
         }
         
@@ -246,6 +346,26 @@
         return cell;
         
     }
+}
+
+- (void)userDetailInfo:(id)sender
+{
+    
+}
+
+- (void)moreUserInfo:(id)sender
+{
+    
+}
+
+//格式话小数 四舍五入类型
+- (NSString *) decimalwithFormat:(NSString *)format floatV:(float)floatV
+{
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    
+    [numberFormatter setPositiveFormat:format];
+    
+    return  [numberFormatter stringFromNumber:[NSNumber numberWithFloat:floatV]];
 }
 
 @end
