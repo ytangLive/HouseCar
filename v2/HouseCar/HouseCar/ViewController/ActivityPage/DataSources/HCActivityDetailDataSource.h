@@ -22,4 +22,6 @@
 
 @property (nonatomic,strong)NSMutableArray *costActivityInfos;
 
+@property(nonatomic, strong) NSMutableArray * activityComments;
+
 @end

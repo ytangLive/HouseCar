@@ -178,15 +178,52 @@
         </customObject>
         <customObject id="tX5-hM-Ifg" customClass="HCActivityDetailTableDataController">
             <connections>
+                <outlet property="commentHeaderView" destination="hNh-V9-dQg" id="s2B-53-Vdx"/>
                 <outlet property="dataSource" destination="p0G-fA-CCN" id="nMg-yl-GGx"/>
                 <outlet property="tableHeaderView" destination="NBR-oH-kgk" id="2u1-tq-ogZ"/>
                 <outlet property="tableView" destination="Tvz-qA-BeD" id="NSa-tK-GGw"/>
                 <outlet property="topLoadingView" destination="Tce-DJ-niv" id="Ndl-ER-mUn"/>
             </connections>
         </customObject>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hNh-V9-dQg" userLabel="评论 headviewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hNh-V9-dQg" id="Az3-qc-gXA">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="90Z-Uy-TIM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Lb-bg-9mU">
+                        <rect key="frame" x="8" y="13" width="42" height="37"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="erO-lF-6mA">
+                        <rect key="frame" x="242" y="17" width="70" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="查看全部">
+                            <color key="titleColor" red="0.19904470220000001" green="0.73292859909999997" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="line2.png" id="0sO-Dw-fgc">
+                        <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="769" y="573"/>
+        </tableViewCell>
     </objects>
     <resources>
         <image name="icon_back.png" width="44" height="44"/>
+        <image name="line2.png" width="213" height="1"/>
         <image name="phone.png" width="22" height="22"/>
         <image name="shareIcon.png" width="18" height="17"/>
     </resources>

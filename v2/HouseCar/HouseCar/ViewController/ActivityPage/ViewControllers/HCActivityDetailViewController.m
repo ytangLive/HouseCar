@@ -41,4 +41,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - VTTableDataControllerDelegate
+
+- (void)vtTableDataController:(VTTableDataController *)dataController cell:(VTTableViewCell *)cell doAction:(id<IVTAction>)action
+{
+    NSString * actionName =[action actionName];
+    NSDictionary *pageInfo = nil;
+    
+    [self openUrl:[NSURL URLWithString:[action userInfo]
+                         relativeToURL:self.url
+                           queryValues:pageInfo] animated:YES ];
+    
+}
+
 @end

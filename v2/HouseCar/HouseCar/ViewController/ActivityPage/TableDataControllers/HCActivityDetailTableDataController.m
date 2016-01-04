@@ -11,8 +11,9 @@
 #import "HCCircleView.h"
 
 #define ActivityAttendUserCellHeight 65
-#define ActivityDetailLocationCellHeight 200
+#define ActivityDetailLocationCellHeight 260
 #define ActivityDetailAttendInfoCellHeight 220
+#define ActivityDetailCommentCellHeight 50
 
 #define TravelRouteImageHeight 220
 
@@ -69,9 +70,9 @@
         
         return [[(HCActivityDetailDataSource *)self.dataSource travelRouteInfos] count];
         
-    }else if(section == TableSectionTypeCostActivity){
+    }else if(section == TableSectionTypeComment){
         
-        return [[(HCActivityDetailDataSource *)self.dataSource costActivityInfos] count];
+        return [[(HCActivityDetailDataSource *)self.dataSource activityComments] count] > 0 ? [[(HCActivityDetailDataSource *)self.dataSource activityComments] count] + 1 : 0;
         
     }
     
@@ -121,9 +122,12 @@
         
         return cellHeight + imageHeight;
         
-    }else if(indexPath.section == TableSectionTypeCostActivity){
-        
-        return 100;
+    }else if(indexPath.section == TableSectionTypeComment){
+        if(indexPath.row == 0){
+            return _commentHeaderView ? _commentHeaderView.height : 0;
+        }else{
+            return ActivityDetailCommentCellHeight;
+        }
         
     }
     
@@ -144,9 +148,11 @@
         
         self.itemViewNib = @"HCActivityDetailTravelRouteCell";
         
-    }else if(indexPath.section == TableSectionTypeCostActivity){
+    }else if(indexPath.section == TableSectionTypeComment){
+        if(indexPath.row > 0){
+            self.itemViewNib = @"HCCampPlayCommentItem";
+        }
         
-        self.itemViewNib = @"HCActivityDetailCostActivityCell";
         
     }
     
@@ -326,10 +332,14 @@
                 }
             }
             
-        }else if(indexPath.section == TableSectionTypeCostActivity){
-            
-            data = [[(HCActivityDetailDataSource *)self.dataSource costActivityInfos] objectAtIndex:indexPath.row];
-            
+        }else if(indexPath.section == TableSectionTypeComment){
+            if(indexPath.row == 0){
+                
+                return _commentHeaderView;
+
+            }else{
+                data = [[(HCActivityDetailDataSource *)self.dataSource activityComments] objectAtIndex:indexPath.row - 1];
+            }
         }
         
         if(data){

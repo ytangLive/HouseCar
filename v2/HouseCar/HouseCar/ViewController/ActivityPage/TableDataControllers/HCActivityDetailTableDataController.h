@@ -14,11 +14,12 @@ typedef NS_ENUM(NSInteger,TableSectionType){
     TableSectionTypeLocation,//地图定位section
     TableSectionTypeAttendInfo,//活动信息section
     TableSectionTypetravelRoute,//活动路线section
-    TableSectionTypeCostActivity//活动花费和活动须知section
+    TableSectionTypeComment//用户评论section
 };
 
 @interface HCActivityDetailTableDataController : HCTableDataController
 
-@property (strong ,nonatomic) IBOutlet HCTableHeaderView *tableHeaderView;
+@property (strong, nonatomic) IBOutlet HCTableHeaderView *tableHeaderView;
+@property (strong, nonatomic) IBOutlet UITableViewCell *commentHeaderView;
 
 @end

@@ -484,6 +484,9 @@
 		F6AB7ECC1C280D910031D58D /* icon_setup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AB7ECB1C280D910031D58D /* icon_setup@2x.png */; };
 		F6AB7ECD1C280D910031D58D /* icon_setup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AB7ECB1C280D910031D58D /* icon_setup@2x.png */; };
 		F6AB7ECE1C280D910031D58D /* icon_setup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AB7ECB1C280D910031D58D /* icon_setup@2x.png */; };
+		F6AC6A941C3A7410002E53EA /* menu_list.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC6A931C3A7410002E53EA /* menu_list.png */; };
+		F6AC6A951C3A7410002E53EA /* menu_list.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC6A931C3A7410002E53EA /* menu_list.png */; };
+		F6AC6A961C3A7410002E53EA /* menu_list.png in Resources */ = {isa = PBXBuildFile; fileRef = F6AC6A931C3A7410002E53EA /* menu_list.png */; };
 		F6AF521E1C28FF840064D099 /* HCMyPageTableDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF521D1C28FF840064D099 /* HCMyPageTableDataController.m */; };
 		F6AF521F1C28FF840064D099 /* HCMyPageTableDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF521D1C28FF840064D099 /* HCMyPageTableDataController.m */; };
 		F6AF52201C28FF840064D099 /* HCMyPageTableDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AF521D1C28FF840064D099 /* HCMyPageTableDataController.m */; };
@@ -1037,6 +1040,7 @@
 		F6AB7EB41C27EC1D0031D58D /* HCRegionItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCRegionItemCell.xib; sourceTree = "<group>"; };
 		F6AB7EC71C280C190031D58D /* default_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_background.png; sourceTree = "<group>"; };
 		F6AB7ECB1C280D910031D58D /* icon_setup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_setup@2x.png"; sourceTree = "<group>"; };
+		F6AC6A931C3A7410002E53EA /* menu_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_list.png; path = Arrow/menu_list.png; sourceTree = "<group>"; };
 		F6AF521C1C28FF840064D099 /* HCMyPageTableDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCMyPageTableDataController.h; sourceTree = "<group>"; };
 		F6AF521D1C28FF840064D099 /* HCMyPageTableDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCMyPageTableDataController.m; sourceTree = "<group>"; };
 		F6AF52251C293E3F0064D099 /* icon_order@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_order@2x.png"; sourceTree = "<group>"; };
@@ -1915,6 +1919,7 @@
 			children = (
 				F6C299341BF4C57800A88B5E /* tab */,
 				F63EAD471C23F03E0070A26A /* Arrow */,
+				F6AC6A931C3A7410002E53EA /* menu_list.png */,
 				F62119C21C19948F000C0DA1 /* default_headimage@2x.png */,
 				9C4FC9091C256EBD006B3840 /* icon_scan@2x.png */,
 				F6424C111C04704D00D0F08D /* icon_landnext@2x.png */,
@@ -2319,6 +2324,7 @@
 				F62119FC1C19A618000C0DA1 /* UMSShareListController.xib in Resources */,
 				F6409DC21C0D9EE3002AB471 /* HCCarOrderViewcontroller.xib in Resources */,
 				F61F59121BFAD8C800698BBD /* test3.png in Resources */,
+				F6AC6A941C3A7410002E53EA /* menu_list.png in Resources */,
 				F6AB7E8D1C279C6C0031D58D /* icon_starSelected@2x.png in Resources */,
 				F63EAD7D1C23F03E0070A26A /* ico_desc.png in Resources */,
 				9C4FC90A1C256EBD006B3840 /* icon_scan@2x.png in Resources */,
@@ -2485,6 +2491,7 @@
 				F62119FD1C19A618000C0DA1 /* UMSShareListController.xib in Resources */,
 				F6409DC31C0D9EE3002AB471 /* HCCarOrderViewcontroller.xib in Resources */,
 				F61F59131BFAD8C800698BBD /* test3.png in Resources */,
+				F6AC6A951C3A7410002E53EA /* menu_list.png in Resources */,
 				F6AB7E8E1C279C6C0031D58D /* icon_starSelected@2x.png in Resources */,
 				F63EAD7E1C23F03E0070A26A /* ico_desc.png in Resources */,
 				9C4FC90B1C256EBD006B3840 /* icon_scan@2x.png in Resources */,
@@ -2651,6 +2658,7 @@
 				F62119FE1C19A618000C0DA1 /* UMSShareListController.xib in Resources */,
 				F6409DC41C0D9EE3002AB471 /* HCCarOrderViewcontroller.xib in Resources */,
 				F61F59141BFAD8C800698BBD /* test3.png in Resources */,
+				F6AC6A961C3A7410002E53EA /* menu_list.png in Resources */,
 				F6AB7E8F1C279C6C0031D58D /* icon_starSelected@2x.png in Resources */,
 				F63EAD7F1C23F03E0070A26A /* ico_desc.png in Resources */,
 				9C4FC90C1C256EBD006B3840 /* icon_scan@2x.png in Resources */,

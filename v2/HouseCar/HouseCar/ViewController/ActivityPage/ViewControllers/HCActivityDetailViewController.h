@@ -10,7 +10,7 @@
 #import "HCActivityDetailTableDataController.h"
 #import "HCActivityDetailDataSource.h"
 
-@interface HCActivityDetailViewController : HCViewController
+@interface HCActivityDetailViewController : HCViewController <VTTableDataControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet HCActivityDetailTableDataController *tableDataController;
 @property (strong, nonatomic) IBOutlet HCActivityDetailDataSource *dataSource;

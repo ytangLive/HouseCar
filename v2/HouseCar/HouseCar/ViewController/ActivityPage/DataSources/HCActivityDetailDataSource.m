@@ -84,4 +84,16 @@
     return _costActivityInfos;
 }
 
+- (NSMutableArray *)activityComments
+{
+    if(!_activityComments){
+        _activityComments = [[NSMutableArray alloc] init];
+        NSDictionary *commentDic = @{@"headImage":@"",@"nickname":@"seed",@"comment":@"好玩吗",@"time":@"2015.12.10 09:00"};
+        NSDictionary *commentDic1 = @{@"headImage":@"",@"nickname":@"seed1",@"comment":@"不错",@"time":@"2015.12.10 09:09"};
+        [_activityComments addObject:commentDic];
+        [_activityComments addObject:commentDic1];
+    }
+    return _activityComments;
+}
+
 @end
