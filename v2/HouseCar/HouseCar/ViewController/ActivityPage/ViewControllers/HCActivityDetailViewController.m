@@ -47,6 +47,9 @@
 {
     NSString * actionName =[action actionName];
     NSDictionary *pageInfo = nil;
+    if([actionName isEqualToString:@"activityGuidelines"]){
+        pageInfo = @{@"activityGuidelines":[VTJSON encodeObject:_dataSource.costActivityInfos]};
+    }
     
     [self openUrl:[NSURL URLWithString:[action userInfo]
                          relativeToURL:self.url

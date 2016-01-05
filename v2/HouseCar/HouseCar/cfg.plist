@@ -247,6 +247,15 @@
 			<key>title</key>
 			<string>搜索页面</string>
 		</dict>
+		<key>activityGuidelines</key>
+		<dict>
+			<key>class</key>
+			<string>HCActivityGuidelinesViewController</string>
+			<key>view</key>
+			<string>HCActivityGuidelinesViewController</string>
+			<key>title</key>
+			<string>搜索页面</string>
+		</dict>
 		<key>servicePage</key>
 		<dict>
 			<key>class</key>

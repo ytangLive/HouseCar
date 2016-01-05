@@ -30,7 +30,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="cellSelected"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/carBase"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/activityDetail"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="doAction:" destination="gWw-8p-HYY" eventType="touchUpInside" id="iaW-gs-XeZ"/>
@@ -105,7 +105,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="cellSelected"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/carBase"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/activityDetail"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="doAction:" destination="gWw-8p-HYY" eventType="touchUpInside" id="axI-6o-DFs"/>
@@ -180,7 +180,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="cellSelected"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/carBase"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/activityDetail"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="doAction:" destination="gWw-8p-HYY" eventType="touchUpInside" id="fcW-eT-XTM"/>
@@ -255,7 +255,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="cellSelected"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/carBase"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/activityDetail"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="doAction:" destination="gWw-8p-HYY" eventType="touchUpInside" id="Wq9-4R-aED"/>
