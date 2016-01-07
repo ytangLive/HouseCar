@@ -7,8 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HCActivityPageViewController">
             <connections>
-                <outlet property="dataSource" destination="NXG-8f-gEK" id="mqV-kf-JsP"/>
-                <outlet property="tableDataController" destination="Kd7-iJ-WOI" id="aHD-lU-xZi"/>
+                <outlet property="myTableDataController" destination="ekO-OA-pzx" id="QJG-OC-3IQ"/>
+                <outlet property="mydataSource" destination="uxl-Gb-PFU" id="R7W-ok-Ixo"/>
+                <outlet property="recentDataSource" destination="NXG-8f-gEK" id="DQE-Tw-bBr"/>
+                <outlet property="recentTableDataController" destination="Kd7-iJ-WOI" id="i5x-6r-8qy"/>
+                <outlet property="tabPageDataController" destination="YET-Lt-9tj" id="HsG-KH-CO1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="fql-9r-toT"/>
             </connections>
         </placeholder>
@@ -19,18 +22,102 @@
             <subviews>
                 <view contentMode="scaleToFill" id="bgM-WA-jrV" userLabel="Content View">
                     <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="265" sectionHeaderHeight="22" sectionFooterHeight="22" id="cro-J0-RAg" userLabel="tableView" customClass="VTTableView">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="zlJ-Zr-RKv">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" tag="100" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="V4G-0c-olX" customClass="VTButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="45"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="近期活动">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="disabled">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="selected">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doTabAction:" destination="YET-Lt-9tj" eventType="touchUpInside" id="qud-Qr-BfN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Wg-tD-HFK" customClass="VTButton">
+                                    <rect key="frame" x="160" y="0.0" width="160" height="45"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="我的活动">
+                                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="disabled">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="selected">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="doTabAction:" destination="YET-Lt-9tj" eventType="touchUpInside" id="4Pz-wF-WCn"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" id="EMx-ji-KUn">
+                                    <rect key="frame" x="15" y="42" width="130" height="3"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                            </subviews>
+                        </scrollView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="8iZ-UJ-ati" customClass="VTScrollView">
+                            <rect key="frame" x="0.0" y="45" width="320" height="459"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <inset key="contentInset" minX="0.0" minY="0.0" maxX="0.0" maxY="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="KUm-5Y-sc6" userLabel="recentActivity View">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="459"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="265" sectionHeaderHeight="22" sectionFooterHeight="22" id="cro-J0-RAg" userLabel="tableView" customClass="VTTableView">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="459"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <inset key="contentInset" minX="0.0" minY="0.0" maxX="0.0" maxY="50"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="Kd7-iJ-WOI" id="nAG-iL-GPH"/>
+                                                <outlet property="delegate" destination="Kd7-iJ-WOI" id="myw-bf-IeN"/>
+                                            </connections>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="fEe-y8-CIE" userLabel="myActivity View">
+                                    <rect key="frame" x="320" y="0.0" width="320" height="459"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="265" sectionHeaderHeight="22" sectionFooterHeight="22" id="CIK-n6-nqx" userLabel="tableView" customClass="VTTableView">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="459"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <inset key="contentInset" minX="0.0" minY="0.0" maxX="0.0" maxY="50"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="ekO-OA-pzx" id="kYj-xs-XhM"/>
+                                                <outlet property="delegate" destination="ekO-OA-pzx" id="YmD-19-opm"/>
+                                            </connections>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
                             <connections>
-                                <outlet property="dataSource" destination="Kd7-iJ-WOI" id="nAG-iL-GPH"/>
-                                <outlet property="delegate" destination="Kd7-iJ-WOI" id="myw-bf-IeN"/>
+                                <outlet property="delegate" destination="YET-Lt-9tj" id="MMD-yz-wJ8"/>
                             </connections>
-                        </tableView>
+                        </scrollView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
@@ -71,135 +158,54 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <point key="canvasLocation" x="312" y="332"/>
         </view>
-        <customObject id="NXG-8f-gEK" userLabel="Data Source" customClass="VTURLDataSource">
+        <customObject id="YET-Lt-9tj" customClass="HCActivityTabPageDataController">
+            <connections>
+                <outlet property="pageContentView" destination="8iZ-UJ-ati" id="Gyz-Hr-18a"/>
+                <outlet property="tabBackgroundView" destination="EMx-ji-KUn" id="0y6-ol-REo"/>
+                <outletCollection property="contentViews" destination="KUm-5Y-sc6" id="ALv-ba-I7X"/>
+                <outletCollection property="contentViews" destination="fEe-y8-CIE" id="o4E-Mf-zfd"/>
+                <outletCollection property="controllers" destination="ekO-OA-pzx" id="Db3-oO-78v"/>
+                <outletCollection property="controllers" destination="Kd7-iJ-WOI" id="hDG-U0-z0W"/>
+                <outletCollection property="tabButtons" destination="V4G-0c-olX" id="IWe-YT-1LY"/>
+                <outletCollection property="tabButtons" destination="2Wg-tD-HFK" id="qsh-vQ-7nG"/>
+            </connections>
+        </customObject>
+        <customObject id="NXG-8f-gEK" userLabel="Recent Activity Data Source" customClass="VTURLDataSource">
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="string" keyPath="urlKey" value="carlist-interface"/>
                 <userDefinedRuntimeAttribute type="string" keyPath="dataKey" value="posts"/>
             </userDefinedRuntimeAttributes>
         </customObject>
-        <customObject id="Kd7-iJ-WOI" customClass="HCActivityTableDataController">
+        <customObject id="Kd7-iJ-WOI" userLabel="Recent Activity Table Data Controller" customClass="HCActivityTableDataController">
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="string" keyPath="itemViewNib" value="HCActivityItemCell"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                    <integer key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="bottomLoadingView" destination="9Ce-Dq-IK7" id="NhD-sX-m8T"/>
                 <outlet property="dataSource" destination="NXG-8f-gEK" id="knM-aE-67k"/>
-                <outlet property="tableView" destination="cro-J0-RAg" id="JUZ-k1-S5M"/>
-                <outlet property="topLoadingView" destination="rv0-5A-d8a" id="a0h-nD-b8B"/>
+                <outlet property="tableView" destination="cro-J0-RAg" id="ton-cd-W1o"/>
             </connections>
         </customObject>
-        <view contentMode="scaleToFill" id="9Ce-Dq-IK7" userLabel="bottom loading" customClass="VTDragLoadingView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="下拉刷新" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gw4-fk-L1W">
-                    <rect key="frame" x="50" y="11" width="60" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.7110800639" green="0.70825729930000003" blue="0.70854242700000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                </label>
-                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="释放刷新" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wKy-6C-aK2">
-                    <rect key="frame" x="50" y="11" width="60" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.7110800639" green="0.70825729930000003" blue="0.70854242700000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                </label>
-                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="努力为您加载中" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HQP-Kw-tix">
-                    <rect key="frame" x="50" y="11" width="100" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.7110800639" green="0.70825729930000003" blue="0.70854242700000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                </label>
-                <view contentMode="scaleToFill" id="fag-n3-t1j" customClass="HCAnimationView">
-                    <rect key="frame" x="16" y="12" width="25" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundImg" value="loading_bg.png"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="coverImg" value="loading_cover.png"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="borderImg" value="loading_border.png"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="loopImg" value="loading_loop.png"/>
-                    </userDefinedRuntimeAttributes>
-                </view>
-            </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-            <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        <customObject id="uxl-Gb-PFU" userLabel="My Activity Data Source" customClass="VTURLDataSource">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="urlKey" value="carlist-interface"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="dataKey" value="posts"/>
+            </userDefinedRuntimeAttributes>
+        </customObject>
+        <customObject id="ekO-OA-pzx" userLabel="My Activity Table Data Controller" customClass="HCActivityTableDataController">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="itemViewNib" value="HCActivityItemCell"/>
+                <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                    <integer key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="downTitleLabel" destination="Gw4-fk-L1W" id="a9P-Qe-pqt"/>
-                <outlet property="loadingTitleLabel" destination="HQP-Kw-tix" id="Iv4-d8-1ze"/>
-                <outlet property="loadingView" destination="fag-n3-t1j" id="9q3-nB-m1B"/>
-                <outlet property="upTitleLabel" destination="wKy-6C-aK2" id="BZM-pr-mP9"/>
+                <outlet property="dataSource" destination="uxl-Gb-PFU" id="mtl-Wp-CTL"/>
+                <outlet property="tableView" destination="CIK-n6-nqx" id="3Wp-fH-Dfv"/>
             </connections>
-            <point key="canvasLocation" x="-73" y="195"/>
-        </view>
-        <view contentMode="scaleToFill" id="rv0-5A-d8a" userLabel="top loading" customClass="VTDragLoadingView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="下拉刷新" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0pd-qg-8m4">
-                    <rect key="frame" x="50" y="11" width="60" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.7110800639" green="0.70825729930000003" blue="0.70854242700000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                </label>
-                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="释放刷新" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yWy-Kl-Mxz">
-                    <rect key="frame" x="50" y="11" width="60" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.7110800639" green="0.70825729930000003" blue="0.70854242700000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                </label>
-                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="正在加载" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JRc-eU-YeS">
-                    <rect key="frame" x="50" y="11" width="60" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.7110800639" green="0.70825729930000003" blue="0.70854242700000003" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                </label>
-                <view contentMode="scaleToFill" id="0a9-yV-n9U" customClass="HCAnimationView">
-                    <rect key="frame" x="16" y="12" width="25" height="20"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundImg" value="loading_bg.png"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="coverImg" value="loading_cover.png"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="borderImg" value="loading_border.png"/>
-                        <userDefinedRuntimeAttribute type="string" keyPath="loopImg" value="loading_loop.png"/>
-                    </userDefinedRuntimeAttributes>
-                </view>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="最后更新: 今天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mph-pw-EoH">
-                    <rect key="frame" x="102" y="11" width="127" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                    <color key="textColor" red="0.79850022809999999" green="0.79946966239999995" blue="0.79978330289999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                    <size key="shadowOffset" width="0.0" height="0.0"/>
-                </label>
-            </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-            <nil key="simulatedStatusBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="downTitleLabel" destination="0pd-qg-8m4" id="RQZ-EM-o1Y"/>
-                <outlet property="loadingTitleLabel" destination="JRc-eU-YeS" id="jwv-f3-7Ng"/>
-                <outlet property="loadingView" destination="0a9-yV-n9U" id="iun-I6-goA"/>
-                <outlet property="timeLabel" destination="Mph-pw-EoH" id="Nn7-Vp-5zy"/>
-                <outlet property="upTitleLabel" destination="yWy-Kl-Mxz" id="7yV-cm-2iq"/>
-            </connections>
-            <point key="canvasLocation" x="-73" y="322"/>
-        </view>
+        </customObject>
     </objects>
     <resources>
         <image name="ico_part.png" width="22" height="22"/>

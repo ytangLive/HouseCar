@@ -25,21 +25,42 @@
     
     [self initSearchMenuWithData:[NSArray arrayWithObjects:@{@"classifyID":@"City",@"classifyName":@"城市"},@{@"classifyID":@"Theme",@"classifyName":@"活动类型"}, nil]];
     
-    [_tableDataController setContext:self.context];
-    self.dataSource.delegate = self.tableDataController;
-    self.tableDataController.delegate = self;
-    self.tableDataController.tableView.backgroundColor = DefaultBackgroundColor;
-
+    
+    [_tabPageDataController setContext:self.context];
+    _tabPageDataController.delegate = self;
+    
+    //最近活动
+    _recentTableDataController.delegate = self;
+    _recentDataSource.delegate = _recentTableDataController;
+    _recentTableDataController.tableView.backgroundColor = DefaultBackgroundColor;
+    [_recentTableDataController useDefaultTopLoadingView:YES stockAnimation:YES];
+    [_recentTableDataController useDefaultBottomLoadingView:YES stockAnimation:YES];
+    
+    //我的活动
+    _myTableDataController.delegate = self;
+    _mydataSource.delegate = _myTableDataController;
+    _myTableDataController.tableView.backgroundColor = DefaultBackgroundColor;
+    [_myTableDataController useDefaultTopLoadingView:YES stockAnimation:YES];
+    [_myTableDataController useDefaultBottomLoadingView:YES stockAnimation:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-    if(![_tableDataController.dataSource isLoading] && ![_tableDataController.dataSource isLoaded]){
-        [_tableDataController reloadData];
-    }else{
-        [[_tableDataController tableView] reloadData];
+    if(![(VTDataSource *)[[_tabPageDataController selectedController] dataSource] isLoaded]
+       && ![(VTDataSource *)[[_tabPageDataController selectedController] dataSource] isLoading]){
+        [[_tabPageDataController selectedController] reloadData];
+    }else {
+        [[[_tabPageDataController selectedController] tableView] reloadData];
+        if(![(VTDataSource *)[[_tabPageDataController selectedController] dataSource] isLoading]){
+            
+            [(VTDataSource *)[[_tabPageDataController selectedController] dataSource] refreshData];
+            
+            if ([_tabPageDataController.selectedController tableView].contentOffset.y <= 0) {
+                [[_tabPageDataController.selectedController tableView] setContentOffset:CGPointZero animated:NO];
+            }
+        }
     }
 }
 

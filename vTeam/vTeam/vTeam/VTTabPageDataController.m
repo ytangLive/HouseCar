@@ -66,17 +66,17 @@
     UIButton * tabButton = [self tabButtonAtIndex:index];
     CGRect r = [_tabBackgroundView frame];
     CGRect rr = [tabButton frame];
-    if (![self.tabBackgroundView isKindOfClass:[UIImageView class]]) {
-        float realWidth = tabButton.titleLabel.text.length*tabBackDefaultWidth/2;
-        if (realWidth > CGRectGetWidth(tabButton.frame)) {
-            realWidth = CGRectGetWidth(tabButton.frame);
-        }
-        r.size.width = realWidth;
-    }else{
-        if ((int)(rr.size.width - r.size.width)%2==1) {
-            r.size.width = _tabBackgroundViewSize.width+1;
-        }
-    }
+//    if (![self.tabBackgroundView isKindOfClass:[UIImageView class]]) {
+//        float realWidth = tabButton.titleLabel.text.length*tabBackDefaultWidth/2;
+//        if (realWidth > CGRectGetWidth(tabButton.frame)) {
+//            realWidth = CGRectGetWidth(tabButton.frame);
+//        }
+//        r.size.width = realWidth;
+//    }else{
+//        if ((int)(rr.size.width - r.size.width)%2==1) {
+//            r.size.width = _tabBackgroundViewSize.width+1;
+//        }
+//    }
 //    if ((int)(rr.size.width - r.size.width)%2==1) {
 //        r.size.width = _tabBackgroundViewSize.width+1;
 //    }
@@ -85,37 +85,6 @@
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
     [self performSelector:@selector(scrollToTabBackgroundVisable:) withObject:@true afterDelay:0.0];
 }
-
-//旧版
-//-(void) scrollToTabBackgroundVisable:(BOOL) animated{
-//    if([_tabBackgroundView.superview isKindOfClass:[UIScrollView class]]){
-//        UIScrollView * scrollView = (UIScrollView *) _tabBackgroundView.superview;
-//        CGPoint contentOffset = [scrollView contentOffset];
-//        CGSize size = [scrollView bounds].size;
-//        CGRect r = _tabBackgroundView.frame;
-//        if(r.origin.x - _leftSpaceWidth < contentOffset.x){
-//            [scrollView setContentOffset:CGPointMake(r.origin.x - _leftSpaceWidth, 0) animated:YES];
-//        }
-//        else if(r.origin.x + r.size.width + _rightSpaceWidth > contentOffset.x + size.width){
-//            [scrollView setContentOffset:CGPointMake(r.origin.x + r.size.width + _rightSpaceWidth - size.width, 0) animated:animated];
-//        }
-//    }
-//}
-
-//-(void) scrollToTabButton:(NSUInteger) index{
-//    UIButton * selButton = [self tabButtonAtIndex:index];
-//    CGRect r = [_tabBackgroundView frame];
-//    r.size.width = selButton.titleLabel.text.length*20>CGRectGetWidth(selButton.frame)?CGRectGetWidth(selButton.frame):selButton.titleLabel.text.length*20;
-//    CGRect rr = [selButton frame];
-//    if ((int)(rr.size.width - r.size.width)%2==1) {
-//        r.size.width = _tabBackgroundViewSize.width+1;
-//    }
-//    r.origin.x = rr.origin.x + (rr.size.width - r.size.width) / 2.0;
-//    [_tabBackgroundView setFrame:r];
-//    
-//    [NSObject cancelPreviousPerformRequestsWithTarget:self];
-//    [self performSelector:@selector(scrollToTabBackgroundVisable:) withObject:@true afterDelay:0.0];
-//}
 
 -(void) setSelectedIndex:(NSUInteger)selectedIndex animated:(BOOL) animated withoutOffset:(BOOL)withoutOffset{
     if(_selectedIndex != selectedIndex){
@@ -268,8 +237,8 @@
                         flag += 1;
                     }
                     
-                    UIButton *tabButton = [self tabButtonAtIndex:flag];
-                    rect.size.width = tabButton.titleLabel.text.length*tabBackDefaultWidth/2>CGRectGetWidth(tabButton.frame)?CGRectGetWidth(tabButton.frame):tabButton.titleLabel.text.length*tabBackDefaultWidth/2;
+//                    UIButton *tabButton = [self tabButtonAtIndex:flag];
+//                    rect.size.width = tabButton.titleLabel.text.length*tabBackDefaultWidth/2>CGRectGetWidth(tabButton.frame)?CGRectGetWidth(tabButton.frame):tabButton.titleLabel.text.length*tabBackDefaultWidth/2;
                 }
             
                 [_tabBackgroundView setFrame:rect];

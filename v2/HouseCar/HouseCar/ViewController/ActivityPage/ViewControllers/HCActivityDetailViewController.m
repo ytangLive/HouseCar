@@ -57,4 +57,27 @@
     
 }
 
+- (void)doAction:(id)sender
+{
+    NSString *actionName = [sender actionName];
+    NSDictionary *pageInfo = nil;
+    if([actionName isEqualToString:@"registration"]){
+        NSString *title = [_dataSource.headerViewDic stringValueForKey:@"title"];
+        NSString *imgUrl = [_dataSource.headerViewDic stringValueForKey:@"imgUrl"];
+        NSString *totalUsersNum =  [[_dataSource.attendUsers firstObject] stringValueForKey:@"totalUser"];
+        NSString *attendUsersNum =  [[_dataSource.attendUsers firstObject] stringValueForKey:@"attendUser"];
+        NSMutableDictionary *dataObject = [[NSMutableDictionary alloc] init];
+        [dataObject setValue:title forKey:@"title"];
+        [dataObject setValue:imgUrl forKey:@"imgUrl"];
+        [dataObject setValue:totalUsersNum forKey:@"totalUsersNum"];
+        [dataObject setValue:attendUsersNum forKey:@"attendUsersNum"];
+        
+        pageInfo = @{@"activityDetails":[VTJSON encodeObject:_dataSource.costActivityInfos]};
+    }
+    
+    [self openUrl:[NSURL URLWithString:[sender userInfo]
+                         relativeToURL:self.url
+                           queryValues:pageInfo] animated:YES];
+}
+
 @end

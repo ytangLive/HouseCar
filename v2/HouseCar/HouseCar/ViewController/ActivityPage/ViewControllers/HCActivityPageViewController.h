@@ -8,10 +8,14 @@
 
 #import "HCViewController.h"
 #import "HCActivityTableDataController.h"
+#import "HCActivityTabPageDataController.h"
 
 @interface HCActivityPageViewController : HCViewController <VTTableDataControllerDelegate>
 
-@property (strong, nonatomic) IBOutlet HCActivityTableDataController *tableDataController;
-@property (strong, nonatomic) IBOutlet VTDataSource *dataSource;
+@property (strong, nonatomic) IBOutlet HCActivityTabPageDataController *tabPageDataController;
+@property (strong, nonatomic) IBOutlet HCActivityTableDataController *recentTableDataController;
+@property (strong, nonatomic) IBOutlet HCActivityTableDataController *myTableDataController;
+@property (strong, nonatomic) IBOutlet VTDataSource *recentDataSource;
+@property (strong, nonatomic) IBOutlet VTDataSource *mydataSource;
 
 @end

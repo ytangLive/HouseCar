@@ -256,6 +256,15 @@
 			<key>title</key>
 			<string>搜索页面</string>
 		</dict>
+		<key>activityOrder</key>
+		<dict>
+			<key>class</key>
+			<string>HCActivityOrderViewController</string>
+			<key>view</key>
+			<string>HCActivityOrderViewController</string>
+			<key>title</key>
+			<string>活动报名</string>
+		</dict>
 		<key>servicePage</key>
 		<dict>
 			<key>class</key>

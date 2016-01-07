@@ -18,7 +18,9 @@
 #define ContentFont [UIFont systemFontOfSize:12.0f]
 
 @interface HCActivityGuidelinesViewController ()
+
 @property (nonatomic, strong)NSArray *dataObjects;
+
 @end
 
 @implementation HCActivityGuidelinesViewController

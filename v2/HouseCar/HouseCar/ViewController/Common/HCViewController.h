@@ -1,5 +1,5 @@
 /**
- *  SFViewController.h
+ *  HCViewController.h
  *  VTTeamProject
  *
  *  Created by zhang hailong on 13-7-5.

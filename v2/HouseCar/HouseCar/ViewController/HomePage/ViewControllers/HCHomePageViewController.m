@@ -25,6 +25,8 @@
     self.tableDataController.delegate = self;
     self.tableDataController.tableDatadelegate = self;
     self.tableDataController.tableView.backgroundColor = TableViewBackgroundColor;
+    [self.tableDataController useDefaultTopLoadingView:YES stockAnimation:YES];
+    [self.tableDataController useDefaultBottomLoadingView:YES stockAnimation:YES];
     
     self.tableDataController.dataUrlKey = @"carlist-interface";
     

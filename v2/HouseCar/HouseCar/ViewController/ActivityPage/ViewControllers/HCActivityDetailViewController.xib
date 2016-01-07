@@ -50,7 +50,12 @@
                                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                             <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="registration"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/activityDetail/activityOrder"/>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="doAction:" destination="-1" eventType="touchUpInside" id="lz1-96-Ub3"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g22-5Q-GOL">
                                     <rect key="frame" x="25" y="8" width="25" height="30"/>

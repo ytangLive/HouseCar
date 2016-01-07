@@ -10,4 +10,10 @@
 
 @interface HCTableDataController : VTTableDataController
 
+- (void)tabButton:(NSArray *)tabButtons clickWithButton:(UIButton *)clickButton tabCurView:(UIView *)tabCurView;
+
+- (void)useDefaultTopLoadingView:(BOOL)isUse stockAnimation:(BOOL)stockAnimation;
+
+- (void)useDefaultBottomLoadingView:(BOOL)isUse stockAnimation:(BOOL)stockAnimation;
+
 @end
