@@ -71,7 +71,7 @@
         NSMutableDictionary *dataObject = [[NSMutableDictionary alloc] init];
         [dataObject setValue:title forKey:@"title"];
         [dataObject setValue:imgUrl forKey:@"imgUrl"];
-        [dataObject setValue:totalUsersNum forKey:@"totalUsersNum"];
+        [dataObject setValue:[NSString stringWithFormat:@"/%@",totalUsersNum] forKey:@"totalUsersNum"];
         [dataObject setValue:attendUsersNum forKey:@"attendUsersNum"];
         [dataObject setValue:activityStartDate forKey:@"activityStartDate"];
         [dataObject setValue:[NSString stringWithFormat:@"￥%@",activityCost] forKey:@"activityCost"];

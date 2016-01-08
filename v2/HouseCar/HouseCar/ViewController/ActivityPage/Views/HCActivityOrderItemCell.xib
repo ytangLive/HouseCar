@@ -11,7 +11,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="421" id="Abt-ch-SOJ" customClass="HCCarOrderItemCell">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="421" id="Abt-ch-SOJ" customClass="HCActivityOrderItemCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Abt-ch-SOJ" id="CGh-oo-D8V">
@@ -82,7 +82,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gnR-Yr-v3C">
-                                <rect key="frame" x="105" y="39" width="25" height="20"/>
+                                <rect key="frame" x="106" y="39" width="25" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,7 +179,11 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="adultPlus"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="doAction:" destination="Abt-ch-SOJ" eventType="touchUpInside" id="X2t-FC-4bS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sWM-l3-vF6" customClass="VTButton">
                                                 <rect key="frame" x="195" y="11" width="30" height="30"/>
@@ -200,9 +204,13 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="adultMinus"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="doAction:" destination="Abt-ch-SOJ" eventType="touchUpInside" id="3eD-AN-xYN"/>
+                                                </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gy0-MD-2Ac" userLabel="Num Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gy0-MD-2Ac" userLabel="Num Label">
                                                 <rect key="frame" x="227" y="8" width="30" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -223,7 +231,7 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yEO-LB-ctK" userLabel="Num Label">
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yEO-LB-ctK" userLabel="Num Label">
                                                 <rect key="frame" x="227" y="8" width="30" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -249,7 +257,11 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="childMinus"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="doAction:" destination="Abt-ch-SOJ" eventType="touchUpInside" id="gp9-0r-P04"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C72-Cf-XAF" customClass="VTButton">
                                                 <rect key="frame" x="260" y="11" width="30" height="30"/>
@@ -270,7 +282,11 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="childPlus"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="doAction:" destination="Abt-ch-SOJ" eventType="touchUpInside" id="GzB-ay-4aC"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -323,7 +339,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Abt-ch-SOJ" id="pNx-Yf-ovM"/>
+                                                    <outlet property="delegate" destination="Abt-ch-SOJ" id="lbB-18-7DF"/>
                                                 </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" id="5qP-Gh-4Ff" userLabel="Line View">
@@ -351,7 +367,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
                                                 <connections>
-                                                    <outlet property="delegate" destination="Abt-ch-SOJ" id="qLT-4J-ymE"/>
+                                                    <outlet property="delegate" destination="Abt-ch-SOJ" id="mvm-rl-NVs"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
@@ -368,9 +384,6 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="dataOutletContainer" destination="PTb-xx-KVp" id="wFY-G1-Wfl"/>
-                <outlet property="daysLabel" destination="Gy0-MD-2Ac" id="bxT-pe-w1J"/>
-                <outlet property="priceLabel" destination="TRl-gQ-DL8" id="Bym-pA-0z1"/>
-                <outlet property="titleLabel" destination="287-ga-qjX" id="sdo-kp-Yg7"/>
             </connections>
             <point key="canvasLocation" x="272" y="253"/>
         </tableViewCell>
@@ -380,6 +393,8 @@
                 <outletCollection property="dataOutlets" destination="K56-c6-LEq" id="OC6-u9-mXi"/>
                 <outletCollection property="dataOutlets" destination="Nrm-KV-ub1" id="suA-rc-i66"/>
                 <outletCollection property="dataOutlets" destination="Frz-I3-NNC" id="xcc-o8-dSv"/>
+                <outletCollection property="dataOutlets" destination="ogJ-BH-7pm" id="ekQ-0a-8GH"/>
+                <outletCollection property="dataOutlets" destination="bM6-Ji-hT0" id="CRM-r7-xhm"/>
             </connections>
         </customObject>
         <customObject id="jDQ-X0-qDL" userLabel="Imageview Outlet" customClass="VTDataOutlet">
@@ -406,7 +421,7 @@
                 <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.totalUsersNum"/>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="view" destination="287-ga-qjX" id="4fO-bW-6tk"/>
+                <outlet property="view" destination="gnR-Yr-v3C" id="e57-es-4ES"/>
             </connections>
         </customObject>
         <customObject id="ogJ-BH-7pm" userLabel="attendUsersNum Outlet" customClass="VTDataOutlet">
@@ -415,7 +430,7 @@
                 <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.attendUsersNum"/>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="view" destination="287-ga-qjX" id="hTI-jl-Gxb"/>
+                <outlet property="view" destination="TaN-Ce-tsL" id="abA-qs-wEX"/>
             </connections>
         </customObject>
         <customObject id="Frz-I3-NNC" userLabel="activityStartDate Outlet" customClass="VTDataOutlet">

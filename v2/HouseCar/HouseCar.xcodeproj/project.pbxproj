@@ -401,6 +401,9 @@
 		F6498A381BF5F21200AB2BF7 /* HCFocusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6498A371BF5F21200AB2BF7 /* HCFocusCell.m */; };
 		F6498A391BF5F21200AB2BF7 /* HCFocusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6498A371BF5F21200AB2BF7 /* HCFocusCell.m */; };
 		F6498A3A1BF5F21200AB2BF7 /* HCFocusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6498A371BF5F21200AB2BF7 /* HCFocusCell.m */; };
+		F651D2A91C3FEA440097362B /* HCActivityOrderItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F651D2A81C3FEA440097362B /* HCActivityOrderItemCell.m */; };
+		F651D2AA1C3FEA440097362B /* HCActivityOrderItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F651D2A81C3FEA440097362B /* HCActivityOrderItemCell.m */; };
+		F651D2AB1C3FEA440097362B /* HCActivityOrderItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F651D2A81C3FEA440097362B /* HCActivityOrderItemCell.m */; };
 		F6578BF01C1AB64A00280453 /* HCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6578BEE1C1AB64A00280453 /* HCSearchViewController.m */; };
 		F6578BF11C1AB64A00280453 /* HCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6578BEE1C1AB64A00280453 /* HCSearchViewController.m */; };
 		F6578BF21C1AB64A00280453 /* HCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6578BEE1C1AB64A00280453 /* HCSearchViewController.m */; };
@@ -1009,6 +1012,8 @@
 		F6498A1F1BF5F1C600AB2BF7 /* HCGuideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCGuideViewController.xib; sourceTree = "<group>"; };
 		F6498A361BF5F21200AB2BF7 /* HCFocusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCFocusCell.h; sourceTree = "<group>"; };
 		F6498A371BF5F21200AB2BF7 /* HCFocusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCFocusCell.m; sourceTree = "<group>"; };
+		F651D2A71C3FEA440097362B /* HCActivityOrderItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCActivityOrderItemCell.h; sourceTree = "<group>"; };
+		F651D2A81C3FEA440097362B /* HCActivityOrderItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCActivityOrderItemCell.m; sourceTree = "<group>"; };
 		F6578BED1C1AB64A00280453 /* HCSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSearchViewController.h; sourceTree = "<group>"; };
 		F6578BEE1C1AB64A00280453 /* HCSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSearchViewController.m; sourceTree = "<group>"; };
 		F6578BEF1C1AB64A00280453 /* HCSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCSearchViewController.xib; sourceTree = "<group>"; };
@@ -1444,6 +1449,8 @@
 				F6E41FCC1C2D16BC00800631 /* HCActivityDetailLocationCell.xib */,
 				F6E41FD01C2D174400800631 /* HCActivityDetailAttendInfoCell.xib */,
 				F6E41FD11C2D174400800631 /* HCActivityDetailTravelRouteCell.xib */,
+				F651D2A71C3FEA440097362B /* HCActivityOrderItemCell.h */,
+				F651D2A81C3FEA440097362B /* HCActivityOrderItemCell.m */,
 				F6653B5E1C3E893900F2F647 /* HCActivityOrderItemCell.xib */,
 				F6E41FC61C2CF3DE00800631 /* HCTableHeaderView.h */,
 				F6E41FC71C2CF3DE00800631 /* HCTableHeaderView.m */,
@@ -2864,6 +2871,7 @@
 				F60910421C2BDA4500C61375 /* HCActivityDetailTableDataController.m in Sources */,
 				F66525911C10494A008E18D4 /* KalDataSource.m in Sources */,
 				F6C299A11BF4C57800A88B5E /* UIDevice+IPAddress.m in Sources */,
+				F651D2A91C3FEA440097362B /* HCActivityOrderItemCell.m in Sources */,
 				F6409DC71C0DB406002AB471 /* HCCarOrderTableDataController.m in Sources */,
 				F6424C0A1C0448F000D0F08D /* HCAnimationView.m in Sources */,
 				F6C2998F1BF4C57800A88B5E /* NSString+URLCoding.m in Sources */,
@@ -2988,6 +2996,7 @@
 				F6C299931BF4C57800A88B5E /* HCAutoLabel.m in Sources */,
 				F6409DC01C0D9EE3002AB471 /* HCCarOrderViewcontroller.m in Sources */,
 				F65DCEBC1C3D2FAF00F778EF /* HCActivityOrderViewController.m in Sources */,
+				F651D2AA1C3FEA440097362B /* HCActivityOrderItemCell.m in Sources */,
 				F6FC33911BFA012A00B81B45 /* HCTableFocusViewController.m in Sources */,
 				F6CB1DE01C0F1CB000718746 /* HCCarOrderItemCell.m in Sources */,
 				F66525981C10494A008E18D4 /* KalLogic.m in Sources */,
@@ -3076,6 +3085,7 @@
 				F6C299941BF4C57800A88B5E /* HCAutoLabel.m in Sources */,
 				F6409DC11C0D9EE3002AB471 /* HCCarOrderViewcontroller.m in Sources */,
 				F65DCEBD1C3D2FAF00F778EF /* HCActivityOrderViewController.m in Sources */,
+				F651D2AB1C3FEA440097362B /* HCActivityOrderItemCell.m in Sources */,
 				F6FC33921BFA012A00B81B45 /* HCTableFocusViewController.m in Sources */,
 				F6CB1DE11C0F1CB000718746 /* HCCarOrderItemCell.m in Sources */,
 				F66525991C10494A008E18D4 /* KalLogic.m in Sources */,

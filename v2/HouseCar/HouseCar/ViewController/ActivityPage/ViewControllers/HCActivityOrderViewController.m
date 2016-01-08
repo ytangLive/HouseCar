@@ -13,6 +13,7 @@
 @interface HCActivityOrderViewController () <VTTableViewCellDelegate>
 
 @property (nonatomic, strong)NSArray *dataObjects;
+@property (nonatomic) UIEdgeInsets tableViewContentInset;
 
 @end
 
@@ -27,6 +28,12 @@
     if(jsonStr){
         _dataObjects = [VTJSON decodeText:jsonStr];
     }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShown:) name:UIKeyboardWillShowNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter]  addObserver:self selector:@selector(keyboardWillHidden:) name:UIKeyboardWillHideNotification object:nil];
+    
+    _tableViewContentInset = _tableView.contentInset;
     
     _tableView.backgroundColor = TableViewBackgroundColor;
     
@@ -93,8 +100,65 @@
 - (void)vtTableViewCell:(VTTableViewCell *)tableViewCell doAction:(id)action
 {
     NSString *actionName = [action actionName];
-    if([actionName isEqualToString:@""]){
+    UILabel *adultLabel = [tableViewCell viewWithTag:100];
+    UILabel *childLabel = [tableViewCell viewWithTag:101];
+    
+    if([actionName isEqualToString:@"adultPlus"]){
+        NSInteger adultCount = [adultLabel.text integerValue];
+        adultCount += 1;
+        if(adultCount > 99){
+            adultCount = 99;
+        }
+        adultLabel.text = [NSString stringWithFormat:@"%ld",(long)adultCount];
         
+    }else if([actionName isEqualToString:@"adultMinus"]){
+        
+        NSInteger adultCount = [adultLabel.text integerValue];
+        adultCount -= 1;
+        if(adultCount < 0){
+            adultCount = 0;
+        }
+        adultLabel.text = [NSString stringWithFormat:@"%ld",(long)adultCount];
+        
+    }else if([actionName isEqualToString:@"childPlus"]){
+        
+        NSInteger childCount = [childLabel.text integerValue];
+        childCount += 1;
+        if(childCount > 99){
+            childCount = 99;
+        }
+        childLabel.text = [NSString stringWithFormat:@"%ld",(long)childCount];
+        
+    }else if([actionName isEqualToString:@"childMinus"]){
+        
+        NSInteger childCount = [childLabel.text integerValue];
+        childCount -= 1;
+        if(childCount < 0){
+            childCount = 0;
+        }
+        childLabel.text = [NSString stringWithFormat:@"%ld",(long)childCount];
+    }
+}
+
+#pragma mark - KeyboardNotification
+
+- (void) keyboardWillShown:(NSNotification *)notif
+{
+    
+    NSDictionary *info = [notif userInfo];
+    NSValue *value = [info objectForKey:UIKeyboardFrameBeginUserInfoKey];
+    CGRect keyboardRect = [value CGRectValue];
+    CGSize keyboardSize = keyboardRect.size;
+    
+    if(_tableView){
+        [_tableView setContentInset:UIEdgeInsetsMake(_tableViewContentInset.top, _tableViewContentInset.left, keyboardSize.height + 20, _tableViewContentInset.right)];
+    }
+}
+
+- (void) keyboardWillHidden:(NSNotification *)notif
+{
+    if(_tableView){
+        [_tableView setContentInset:_tableViewContentInset];
     }
 }
 
