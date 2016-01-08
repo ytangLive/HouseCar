@@ -16,7 +16,7 @@
     if(self){
         self.layer.cornerRadius = 5.0;
         self.layer.masksToBounds = YES;
-        self.layer.borderWidth = 1.0;
+        self.layer.borderWidth = 0.8;
         self.layer.borderColor = COLOR_RGB(190, 190, 190).CGColor;
     }
     return self;

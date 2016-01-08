@@ -11,5 +11,6 @@
 @interface HCActivityOrderViewController : HCViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, weak) IBOutlet VTTableView *tableView;
+@property (nonatomic, weak) IBOutlet UILabel *totalLabel;
 
 @end

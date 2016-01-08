@@ -54,9 +54,11 @@
     if(!_attendInfos){
         _attendInfos = [[NSMutableArray alloc] init];
         NSMutableDictionary *attendInfo = [NSMutableDictionary dictionary];
+        [attendInfo setValue:@"2015年12月10日" forKey:@"activityStartDate"];
         [attendInfo setValue:@"2015年12月10日—2016年3月15日" forKey:@"activityDate"];
         [attendInfo setValue:@"2015年11月10日—2016年1月15日" forKey:@"attendDate"];
-        [attendInfo setValue:@"￥10000/人" forKey:@"activityCost"];
+        [attendInfo setValue:@"12000/人" forKey:@"activityCostText"];
+        [attendInfo setValue:@"12000" forKey:@"activityCost"];
         [_attendInfos addObject:attendInfo];
     }
     return _attendInfos;

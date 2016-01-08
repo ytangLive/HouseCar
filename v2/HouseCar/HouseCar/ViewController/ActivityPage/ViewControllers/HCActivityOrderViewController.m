@@ -8,6 +8,8 @@
 
 #import "HCActivityOrderViewController.h"
 
+#define ActivityOrderCellHeight 420
+
 @interface HCActivityOrderViewController () <VTTableViewCellDelegate>
 
 @property (nonatomic, strong)NSArray *dataObjects;
@@ -26,9 +28,7 @@
         _dataObjects = [VTJSON decodeText:jsonStr];
     }
     
-    _tableView.backgroundColor = DefaultBackgroundColor;
-    _tableView.dataSource = self;
-    _tableView.delegate = self;
+    _tableView.backgroundColor = TableViewBackgroundColor;
     
     [_tableView reloadData];
 }
@@ -48,14 +48,15 @@
 
 #pragma mark - table view delegate
 
--(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     
     return [self.dataObjects count];
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return tableView.rowHeight;
+    return ActivityOrderCellHeight;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -91,7 +92,10 @@
 
 - (void)vtTableViewCell:(VTTableViewCell *)tableViewCell doAction:(id)action
 {
-    
+    NSString *actionName = [action actionName];
+    if([actionName isEqualToString:@""]){
+        
+    }
 }
 
 @end

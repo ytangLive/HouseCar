@@ -66,13 +66,19 @@
         NSString *imgUrl = [_dataSource.headerViewDic stringValueForKey:@"imgUrl"];
         NSString *totalUsersNum =  [[_dataSource.attendUsers firstObject] stringValueForKey:@"totalUser"];
         NSString *attendUsersNum =  [[_dataSource.attendUsers firstObject] stringValueForKey:@"attendUser"];
+        NSString *activityStartDate = [[_dataSource.attendInfos firstObject] stringValueForKey:@"activityStartDate"];
+        NSString *activityCost = [[_dataSource.attendInfos firstObject] stringValueForKey:@"activityCost"];
         NSMutableDictionary *dataObject = [[NSMutableDictionary alloc] init];
         [dataObject setValue:title forKey:@"title"];
         [dataObject setValue:imgUrl forKey:@"imgUrl"];
         [dataObject setValue:totalUsersNum forKey:@"totalUsersNum"];
         [dataObject setValue:attendUsersNum forKey:@"attendUsersNum"];
+        [dataObject setValue:activityStartDate forKey:@"activityStartDate"];
+        [dataObject setValue:[NSString stringWithFormat:@"￥%@",activityCost] forKey:@"activityCost"];
         
-        pageInfo = @{@"activityDetails":[VTJSON encodeObject:_dataSource.costActivityInfos]};
+        NSArray *dataObjects = @[dataObject];
+        
+        pageInfo = @{@"activityDetails":[VTJSON encodeObject:dataObjects]};
     }
     
     [self openUrl:[NSURL URLWithString:[sender userInfo]

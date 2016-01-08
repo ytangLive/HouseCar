@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HCActivityOrderViewController">
             <connections>
+                <outlet property="tableView" destination="yzY-y3-xTT" id="Zx7-vd-I23"/>
+                <outlet property="totalLabel" destination="yBH-Qy-oQS" id="bng-0c-C3g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,6 +29,9 @@
                                 <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="url"/>
                                 <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="."/>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="doAction:" destination="-1" eventType="touchUpInside" id="NfH-d1-ctF"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动报名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hJF-Qa-rgg">
                             <rect key="frame" x="0.0" y="16" width="320" height="49"/>
@@ -50,7 +55,53 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <inset key="contentInset" minX="0.0" minY="0.0" maxX="0.0" maxY="50"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="KnZ-ho-mBS"/>
+                                <outlet property="delegate" destination="-1" id="B5g-Ft-vWF"/>
+                            </connections>
                         </tableView>
+                        <view contentMode="scaleToFill" id="X8h-NZ-Ip9">
+                            <rect key="frame" x="0.0" y="454" width="320" height="50"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MmM-9B-AnJ" customClass="VTButton">
+                                    <rect key="frame" x="195" y="10" width="95" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="我要报名"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="commitRegistration"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="doAction:" destination="-1" eventType="touchUpInside" id="o8b-sE-Es7"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="00F-70-Qzb">
+                                    <rect key="frame" x="25" y="8" width="25" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yBH-Qy-oQS">
+                                    <rect key="frame" x="46" y="10" width="104" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.90980392160000001" green="0.46274509800000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>

@@ -12,10 +12,10 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="421" id="Abt-ch-SOJ" customClass="HCCarOrderItemCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="421"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Abt-ch-SOJ" id="CGh-oo-D8V">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="419"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" id="LMJ-GB-A8l">
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bdy-aL-fqb" customClass="VTButton">
-                                <rect key="frame" x="249.99999794512473" y="10" width="60" height="20"/>
+                                <rect key="frame" x="250" y="10" width="60" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.8901960784313725" green="0.36862745098039218" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
@@ -50,9 +50,9 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line2.png" id="RaD-o4-XjG">
                                 <rect key="frame" x="90" y="88" width="220" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fIn-NA-FR9" customClass="VTImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fIn-NA-FR9" customClass="HCCircleView">
                                 <rect key="frame" x="10" y="10" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -88,8 +88,8 @@
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出游时间：2015年11月10日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ohk-SQ-B2p">
-                                <rect key="frame" x="90" y="93" width="176" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出游时间：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ohk-SQ-B2p">
+                                <rect key="frame" x="90" y="93" width="66" height="20"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -109,8 +109,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015年11月10日" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aKI-lI-Ohb">
+                                <rect key="frame" x="155" y="93" width="155" height="20"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <view contentMode="scaleToFill" id="wfL-ma-1UY">
                         <rect key="frame" x="0.0" y="126" width="320" height="140"/>
@@ -130,11 +137,11 @@
                                 <rect key="frame" x="28" y="4" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="7hK-jh-Sst" customClass="HCCardView">
-                                <rect key="frame" x="8" y="33" width="304" height="107"/>
+                                <rect key="frame" x="8" y="33" width="304" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="ZGt-oG-JJs">
@@ -148,15 +155,17 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line2.png" id="hyL-XB-xbE">
-                                                <rect key="frame" x="10" y="49" width="280" height="1"/>
+                                            <view contentMode="scaleToFill" id="VVe-md-4Bm" userLabel="Line View">
+                                                <rect key="frame" x="10" y="49" width="284" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
+                                                <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZZy-6K-gxy" customClass="VTButton">
-                                                <rect key="frame" x="260" y="10" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.36862745099999999" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="260" y="11" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -173,10 +182,11 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sWM-l3-vF6" customClass="VTButton">
-                                                <rect key="frame" x="195" y="10" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.36862745099999999" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="195" y="11" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                 <state key="normal" title="-">
                                                     <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -200,7 +210,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="vRc-eq-E1y">
                                         <rect key="frame" x="0.0" y="50" width="304" height="50"/>
@@ -213,10 +223,6 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line2.png" id="WxK-cF-k4f">
-                                                <rect key="frame" x="10" y="49" width="280" height="1"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yEO-LB-ctK" userLabel="Num Label">
                                                 <rect key="frame" x="227" y="8" width="30" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
@@ -225,10 +231,11 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MOJ-ol-dya" customClass="VTButton">
-                                                <rect key="frame" x="195" y="10" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.36862745099999999" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="195" y="11" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                 <state key="normal" title="-">
                                                     <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -245,10 +252,11 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C72-Cf-XAF" customClass="VTButton">
-                                                <rect key="frame" x="260" y="10" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.89019607840000003" green="0.36862745099999999" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="260" y="11" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
@@ -265,10 +273,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -291,11 +299,11 @@
                                 <rect key="frame" x="28" y="4" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.73333333329999995" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" id="JoG-Nr-fQZ" customClass="HCCardView">
-                                <rect key="frame" x="8" y="40" width="304" height="100"/>
+                                <rect key="frame" x="8" y="33" width="304" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="IN8-Ek-ZFB">
@@ -318,12 +326,13 @@
                                                     <outlet property="delegate" destination="Abt-ch-SOJ" id="pNx-Yf-ovM"/>
                                                 </connections>
                                             </textField>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line2.png" id="KMu-F9-ZaI">
-                                                <rect key="frame" x="10" y="49" width="280" height="1"/>
+                                            <view contentMode="scaleToFill" id="5qP-Gh-4Ff" userLabel="Line View">
+                                                <rect key="frame" x="10" y="49" width="284" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                            </imageView>
+                                                <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="kBi-Hj-Rgc">
                                         <rect key="frame" x="0.0" y="50" width="304" height="50"/>
@@ -346,24 +355,87 @@
                                                 </connections>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>
             </tableViewCellContentView>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
+                <outlet property="dataOutletContainer" destination="PTb-xx-KVp" id="wFY-G1-Wfl"/>
                 <outlet property="daysLabel" destination="Gy0-MD-2Ac" id="bxT-pe-w1J"/>
                 <outlet property="priceLabel" destination="TRl-gQ-DL8" id="Bym-pA-0z1"/>
                 <outlet property="titleLabel" destination="287-ga-qjX" id="sdo-kp-Yg7"/>
             </connections>
-            <point key="canvasLocation" x="272" y="253.5"/>
+            <point key="canvasLocation" x="272" y="253"/>
         </tableViewCell>
+        <customObject id="PTb-xx-KVp" customClass="VTDataOutletContainer">
+            <connections>
+                <outletCollection property="dataOutlets" destination="jDQ-X0-qDL" id="Q6U-kC-w0e"/>
+                <outletCollection property="dataOutlets" destination="K56-c6-LEq" id="OC6-u9-mXi"/>
+                <outletCollection property="dataOutlets" destination="Nrm-KV-ub1" id="suA-rc-i66"/>
+                <outletCollection property="dataOutlets" destination="Frz-I3-NNC" id="xcc-o8-dSv"/>
+            </connections>
+        </customObject>
+        <customObject id="jDQ-X0-qDL" userLabel="Imageview Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="src"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.imgUrl"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="fIn-NA-FR9" id="IYQ-iL-ydE"/>
+            </connections>
+        </customObject>
+        <customObject id="K56-c6-LEq" userLabel="title Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.title"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="287-ga-qjX" id="ZNd-Ng-LPe"/>
+            </connections>
+        </customObject>
+        <customObject id="bM6-Ji-hT0" userLabel="totalUsersNum Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.totalUsersNum"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="287-ga-qjX" id="4fO-bW-6tk"/>
+            </connections>
+        </customObject>
+        <customObject id="ogJ-BH-7pm" userLabel="attendUsersNum Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.attendUsersNum"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="287-ga-qjX" id="hTI-jl-Gxb"/>
+            </connections>
+        </customObject>
+        <customObject id="Frz-I3-NNC" userLabel="activityStartDate Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.activityStartDate"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="aKI-lI-Ohb" id="KCn-MP-9vc"/>
+            </connections>
+        </customObject>
+        <customObject id="Nrm-KV-ub1" userLabel="activityCost Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.activityCost"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="TRl-gQ-DL8" id="8SI-rj-Ean"/>
+            </connections>
+        </customObject>
     </objects>
     <resources>
         <image name="line2.png" width="213" height="1"/>
