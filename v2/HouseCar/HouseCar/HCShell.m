@@ -26,6 +26,8 @@ CGFloat SFBottomOffsetHeight = 0;
     
 }
 
+@property(nonatomic, assign)NSInteger tabbarItemSelectedIndex;
+
 @end
 
 @implementation HCShell
@@ -201,6 +203,22 @@ CGFloat SFBottomOffsetHeight = 0;
         [viewController setParentController:self.rootViewController];
         [_window setRootViewController:viewController];
     }
+    
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0
+        && [self.rootViewController isKindOfClass:[VTHeapViewController class]]
+        && [[[self rootViewController] bottomViewController] isKindOfClass:[VTTabBarController class]]) {
+        VTTabBarController * tabBarController = (VTTabBarController *)[[self rootViewController] bottomViewController];
+        if (tabBarController && !tabBarController.delegate) {
+            [tabBarController setDelegate:self];
+            if (tabBarController.selectedViewController) {
+                self.tabbarItemSelectedIndex = 999;
+                if ([self respondsToSelector:@selector(tabBarController:didSelectViewController:)]) {
+                    [self tabBarController:tabBarController didSelectViewController:tabBarController.selectedViewController];
+                }
+            }
+        }
+    }
+
 }
 
 -(void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings{
@@ -582,6 +600,89 @@ CGFloat SFBottomOffsetHeight = 0;
             }
         }
     });
+}
+
+
+#pragma mark - 记录iOS7以后tabbarController点击event事件（iOS7以后SFTabViewController被弃用）
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(nonnull UIViewController *)viewController
+{
+    if ([tabBarController.viewControllers containsObject:viewController]) {
+        NSInteger selectedIndex = [tabBarController.viewControllers indexOfObject:viewController];
+        switch (selectedIndex) {
+            case 0:
+            {
+                
+            }
+                break;
+            case 1:
+            {
+                
+            }
+                break;
+            case 2:
+            {
+                
+                
+            }
+                break;
+            case 3:
+            {
+                
+            }
+                break;
+            case 4:
+            {
+                [[self rootViewController] openUrl:[NSURL URLWithString:@"present://root/nav/loginHomePage"]
+                                          animated:YES];
+                return NO;
+            }
+                break;
+            default:
+                break;
+        }
+    }
+    return YES;
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    if ([tabBarController.viewControllers containsObject:viewController]) {
+        NSInteger selectedIndex = [tabBarController.viewControllers indexOfObject:viewController];
+        if(self.tabbarItemSelectedIndex!= selectedIndex){
+            switch (selectedIndex) {
+                case 0:
+                {
+                   
+                }
+                    break;
+                case 1:
+                {
+                   
+                }
+                    break;
+                case 2:
+                {
+                    
+                    
+                }
+                    break;
+                case 3:
+                {
+                   
+                }
+                    break;
+                case 4:
+                {
+                    
+                }
+                    break;
+                default:
+                    break;
+            }
+            
+        }
+        self.tabbarItemSelectedIndex = selectedIndex;
+    }
 }
 
 @end

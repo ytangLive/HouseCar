@@ -139,7 +139,7 @@
 		<key>tab</key>
 		<dict>
 			<key>class</key>
-			<string>HCTabViewController</string>
+			<string>HCTabBarController</string>
 			<key>view</key>
 			<string>HCTabViewController</string>
 			<key>iOS7</key>
@@ -336,6 +336,33 @@
 			<string>HCSearchViewController</string>
 			<key>class</key>
 			<string>HCSearchViewController</string>
+		</dict>
+		<key>loginHomePage</key>
+		<dict>
+			<key>title</key>
+			<string>登陆首页</string>
+			<key>view</key>
+			<string>HCLoginHomePageViewController</string>
+			<key>class</key>
+			<string>HCLoginHomePageViewController</string>
+		</dict>
+		<key>loginPage</key>
+		<dict>
+			<key>title</key>
+			<string>登陆页</string>
+			<key>view</key>
+			<string>HCLoginViewController</string>
+			<key>class</key>
+			<string>HCLoginViewController</string>
+		</dict>
+		<key>registerPage</key>
+		<dict>
+			<key>title</key>
+			<string>登陆页</string>
+			<key>view</key>
+			<string>HCRegisterPageViewController</string>
+			<key>class</key>
+			<string>HCRegisterPageViewController</string>
 		</dict>
 	</dict>
 	<key>app-db</key>

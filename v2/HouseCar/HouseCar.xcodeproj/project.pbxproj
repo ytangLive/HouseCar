@@ -746,6 +746,48 @@
 		F6D5A4CF1BFC616E006CA72F /* icon_searcbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D5A4CE1BFC616E006CA72F /* icon_searcbar@2x.png */; };
 		F6D5A4D01BFC616E006CA72F /* icon_searcbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D5A4CE1BFC616E006CA72F /* icon_searcbar@2x.png */; };
 		F6D5A4D11BFC616E006CA72F /* icon_searcbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D5A4CE1BFC616E006CA72F /* icon_searcbar@2x.png */; };
+		F6DDD4171C4358FA00AB985E /* HCLoginHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD4151C4358FA00AB985E /* HCLoginHomePageViewController.m */; };
+		F6DDD4181C4358FA00AB985E /* HCLoginHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD4151C4358FA00AB985E /* HCLoginHomePageViewController.m */; };
+		F6DDD4191C4358FA00AB985E /* HCLoginHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD4151C4358FA00AB985E /* HCLoginHomePageViewController.m */; };
+		F6DDD41A1C4358FA00AB985E /* HCLoginHomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4161C4358FA00AB985E /* HCLoginHomePageViewController.xib */; };
+		F6DDD41B1C4358FA00AB985E /* HCLoginHomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4161C4358FA00AB985E /* HCLoginHomePageViewController.xib */; };
+		F6DDD41C1C4358FA00AB985E /* HCLoginHomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4161C4358FA00AB985E /* HCLoginHomePageViewController.xib */; };
+		F6DDD4221C436E3C00AB985E /* loginbackground1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD41E1C436E3C00AB985E /* loginbackground1@2x.png */; };
+		F6DDD4231C436E3C00AB985E /* loginbackground1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD41E1C436E3C00AB985E /* loginbackground1@2x.png */; };
+		F6DDD4241C436E3C00AB985E /* loginbackground1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD41E1C436E3C00AB985E /* loginbackground1@2x.png */; };
+		F6DDD4251C436E3C00AB985E /* loginbackground1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD41F1C436E3C00AB985E /* loginbackground1@3x.png */; };
+		F6DDD4261C436E3C00AB985E /* loginbackground1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD41F1C436E3C00AB985E /* loginbackground1@3x.png */; };
+		F6DDD4271C436E3C00AB985E /* loginbackground1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD41F1C436E3C00AB985E /* loginbackground1@3x.png */; };
+		F6DDD4281C436E3C00AB985E /* loginbackground2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4201C436E3C00AB985E /* loginbackground2@2x.png */; };
+		F6DDD4291C436E3C00AB985E /* loginbackground2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4201C436E3C00AB985E /* loginbackground2@2x.png */; };
+		F6DDD42A1C436E3C00AB985E /* loginbackground2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4201C436E3C00AB985E /* loginbackground2@2x.png */; };
+		F6DDD42B1C436E3C00AB985E /* loginbackground2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4211C436E3C00AB985E /* loginbackground2@3x.png */; };
+		F6DDD42C1C436E3C00AB985E /* loginbackground2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4211C436E3C00AB985E /* loginbackground2@3x.png */; };
+		F6DDD42D1C436E3C00AB985E /* loginbackground2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4211C436E3C00AB985E /* loginbackground2@3x.png */; };
+		F6DDD4371C43BA8500AB985E /* HCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD4351C43BA8500AB985E /* HCLoginViewController.m */; };
+		F6DDD4381C43BA8500AB985E /* HCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD4351C43BA8500AB985E /* HCLoginViewController.m */; };
+		F6DDD4391C43BA8500AB985E /* HCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD4351C43BA8500AB985E /* HCLoginViewController.m */; };
+		F6DDD43A1C43BA8500AB985E /* HCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4361C43BA8500AB985E /* HCLoginViewController.xib */; };
+		F6DDD43B1C43BA8500AB985E /* HCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4361C43BA8500AB985E /* HCLoginViewController.xib */; };
+		F6DDD43C1C43BA8500AB985E /* HCLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4361C43BA8500AB985E /* HCLoginViewController.xib */; };
+		F6DDD43F1C43C00B00AB985E /* password_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD43D1C43C00B00AB985E /* password_icon@2x.png */; };
+		F6DDD4401C43C00B00AB985E /* password_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD43D1C43C00B00AB985E /* password_icon@2x.png */; };
+		F6DDD4411C43C00B00AB985E /* password_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD43D1C43C00B00AB985E /* password_icon@2x.png */; };
+		F6DDD4421C43C00B00AB985E /* user_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD43E1C43C00B00AB985E /* user_icon@2x.png */; };
+		F6DDD4431C43C00B00AB985E /* user_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD43E1C43C00B00AB985E /* user_icon@2x.png */; };
+		F6DDD4441C43C00B00AB985E /* user_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD43E1C43C00B00AB985E /* user_icon@2x.png */; };
+		F6DDD4481C43D5E700AB985E /* HCRegisterPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD4461C43D5E700AB985E /* HCRegisterPageViewController.m */; };
+		F6DDD4491C43D5E700AB985E /* HCRegisterPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD4461C43D5E700AB985E /* HCRegisterPageViewController.m */; };
+		F6DDD44A1C43D5E700AB985E /* HCRegisterPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD4461C43D5E700AB985E /* HCRegisterPageViewController.m */; };
+		F6DDD44B1C43D5E700AB985E /* HCRegisterPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4471C43D5E700AB985E /* HCRegisterPageViewController.xib */; };
+		F6DDD44C1C43D5E700AB985E /* HCRegisterPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4471C43D5E700AB985E /* HCRegisterPageViewController.xib */; };
+		F6DDD44D1C43D5E700AB985E /* HCRegisterPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4471C43D5E700AB985E /* HCRegisterPageViewController.xib */; };
+		F6DDD4581C43E0DD00AB985E /* selected_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4561C43E0DD00AB985E /* selected_circle@2x.png */; };
+		F6DDD4591C43E0DD00AB985E /* selected_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4561C43E0DD00AB985E /* selected_circle@2x.png */; };
+		F6DDD45A1C43E0DD00AB985E /* selected_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4561C43E0DD00AB985E /* selected_circle@2x.png */; };
+		F6DDD45B1C43E0DD00AB985E /* unselected _circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4571C43E0DD00AB985E /* unselected _circle@2x.png */; };
+		F6DDD45C1C43E0DD00AB985E /* unselected _circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4571C43E0DD00AB985E /* unselected _circle@2x.png */; };
+		F6DDD45D1C43E0DD00AB985E /* unselected _circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6DDD4571C43E0DD00AB985E /* unselected _circle@2x.png */; };
 		F6E06BE91C03132400D95554 /* HCCarBookItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E06BE81C03132400D95554 /* HCCarBookItemCell.xib */; };
 		F6E06BEA1C03132400D95554 /* HCCarBookItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E06BE81C03132400D95554 /* HCCarBookItemCell.xib */; };
 		F6E06BEB1C03132400D95554 /* HCCarBookItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E06BE81C03132400D95554 /* HCCarBookItemCell.xib */; };
@@ -1185,6 +1227,23 @@
 		F6D5A4C61BFC60AA006CA72F /* HCSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSearchBarView.m; sourceTree = "<group>"; };
 		F6D5A4CA1BFC6132006CA72F /* search_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_icon@2x.png"; sourceTree = "<group>"; };
 		F6D5A4CE1BFC616E006CA72F /* icon_searcbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_searcbar@2x.png"; sourceTree = "<group>"; };
+		F6DDD4141C4358FA00AB985E /* HCLoginHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCLoginHomePageViewController.h; sourceTree = "<group>"; };
+		F6DDD4151C4358FA00AB985E /* HCLoginHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCLoginHomePageViewController.m; sourceTree = "<group>"; };
+		F6DDD4161C4358FA00AB985E /* HCLoginHomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCLoginHomePageViewController.xib; sourceTree = "<group>"; };
+		F6DDD41E1C436E3C00AB985E /* loginbackground1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginbackground1@2x.png"; sourceTree = "<group>"; };
+		F6DDD41F1C436E3C00AB985E /* loginbackground1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginbackground1@3x.png"; sourceTree = "<group>"; };
+		F6DDD4201C436E3C00AB985E /* loginbackground2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginbackground2@2x.png"; sourceTree = "<group>"; };
+		F6DDD4211C436E3C00AB985E /* loginbackground2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginbackground2@3x.png"; sourceTree = "<group>"; };
+		F6DDD4341C43BA8500AB985E /* HCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCLoginViewController.h; sourceTree = "<group>"; };
+		F6DDD4351C43BA8500AB985E /* HCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCLoginViewController.m; sourceTree = "<group>"; };
+		F6DDD4361C43BA8500AB985E /* HCLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCLoginViewController.xib; sourceTree = "<group>"; };
+		F6DDD43D1C43C00B00AB985E /* password_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "password_icon@2x.png"; sourceTree = "<group>"; };
+		F6DDD43E1C43C00B00AB985E /* user_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_icon@2x.png"; sourceTree = "<group>"; };
+		F6DDD4451C43D5E700AB985E /* HCRegisterPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCRegisterPageViewController.h; sourceTree = "<group>"; };
+		F6DDD4461C43D5E700AB985E /* HCRegisterPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCRegisterPageViewController.m; sourceTree = "<group>"; };
+		F6DDD4471C43D5E700AB985E /* HCRegisterPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCRegisterPageViewController.xib; sourceTree = "<group>"; };
+		F6DDD4561C43E0DD00AB985E /* selected_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selected_circle@2x.png"; sourceTree = "<group>"; };
+		F6DDD4571C43E0DD00AB985E /* unselected _circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "unselected _circle@2x.png"; sourceTree = "<group>"; };
 		F6E06BE81C03132400D95554 /* HCCarBookItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCCarBookItemCell.xib; sourceTree = "<group>"; };
 		F6E06BEC1C0313E900D95554 /* HCCarBookMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCCarBookMenuCell.xib; sourceTree = "<group>"; };
 		F6E06BF01C031E5A00D95554 /* line2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line2.png; sourceTree = "<group>"; };
@@ -1484,9 +1543,17 @@
 		F61572D11C16AC75002507AC /* Resorce */ = {
 			isa = PBXGroup;
 			children = (
+				F6DDD4561C43E0DD00AB985E /* selected_circle@2x.png */,
+				F6DDD4571C43E0DD00AB985E /* unselected _circle@2x.png */,
+				F6DDD43E1C43C00B00AB985E /* user_icon@2x.png */,
+				F6DDD43D1C43C00B00AB985E /* password_icon@2x.png */,
 				F6AF52251C293E3F0064D099 /* icon_order@2x.png */,
 				F6AB7EC71C280C190031D58D /* default_background.png */,
 				F6AB7ECB1C280D910031D58D /* icon_setup@2x.png */,
+				F6DDD41E1C436E3C00AB985E /* loginbackground1@2x.png */,
+				F6DDD41F1C436E3C00AB985E /* loginbackground1@3x.png */,
+				F6DDD4201C436E3C00AB985E /* loginbackground2@2x.png */,
+				F6DDD4211C436E3C00AB985E /* loginbackground2@3x.png */,
 			);
 			path = Resorce;
 			sourceTree = "<group>";
@@ -1520,6 +1587,15 @@
 				F61572FA1C16AD27002507AC /* HCMyPageViewController.h */,
 				F61572FB1C16AD27002507AC /* HCMyPageViewController.m */,
 				F61572FC1C16AD27002507AC /* HCMyPageViewController.xib */,
+				F6DDD4141C4358FA00AB985E /* HCLoginHomePageViewController.h */,
+				F6DDD4151C4358FA00AB985E /* HCLoginHomePageViewController.m */,
+				F6DDD4161C4358FA00AB985E /* HCLoginHomePageViewController.xib */,
+				F6DDD4341C43BA8500AB985E /* HCLoginViewController.h */,
+				F6DDD4351C43BA8500AB985E /* HCLoginViewController.m */,
+				F6DDD4361C43BA8500AB985E /* HCLoginViewController.xib */,
+				F6DDD4451C43D5E700AB985E /* HCRegisterPageViewController.h */,
+				F6DDD4461C43D5E700AB985E /* HCRegisterPageViewController.m */,
+				F6DDD4471C43D5E700AB985E /* HCRegisterPageViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -2358,6 +2434,7 @@
 				F63EADAA1C23F03E0070A26A /* rightRow@2x.png in Resources */,
 				F6C29A0A1BF4C57800A88B5E /* tab_ico5_act.png in Resources */,
 				F6C299BF1BF4C57800A88B5E /* tab_ico1@3x.png in Resources */,
+				F6DDD43A1C43BA8500AB985E /* HCLoginViewController.xib in Resources */,
 				F63EAD831C23F03E0070A26A /* ico_dw.png in Resources */,
 				F63EADA71C23F03E0070A26A /* rightRow.png in Resources */,
 				F63EAD921C23F03E0070A26A /* ico_r.png in Resources */,
@@ -2404,10 +2481,12 @@
 				F6C299C51BF4C57800A88B5E /* tab_ico1_act@2x.png in Resources */,
 				F665261E1C1055B7008E18D4 /* Localizable.strings in Resources */,
 				F6C299EF1BF4C57800A88B5E /* tab_ico4.png in Resources */,
+				F6DDD42B1C436E3C00AB985E /* loginbackground2@3x.png in Resources */,
 				F6AF52261C293E3F0064D099 /* icon_order@2x.png in Resources */,
 				F63EAD801C23F03E0070A26A /* ico_desc@2x.png in Resources */,
 				F6C299FE1BF4C57800A88B5E /* tab_ico4_act@3x.png in Resources */,
 				F6FC33931BFA012A00B81B45 /* HCTableFocusViewController.xib in Resources */,
+				F6DDD41A1C4358FA00AB985E /* HCLoginHomePageViewController.xib in Resources */,
 				F61F58F91BFAD5DA00698BBD /* HCHomePageMenuCell.xib in Resources */,
 				F6CB0DA71C11393E0093BB38 /* position.png in Resources */,
 				F6CB0D981C11393E0093BB38 /* icon_favorite_ white.png in Resources */,
@@ -2415,6 +2494,7 @@
 				F63EAD9B1C23F03E0070A26A /* ico_rr@2x.png in Resources */,
 				F6C299CB1BF4C57800A88B5E /* tab_ico2.png in Resources */,
 				F63EAD2E1C23BAFD0070A26A /* HCCampPlayLocationItem.xib in Resources */,
+				F6DDD4581C43E0DD00AB985E /* selected_circle@2x.png in Resources */,
 				F6AB7E911C27ACC40031D58D /* HCActivityPageViewController.xib in Resources */,
 				F6498A2D1BF5F1C600AB2BF7 /* HCGuideViewController.xib in Resources */,
 				F6CB0DA11C11393E0093BB38 /* icon_lefthand@2x.png in Resources */,
@@ -2424,6 +2504,7 @@
 				F6E41FD31C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */,
 				F6C299B91BF4C57800A88B5E /* tab_ico1.png in Resources */,
 				F61F592A1BFAD8C800698BBD /* test11.png in Resources */,
+				F6DDD4251C436E3C00AB985E /* loginbackground1@3x.png in Resources */,
 				A790E88F1AD690CD00F0A95D /* Images.xcassets in Resources */,
 				F6C299DA1BF4C57800A88B5E /* tab_ico2_act@3x.png in Resources */,
 				F61F590C1BFAD8C800698BBD /* test1.png in Resources */,
@@ -2453,12 +2534,15 @@
 				F6CB1DD41C0EA30A00718746 /* HCCarOrderItemCell.xib in Resources */,
 				F61F59181BFAD8C800698BBD /* test5.png in Resources */,
 				F62119B31C1979F4000C0DA1 /* act_location_blue.png in Resources */,
+				F6DDD4421C43C00B00AB985E /* user_icon@2x.png in Resources */,
 				F63EAD771C23F03E0070A26A /* ico_cmt.png in Resources */,
 				F61573201C1717E4002507AC /* icon_next_white@2x.png in Resources */,
 				F609103D1C2BDA0800C61375 /* HCActivityDetailViewController.xib in Resources */,
 				F6C299C81BF4C57800A88B5E /* tab_ico1_act@3x.png in Resources */,
 				F63EAD211C23BAD30070A26A /* HCCampPlayViewController.xib in Resources */,
+				F6DDD4221C436E3C00AB985E /* loginbackground1@2x.png in Resources */,
 				F6C299E31BF4C57800A88B5E /* tab_ico3@3x.png in Resources */,
+				F6DDD45B1C43E0DD00AB985E /* unselected _circle@2x.png in Resources */,
 				F6D5A4CB1BFC6132006CA72F /* search_icon@2x.png in Resources */,
 				F6C299E61BF4C57800A88B5E /* tab_ico3_act.png in Resources */,
 				F6C299AA1BF4C57800A88B5E /* HouseCar-Info.plist in Resources */,
@@ -2481,6 +2565,7 @@
 				F6578BF31C1AB64A00280453 /* HCSearchViewController.xib in Resources */,
 				F6C299D11BF4C57800A88B5E /* tab_ico2@3x.png in Resources */,
 				F63EADB61C2404980070A26A /* HCHomeHotActivityItemCell.xib in Resources */,
+				F6DDD44B1C43D5E700AB985E /* HCRegisterPageViewController.xib in Resources */,
 				F63EAD8C1C23F03E0070A26A /* ico_expand@2x.png in Resources */,
 				F63EAD311C23BAFD0070A26A /* HCCampPlayTitleItem.xib in Resources */,
 				F61F591E1BFAD8C800698BBD /* test7.png in Resources */,
@@ -2507,8 +2592,10 @@
 				F6409D821C0D8246002AB471 /* ico_part@2x.png in Resources */,
 				F6FC338A1BF9C36F00B81B45 /* HCFocusCell.xib in Resources */,
 				F6C299B31BF4C57800A88B5E /* tab_bg.png in Resources */,
+				F6DDD43F1C43C00B00AB985E /* password_icon@2x.png in Resources */,
 				F6D5A4CF1BFC616E006CA72F /* icon_searcbar@2x.png in Resources */,
 				F6C299F81BF4C57800A88B5E /* tab_ico4_act.png in Resources */,
+				F6DDD4281C436E3C00AB985E /* loginbackground2@2x.png in Resources */,
 				F6AB7EC81C280C190031D58D /* default_background.png in Resources */,
 				F63EADAD1C23F03E0070A26A /* unwrapArrow@2x.png in Resources */,
 				F63EADA11C23F03E0070A26A /* ico_up.png in Resources */,
@@ -2527,6 +2614,7 @@
 				F63EADAB1C23F03E0070A26A /* rightRow@2x.png in Resources */,
 				F6C29A0B1BF4C57800A88B5E /* tab_ico5_act.png in Resources */,
 				F6C299C01BF4C57800A88B5E /* tab_ico1@3x.png in Resources */,
+				F6DDD43B1C43BA8500AB985E /* HCLoginViewController.xib in Resources */,
 				F63EAD841C23F03E0070A26A /* ico_dw.png in Resources */,
 				F63EADA81C23F03E0070A26A /* rightRow.png in Resources */,
 				F63EAD931C23F03E0070A26A /* ico_r.png in Resources */,
@@ -2573,10 +2661,12 @@
 				F6C299C61BF4C57800A88B5E /* tab_ico1_act@2x.png in Resources */,
 				F665261F1C1055B7008E18D4 /* Localizable.strings in Resources */,
 				F6C299F01BF4C57800A88B5E /* tab_ico4.png in Resources */,
+				F6DDD42C1C436E3C00AB985E /* loginbackground2@3x.png in Resources */,
 				F6AF52271C293E3F0064D099 /* icon_order@2x.png in Resources */,
 				F63EAD811C23F03E0070A26A /* ico_desc@2x.png in Resources */,
 				F6C299FF1BF4C57800A88B5E /* tab_ico4_act@3x.png in Resources */,
 				F6FC33941BFA012A00B81B45 /* HCTableFocusViewController.xib in Resources */,
+				F6DDD41B1C4358FA00AB985E /* HCLoginHomePageViewController.xib in Resources */,
 				F61F58FA1BFAD5DA00698BBD /* HCHomePageMenuCell.xib in Resources */,
 				F6CB0DA81C11393E0093BB38 /* position.png in Resources */,
 				F6CB0D991C11393E0093BB38 /* icon_favorite_ white.png in Resources */,
@@ -2584,6 +2674,7 @@
 				F63EAD9C1C23F03E0070A26A /* ico_rr@2x.png in Resources */,
 				F6C299CC1BF4C57800A88B5E /* tab_ico2.png in Resources */,
 				F63EAD2F1C23BAFD0070A26A /* HCCampPlayLocationItem.xib in Resources */,
+				F6DDD4591C43E0DD00AB985E /* selected_circle@2x.png in Resources */,
 				F6AB7E921C27ACC40031D58D /* HCActivityPageViewController.xib in Resources */,
 				F6498A2E1BF5F1C600AB2BF7 /* HCGuideViewController.xib in Resources */,
 				F6CB0DA21C11393E0093BB38 /* icon_lefthand@2x.png in Resources */,
@@ -2593,6 +2684,7 @@
 				F6E41FD41C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */,
 				F6C299BA1BF4C57800A88B5E /* tab_ico1.png in Resources */,
 				F61F592B1BFAD8C800698BBD /* test11.png in Resources */,
+				F6DDD4261C436E3C00AB985E /* loginbackground1@3x.png in Resources */,
 				A790E8901AD690CD00F0A95D /* Images.xcassets in Resources */,
 				F6C299DB1BF4C57800A88B5E /* tab_ico2_act@3x.png in Resources */,
 				F61F590D1BFAD8C800698BBD /* test1.png in Resources */,
@@ -2622,12 +2714,15 @@
 				F6CB1DD51C0EA30A00718746 /* HCCarOrderItemCell.xib in Resources */,
 				F61F59191BFAD8C800698BBD /* test5.png in Resources */,
 				F62119B41C1979F4000C0DA1 /* act_location_blue.png in Resources */,
+				F6DDD4431C43C00B00AB985E /* user_icon@2x.png in Resources */,
 				F63EAD781C23F03E0070A26A /* ico_cmt.png in Resources */,
 				F61573211C1717E4002507AC /* icon_next_white@2x.png in Resources */,
 				F609103E1C2BDA0800C61375 /* HCActivityDetailViewController.xib in Resources */,
 				F6C299C91BF4C57800A88B5E /* tab_ico1_act@3x.png in Resources */,
 				F63EAD221C23BAD30070A26A /* HCCampPlayViewController.xib in Resources */,
+				F6DDD4231C436E3C00AB985E /* loginbackground1@2x.png in Resources */,
 				F6C299E41BF4C57800A88B5E /* tab_ico3@3x.png in Resources */,
+				F6DDD45C1C43E0DD00AB985E /* unselected _circle@2x.png in Resources */,
 				F6D5A4CC1BFC6132006CA72F /* search_icon@2x.png in Resources */,
 				F6C299E71BF4C57800A88B5E /* tab_ico3_act.png in Resources */,
 				F6C299AB1BF4C57800A88B5E /* HouseCar-Info.plist in Resources */,
@@ -2650,6 +2745,7 @@
 				F6578BF41C1AB64A00280453 /* HCSearchViewController.xib in Resources */,
 				F6C299D21BF4C57800A88B5E /* tab_ico2@3x.png in Resources */,
 				F63EADB71C2404980070A26A /* HCHomeHotActivityItemCell.xib in Resources */,
+				F6DDD44C1C43D5E700AB985E /* HCRegisterPageViewController.xib in Resources */,
 				F63EAD8D1C23F03E0070A26A /* ico_expand@2x.png in Resources */,
 				F63EAD321C23BAFD0070A26A /* HCCampPlayTitleItem.xib in Resources */,
 				F61F591F1BFAD8C800698BBD /* test7.png in Resources */,
@@ -2676,8 +2772,10 @@
 				F6409D831C0D8246002AB471 /* ico_part@2x.png in Resources */,
 				F6FC338B1BF9C36F00B81B45 /* HCFocusCell.xib in Resources */,
 				F6C299B41BF4C57800A88B5E /* tab_bg.png in Resources */,
+				F6DDD4401C43C00B00AB985E /* password_icon@2x.png in Resources */,
 				F6D5A4D01BFC616E006CA72F /* icon_searcbar@2x.png in Resources */,
 				F6C299F91BF4C57800A88B5E /* tab_ico4_act.png in Resources */,
+				F6DDD4291C436E3C00AB985E /* loginbackground2@2x.png in Resources */,
 				F6AB7EC91C280C190031D58D /* default_background.png in Resources */,
 				F63EADAE1C23F03E0070A26A /* unwrapArrow@2x.png in Resources */,
 				F63EADA21C23F03E0070A26A /* ico_up.png in Resources */,
@@ -2696,6 +2794,7 @@
 				F63EADAC1C23F03E0070A26A /* rightRow@2x.png in Resources */,
 				F6C29A0C1BF4C57800A88B5E /* tab_ico5_act.png in Resources */,
 				F6C299C11BF4C57800A88B5E /* tab_ico1@3x.png in Resources */,
+				F6DDD43C1C43BA8500AB985E /* HCLoginViewController.xib in Resources */,
 				F63EAD851C23F03E0070A26A /* ico_dw.png in Resources */,
 				F63EADA91C23F03E0070A26A /* rightRow.png in Resources */,
 				F63EAD941C23F03E0070A26A /* ico_r.png in Resources */,
@@ -2742,10 +2841,12 @@
 				F6C299C71BF4C57800A88B5E /* tab_ico1_act@2x.png in Resources */,
 				F66526201C1055B7008E18D4 /* Localizable.strings in Resources */,
 				F6C299F11BF4C57800A88B5E /* tab_ico4.png in Resources */,
+				F6DDD42D1C436E3C00AB985E /* loginbackground2@3x.png in Resources */,
 				F6AF52281C293E3F0064D099 /* icon_order@2x.png in Resources */,
 				F63EAD821C23F03E0070A26A /* ico_desc@2x.png in Resources */,
 				F6C29A001BF4C57800A88B5E /* tab_ico4_act@3x.png in Resources */,
 				F6FC33951BFA012A00B81B45 /* HCTableFocusViewController.xib in Resources */,
+				F6DDD41C1C4358FA00AB985E /* HCLoginHomePageViewController.xib in Resources */,
 				F61F58FB1BFAD5DA00698BBD /* HCHomePageMenuCell.xib in Resources */,
 				F6CB0DA91C11393E0093BB38 /* position.png in Resources */,
 				F6CB0D9A1C11393E0093BB38 /* icon_favorite_ white.png in Resources */,
@@ -2753,6 +2854,7 @@
 				F63EAD9D1C23F03E0070A26A /* ico_rr@2x.png in Resources */,
 				F6C299CD1BF4C57800A88B5E /* tab_ico2.png in Resources */,
 				F63EAD301C23BAFD0070A26A /* HCCampPlayLocationItem.xib in Resources */,
+				F6DDD45A1C43E0DD00AB985E /* selected_circle@2x.png in Resources */,
 				F6AB7E931C27ACC40031D58D /* HCActivityPageViewController.xib in Resources */,
 				F6498A2F1BF5F1C600AB2BF7 /* HCGuideViewController.xib in Resources */,
 				F6CB0DA31C11393E0093BB38 /* icon_lefthand@2x.png in Resources */,
@@ -2762,6 +2864,7 @@
 				F6E41FD51C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */,
 				F6C299BB1BF4C57800A88B5E /* tab_ico1.png in Resources */,
 				F61F592C1BFAD8C800698BBD /* test11.png in Resources */,
+				F6DDD4271C436E3C00AB985E /* loginbackground1@3x.png in Resources */,
 				A790E8911AD690CD00F0A95D /* Images.xcassets in Resources */,
 				F6C299DC1BF4C57800A88B5E /* tab_ico2_act@3x.png in Resources */,
 				F61F590E1BFAD8C800698BBD /* test1.png in Resources */,
@@ -2791,12 +2894,15 @@
 				F6CB1DD61C0EA30A00718746 /* HCCarOrderItemCell.xib in Resources */,
 				F61F591A1BFAD8C800698BBD /* test5.png in Resources */,
 				F62119B51C1979F4000C0DA1 /* act_location_blue.png in Resources */,
+				F6DDD4441C43C00B00AB985E /* user_icon@2x.png in Resources */,
 				F63EAD791C23F03E0070A26A /* ico_cmt.png in Resources */,
 				F61573221C1717E4002507AC /* icon_next_white@2x.png in Resources */,
 				F609103F1C2BDA0800C61375 /* HCActivityDetailViewController.xib in Resources */,
 				F6C299E51BF4C57800A88B5E /* tab_ico3@3x.png in Resources */,
 				F63EAD231C23BAD30070A26A /* HCCampPlayViewController.xib in Resources */,
+				F6DDD4241C436E3C00AB985E /* loginbackground1@2x.png in Resources */,
 				F6C299E81BF4C57800A88B5E /* tab_ico3_act.png in Resources */,
+				F6DDD45D1C43E0DD00AB985E /* unselected _circle@2x.png in Resources */,
 				F6D5A4CD1BFC6132006CA72F /* search_icon@2x.png in Resources */,
 				F6C299AC1BF4C57800A88B5E /* HouseCar-Info.plist in Resources */,
 				F6C29A061BF4C57800A88B5E /* tab_ico5@2x.png in Resources */,
@@ -2819,6 +2925,7 @@
 				F6578BF51C1AB64A00280453 /* HCSearchViewController.xib in Resources */,
 				F6C299EE1BF4C57800A88B5E /* tab_ico3_act@3x.png in Resources */,
 				F63EADB81C2404980070A26A /* HCHomeHotActivityItemCell.xib in Resources */,
+				F6DDD44D1C43D5E700AB985E /* HCRegisterPageViewController.xib in Resources */,
 				F63EAD8E1C23F03E0070A26A /* ico_expand@2x.png in Resources */,
 				F63EAD331C23BAFD0070A26A /* HCCampPlayTitleItem.xib in Resources */,
 				F61F59201BFAD8C800698BBD /* test7.png in Resources */,
@@ -2845,8 +2952,10 @@
 				F6409D841C0D8246002AB471 /* ico_part@2x.png in Resources */,
 				F6FC338C1BF9C36F00B81B45 /* HCFocusCell.xib in Resources */,
 				F6C299B51BF4C57800A88B5E /* tab_bg.png in Resources */,
+				F6DDD4411C43C00B00AB985E /* password_icon@2x.png in Resources */,
 				F6D5A4D11BFC616E006CA72F /* icon_searcbar@2x.png in Resources */,
 				F6C299FA1BF4C57800A88B5E /* tab_ico4_act.png in Resources */,
+				F6DDD42A1C436E3C00AB985E /* loginbackground2@2x.png in Resources */,
 				F6AB7ECA1C280C190031D58D /* default_background.png in Resources */,
 				F63EADAF1C23F03E0070A26A /* unwrapArrow@2x.png in Resources */,
 				F63EADA31C23F03E0070A26A /* ico_up.png in Resources */,
@@ -2901,6 +3010,7 @@
 				F6FC33901BFA012A00B81B45 /* HCTableFocusViewController.m in Sources */,
 				F63EAD3F1C23DEC60070A26A /* HCCampHomeTableDataController.m in Sources */,
 				F6C29A281BF4C57800A88B5E /* HCViewController.m in Sources */,
+				F6DDD4171C4358FA00AB985E /* HCLoginHomePageViewController.m in Sources */,
 				F6409DB51C0D8F7E002AB471 /* HCCarBaseDetailViewController.m in Sources */,
 				F6409DCC1C0DBB40002AB471 /* HCCarOrderDataSource.m in Sources */,
 				F6C2999B1BF4C57800A88B5E /* HCXMLParserHelper.m in Sources */,
@@ -2909,6 +3019,7 @@
 				9C41D1F61C255DCB0038331B /* HCTravelNotesDataSource.m in Sources */,
 				F6D016351BFB54AB00ACCD33 /* HCImageView.m in Sources */,
 				F63EAD441C23E6B80070A26A /* HCCampPlayTableDataController.m in Sources */,
+				F6DDD4371C43BA8500AB985E /* HCLoginViewController.m in Sources */,
 				F66525A01C10494A008E18D4 /* KalView.m in Sources */,
 				F6CB1DDA1C0EE17D00718746 /* HCCardView.m in Sources */,
 				F6D016421BFB5FB400ACCD33 /* HCCityViewController.m in Sources */,
@@ -2942,6 +3053,7 @@
 				F6578C001C1ABFCD00280453 /* HCSearchDataSource.m in Sources */,
 				F63EAD1E1C23BAD30070A26A /* HCCampPlayViewController.m in Sources */,
 				F6CB1DDF1C0F1CB000718746 /* HCCarOrderItemCell.m in Sources */,
+				F6DDD4481C43D5E700AB985E /* HCRegisterPageViewController.m in Sources */,
 				F622497E1C05B48500F818B6 /* UIView+Util.m in Sources */,
 				F6498A271BF5F1C600AB2BF7 /* HCGuideImageViewFit.m in Sources */,
 				F63EAD3A1C23DE7D0070A26A /* HCCampPlayDataSource.m in Sources */,
@@ -2979,6 +3091,7 @@
 				F6AF521F1C28FF840064D099 /* HCMyPageTableDataController.m in Sources */,
 				F6D5A4C81BFC60AA006CA72F /* HCSearchBarView.m in Sources */,
 				F6AF522D1C29615C0064D099 /* HCCircleView.m in Sources */,
+				F6DDD4491C43D5E700AB985E /* HCRegisterPageViewController.m in Sources */,
 				F622497F1C05B48500F818B6 /* UIView+Util.m in Sources */,
 				F63EAD1F1C23BAD30070A26A /* HCCampPlayViewController.m in Sources */,
 				F665258C1C10494A008E18D4 /* NSDateAdditions.m in Sources */,
@@ -2986,6 +3099,7 @@
 				F6C4F4511C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */,
 				F6409DB61C0D8F7E002AB471 /* HCCarBaseDetailViewController.m in Sources */,
 				F6CB1DDB1C0EE17D00718746 /* HCCardView.m in Sources */,
+				F6DDD4381C43BA8500AB985E /* HCLoginViewController.m in Sources */,
 				F6409D921C0D8353002AB471 /* EasyJSDataFunction.m in Sources */,
 				F6409DAB1C0D85DE002AB471 /* HCJavaScriptCallBack.m in Sources */,
 				F63EAD451C23E6B80070A26A /* HCCampPlayTableDataController.m in Sources */,
@@ -2993,6 +3107,7 @@
 				F63EAD3B1C23DE7D0070A26A /* HCCampPlayDataSource.m in Sources */,
 				F6C29A1A1BF4C57800A88B5E /* HCNavigationController.m in Sources */,
 				F6409D951C0D8353002AB471 /* EasyJSWebView.m in Sources */,
+				F6DDD4181C4358FA00AB985E /* HCLoginHomePageViewController.m in Sources */,
 				F6C299931BF4C57800A88B5E /* HCAutoLabel.m in Sources */,
 				F6409DC01C0D9EE3002AB471 /* HCCarOrderViewcontroller.m in Sources */,
 				F65DCEBC1C3D2FAF00F778EF /* HCActivityOrderViewController.m in Sources */,
@@ -3068,6 +3183,7 @@
 				F6AF52201C28FF840064D099 /* HCMyPageTableDataController.m in Sources */,
 				F6D5A4C91BFC60AA006CA72F /* HCSearchBarView.m in Sources */,
 				F6AF522E1C29615C0064D099 /* HCCircleView.m in Sources */,
+				F6DDD44A1C43D5E700AB985E /* HCRegisterPageViewController.m in Sources */,
 				F62249801C05B48500F818B6 /* UIView+Util.m in Sources */,
 				F63EAD201C23BAD30070A26A /* HCCampPlayViewController.m in Sources */,
 				F665258D1C10494A008E18D4 /* NSDateAdditions.m in Sources */,
@@ -3075,6 +3191,7 @@
 				F6C4F4521C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */,
 				F6409DB71C0D8F7E002AB471 /* HCCarBaseDetailViewController.m in Sources */,
 				F6CB1DDC1C0EE17D00718746 /* HCCardView.m in Sources */,
+				F6DDD4391C43BA8500AB985E /* HCLoginViewController.m in Sources */,
 				F6409D931C0D8353002AB471 /* EasyJSDataFunction.m in Sources */,
 				F6409DAC1C0D85DE002AB471 /* HCJavaScriptCallBack.m in Sources */,
 				F63EAD461C23E6B80070A26A /* HCCampPlayTableDataController.m in Sources */,
@@ -3082,6 +3199,7 @@
 				F63EAD3C1C23DE7D0070A26A /* HCCampPlayDataSource.m in Sources */,
 				F6C29A1B1BF4C57800A88B5E /* HCNavigationController.m in Sources */,
 				F6409D961C0D8353002AB471 /* EasyJSWebView.m in Sources */,
+				F6DDD4191C4358FA00AB985E /* HCLoginHomePageViewController.m in Sources */,
 				F6C299941BF4C57800A88B5E /* HCAutoLabel.m in Sources */,
 				F6409DC11C0D9EE3002AB471 /* HCCarOrderViewcontroller.m in Sources */,
 				F65DCEBD1C3D2FAF00F778EF /* HCActivityOrderViewController.m in Sources */,

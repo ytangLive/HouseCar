@@ -12,7 +12,7 @@
 #import "HCContext.h"
 
 @interface HCShell : VTShell<UIApplicationDelegate,HCContext,UIAlertViewDelegate
-,IVTUplinkTaskDelegate> {
+,IVTUplinkTaskDelegate,UITabBarControllerDelegate> {
 }
 
 @property (strong, nonatomic) IBOutlet UIWindow *window;
