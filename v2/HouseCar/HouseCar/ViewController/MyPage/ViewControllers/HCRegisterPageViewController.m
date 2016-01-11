@@ -7,8 +7,13 @@
 //
 
 #import "HCRegisterPageViewController.h"
+#import "HCNavigationTitleBar.h"
 
 @interface HCRegisterPageViewController ()
+
+@property(nonatomic,weak) IBOutlet HCNavigationTitleBar *titleBar;
+@property(nonatomic,weak) IBOutlet VTButton *actionButton;
+@property(nonatomic, weak) IBOutlet UIView *protocolView;
 
 @end
 
@@ -17,6 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

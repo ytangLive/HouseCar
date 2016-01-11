@@ -26,9 +26,17 @@
 
 - (void)doAction:(id)sender
 {
+    NSString *actionName = [sender actionName];
+    NSDictionary *queryValues = nil;
+    if([actionName isEqualToString:@"register"]){
+        queryValues = @{@"pageType":@"register"};
+    }else if([actionName isEqualToString:@"forgetpassword"]){
+        queryValues = @{@"pageType":@"forgetpassword"};
+    }
+    
     [self openUrl:[NSURL URLWithString:[sender userInfo]
                          relativeToURL:self.url
-                           queryValues:nil] animated:YES];
+                           queryValues:queryValues] animated:YES];
 }
 
 @end
