@@ -164,7 +164,7 @@
                         </state>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="allActivities"/>
-                            <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/planner"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/activityList"/>
                         </userDefinedRuntimeAttributes>
                         <connections>
                             <action selector="doAction:" destination="-1" eventType="touchUpInside" id="kHV-AG-Sdz"/>

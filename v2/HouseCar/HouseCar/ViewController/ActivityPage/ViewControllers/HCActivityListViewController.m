@@ -1,20 +1,20 @@
 //
-//  HCActivityPageViewController.m
+//  HCActivityListViewController.m
 //  HouseCar
 //
-//  Created by tangyin on 15/12/8.
-//  Copyright © 2015年 sina.com. All rights reserved.
+//  Created by tangyin on 16/1/12.
+//  Copyright © 2016年 sina.com. All rights reserved.
 //
 
-#import "HCActivityPageViewController.h"
+#import "HCActivityListViewController.h"
 #import "HCFilterMenusView.h"
 #import "HCSearchBarView.h"
 
-@interface HCActivityPageViewController() <HCFilterMenusViewDelegate, HCSearchBarViewViewDelegate>
+@interface HCActivityListViewController ()<HCFilterMenusViewDelegate, HCSearchBarViewViewDelegate>
 
 @end
 
-@implementation HCActivityPageViewController
+@implementation HCActivityListViewController
 {
     HCFilterMenusView *_searchMenu;
 }
@@ -25,42 +25,22 @@
     
     [self initSearchMenuWithData:[NSArray arrayWithObjects:@{@"classifyID":@"City",@"classifyName":@"城市"},@{@"classifyID":@"Theme",@"classifyName":@"活动类型"}, nil]];
     
-    
-    [_tabPageDataController setContext:self.context];
-    _tabPageDataController.delegate = self;
-    
-    //最近活动
-    _recentTableDataController.delegate = self;
-    _recentDataSource.delegate = _recentTableDataController;
-    _recentTableDataController.tableView.backgroundColor = DefaultBackgroundColor;
-    [_recentTableDataController useDefaultTopLoadingView:YES stockAnimation:YES];
-    [_recentTableDataController useDefaultBottomLoadingView:YES stockAnimation:YES];
-    
-    //我的活动
-    _myTableDataController.delegate = self;
-    _mydataSource.delegate = _myTableDataController;
-    _myTableDataController.tableView.backgroundColor = DefaultBackgroundColor;
-    [_myTableDataController useDefaultTopLoadingView:YES stockAnimation:YES];
-    [_myTableDataController useDefaultBottomLoadingView:YES stockAnimation:YES];
+    [_tableDataController setContext:self.context];
+    _tableDataController.delegate = self;
+    _dataSource.delegate = _tableDataController;
+    _tableDataController.tableView.backgroundColor = DefaultBackgroundColor;
+    [_tableDataController useDefaultTopLoadingView:YES stockAnimation:YES];
+    [_tableDataController useDefaultBottomLoadingView:YES stockAnimation:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
-    if(![(VTDataSource *)[[_tabPageDataController selectedController] dataSource] isLoaded]
-       && ![(VTDataSource *)[[_tabPageDataController selectedController] dataSource] isLoading]){
-        [[_tabPageDataController selectedController] reloadData];
-    }else {
-        [[[_tabPageDataController selectedController] tableView] reloadData];
-        if(![(VTDataSource *)[[_tabPageDataController selectedController] dataSource] isLoading]){
-            
-            [(VTDataSource *)[[_tabPageDataController selectedController] dataSource] refreshData];
-            
-            if ([_tabPageDataController.selectedController tableView].contentOffset.y <= 0) {
-                [[_tabPageDataController.selectedController tableView] setContentOffset:CGPointZero animated:NO];
-            }
-        }
+    if(![_tableDataController.dataSource isLoading] && ![_tableDataController.dataSource isLoaded]){
+        [_tableDataController reloadData];
+    }else{
+        [[_tableDataController tableView] reloadData];
     }
 }
 
@@ -71,7 +51,6 @@
 
 - (void)doAction:(id)sender
 {
-    
     NSString * actionName =[sender actionName];
     
     if([actionName isEqualToString:@"filterCar"]){
@@ -93,10 +72,10 @@
         
         [self showSearchMenu];
         
-    }else if([actionName isEqualToString:@"cellSelected"]){
+    }else  if([actionName isEqualToString:@"cellSelected"]){
         NSDictionary *pageInfo = nil;
         
-        [self openUrl:[NSURL URLWithString:[action userInfo]
+        [self openUrl:[NSURL URLWithString:@"root:///root/tab/activityList/activityDetail"
                              relativeToURL:self.url
                                queryValues:pageInfo] animated:YES];
         

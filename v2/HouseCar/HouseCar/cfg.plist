@@ -238,6 +238,15 @@
 			<key>title</key>
 			<string>活动</string>
 		</dict>
+		<key>activityList</key>
+		<dict>
+			<key>class</key>
+			<string>HCActivityListViewController</string>
+			<key>view</key>
+			<string>HCActivityListViewController</string>
+			<key>title</key>
+			<string>活动</string>
+		</dict>
 		<key>activityDetail</key>
 		<dict>
 			<key>class</key>

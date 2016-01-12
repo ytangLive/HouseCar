@@ -23,7 +23,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    NSDictionary *params = [self.url queryValues];
+    NSString *pageType = [params stringValueForKey:@"pageType"];
     
+    if([pageType isEqualToString:@"forgetpassword"]){
+        
+        _titleBar.titleLabel.text = @"找回密码";
+        [_actionButton setTitle:@"重置密码" forState:UIControlStateNormal];
+        _protocolView.hidden = YES;
+        
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {

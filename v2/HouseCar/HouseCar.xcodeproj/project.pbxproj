@@ -221,6 +221,15 @@
 		F622497E1C05B48500F818B6 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F622497D1C05B48500F818B6 /* UIView+Util.m */; };
 		F622497F1C05B48500F818B6 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F622497D1C05B48500F818B6 /* UIView+Util.m */; };
 		F62249801C05B48500F818B6 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F622497D1C05B48500F818B6 /* UIView+Util.m */; };
+		F625059F1C44F4EA00C692F4 /* HCActivityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F625059D1C44F4EA00C692F4 /* HCActivityListViewController.m */; };
+		F62505A01C44F4EA00C692F4 /* HCActivityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F625059D1C44F4EA00C692F4 /* HCActivityListViewController.m */; };
+		F62505A11C44F4EA00C692F4 /* HCActivityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F625059D1C44F4EA00C692F4 /* HCActivityListViewController.m */; };
+		F62505A21C44F4EA00C692F4 /* HCActivityListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F625059E1C44F4EA00C692F4 /* HCActivityListViewController.xib */; };
+		F62505A31C44F4EA00C692F4 /* HCActivityListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F625059E1C44F4EA00C692F4 /* HCActivityListViewController.xib */; };
+		F62505A41C44F4EA00C692F4 /* HCActivityListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F625059E1C44F4EA00C692F4 /* HCActivityListViewController.xib */; };
+		F62505A81C44F6A600C692F4 /* HCActivityListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F62505A71C44F6A600C692F4 /* HCActivityListDataSource.m */; };
+		F62505A91C44F6A600C692F4 /* HCActivityListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F62505A71C44F6A600C692F4 /* HCActivityListDataSource.m */; };
+		F62505AA1C44F6A600C692F4 /* HCActivityListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F62505A71C44F6A600C692F4 /* HCActivityListDataSource.m */; };
 		F63EAD151C23B8A90070A26A /* HCCampHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63EAD121C23B8A90070A26A /* HCCampHomePageViewController.m */; };
 		F63EAD161C23B8A90070A26A /* HCCampHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63EAD121C23B8A90070A26A /* HCCampHomePageViewController.m */; };
 		F63EAD171C23B8A90070A26A /* HCCampHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63EAD121C23B8A90070A26A /* HCCampHomePageViewController.m */; };
@@ -976,6 +985,11 @@
 		F62249751C05AF8600F818B6 /* button_confirmgray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_confirmgray@2x.png"; sourceTree = "<group>"; };
 		F622497C1C05B48500F818B6 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
 		F622497D1C05B48500F818B6 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
+		F625059C1C44F4EA00C692F4 /* HCActivityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCActivityListViewController.h; sourceTree = "<group>"; };
+		F625059D1C44F4EA00C692F4 /* HCActivityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCActivityListViewController.m; sourceTree = "<group>"; };
+		F625059E1C44F4EA00C692F4 /* HCActivityListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCActivityListViewController.xib; sourceTree = "<group>"; };
+		F62505A61C44F6A600C692F4 /* HCActivityListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCActivityListDataSource.h; sourceTree = "<group>"; };
+		F62505A71C44F6A600C692F4 /* HCActivityListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCActivityListDataSource.m; sourceTree = "<group>"; };
 		F63EAD111C23B8A90070A26A /* HCCampHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCCampHomePageViewController.h; sourceTree = "<group>"; };
 		F63EAD121C23B8A90070A26A /* HCCampHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCCampHomePageViewController.m; sourceTree = "<group>"; };
 		F63EAD1B1C23BAD30070A26A /* HCCampPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCCampPlayViewController.h; sourceTree = "<group>"; };
@@ -1444,6 +1458,8 @@
 			children = (
 				F60910451C2BDA8200C61375 /* HCActivityDetailDataSource.h */,
 				F60910461C2BDA8200C61375 /* HCActivityDetailDataSource.m */,
+				F62505A61C44F6A600C692F4 /* HCActivityListDataSource.h */,
+				F62505A71C44F6A600C692F4 /* HCActivityListDataSource.m */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -1488,6 +1504,9 @@
 				F61572DF1C16ACBC002507AC /* HCActivityPageViewController.h */,
 				F61572E01C16ACBC002507AC /* HCActivityPageViewController.m */,
 				F6AB7E901C27ACC40031D58D /* HCActivityPageViewController.xib */,
+				F625059C1C44F4EA00C692F4 /* HCActivityListViewController.h */,
+				F625059D1C44F4EA00C692F4 /* HCActivityListViewController.m */,
+				F625059E1C44F4EA00C692F4 /* HCActivityListViewController.xib */,
 				F60910371C2BDA0800C61375 /* HCActivityDetailViewController.h */,
 				F60910381C2BDA0800C61375 /* HCActivityDetailViewController.m */,
 				F60910391C2BDA0800C61375 /* HCActivityDetailViewController.xib */,
@@ -2543,6 +2562,7 @@
 				F6DDD4221C436E3C00AB985E /* loginbackground1@2x.png in Resources */,
 				F6C299E31BF4C57800A88B5E /* tab_ico3@3x.png in Resources */,
 				F6DDD45B1C43E0DD00AB985E /* unselected _circle@2x.png in Resources */,
+				F62505A21C44F4EA00C692F4 /* HCActivityListViewController.xib in Resources */,
 				F6D5A4CB1BFC6132006CA72F /* search_icon@2x.png in Resources */,
 				F6C299E61BF4C57800A88B5E /* tab_ico3_act.png in Resources */,
 				F6C299AA1BF4C57800A88B5E /* HouseCar-Info.plist in Resources */,
@@ -2723,6 +2743,7 @@
 				F6DDD4231C436E3C00AB985E /* loginbackground1@2x.png in Resources */,
 				F6C299E41BF4C57800A88B5E /* tab_ico3@3x.png in Resources */,
 				F6DDD45C1C43E0DD00AB985E /* unselected _circle@2x.png in Resources */,
+				F62505A31C44F4EA00C692F4 /* HCActivityListViewController.xib in Resources */,
 				F6D5A4CC1BFC6132006CA72F /* search_icon@2x.png in Resources */,
 				F6C299E71BF4C57800A88B5E /* tab_ico3_act.png in Resources */,
 				F6C299AB1BF4C57800A88B5E /* HouseCar-Info.plist in Resources */,
@@ -2903,6 +2924,7 @@
 				F6DDD4241C436E3C00AB985E /* loginbackground1@2x.png in Resources */,
 				F6C299E81BF4C57800A88B5E /* tab_ico3_act.png in Resources */,
 				F6DDD45D1C43E0DD00AB985E /* unselected _circle@2x.png in Resources */,
+				F62505A41C44F4EA00C692F4 /* HCActivityListViewController.xib in Resources */,
 				F6D5A4CD1BFC6132006CA72F /* search_icon@2x.png in Resources */,
 				F6C299AC1BF4C57800A88B5E /* HouseCar-Info.plist in Resources */,
 				F6C29A061BF4C57800A88B5E /* tab_ico5@2x.png in Resources */,
@@ -3042,6 +3064,7 @@
 				F6D5A4C71BFC60AA006CA72F /* HCSearchBarView.m in Sources */,
 				F6C299AD1BF4C57800A88B5E /* main.m in Sources */,
 				F6AF522C1C29615C0064D099 /* HCCircleView.m in Sources */,
+				F625059F1C44F4EA00C692F4 /* HCActivityListViewController.m in Sources */,
 				F65DCEBB1C3D2FAF00F778EF /* HCActivityOrderViewController.m in Sources */,
 				F6C4F4401C2A548100561D56 /* HCHandleNativeDataService.m in Sources */,
 				F60910471C2BDA8200C61375 /* HCActivityDetailDataSource.m in Sources */,
@@ -3055,6 +3078,7 @@
 				F6CB1DDF1C0F1CB000718746 /* HCCarOrderItemCell.m in Sources */,
 				F6DDD4481C43D5E700AB985E /* HCRegisterPageViewController.m in Sources */,
 				F622497E1C05B48500F818B6 /* UIView+Util.m in Sources */,
+				F62505A81C44F6A600C692F4 /* HCActivityListDataSource.m in Sources */,
 				F6498A271BF5F1C600AB2BF7 /* HCGuideImageViewFit.m in Sources */,
 				F63EAD3A1C23DE7D0070A26A /* HCCampPlayDataSource.m in Sources */,
 				F6C2998C1BF4C57800A88B5E /* NSDate+Helper.m in Sources */,
@@ -3131,8 +3155,10 @@
 				F6FC33821BF9B80300B81B45 /* HCHotActivitiesDataSource.m in Sources */,
 				F6FC33751BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */,
 				F65DCEB61C3D206600F778EF /* HCDragLoadingView.m in Sources */,
+				F62505A91C44F6A600C692F4 /* HCActivityListDataSource.m in Sources */,
 				F6C29A231BF4C57800A88B5E /* HCTabViewController.m in Sources */,
 				F6C299AE1BF4C57800A88B5E /* main.m in Sources */,
+				F62505A01C44F4EA00C692F4 /* HCActivityListViewController.m in Sources */,
 				F6C4F44C1C2A791200561D56 /* HCHistorySearchDataObject.m in Sources */,
 				F609103B1C2BDA0800C61375 /* HCActivityDetailViewController.m in Sources */,
 				F6AB7EB91C27EC1D0031D58D /* HCRegionPageViewController.m in Sources */,
@@ -3223,8 +3249,10 @@
 				F6FC33831BF9B80300B81B45 /* HCHotActivitiesDataSource.m in Sources */,
 				F6FC33761BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */,
 				F65DCEB71C3D206600F778EF /* HCDragLoadingView.m in Sources */,
+				F62505AA1C44F6A600C692F4 /* HCActivityListDataSource.m in Sources */,
 				F6C29A241BF4C57800A88B5E /* HCTabViewController.m in Sources */,
 				F6C299AF1BF4C57800A88B5E /* main.m in Sources */,
+				F62505A11C44F4EA00C692F4 /* HCActivityListViewController.m in Sources */,
 				F6C4F44D1C2A791200561D56 /* HCHistorySearchDataObject.m in Sources */,
 				F609103C1C2BDA0800C61375 /* HCActivityDetailViewController.m in Sources */,
 				F6AB7EBA1C27EC1D0031D58D /* HCRegionPageViewController.m in Sources */,

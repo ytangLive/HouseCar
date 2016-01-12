@@ -170,7 +170,7 @@
                 <outletCollection property="tabButtons" destination="2Wg-tD-HFK" id="qsh-vQ-7nG"/>
             </connections>
         </customObject>
-        <customObject id="NXG-8f-gEK" userLabel="Recent Activity Data Source" customClass="VTURLDataSource">
+        <customObject id="NXG-8f-gEK" userLabel="Recent Activity Data Source" customClass="HCActivityListDataSource">
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="string" keyPath="urlKey" value="carlist-interface"/>
                 <userDefinedRuntimeAttribute type="string" keyPath="dataKey" value="posts"/>
@@ -188,7 +188,7 @@
                 <outlet property="tableView" destination="cro-J0-RAg" id="ton-cd-W1o"/>
             </connections>
         </customObject>
-        <customObject id="uxl-Gb-PFU" userLabel="My Activity Data Source" customClass="VTURLDataSource">
+        <customObject id="uxl-Gb-PFU" userLabel="My Activity Data Source" customClass="HCActivityListDataSource">
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="string" keyPath="urlKey" value="carlist-interface"/>
                 <userDefinedRuntimeAttribute type="string" keyPath="dataKey" value="posts"/>
