@@ -33,15 +33,15 @@
     _recentTableDataController.delegate = self;
     _recentDataSource.delegate = _recentTableDataController;
     _recentTableDataController.tableView.backgroundColor = DefaultBackgroundColor;
-    [_recentTableDataController useDefaultTopLoadingView:YES stockAnimation:YES];
-    [_recentTableDataController useDefaultBottomLoadingView:YES stockAnimation:YES];
+    [_recentTableDataController topLoadingViewWithStyle:SFLoadingViewStyle_ActivityIndicatorStockAnimaiton];
+    [_recentTableDataController bottomLoadingViewWithStyle:SFLoadingViewStyle_ActivityIndicatorStockAnimaiton];
     
     //我的活动
     _myTableDataController.delegate = self;
     _mydataSource.delegate = _myTableDataController;
     _myTableDataController.tableView.backgroundColor = DefaultBackgroundColor;
-    [_myTableDataController useDefaultTopLoadingView:YES stockAnimation:YES];
-    [_myTableDataController useDefaultBottomLoadingView:YES stockAnimation:YES];
+    [_myTableDataController topLoadingViewWithStyle:SFLoadingViewStyle_ActivityIndicatorStockAnimaiton];
+    [_myTableDataController bottomLoadingViewWithStyle:SFLoadingViewStyle_ActivityIndicatorStockAnimaiton];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -111,7 +111,7 @@
     if(_searchMenu.hidden){
         _searchMenu.hidden = NO;
         [_searchMenu.tableView reloadData];
-        UIView *belowView = [[UIView alloc] initWithFrame:CGRectMake(0, KOffOriginalY,
+        UIView *belowView = [[UIView alloc] initWithFrame:CGRectMake(0, 0,
                                                                      self.view.bounds.size.width, self.view.bounds.size.height)];
         belowView.backgroundColor = [UIColor blackColor];
         belowView.alpha = 0.5;
@@ -119,7 +119,7 @@
         [belowView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hiddenSearchMenu)]];
         [self.view insertSubview:belowView belowSubview:_searchMenu];
         [UIView animateWithDuration:0.3 animations:^{
-            _searchMenu.frame = CGRectMake(100 ,KOffOriginalY , _searchMenu.frame.size.width, _searchMenu.frame.size.height);
+            _searchMenu.frame = CGRectMake(80 ,0 , _searchMenu.frame.size.width, _searchMenu.frame.size.height);
         } completion:NULL];
     }
 }
@@ -128,7 +128,7 @@
 {
     if(!_searchMenu.hidden){
         [UIView animateWithDuration:0.3 animations:^{
-            _searchMenu.frame = CGRectMake(KScreenWidth ,KOffOriginalY , _searchMenu.frame.size.width, _searchMenu.frame.size.height);
+            _searchMenu.frame = CGRectMake(KScreenWidth ,0 , _searchMenu.frame.size.width, _searchMenu.frame.size.height);
         } completion:^(BOOL finished) {
             _searchMenu.hidden = YES;
             UIView *belowView = [self.view viewWithTag:9999];
@@ -139,8 +139,8 @@
 
 - (void)initSearchMenuWithData:(NSArray *)menuData
 {
-    _searchMenu = [[HCFilterMenusView alloc] initWithFrame:CGRectMake(KScreenWidth ,KOffOriginalY ,
-                                                                      KScreenWidth - 100.0f,
+    _searchMenu = [[HCFilterMenusView alloc] initWithFrame:CGRectMake(KScreenWidth ,0 ,
+                                                                      KScreenWidth - 80.0f,
                                                                       self.view.frame.size.height)];
     _searchMenu.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     _searchMenu.delegate = self;

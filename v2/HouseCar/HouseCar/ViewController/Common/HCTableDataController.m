@@ -9,6 +9,7 @@
 #import "HCTableDataController.h"
 #import "HCAnimationView.h"
 #import "HCDragLoadingView.h"
+#import "HCNoMessageView.h"
 
 @implementation HCTableDataController
 
@@ -25,7 +26,7 @@
         }
         else
         {
-            if ([self.dataSource.dataObjects count]>0) {
+            if ([self.dataSource.dataObjects count]>0 && self.tableView.contentSize.height >= self.tableView.bounds.size.height) {
                 self.bottomLoadingView.upTitleLabel.hidden = NO;
                 self.bottomLoadingView.downTitleLabel.hidden = YES;
                 self.bottomLoadingView.loadingTitleLabel.hidden = YES;
@@ -82,17 +83,18 @@
     }
 }
 
-- (void)useDefaultTopLoadingView:(BOOL)isUse stockAnimation:(BOOL)stockAnimation
+- (void)topLoadingViewWithStyle:(SFLoadingViewStyle)loadingViewStyle
 {
     if (self.topLoadingView) {
         for (UIView * view in self.topLoadingView.subviews) {
             [view removeFromSuperview];
         }
+        [self.topLoadingView removeFromSuperview];
         self.topLoadingView = nil;
     }
-    if (isUse && !self.topLoadingView) {
+    if (loadingViewStyle != SFLoadingViewStyle_ActivityIndicatorNone) {
         VTDragLoadingView * topLoadingView = nil;
-        if (stockAnimation) {
+        if (loadingViewStyle == SFLoadingViewStyle_ActivityIndicatorStockAnimaiton) {
             topLoadingView = [[VTDragLoadingView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.width, 44)];
         }else{
             topLoadingView = [[HCDragLoadingView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.width, 44)];
@@ -105,7 +107,7 @@
         [backgourdView setBackgroundColor:[UIColor clearColor]];
         [topLoadingView addSubview:backgourdView];
         
-        if (stockAnimation) {
+        if (loadingViewStyle == SFLoadingViewStyle_ActivityIndicatorStockAnimaiton) {
             
             HCAnimationView * activityView = [[HCAnimationView alloc] initWithFrame:CGRectMake(16,
                                                                                                0,
@@ -160,7 +162,7 @@
             timeLabel.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
             [backgourdView addSubview:timeLabel];
             [topLoadingView setTimeLabel:timeLabel];
-        }else{
+        }else if(loadingViewStyle == SFLoadingViewStyle_ActivityIndicatorSystem){
             
             UIActivityIndicatorView * activityView = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0,
                                                                                                                0,
@@ -176,16 +178,22 @@
     }
 }
 
-- (void)useDefaultBottomLoadingView:(BOOL)isUse stockAnimation:(BOOL)stockAnimation
+- (void)bottomLoadingViewWithStyle:(SFLoadingViewStyle)loadingViewStyle
 {
     if (self.bottomLoadingView) {
         for (UIView * view in self.bottomLoadingView.subviews) {
             [view removeFromSuperview];
         }
+        [self.bottomLoadingView  removeFromSuperview];
         self.bottomLoadingView = nil;
     }
-    if (isUse && !self.bottomLoadingView) {
-        VTDragLoadingView * bottomLoadingView = [[VTDragLoadingView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.width, 44)];
+    if (loadingViewStyle != SFLoadingViewStyle_ActivityIndicatorNone) {
+        VTDragLoadingView * bottomLoadingView = nil;
+        if (loadingViewStyle == SFLoadingViewStyle_ActivityIndicatorStockAnimaiton) {
+            bottomLoadingView = [[VTDragLoadingView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.width, 44)];
+        }else{
+            bottomLoadingView = [[HCDragLoadingView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.width, 44)];
+        }
         bottomLoadingView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         [self setBottomLoadingView:bottomLoadingView];
         
@@ -194,7 +202,7 @@
         [backgourdView setBackgroundColor:[UIColor clearColor]];
         [bottomLoadingView addSubview:backgourdView];
         
-        if (stockAnimation) {
+        if (loadingViewStyle == SFLoadingViewStyle_ActivityIndicatorStockAnimaiton) {
             HCAnimationView * activityView = [[HCAnimationView alloc] initWithFrame:CGRectMake(16,
                                                                                                0,
                                                                                                25,
@@ -239,7 +247,7 @@
             [backgourdView addSubview:loadingTitleLabel];
             [bottomLoadingView setLoadingTitleLabel:loadingTitleLabel];
             
-        }else{
+        }else if(loadingViewStyle == SFLoadingViewStyle_ActivityIndicatorSystem){
             UIActivityIndicatorView * activityView = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0,
                                                                                                                0,
                                                                                                                20,
@@ -254,5 +262,56 @@
         
     }
 }
+
+- (void)notFoundDataWithAlertText:(NSString *)alertText imageNamed:(NSString *)imageName
+{
+    if (self.notFoundDataView) {
+        [self.notFoundDataView removeFromSuperview];
+        self.notFoundDataView = nil;
+    }
+    
+    HCNoMessageView * noMessageView = [[HCNoMessageView alloc] initWithFrame:self.tableView.bounds];
+    noMessageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    if (alertText && alertText.length > 0) {
+        [noMessageView setShowLabelText:alertText];
+    }
+    if (imageName && [UIImage imageNamed:imageName]) {
+        [noMessageView setShowImageNamed:imageName];
+    }
+    self.notFoundDataView = noMessageView;;
+}
+
+- (void)vtDataSource:(VTDataSource *)dataSource didFitalError:(NSError *)error
+{
+    [super vtDataSource:dataSource didFitalError:error];
+    if ([self.delegate respondsToSelector:@selector(SFTableDataControllerDidFinishLoaded:)]) {
+        [self.delegate HCTableDataControllerDidFinishLoaded:self];
+    }
+}
+
+- (void)vtDataSourceDidLoadedFromCache:(VTDataSource *)dataSource timestamp:(NSDate *)timestamp
+{
+    [super vtDataSourceDidLoadedFromCache:dataSource timestamp:timestamp];
+    if ([self.delegate respondsToSelector:@selector(SFTableDataControllerDidFinishLoaded:)]) {
+        [self.delegate HCTableDataControllerDidFinishLoaded:self];
+    }
+}
+
+- (void)vtDataSourceDidContentChanged:(VTDataSource *)dataSource
+{
+    [super vtDataSourceDidContentChanged:dataSource];
+    if ([self.delegate respondsToSelector:@selector(SFTableDataControllerDidFinishLoaded:)]) {
+        [self.delegate HCTableDataControllerDidFinishLoaded:self];
+    }
+}
+
+- (void)vtDataSourceDidLoaded:(VTDataSource *)dataSource
+{
+    [super vtDataSourceDidLoaded:dataSource];
+    if ([self.delegate respondsToSelector:@selector(SFTableDataControllerDidFinishLoaded:)]) {
+        [self.delegate HCTableDataControllerDidFinishLoaded:self];
+    }
+}
+
 
 @end

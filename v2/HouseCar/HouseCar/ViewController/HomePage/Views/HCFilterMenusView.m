@@ -29,21 +29,30 @@
 
 - (void)updateUI
 {
-    _titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 50.0f)];
-    _titleView.backgroundColor = COLOR_HEX(0xD2D2D2);
-    UIButton *clearButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    CGSize clearSize = CGSizeMake(65.0f, 26.0f);
-    clearButton.frame = CGRectMake(15.0f, 12.0f, clearSize.width, clearSize.height);
-    [clearButton setImage:[UIImage imageNamed:@"button_cleargray"] forState:UIControlStateNormal];
-    //[clearButton setImage:[UIImage imageNamed:@"button_cleargray-press"] forState:UIControlStateHighlighted];
+    _titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 64.0f)];
+    _titleView.backgroundColor = DefaultNavBarColor;
+    UIButton *clearButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    CGSize clearSize = CGSizeMake(43.0f, 23.0f);
+    clearButton.frame = CGRectMake(15.0f, 30.0f, clearSize.width, clearSize.height);
+    [clearButton setTitle:@"重置" forState:UIControlStateNormal];
+    [clearButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    clearButton.layer.borderWidth = 0.5;
+    clearButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    clearButton.layer.cornerRadius = 2;
+    clearButton.titleLabel.font = [UIFont systemFontOfSize:14];
     [clearButton addTarget:self action:@selector(clearButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     
-    UIButton *confirmButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    CGSize confirmSize = CGSizeMake(45.0f, 26.0f);
-    confirmButton.frame = CGRectMake(self.bounds.size.width - confirmSize.width - 10.0f, 12.0f,
+    UIButton *confirmButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    CGSize confirmSize = CGSizeMake(43.0f, 23.0f);
+    confirmButton.frame = CGRectMake(self.bounds.size.width - confirmSize.width - 15.0f, clearButton.minY,
                                      confirmSize.width, confirmSize.height);
-    [confirmButton setImage:[UIImage imageNamed:@"button_confirmgray"] forState:UIControlStateNormal];
-    //[confirmButton setImage:[UIImage imageNamed:@"button_confirmgray-press"] forState:UIControlStateHighlighted];
+    [confirmButton setTitle:@"确定" forState:UIControlStateNormal];
+    [confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    confirmButton.layer.borderWidth = 0.5;
+    confirmButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    confirmButton.layer.cornerRadius = 2;
+    confirmButton.titleLabel.font = [UIFont systemFontOfSize:14];
+
     [confirmButton addTarget:self action:@selector(confirmButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
     
     [_titleView addSubview:clearButton];
@@ -90,7 +99,7 @@
 
 #pragma mark - UITableViewDataSource
 
-static const CGFloat TableCellHeight = 44.0f;
+static const CGFloat TableCellHeight = 49.0f;
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -114,10 +123,10 @@ static const CGFloat TableCellHeight = 44.0f;
                                                                              self.bounds.size.width - detailSpace - 27.0f, TableCellHeight)];
             detailLabel.backgroundColor = [UIColor clearColor];
             detailLabel.tag = 990;
-            detailLabel.textColor = [UIColor redColor];
+            detailLabel.textColor = COLOR_HEX(0xE84646);
             detailLabel.textAlignment = NSTextAlignmentRight;
             detailLabel.alpha = 0.3;
-            detailLabel.font = [UIFont systemFontOfSize:11.0f];
+            detailLabel.font = [UIFont systemFontOfSize:12.0f];
             detailLabel.text = detailText;
             
             [cell addSubview:detailLabel];
@@ -164,7 +173,7 @@ static const CGFloat TableCellHeight = 44.0f;
         NSDictionary *menuItem = self.filterMenus[i];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.textLabel.textColor = COLOR_HEX(0x666666);
-        cell.textLabel.font = [UIFont systemFontOfSize:13.0f];
+        cell.textLabel.font = [UIFont systemFontOfSize:14.0f];
         cell.textLabel.text = [menuItem stringValueForKey:@"classifyName"];
         
         [cell.contentView addSubview:[UIView initLineWidthFrame:CGRectMake(10.0f, TableCellHeight - 1,CGRectGetWidth(self.frame) - 20.0f, 1)]];

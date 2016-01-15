@@ -41,6 +41,7 @@ typedef enum {
 
 //当前屏幕宽度
 #define KScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define KScreenHeight [[UIScreen mainScreen] bounds].size.height
 #define KOffOriginalY   ((KDeviceSystemVersion >= 7) ? (20) : (0))
 #define KDeviceSystemVersion [[[[[UIDevice currentDevice] systemVersion]componentsSeparatedByString:@"."] objectAtIndex:0] intValue]
 

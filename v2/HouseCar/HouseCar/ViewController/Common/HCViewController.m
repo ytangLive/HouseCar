@@ -7,13 +7,18 @@
  */
 
 
-#import "HCViewController.h"
-
 #import <QuartzCore/QuartzCore.h>
+#import "HCViewController.h"
+#import "HCAnimationView.h"
+#import "HCTableDataController.h"
 
+@interface HCViewController ()<HCTableDataControllerDelegate>
 
+@property(nonatomic,strong) UIActivityIndicatorView * loadingView_System;
 
-@interface HCViewController ()
+@property(nonatomic, strong)HCAnimationView * loadingView_StockAnimaiton;
+
+@property(nonatomic,strong) UIView * loadingBackgroundView;
 
 @end
 
@@ -213,6 +218,81 @@
             [_focusButton setSelected:YES];
         }
     }
+}
+
+#pragma mark - showLoaddingView
+- (void)showLoadingViewWithStyle:(SFViewControllerLoadingViewStyle)loadingStyle backgroundColor:(UIColor *)backgroundColor
+{
+    if (loadingStyle != SFViewControllerLoadingViewStyle_None) {
+        if (backgroundColor) {
+            if (!_loadingBackgroundView) {
+                _loadingBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, KScreenWidth, KScreenHeight - 64)];
+            }
+            [_loadingBackgroundView setBackgroundColor:backgroundColor];
+            [self.view addSubview:_loadingBackgroundView];
+        }
+        
+        UIView * baseView = nil;
+        if (_loadingBackgroundView) {
+            baseView = _loadingBackgroundView;
+        }else{
+            baseView = self.view;
+        }
+        
+        
+        UIView * activityView = nil;
+        if (loadingStyle == SFViewControllerLoadingViewStyle_System) {
+            if (!_loadingView_System) {
+                _loadingView_System = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0,
+                                                                                                0,
+                                                                                                20,
+                                                                                                20)];
+                _loadingView_System.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+            }
+            _loadingView_System.hidden = NO;
+            [_loadingView_System startAnimating];
+            activityView = _loadingView_System;
+        }else if (loadingStyle == SFViewControllerLoadingViewStyle_StockAnimation){
+            if (!_loadingView_StockAnimaiton) {
+                _loadingView_StockAnimaiton = [[HCAnimationView alloc] initWithFrame:CGRectMake(0,
+                                                                                                0,
+                                                                                                25,
+                                                                                                20)];
+                [_loadingView_StockAnimaiton setBackgroundColor:[UIColor clearColor]];
+                [_loadingView_StockAnimaiton setBackgroundImg:@"loading_bg.png"];
+                [_loadingView_StockAnimaiton setCoverImg:@"loading_cover.png"];
+                [_loadingView_StockAnimaiton setBorderImg:@"loading_border.png"];
+                [_loadingView_StockAnimaiton setLoopImg:@"loading_loop.png"];
+                [_loadingView_StockAnimaiton reloadRes];
+            }
+            _loadingView_StockAnimaiton.hidden = NO;
+            [_loadingView_StockAnimaiton startAnimating];
+            activityView = _loadingView_StockAnimaiton;
+        }
+        activityView.frame = CGRectMake(KScreenWidth / 2 - activityView.width / 2,
+                                        KScreenHeight / 2 - activityView.height / 2 - 64,
+                                        activityView.width,
+                                        activityView.height);
+        [baseView addSubview:activityView];
+    }
+}
+
+- (void)hiddenLoadingView
+{
+    if (_loadingView_System.superview) {
+        [_loadingView_System removeFromSuperview];
+    }
+    if (_loadingView_StockAnimaiton.superview) {
+        [_loadingView_StockAnimaiton removeFromSuperview];
+    }
+    if (_loadingBackgroundView.superview){
+        [_loadingBackgroundView removeFromSuperview];
+    }
+}
+
+- (void)HCTableDataControllerDidFinishLoaded:(HCTableDataController *)dataController
+{
+    [self hiddenLoadingView];
 }
 
 @end

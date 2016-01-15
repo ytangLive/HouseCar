@@ -8,6 +8,14 @@
 
 #import <vTeam/vTeam.h>
 
+typedef enum _SFViewControllerLoadingViewStyle : NSInteger
+{
+    SFViewControllerLoadingViewStyle_None = 0,
+    SFViewControllerLoadingViewStyle_System,
+    SFViewControllerLoadingViewStyle_StockAnimation
+    
+}SFViewControllerLoadingViewStyle;
+
 #define HELP_IMAGEVIEW_TAG   1578
 
 @interface HCViewController : VTViewController
@@ -18,5 +26,10 @@
 @property(nonatomic,strong) IBOutlet UIButton * rightButton;
 @property(nonatomic,strong) id focusButton;
 @property(nonatomic,assign) BOOL isTipHidden;
+@property(nonatomic,assign,getter=isCurrentNetWorkStatue) BOOL currentNetWorkStatue;
+
+- (void)showLoadingViewWithStyle:(SFViewControllerLoadingViewStyle)loadingStyle backgroundColor:(UIColor *)backgroundColor;
+
+- (void)hiddenLoadingView;
 
 @end

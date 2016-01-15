@@ -632,9 +632,9 @@ CGFloat SFBottomOffsetHeight = 0;
                 break;
             case 4:
             {
-                [[self rootViewController] openUrl:[NSURL URLWithString:@"present://root/nav/loginHomePage"]
-                                          animated:YES];
-                return NO;
+//                [[self rootViewController] openUrl:[NSURL URLWithString:@"present://root/nav/loginHomePage"]
+//                                          animated:YES];
+                //return NO;
             }
                 break;
             default:

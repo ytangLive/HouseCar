@@ -8,12 +8,27 @@
 
 #import <vTeam/vTeam.h>
 
+typedef enum _SFLoadingViewStyle : NSInteger
+{
+    SFLoadingViewStyle_ActivityIndicatorNone = 0,
+    SFLoadingViewStyle_ActivityIndicatorSystem,
+    SFLoadingViewStyle_ActivityIndicatorStockAnimaiton
+}SFLoadingViewStyle;
+
 @interface HCTableDataController : VTTableDataController
 
 - (void)tabButton:(NSArray *)tabButtons clickWithButton:(UIButton *)clickButton tabCurView:(UIView *)tabCurView;
 
-- (void)useDefaultTopLoadingView:(BOOL)isUse stockAnimation:(BOOL)stockAnimation;
+- (void)topLoadingViewWithStyle:(SFLoadingViewStyle)loadingViewStyle;
 
-- (void)useDefaultBottomLoadingView:(BOOL)isUse stockAnimation:(BOOL)stockAnimation;
+- (void)bottomLoadingViewWithStyle:(SFLoadingViewStyle)loadingViewStyle;
+
+- (void)notFoundDataWithAlertText:(NSString *)alertText imageNamed:(NSString *)imageName;
+
+@end
+
+@protocol HCTableDataControllerDelegate <VTTableDataControllerDelegate>
+@optional
+-(void) HCTableDataControllerDidFinishLoaded:(HCTableDataController *) dataController;
 
 @end
