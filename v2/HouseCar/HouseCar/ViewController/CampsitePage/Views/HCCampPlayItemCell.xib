@@ -33,7 +33,7 @@
                             <action selector="doAction:" destination="gWw-8p-HYY" eventType="touchUpInside" id="Eyf-Xh-brU"/>
                         </connections>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HCImageView" id="iny-K3-4At" customClass="HCImageView">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="iny-K3-4At" customClass="HCImageView">
                         <rect key="frame" x="10" y="10" width="300" height="190"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <userDefinedRuntimeAttributes>
@@ -91,7 +91,6 @@
         </customObject>
     </objects>
     <resources>
-        <image name="HCImageView" width="213" height="1"/>
         <image name="cell_bg_act.png" width="320" height="45"/>
     </resources>
 </document>

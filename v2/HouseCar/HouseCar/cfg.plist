@@ -348,6 +348,15 @@
 			<key>class</key>
 			<string>HCSearchViewController</string>
 		</dict>
+		<key>travelNotesDetail</key>
+		<dict>
+			<key>title</key>
+			<string>游记详情页</string>
+			<key>view</key>
+			<string>HCTravelNotesViewController</string>
+			<key>class</key>
+			<string>HCTravelNotesViewController</string>
+		</dict>
 		<key>loginHomePage</key>
 		<dict>
 			<key>title</key>

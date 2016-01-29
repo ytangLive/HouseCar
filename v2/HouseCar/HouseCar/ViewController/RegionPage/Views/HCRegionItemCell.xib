@@ -36,7 +36,7 @@
                                     <action selector="doAction:" destination="gWw-8p-HYY" eventType="touchUpInside" id="Eyf-Xh-brU"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HCImageView" id="iny-K3-4At" customClass="HCImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="iny-K3-4At" customClass="HCImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -115,7 +115,6 @@
         </customObject>
     </objects>
     <resources>
-        <image name="HCImageView" width="320" height="45"/>
         <image name="split_line.png" width="1" height="1"/>
     </resources>
 </document>
