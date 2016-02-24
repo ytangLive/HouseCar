@@ -14,6 +14,12 @@
 {
     [super loadResultsData:resultsData];
     
+    [self handleResultsData:resultsData];
+}
+
+- (void)handleResultsData:(NSDictionary *)resultsData
+{
+    
 }
 
 @end

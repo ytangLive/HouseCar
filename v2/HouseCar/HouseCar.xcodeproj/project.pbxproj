@@ -416,12 +416,12 @@
 		F6424C161C04704D00D0F08D /* icon_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6424C121C04704D00D0F08D /* icon_next@2x.png */; };
 		F6424C171C04704D00D0F08D /* icon_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6424C121C04704D00D0F08D /* icon_next@2x.png */; };
 		F6424C181C04704D00D0F08D /* icon_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6424C121C04704D00D0F08D /* icon_next@2x.png */; };
-		F645470E1C5B4CE100DB69F3 /* HCTravelNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F645470C1C5B4CE100DB69F3 /* HCTravelNotesViewController.m */; };
-		F645470F1C5B4CE100DB69F3 /* HCTravelNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F645470C1C5B4CE100DB69F3 /* HCTravelNotesViewController.m */; };
-		F64547101C5B4CE100DB69F3 /* HCTravelNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F645470C1C5B4CE100DB69F3 /* HCTravelNotesViewController.m */; };
-		F64547111C5B4CE100DB69F3 /* HCTravelNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F645470D1C5B4CE100DB69F3 /* HCTravelNotesViewController.xib */; };
-		F64547121C5B4CE100DB69F3 /* HCTravelNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F645470D1C5B4CE100DB69F3 /* HCTravelNotesViewController.xib */; };
-		F64547131C5B4CE100DB69F3 /* HCTravelNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F645470D1C5B4CE100DB69F3 /* HCTravelNotesViewController.xib */; };
+		F645470E1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F645470C1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m */; };
+		F645470F1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F645470C1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m */; };
+		F64547101C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F645470C1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m */; };
+		F64547111C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F645470D1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib */; };
+		F64547121C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F645470D1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib */; };
+		F64547131C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F645470D1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib */; };
 		F645471A1C5B57EE00DB69F3 /* default_travelnotes.png in Resources */ = {isa = PBXBuildFile; fileRef = F64547191C5B57EE00DB69F3 /* default_travelnotes.png */; };
 		F645471B1C5B57EE00DB69F3 /* default_travelnotes.png in Resources */ = {isa = PBXBuildFile; fileRef = F64547191C5B57EE00DB69F3 /* default_travelnotes.png */; };
 		F645471C1C5B57EE00DB69F3 /* default_travelnotes.png in Resources */ = {isa = PBXBuildFile; fileRef = F64547191C5B57EE00DB69F3 /* default_travelnotes.png */; };
@@ -515,6 +515,9 @@
 		F6653B5F1C3E893900F2F647 /* HCActivityOrderItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6653B5E1C3E893900F2F647 /* HCActivityOrderItemCell.xib */; };
 		F6653B601C3E893900F2F647 /* HCActivityOrderItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6653B5E1C3E893900F2F647 /* HCActivityOrderItemCell.xib */; };
 		F6653B611C3E893900F2F647 /* HCActivityOrderItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6653B5E1C3E893900F2F647 /* HCActivityOrderItemCell.xib */; };
+		F67487191C63597800DD56FC /* HCTravelNotesDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F67487181C63597800DD56FC /* HCTravelNotesDetailDataSource.m */; };
+		F674871A1C63597800DD56FC /* HCTravelNotesDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F67487181C63597800DD56FC /* HCTravelNotesDetailDataSource.m */; };
+		F674871B1C63597800DD56FC /* HCTravelNotesDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F67487181C63597800DD56FC /* HCTravelNotesDetailDataSource.m */; };
 		F69A56BA1C4681B000B93454 /* HCNoMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F69A56B91C4681B000B93454 /* HCNoMessageView.m */; };
 		F69A56BB1C4681B000B93454 /* HCNoMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F69A56B91C4681B000B93454 /* HCNoMessageView.m */; };
 		F69A56BC1C4681B000B93454 /* HCNoMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F69A56B91C4681B000B93454 /* HCNoMessageView.m */; };
@@ -1107,9 +1110,9 @@
 		F6424C091C0448F000D0F08D /* HCAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAnimationView.m; sourceTree = "<group>"; };
 		F6424C111C04704D00D0F08D /* icon_landnext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_landnext@2x.png"; sourceTree = "<group>"; };
 		F6424C121C04704D00D0F08D /* icon_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_next@2x.png"; sourceTree = "<group>"; };
-		F645470B1C5B4CE100DB69F3 /* HCTravelNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTravelNotesViewController.h; sourceTree = "<group>"; };
-		F645470C1C5B4CE100DB69F3 /* HCTravelNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTravelNotesViewController.m; sourceTree = "<group>"; };
-		F645470D1C5B4CE100DB69F3 /* HCTravelNotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCTravelNotesViewController.xib; sourceTree = "<group>"; };
+		F645470B1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTravelNotesDetailViewController.h; sourceTree = "<group>"; };
+		F645470C1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTravelNotesDetailViewController.m; sourceTree = "<group>"; };
+		F645470D1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCTravelNotesDetailViewController.xib; sourceTree = "<group>"; };
 		F64547191C5B57EE00DB69F3 /* default_travelnotes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_travelnotes.png; sourceTree = "<group>"; };
 		F645471D1C5B589600DB69F3 /* HCTravelNotesTableDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTravelNotesTableDataController.h; sourceTree = "<group>"; };
 		F645471E1C5B589600DB69F3 /* HCTravelNotesTableDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTravelNotesTableDataController.m; sourceTree = "<group>"; };
@@ -1166,6 +1169,8 @@
 		F66526161C104CFD008E18D4 /* HCCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCCalendarViewController.xib; sourceTree = "<group>"; };
 		F665261D1C1055B7008E18D4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = HouseCar/lib/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		F6653B5E1C3E893900F2F647 /* HCActivityOrderItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCActivityOrderItemCell.xib; sourceTree = "<group>"; };
+		F67487171C63597800DD56FC /* HCTravelNotesDetailDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTravelNotesDetailDataSource.h; sourceTree = "<group>"; };
+		F67487181C63597800DD56FC /* HCTravelNotesDetailDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTravelNotesDetailDataSource.m; sourceTree = "<group>"; };
 		F69A56B81C4681B000B93454 /* HCNoMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCNoMessageView.h; sourceTree = "<group>"; };
 		F69A56B91C4681B000B93454 /* HCNoMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCNoMessageView.m; sourceTree = "<group>"; };
 		F6A2058B1BF4A52700F15F5A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
@@ -1611,6 +1616,8 @@
 			children = (
 				9C41D1F41C255DCB0038331B /* HCTravelNotesDataSource.h */,
 				9C41D1F51C255DCB0038331B /* HCTravelNotesDataSource.m */,
+				F67487171C63597800DD56FC /* HCTravelNotesDetailDataSource.h */,
+				F67487181C63597800DD56FC /* HCTravelNotesDetailDataSource.m */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -1675,9 +1682,9 @@
 				F6DDD4451C43D5E700AB985E /* HCRegisterPageViewController.h */,
 				F6DDD4461C43D5E700AB985E /* HCRegisterPageViewController.m */,
 				F6DDD4471C43D5E700AB985E /* HCRegisterPageViewController.xib */,
-				F645470B1C5B4CE100DB69F3 /* HCTravelNotesViewController.h */,
-				F645470C1C5B4CE100DB69F3 /* HCTravelNotesViewController.m */,
-				F645470D1C5B4CE100DB69F3 /* HCTravelNotesViewController.xib */,
+				F645470B1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.h */,
+				F645470C1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m */,
+				F645470D1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib */,
 				F6213CD51C48FFB000F94D79 /* HCTravelNotesEditViewController.h */,
 				F6213CD61C48FFB000F94D79 /* HCTravelNotesEditViewController.m */,
 				F6213CD71C48FFB000F94D79 /* HCTravelNotesEditViewController.xib */,
@@ -2533,7 +2540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6213CC31C48E21C00F94D79 /* SVProgressHUD.bundle in Resources */,
-				F64547111C5B4CE100DB69F3 /* HCTravelNotesViewController.xib in Resources */,
+				F64547111C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib in Resources */,
 				F63EAD2B1C23BAFD0070A26A /* HCCampPlayItemCell.xib in Resources */,
 				F66526101C104AD7008E18D4 /* Kal.bundle in Resources */,
 				F63EADAA1C23F03E0070A26A /* rightRow@2x.png in Resources */,
@@ -2719,7 +2726,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6213CC41C48E21C00F94D79 /* SVProgressHUD.bundle in Resources */,
-				F64547121C5B4CE100DB69F3 /* HCTravelNotesViewController.xib in Resources */,
+				F64547121C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib in Resources */,
 				F63EAD2C1C23BAFD0070A26A /* HCCampPlayItemCell.xib in Resources */,
 				F66526111C104AD7008E18D4 /* Kal.bundle in Resources */,
 				F63EADAB1C23F03E0070A26A /* rightRow@2x.png in Resources */,
@@ -2905,7 +2912,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6213CC51C48E21C00F94D79 /* SVProgressHUD.bundle in Resources */,
-				F64547131C5B4CE100DB69F3 /* HCTravelNotesViewController.xib in Resources */,
+				F64547131C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib in Resources */,
 				F63EAD2D1C23BAFD0070A26A /* HCCampPlayItemCell.xib in Resources */,
 				F66526121C104AD7008E18D4 /* Kal.bundle in Resources */,
 				F63EADAC1C23F03E0070A26A /* rightRow@2x.png in Resources */,
@@ -3120,7 +3127,7 @@
 				F6AB7EB51C27EC1D0031D58D /* HCRegionTableDataController.m in Sources */,
 				F665258E1C10494A008E18D4 /* UIViewAdditions.m in Sources */,
 				F6C299B01BF4C57800A88B5E /* NSError+SFError.m in Sources */,
-				F645470E1C5B4CE100DB69F3 /* HCTravelNotesViewController.m in Sources */,
+				F645470E1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m in Sources */,
 				F6409D911C0D8353002AB471 /* EasyJSDataFunction.m in Sources */,
 				F6C299951BF4C57800A88B5E /* HCMainWindow.m in Sources */,
 				F665259D1C10494A008E18D4 /* KalTileView.m in Sources */,
@@ -3183,6 +3190,7 @@
 				F6CB1DDF1C0F1CB000718746 /* HCCarOrderItemCell.m in Sources */,
 				F6DDD4481C43D5E700AB985E /* HCRegisterPageViewController.m in Sources */,
 				F622497E1C05B48500F818B6 /* UIView+Util.m in Sources */,
+				F67487191C63597800DD56FC /* HCTravelNotesDetailDataSource.m in Sources */,
 				F62505A81C44F6A600C692F4 /* HCActivityListDataSource.m in Sources */,
 				F6213CC61C48E21C00F94D79 /* SVProgressHUD.m in Sources */,
 				F6498A271BF5F1C600AB2BF7 /* HCGuideImageViewFit.m in Sources */,
@@ -3243,7 +3251,7 @@
 				F6409D951C0D8353002AB471 /* EasyJSWebView.m in Sources */,
 				F6DDD4181C4358FA00AB985E /* HCLoginHomePageViewController.m in Sources */,
 				F6C299931BF4C57800A88B5E /* HCAutoLabel.m in Sources */,
-				F645470F1C5B4CE100DB69F3 /* HCTravelNotesViewController.m in Sources */,
+				F645470F1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m in Sources */,
 				F6409DC01C0D9EE3002AB471 /* HCCarOrderViewcontroller.m in Sources */,
 				F65DCEBC1C3D2FAF00F778EF /* HCActivityOrderViewController.m in Sources */,
 				F6213CD91C48FFB000F94D79 /* HCTravelNotesEditViewController.m in Sources */,
@@ -3278,6 +3286,7 @@
 				F665259B1C10494A008E18D4 /* KalMonthView.m in Sources */,
 				F6213CC71C48E21C00F94D79 /* SVProgressHUD.m in Sources */,
 				F61572E31C16ACBC002507AC /* HCActivityPageViewController.m in Sources */,
+				F674871A1C63597800DD56FC /* HCTravelNotesDetailDataSource.m in Sources */,
 				9C41D1F71C255DCB0038331B /* HCTravelNotesDataSource.m in Sources */,
 				F6C4F4411C2A548100561D56 /* HCHandleNativeDataService.m in Sources */,
 				F6FC337D1BF9B7A900B81B45 /* HCHomePageTableDataController.m in Sources */,
@@ -3344,7 +3353,7 @@
 				F6409D961C0D8353002AB471 /* EasyJSWebView.m in Sources */,
 				F6DDD4191C4358FA00AB985E /* HCLoginHomePageViewController.m in Sources */,
 				F6C299941BF4C57800A88B5E /* HCAutoLabel.m in Sources */,
-				F64547101C5B4CE100DB69F3 /* HCTravelNotesViewController.m in Sources */,
+				F64547101C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m in Sources */,
 				F6409DC11C0D9EE3002AB471 /* HCCarOrderViewcontroller.m in Sources */,
 				F65DCEBD1C3D2FAF00F778EF /* HCActivityOrderViewController.m in Sources */,
 				F6213CDA1C48FFB000F94D79 /* HCTravelNotesEditViewController.m in Sources */,
@@ -3379,6 +3388,7 @@
 				F665259C1C10494A008E18D4 /* KalMonthView.m in Sources */,
 				F6213CC81C48E21C00F94D79 /* SVProgressHUD.m in Sources */,
 				F61572E41C16ACBC002507AC /* HCActivityPageViewController.m in Sources */,
+				F674871B1C63597800DD56FC /* HCTravelNotesDetailDataSource.m in Sources */,
 				9C41D1F81C255DCB0038331B /* HCTravelNotesDataSource.m in Sources */,
 				F6C4F4421C2A548100561D56 /* HCHandleNativeDataService.m in Sources */,
 				F6FC337E1BF9B7A900B81B45 /* HCHomePageTableDataController.m in Sources */,

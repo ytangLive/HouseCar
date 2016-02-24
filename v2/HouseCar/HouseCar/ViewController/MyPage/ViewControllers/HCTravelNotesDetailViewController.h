@@ -1,5 +1,5 @@
 //
-//  HCTravelNotesViewController.h
+//  HCTravelNotesDetailViewController.h
 //  HouseCar
 //
 //  Created by tangyin on 16/1/29.
@@ -10,7 +10,7 @@
 #import "HCTravelNotesTableDataController.h"
 #import "HCTravelNotesDataSource.h"
 
-@interface HCTravelNotesViewController : HCViewController <VTTableDataControllerDelegate>
+@interface HCTravelNotesDetailViewController : HCViewController <VTTableDataControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet HCTravelNotesTableDataController *tableDataController;
 @property (strong, nonatomic) IBOutlet HCTravelNotesDataSource *dataSource;

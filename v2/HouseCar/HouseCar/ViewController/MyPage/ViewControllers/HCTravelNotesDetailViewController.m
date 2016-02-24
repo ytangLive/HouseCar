@@ -1,18 +1,18 @@
 //
-//  HCTravelNotesViewController.m
+//  HCTravelNotesDetailViewController.m
 //  HouseCar
 //
 //  Created by tangyin on 16/1/29.
 //  Copyright © 2016年 sina.com. All rights reserved.
 //
 
-#import "HCTravelNotesViewController.h"
+#import "HCTravelNotesDetailViewController.h"
 
-@interface HCTravelNotesViewController ()
+@interface HCTravelNotesDetailViewController ()
 
 @end
 
-@implementation HCTravelNotesViewController
+@implementation HCTravelNotesDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,5 +38,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end

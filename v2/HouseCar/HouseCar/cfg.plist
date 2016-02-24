@@ -353,9 +353,9 @@
 			<key>title</key>
 			<string>游记详情页</string>
 			<key>view</key>
-			<string>HCTravelNotesViewController</string>
+			<string>HCTravelNotesDetailViewController</string>
 			<key>class</key>
-			<string>HCTravelNotesViewController</string>
+			<string>HCTravelNotesDetailViewController</string>
 		</dict>
 		<key>loginHomePage</key>
 		<dict>
