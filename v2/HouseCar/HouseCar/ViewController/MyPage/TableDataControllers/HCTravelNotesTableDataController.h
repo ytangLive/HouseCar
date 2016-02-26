@@ -23,6 +23,4 @@
 @property (weak, nonatomic) IBOutlet UIView *tableViewHeaderView;
 @property (weak, nonatomic) IBOutlet HCNavigationTitleBar *toolBarView;
 
-@property(nonatomic,strong) NSArray * sections;
-
 @end

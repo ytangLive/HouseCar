@@ -10,7 +10,7 @@
 
 @interface HCTravelNotesDetailDataSource : VTURLDataSource
 
-@property(nonatomic, strong) NSArray *sectionsData;
-@property(nonatomic, strong) NSDictionary *travelNotesInfo;
+@property(nonatomic,strong) NSMutableArray *sections;
+@property(nonatomic, strong) NSMutableDictionary *travelNotesInfos;
 
 @end

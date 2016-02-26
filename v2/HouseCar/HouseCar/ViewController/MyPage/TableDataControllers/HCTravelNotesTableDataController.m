@@ -11,15 +11,17 @@
 
 #define ColorChangeOffset 360
 
-#define Section_headerView(section) [[_sections objectAtIndex:section] headerView]
+#define Section_headerView(section) [[((HCTravelNotesDetailDataSource *)self.dataSource).sections objectAtIndex:section] headerView]
 #define TravelNotesDetailCellHeight 200
+
+@implementation HCTravelNotesTableDataControllerSection
+
+@end
 
 @implementation HCTravelNotesTableDataController
 {
     CGFloat _backgroundViewHeight;
 }
-
-@synthesize sections = _sections;
 
 - (void)awakeFromNib
 {
@@ -66,15 +68,17 @@
 #pragma mark - table view delegate
 
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView{
-    return [self.sections count];
+    return [((HCTravelNotesDetailDataSource *)self.dataSource).sections count];
 }
 
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     NSUInteger count = 0;
     
-    count = [[self.dataSource dataObjects] count];
+    NSDictionary *travelNotesInfos = ((HCTravelNotesDetailDataSource *)self.dataSource).travelNotesInfos;
+    NSArray *trabelNotes = [travelNotesInfos arrayValueForKey:[NSString stringWithFormat:@"day_%ld",(long)section]];
     
+    count = [trabelNotes count];
     if(count){
         return count + (Section_headerView(section) ? 1 : 0);
     }else{
@@ -93,14 +97,10 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    HCTravelNotesTableDataControllerSection *headerSection =[self.sections objectAtIndex:indexPath.section];
+    HCTravelNotesTableDataControllerSection *headerSection = [((HCTravelNotesDetailDataSource *)self.dataSource).sections objectAtIndex:indexPath.section];
     if(indexPath.row == 0 && headerSection.headerView){
-        UITableViewCell *headerCell =  headerSection.headerView;
-        if([headerCell isKindOfClass:[VTTableViewCell class]]){
-            [(VTTableViewCell *) headerCell setController:self];
-            [(VTTableViewCell *) headerCell setDelegate:self];
-        }
-        return headerCell;
+        
+        return headerSection.headerView;
         
     }else{
         
@@ -131,7 +131,9 @@
         if(indexPath.row > 0){
             id data = nil;
             
-            data = [[self.dataSource dataObjects] objectAtIndex:indexPath.row - 1];
+            NSDictionary *travelNotesInfos = ((HCTravelNotesDetailDataSource *)self.dataSource).travelNotesInfos;
+            NSArray *trabelNotes = [travelNotesInfos arrayValueForKey:[NSString stringWithFormat:@"day_%ld",(long)indexPath.section]];
+            data = [trabelNotes objectAtIndex:indexPath.row - 1];
             
             if([cell isKindOfClass:[VTTableViewCell class]] && data){
                 [(VTTableViewCell *) cell setContext:self.context];
@@ -141,23 +143,6 @@
         
         return cell;
     }
-}
-
-- (NSArray *)sections{
-    return ((HCTravelNotesDetailDataSource *)self.dataSource).sectionsData;
-}
-
--(void) setSections:(NSArray *)sections{
-    _sections = [sections sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        NSInteger i = [obj1 index] - [obj2 index];
-        if(i < 0 ){
-            return NSOrderedAscending;
-        }
-        if(i > 0) {
-            return NSOrderedDescending;
-        }
-        return NSOrderedSame;
-    }];
 }
 
 @end

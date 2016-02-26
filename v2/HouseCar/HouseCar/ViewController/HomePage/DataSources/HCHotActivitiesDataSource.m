@@ -21,10 +21,12 @@
 - (void)parseHotActivities
 {
     //for (int i = 0 ; i < [self.dataObjects count]; i++) {
-        
-    id dataObject = [self.dataObjects lastObject];
-    NSArray *newdataObjects = @[dataObject];
-    self.dataObjects = [newdataObjects mutableCopy];
+    
+    if(self.dataObjects && [self.dataObjects count] > 0){
+        id dataObject = [self.dataObjects lastObject];
+        NSArray *newdataObjects = @[dataObject];
+        self.dataObjects = [newdataObjects mutableCopy];
+    }
     //}
 }
 

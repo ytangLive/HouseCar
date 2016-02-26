@@ -416,6 +416,12 @@
 		F6424C161C04704D00D0F08D /* icon_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6424C121C04704D00D0F08D /* icon_next@2x.png */; };
 		F6424C171C04704D00D0F08D /* icon_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6424C121C04704D00D0F08D /* icon_next@2x.png */; };
 		F6424C181C04704D00D0F08D /* icon_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6424C121C04704D00D0F08D /* icon_next@2x.png */; };
+		F6441A001C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64419FF1C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib */; };
+		F6441A011C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64419FF1C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib */; };
+		F6441A021C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64419FF1C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib */; };
+		F6441A061C7EE61000151C4E /* HCHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6441A051C7EE61000151C4E /* HCHeaderCell.m */; };
+		F6441A071C7EE61000151C4E /* HCHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6441A051C7EE61000151C4E /* HCHeaderCell.m */; };
+		F6441A081C7EE61000151C4E /* HCHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6441A051C7EE61000151C4E /* HCHeaderCell.m */; };
 		F645470E1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F645470C1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m */; };
 		F645470F1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F645470C1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m */; };
 		F64547101C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F645470C1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m */; };
@@ -518,6 +524,24 @@
 		F67487191C63597800DD56FC /* HCTravelNotesDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F67487181C63597800DD56FC /* HCTravelNotesDetailDataSource.m */; };
 		F674871A1C63597800DD56FC /* HCTravelNotesDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F67487181C63597800DD56FC /* HCTravelNotesDetailDataSource.m */; };
 		F674871B1C63597800DD56FC /* HCTravelNotesDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F67487181C63597800DD56FC /* HCTravelNotesDetailDataSource.m */; };
+		F69644421C8042FE00CF5C8F /* dali1.png in Resources */ = {isa = PBXBuildFile; fileRef = F696443F1C8042FE00CF5C8F /* dali1.png */; };
+		F69644431C8042FE00CF5C8F /* dali1.png in Resources */ = {isa = PBXBuildFile; fileRef = F696443F1C8042FE00CF5C8F /* dali1.png */; };
+		F69644441C8042FE00CF5C8F /* dali1.png in Resources */ = {isa = PBXBuildFile; fileRef = F696443F1C8042FE00CF5C8F /* dali1.png */; };
+		F69644451C8042FE00CF5C8F /* dali2.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644401C8042FE00CF5C8F /* dali2.png */; };
+		F69644461C8042FE00CF5C8F /* dali2.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644401C8042FE00CF5C8F /* dali2.png */; };
+		F69644471C8042FE00CF5C8F /* dali2.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644401C8042FE00CF5C8F /* dali2.png */; };
+		F69644481C8042FE00CF5C8F /* dali3.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644411C8042FE00CF5C8F /* dali3.png */; };
+		F69644491C8042FE00CF5C8F /* dali3.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644411C8042FE00CF5C8F /* dali3.png */; };
+		F696444A1C8042FE00CF5C8F /* dali3.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644411C8042FE00CF5C8F /* dali3.png */; };
+		F696444D1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F696444C1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib */; };
+		F696444E1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F696444C1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib */; };
+		F696444F1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F696444C1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib */; };
+		F69644521C8058E000CF5C8F /* clock_big.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644501C8058E000CF5C8F /* clock_big.png */; };
+		F69644531C8058E000CF5C8F /* clock_big.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644501C8058E000CF5C8F /* clock_big.png */; };
+		F69644541C8058E000CF5C8F /* clock_big.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644501C8058E000CF5C8F /* clock_big.png */; };
+		F69644551C8058E000CF5C8F /* clock_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644511C8058E000CF5C8F /* clock_big@2x.png */; };
+		F69644561C8058E000CF5C8F /* clock_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644511C8058E000CF5C8F /* clock_big@2x.png */; };
+		F69644571C8058E000CF5C8F /* clock_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69644511C8058E000CF5C8F /* clock_big@2x.png */; };
 		F69A56BA1C4681B000B93454 /* HCNoMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F69A56B91C4681B000B93454 /* HCNoMessageView.m */; };
 		F69A56BB1C4681B000B93454 /* HCNoMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F69A56B91C4681B000B93454 /* HCNoMessageView.m */; };
 		F69A56BC1C4681B000B93454 /* HCNoMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F69A56B91C4681B000B93454 /* HCNoMessageView.m */; };
@@ -1110,6 +1134,9 @@
 		F6424C091C0448F000D0F08D /* HCAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAnimationView.m; sourceTree = "<group>"; };
 		F6424C111C04704D00D0F08D /* icon_landnext@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_landnext@2x.png"; sourceTree = "<group>"; };
 		F6424C121C04704D00D0F08D /* icon_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_next@2x.png"; sourceTree = "<group>"; };
+		F64419FF1C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCTrabelNotesDetailHeaderCell.xib; sourceTree = "<group>"; };
+		F6441A041C7EE61000151C4E /* HCHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCHeaderCell.h; sourceTree = "<group>"; };
+		F6441A051C7EE61000151C4E /* HCHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCHeaderCell.m; sourceTree = "<group>"; };
 		F645470B1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTravelNotesDetailViewController.h; sourceTree = "<group>"; };
 		F645470C1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTravelNotesDetailViewController.m; sourceTree = "<group>"; };
 		F645470D1C5B4CE100DB69F3 /* HCTravelNotesDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCTravelNotesDetailViewController.xib; sourceTree = "<group>"; };
@@ -1171,6 +1198,12 @@
 		F6653B5E1C3E893900F2F647 /* HCActivityOrderItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCActivityOrderItemCell.xib; sourceTree = "<group>"; };
 		F67487171C63597800DD56FC /* HCTravelNotesDetailDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCTravelNotesDetailDataSource.h; sourceTree = "<group>"; };
 		F67487181C63597800DD56FC /* HCTravelNotesDetailDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCTravelNotesDetailDataSource.m; sourceTree = "<group>"; };
+		F696443F1C8042FE00CF5C8F /* dali1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dali1.png; sourceTree = "<group>"; };
+		F69644401C8042FE00CF5C8F /* dali2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dali2.png; sourceTree = "<group>"; };
+		F69644411C8042FE00CF5C8F /* dali3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dali3.png; sourceTree = "<group>"; };
+		F696444C1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCTravelNotesDetailItemCell.xib; sourceTree = "<group>"; };
+		F69644501C8058E000CF5C8F /* clock_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_big.png; sourceTree = "<group>"; };
+		F69644511C8058E000CF5C8F /* clock_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clock_big@2x.png"; sourceTree = "<group>"; };
 		F69A56B81C4681B000B93454 /* HCNoMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCNoMessageView.h; sourceTree = "<group>"; };
 		F69A56B91C4681B000B93454 /* HCNoMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCNoMessageView.m; sourceTree = "<group>"; };
 		F6A2058B1BF4A52700F15F5A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
@@ -1625,6 +1658,11 @@
 		F61572D11C16AC75002507AC /* Resorce */ = {
 			isa = PBXGroup;
 			children = (
+				F69644501C8058E000CF5C8F /* clock_big.png */,
+				F69644511C8058E000CF5C8F /* clock_big@2x.png */,
+				F696443F1C8042FE00CF5C8F /* dali1.png */,
+				F69644401C8042FE00CF5C8F /* dali2.png */,
+				F69644411C8042FE00CF5C8F /* dali3.png */,
 				F64547191C5B57EE00DB69F3 /* default_travelnotes.png */,
 				F6DDD4561C43E0DD00AB985E /* selected_circle@2x.png */,
 				F6DDD4571C43E0DD00AB985E /* unselected _circle@2x.png */,
@@ -1698,6 +1736,10 @@
 				F6AF522A1C29615C0064D099 /* HCCircleView.h */,
 				F6AF522B1C29615C0064D099 /* HCCircleView.m */,
 				9C4FC9041C256736006B3840 /* HCTravelNotesItemCell.xib */,
+				F6441A041C7EE61000151C4E /* HCHeaderCell.h */,
+				F6441A051C7EE61000151C4E /* HCHeaderCell.m */,
+				F64419FF1C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib */,
+				F696444C1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -2575,6 +2617,7 @@
 				F6C299A71BF4C57800A88B5E /* Entitlements.plist in Resources */,
 				F6E06BF51C031E5A00D95554 /* line2@2x.png in Resources */,
 				F62119C31C19948F000C0DA1 /* default_headimage@2x.png in Resources */,
+				F6441A001C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib in Resources */,
 				F6AB7EBE1C27EC1D0031D58D /* HCRegionItemCell.xib in Resources */,
 				F63EAD9E1C23F03E0070A26A /* ico_rr@3x.png in Resources */,
 				F63EAD711C23F03E0070A26A /* ico_back@2x.png in Resources */,
@@ -2616,6 +2659,7 @@
 				F6C299F21BF4C57800A88B5E /* tab_ico4@2x.png in Resources */,
 				F6E41FD31C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */,
 				F6C299B91BF4C57800A88B5E /* tab_ico1.png in Resources */,
+				F69644451C8042FE00CF5C8F /* dali2.png in Resources */,
 				F61F592A1BFAD8C800698BBD /* test11.png in Resources */,
 				F6DDD4251C436E3C00AB985E /* loginbackground1@3x.png in Resources */,
 				A790E88F1AD690CD00F0A95D /* Images.xcassets in Resources */,
@@ -2633,6 +2677,7 @@
 				F6CB0D9B1C11393E0093BB38 /* icon_favorite_ white@2x.png in Resources */,
 				F62119E11C19A618000C0DA1 /* UMSocialLocalizable.strings in Resources */,
 				F63EAD7A1C23F03E0070A26A /* ico_cmt@2x.png in Resources */,
+				F69644551C8058E000CF5C8F /* clock_big@2x.png in Resources */,
 				F6C29A011BF4C57800A88B5E /* tab_ico5.png in Resources */,
 				F6C299E91BF4C57800A88B5E /* tab_ico3_act@2x.png in Resources */,
 				F61F59151BFAD8C800698BBD /* test4.png in Resources */,
@@ -2650,6 +2695,7 @@
 				F6DDD4421C43C00B00AB985E /* user_icon@2x.png in Resources */,
 				F63EAD771C23F03E0070A26A /* ico_cmt.png in Resources */,
 				F61573201C1717E4002507AC /* icon_next_white@2x.png in Resources */,
+				F69644521C8058E000CF5C8F /* clock_big.png in Resources */,
 				F609103D1C2BDA0800C61375 /* HCActivityDetailViewController.xib in Resources */,
 				F6C299C81BF4C57800A88B5E /* tab_ico1_act@3x.png in Resources */,
 				F63EAD211C23BAD30070A26A /* HCCampPlayViewController.xib in Resources */,
@@ -2683,6 +2729,7 @@
 				F63EAD8C1C23F03E0070A26A /* ico_expand@2x.png in Resources */,
 				F63EAD311C23BAFD0070A26A /* HCCampPlayTitleItem.xib in Resources */,
 				F61F591E1BFAD8C800698BBD /* test7.png in Resources */,
+				F69644421C8042FE00CF5C8F /* dali1.png in Resources */,
 				F61F591B1BFAD8C800698BBD /* test6.png in Resources */,
 				9C7AE2E41C37A18600C18CBE /* flag-blue@2x.png in Resources */,
 				F6424C161C04704D00D0F08D /* icon_next@2x.png in Resources */,
@@ -2693,8 +2740,10 @@
 				F665261A1C104CFD008E18D4 /* HCCalendarViewController.xib in Resources */,
 				F63EAD8F1C23F03E0070A26A /* ico_pick@2x.png in Resources */,
 				F6C299D71BF4C57800A88B5E /* tab_ico2_act@2x.png in Resources */,
+				F69644481C8042FE00CF5C8F /* dali3.png in Resources */,
 				F61F59241BFAD8C800698BBD /* test9.png in Resources */,
 				F6C299C21BF4C57800A88B5E /* tab_ico1_act.png in Resources */,
+				F696444D1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib in Resources */,
 				F615730D1C16B8D1002507AC /* phone@2x.png in Resources */,
 				F6E41FCD1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */,
 				F6D016491BFB5FCA00ACCD33 /* citydict.plist in Resources */,
@@ -2761,6 +2810,7 @@
 				F6C299A81BF4C57800A88B5E /* Entitlements.plist in Resources */,
 				F6E06BF61C031E5A00D95554 /* line2@2x.png in Resources */,
 				F62119C41C19948F000C0DA1 /* default_headimage@2x.png in Resources */,
+				F6441A011C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib in Resources */,
 				F6AB7EBF1C27EC1D0031D58D /* HCRegionItemCell.xib in Resources */,
 				F63EAD9F1C23F03E0070A26A /* ico_rr@3x.png in Resources */,
 				F63EAD721C23F03E0070A26A /* ico_back@2x.png in Resources */,
@@ -2802,6 +2852,7 @@
 				F6C299F31BF4C57800A88B5E /* tab_ico4@2x.png in Resources */,
 				F6E41FD41C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */,
 				F6C299BA1BF4C57800A88B5E /* tab_ico1.png in Resources */,
+				F69644461C8042FE00CF5C8F /* dali2.png in Resources */,
 				F61F592B1BFAD8C800698BBD /* test11.png in Resources */,
 				F6DDD4261C436E3C00AB985E /* loginbackground1@3x.png in Resources */,
 				A790E8901AD690CD00F0A95D /* Images.xcassets in Resources */,
@@ -2819,6 +2870,7 @@
 				F6CB0D9C1C11393E0093BB38 /* icon_favorite_ white@2x.png in Resources */,
 				F62119E21C19A618000C0DA1 /* UMSocialLocalizable.strings in Resources */,
 				F63EAD7B1C23F03E0070A26A /* ico_cmt@2x.png in Resources */,
+				F69644561C8058E000CF5C8F /* clock_big@2x.png in Resources */,
 				F6C29A021BF4C57800A88B5E /* tab_ico5.png in Resources */,
 				F6C299EA1BF4C57800A88B5E /* tab_ico3_act@2x.png in Resources */,
 				F61F59161BFAD8C800698BBD /* test4.png in Resources */,
@@ -2836,6 +2888,7 @@
 				F6DDD4431C43C00B00AB985E /* user_icon@2x.png in Resources */,
 				F63EAD781C23F03E0070A26A /* ico_cmt.png in Resources */,
 				F61573211C1717E4002507AC /* icon_next_white@2x.png in Resources */,
+				F69644531C8058E000CF5C8F /* clock_big.png in Resources */,
 				F609103E1C2BDA0800C61375 /* HCActivityDetailViewController.xib in Resources */,
 				F6C299C91BF4C57800A88B5E /* tab_ico1_act@3x.png in Resources */,
 				F63EAD221C23BAD30070A26A /* HCCampPlayViewController.xib in Resources */,
@@ -2869,6 +2922,7 @@
 				F63EAD8D1C23F03E0070A26A /* ico_expand@2x.png in Resources */,
 				F63EAD321C23BAFD0070A26A /* HCCampPlayTitleItem.xib in Resources */,
 				F61F591F1BFAD8C800698BBD /* test7.png in Resources */,
+				F69644431C8042FE00CF5C8F /* dali1.png in Resources */,
 				F61F591C1BFAD8C800698BBD /* test6.png in Resources */,
 				9C7AE2E51C37A18600C18CBE /* flag-blue@2x.png in Resources */,
 				F6424C171C04704D00D0F08D /* icon_next@2x.png in Resources */,
@@ -2879,8 +2933,10 @@
 				F665261B1C104CFD008E18D4 /* HCCalendarViewController.xib in Resources */,
 				F63EAD901C23F03E0070A26A /* ico_pick@2x.png in Resources */,
 				F6C299D81BF4C57800A88B5E /* tab_ico2_act@2x.png in Resources */,
+				F69644491C8042FE00CF5C8F /* dali3.png in Resources */,
 				F61F59251BFAD8C800698BBD /* test9.png in Resources */,
 				F6C299C31BF4C57800A88B5E /* tab_ico1_act.png in Resources */,
+				F696444E1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib in Resources */,
 				F615730E1C16B8D1002507AC /* phone@2x.png in Resources */,
 				F6E41FCE1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */,
 				F6D0164A1BFB5FCA00ACCD33 /* citydict.plist in Resources */,
@@ -2947,6 +3003,7 @@
 				F6C299A91BF4C57800A88B5E /* Entitlements.plist in Resources */,
 				F6E06BF71C031E5A00D95554 /* line2@2x.png in Resources */,
 				F62119C51C19948F000C0DA1 /* default_headimage@2x.png in Resources */,
+				F6441A021C7EE45300151C4E /* HCTrabelNotesDetailHeaderCell.xib in Resources */,
 				F6AB7EC01C27EC1D0031D58D /* HCRegionItemCell.xib in Resources */,
 				F63EADA01C23F03E0070A26A /* ico_rr@3x.png in Resources */,
 				F63EAD731C23F03E0070A26A /* ico_back@2x.png in Resources */,
@@ -2988,6 +3045,7 @@
 				F6C299F41BF4C57800A88B5E /* tab_ico4@2x.png in Resources */,
 				F6E41FD51C2D174400800631 /* HCActivityDetailAttendInfoCell.xib in Resources */,
 				F6C299BB1BF4C57800A88B5E /* tab_ico1.png in Resources */,
+				F69644471C8042FE00CF5C8F /* dali2.png in Resources */,
 				F61F592C1BFAD8C800698BBD /* test11.png in Resources */,
 				F6DDD4271C436E3C00AB985E /* loginbackground1@3x.png in Resources */,
 				A790E8911AD690CD00F0A95D /* Images.xcassets in Resources */,
@@ -3005,6 +3063,7 @@
 				F6CB0D9D1C11393E0093BB38 /* icon_favorite_ white@2x.png in Resources */,
 				F62119E31C19A618000C0DA1 /* UMSocialLocalizable.strings in Resources */,
 				F63EAD7C1C23F03E0070A26A /* ico_cmt@2x.png in Resources */,
+				F69644571C8058E000CF5C8F /* clock_big@2x.png in Resources */,
 				F6C299EB1BF4C57800A88B5E /* tab_ico3_act@2x.png in Resources */,
 				F6C29A151BF4C57800A88B5E /* HCMain.xib in Resources */,
 				F61F59171BFAD8C800698BBD /* test4.png in Resources */,
@@ -3022,6 +3081,7 @@
 				F6DDD4441C43C00B00AB985E /* user_icon@2x.png in Resources */,
 				F63EAD791C23F03E0070A26A /* ico_cmt.png in Resources */,
 				F61573221C1717E4002507AC /* icon_next_white@2x.png in Resources */,
+				F69644541C8058E000CF5C8F /* clock_big.png in Resources */,
 				F609103F1C2BDA0800C61375 /* HCActivityDetailViewController.xib in Resources */,
 				F6C299E51BF4C57800A88B5E /* tab_ico3@3x.png in Resources */,
 				F63EAD231C23BAD30070A26A /* HCCampPlayViewController.xib in Resources */,
@@ -3055,6 +3115,7 @@
 				F63EAD8E1C23F03E0070A26A /* ico_expand@2x.png in Resources */,
 				F63EAD331C23BAFD0070A26A /* HCCampPlayTitleItem.xib in Resources */,
 				F61F59201BFAD8C800698BBD /* test7.png in Resources */,
+				F69644441C8042FE00CF5C8F /* dali1.png in Resources */,
 				F61F591D1BFAD8C800698BBD /* test6.png in Resources */,
 				9C7AE2E61C37A18600C18CBE /* flag-blue@2x.png in Resources */,
 				F6424C181C04704D00D0F08D /* icon_next@2x.png in Resources */,
@@ -3065,8 +3126,10 @@
 				F665261C1C104CFD008E18D4 /* HCCalendarViewController.xib in Resources */,
 				F63EAD911C23F03E0070A26A /* ico_pick@2x.png in Resources */,
 				F6C299D91BF4C57800A88B5E /* tab_ico2_act@2x.png in Resources */,
+				F696444A1C8042FE00CF5C8F /* dali3.png in Resources */,
 				F61F59261BFAD8C800698BBD /* test9.png in Resources */,
 				F6C299C41BF4C57800A88B5E /* tab_ico1_act.png in Resources */,
+				F696444F1C80479C00CF5C8F /* HCTravelNotesDetailItemCell.xib in Resources */,
 				F615730F1C16B8D1002507AC /* phone@2x.png in Resources */,
 				F6E41FCF1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */,
 				F6D0164B1BFB5FCA00ACCD33 /* citydict.plist in Resources */,
@@ -3171,6 +3234,7 @@
 				F6E06C021C0345B700D95554 /* HCAutoFontLabel.m in Sources */,
 				F6213CC01C48E21C00F94D79 /* SVIndefiniteAnimatedView.m in Sources */,
 				F6409D971C0D8353002AB471 /* EasyJSWebViewProxyDelegate.m in Sources */,
+				F6441A061C7EE61000151C4E /* HCHeaderCell.m in Sources */,
 				F61572FD1C16AD27002507AC /* HCMyPageViewController.m in Sources */,
 				F6D5A4C71BFC60AA006CA72F /* HCSearchBarView.m in Sources */,
 				F6C299AD1BF4C57800A88B5E /* main.m in Sources */,
@@ -3271,6 +3335,7 @@
 				F6E41FC91C2CF3DE00800631 /* HCTableHeaderView.m in Sources */,
 				F66525951C10494A008E18D4 /* KalGridView.m in Sources */,
 				F6578BFB1C1ABF7900280453 /* HCSearchTableDataController.m in Sources */,
+				F6441A071C7EE61000151C4E /* HCHeaderCell.m in Sources */,
 				F6E06C031C0345B700D95554 /* HCAutoFontLabel.m in Sources */,
 				F6FC33821BF9B80300B81B45 /* HCHotActivitiesDataSource.m in Sources */,
 				F6FC33751BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */,
@@ -3373,6 +3438,7 @@
 				F6E41FCA1C2CF3DE00800631 /* HCTableHeaderView.m in Sources */,
 				F66525961C10494A008E18D4 /* KalGridView.m in Sources */,
 				F6578BFC1C1ABF7900280453 /* HCSearchTableDataController.m in Sources */,
+				F6441A081C7EE61000151C4E /* HCHeaderCell.m in Sources */,
 				F6E06C041C0345B700D95554 /* HCAutoFontLabel.m in Sources */,
 				F6FC33831BF9B80300B81B45 /* HCHotActivitiesDataSource.m in Sources */,
 				F6FC33761BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */,
