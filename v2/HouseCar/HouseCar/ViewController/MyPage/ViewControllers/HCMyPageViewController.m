@@ -22,6 +22,8 @@
     self.dataSource.delegate = self.tableDataController;
     self.tableDataController.delegate = self;
     
+    self.view.backgroundColor = TableViewBackgroundColor;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated

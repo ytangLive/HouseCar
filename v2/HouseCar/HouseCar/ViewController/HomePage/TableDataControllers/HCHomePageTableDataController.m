@@ -171,7 +171,7 @@
             
         }else if (indexPath.section == TableSectionTravelNotes){
             
-            self.itemViewNib = @"HCTravelNotesItemCell";
+            self.itemViewNib = @"HCCampPlayItemCell";
             
         }
         

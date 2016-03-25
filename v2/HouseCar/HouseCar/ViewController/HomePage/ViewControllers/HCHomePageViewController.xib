@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -47,25 +47,20 @@
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hUY-so-jef" customClass="VTButton">
-                            <rect key="frame" x="272" y="21" width="40" height="40"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                            <state key="normal" image="icon_scan.png"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="scanCode"/>
-                                <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="root:///root/tab/scancode"/>
-                            </userDefinedRuntimeAttributes>
+                        <view contentMode="scaleToFill" id="TgU-WK-Q5d" customClass="HCSearchBarView">
+                            <rect key="frame" x="20" y="22" width="235" height="25"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <connections>
-                                <action selector="doAction:" destination="-1" eventType="touchUpInside" id="3VS-ts-Cve"/>
+                                <outlet property="delegate" destination="-1" id="hxo-ui-RnO"/>
                             </connections>
-                        </button>
+                        </view>
                         <view contentMode="scaleToFill" id="6E1-e3-NVJ">
-                            <rect key="frame" x="0.0" y="8" width="89" height="48"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="frame" x="245" y="8" width="65" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ls0-MB-hSg" customClass="VTButton">
-                                    <rect key="frame" x="15" y="26" width="10" height="15"/>
+                                    <rect key="frame" x="17" y="26" width="8" height="13"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" image="position.png"/>
                                     <userDefinedRuntimeAttributes>
@@ -87,14 +82,6 @@
                         </view>
                     </subviews>
                     <color key="backgroundColor" red="0.19904470216578932" green="0.73292859909473684" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
-                <view contentMode="scaleToFill" id="TgU-WK-Q5d" customClass="HCSearchBarView">
-                    <rect key="frame" x="63" y="21" width="212" height="25"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="hxo-ui-RnO"/>
-                    </connections>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -212,7 +199,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="精彩游记" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7tx-HC-5PG">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门营地" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7tx-HC-5PG">
                         <rect key="frame" x="28" y="17" width="135" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -227,7 +214,6 @@
     </objects>
     <resources>
         <image name="ico_r.png" width="7" height="17"/>
-        <image name="icon_scan.png" width="44" height="44"/>
         <image name="position.png" width="24" height="34"/>
     </resources>
 </document>

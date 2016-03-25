@@ -32,14 +32,14 @@
     //最近活动
     _recentTableDataController.delegate = self;
     _recentDataSource.delegate = _recentTableDataController;
-    _recentTableDataController.tableView.backgroundColor = DefaultBackgroundColor;
+    _recentTableDataController.tableView.backgroundColor = TableViewBackgroundColor;
     [_recentTableDataController topLoadingViewWithStyle:SFLoadingViewStyle_ActivityIndicatorStockAnimaiton];
     [_recentTableDataController bottomLoadingViewWithStyle:SFLoadingViewStyle_ActivityIndicatorStockAnimaiton];
     
-    //我的活动
+    //专区活动
     _myTableDataController.delegate = self;
     _mydataSource.delegate = _myTableDataController;
-    _myTableDataController.tableView.backgroundColor = DefaultBackgroundColor;
+    _myTableDataController.tableView.backgroundColor = TableViewBackgroundColor;
     [_myTableDataController topLoadingViewWithStyle:SFLoadingViewStyle_ActivityIndicatorStockAnimaiton];
     [_myTableDataController bottomLoadingViewWithStyle:SFLoadingViewStyle_ActivityIndicatorStockAnimaiton];
 }
