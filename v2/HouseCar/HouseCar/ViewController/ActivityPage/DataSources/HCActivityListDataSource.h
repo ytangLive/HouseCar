@@ -7,7 +7,8 @@
 //
 
 #import <vTeam/vTeam.h>
+#import "HCBaseURLDataSource.h"
 
-@interface HCActivityListDataSource : VTURLDataSource
+@interface HCActivityListDataSource : HCBaseURLDataSource
 
 @end

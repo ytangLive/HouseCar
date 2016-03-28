@@ -27,7 +27,7 @@ Class object_getClass(id object);
 -(id) init{
     if((self = [super init])){
         self.pageIndex = 1;
-        self.pageSize = 20;
+        self.pageSize = 10;
     }
     return self;
 }

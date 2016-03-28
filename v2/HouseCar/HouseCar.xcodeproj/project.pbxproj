@@ -533,6 +533,9 @@
 		F6851C9C1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */; };
 		F6851C9D1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */; };
 		F6851C9E1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */; };
+		F69022891CA8E10000614833 /* HCBaseURLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F69022881CA8E10000614833 /* HCBaseURLDataSource.m */; };
+		F690228A1CA8E10000614833 /* HCBaseURLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F69022881CA8E10000614833 /* HCBaseURLDataSource.m */; };
+		F690228B1CA8E10000614833 /* HCBaseURLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F69022881CA8E10000614833 /* HCBaseURLDataSource.m */; };
 		F69644421C8042FE00CF5C8F /* dali1.png in Resources */ = {isa = PBXBuildFile; fileRef = F696443F1C8042FE00CF5C8F /* dali1.png */; };
 		F69644431C8042FE00CF5C8F /* dali1.png in Resources */ = {isa = PBXBuildFile; fileRef = F696443F1C8042FE00CF5C8F /* dali1.png */; };
 		F69644441C8042FE00CF5C8F /* dali1.png in Resources */ = {isa = PBXBuildFile; fileRef = F696443F1C8042FE00CF5C8F /* dali1.png */; };
@@ -1211,6 +1214,8 @@
 		F6851C961CA54170000F8FFB /* HCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSettingsViewController.h; sourceTree = "<group>"; };
 		F6851C971CA54170000F8FFB /* HCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSettingsViewController.m; sourceTree = "<group>"; };
 		F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCSettingsViewController.xib; sourceTree = "<group>"; };
+		F69022871CA8E10000614833 /* HCBaseURLDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCBaseURLDataSource.h; sourceTree = "<group>"; };
+		F69022881CA8E10000614833 /* HCBaseURLDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCBaseURLDataSource.m; sourceTree = "<group>"; };
 		F696443F1C8042FE00CF5C8F /* dali1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dali1.png; sourceTree = "<group>"; };
 		F69644401C8042FE00CF5C8F /* dali2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dali2.png; sourceTree = "<group>"; };
 		F69644411C8042FE00CF5C8F /* dali3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dali3.png; sourceTree = "<group>"; };
@@ -2176,6 +2181,8 @@
 				F69A56B91C4681B000B93454 /* HCNoMessageView.m */,
 				F6409DA81C0D85DE002AB471 /* HCJavaScriptCallBack.h */,
 				F6409DA91C0D85DE002AB471 /* HCJavaScriptCallBack.m */,
+				F69022871CA8E10000614833 /* HCBaseURLDataSource.h */,
+				F69022881CA8E10000614833 /* HCBaseURLDataSource.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -3191,6 +3198,7 @@
 				F6C29A161BF4C57800A88B5E /* HCShell.m in Sources */,
 				9C4FC9121C26769E006B3840 /* HCMenusSwitchView.m in Sources */,
 				F62249701C059E5500F818B6 /* HCFilterMenusView.m in Sources */,
+				F69022891CA8E10000614833 /* HCBaseURLDataSource.m in Sources */,
 				F60910421C2BDA4500C61375 /* HCActivityDetailTableDataController.m in Sources */,
 				F66525911C10494A008E18D4 /* KalDataSource.m in Sources */,
 				F6C299A11BF4C57800A88B5E /* UIDevice+IPAddress.m in Sources */,
@@ -3365,6 +3373,7 @@
 				F6FC33821BF9B80300B81B45 /* HCHotActivitiesDataSource.m in Sources */,
 				F6FC33751BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */,
 				F65DCEB61C3D206600F778EF /* HCDragLoadingView.m in Sources */,
+				F690228A1CA8E10000614833 /* HCBaseURLDataSource.m in Sources */,
 				F62505A91C44F6A600C692F4 /* HCActivityListDataSource.m in Sources */,
 				F6C29A231BF4C57800A88B5E /* HCTabViewController.m in Sources */,
 				F6C299AE1BF4C57800A88B5E /* main.m in Sources */,
@@ -3469,6 +3478,7 @@
 				F6FC33831BF9B80300B81B45 /* HCHotActivitiesDataSource.m in Sources */,
 				F6FC33761BF9B4AB00B81B45 /* HCHomePageViewController.m in Sources */,
 				F65DCEB71C3D206600F778EF /* HCDragLoadingView.m in Sources */,
+				F690228B1CA8E10000614833 /* HCBaseURLDataSource.m in Sources */,
 				F62505AA1C44F6A600C692F4 /* HCActivityListDataSource.m in Sources */,
 				F6C29A241BF4C57800A88B5E /* HCTabViewController.m in Sources */,
 				F6C299AF1BF4C57800A88B5E /* main.m in Sources */,

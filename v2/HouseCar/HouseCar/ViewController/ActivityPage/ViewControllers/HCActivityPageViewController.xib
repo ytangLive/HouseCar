@@ -172,7 +172,7 @@
         </customObject>
         <customObject id="NXG-8f-gEK" userLabel="Recent Activity Data Source" customClass="HCActivityListDataSource">
             <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="string" keyPath="urlKey" value="carlist-interface"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="urlKey" value="activity-list"/>
                 <userDefinedRuntimeAttribute type="string" keyPath="dataKey" value="posts"/>
             </userDefinedRuntimeAttributes>
         </customObject>
@@ -190,7 +190,7 @@
         </customObject>
         <customObject id="uxl-Gb-PFU" userLabel="Region Activity Data Source" customClass="HCActivityListDataSource">
             <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="string" keyPath="urlKey" value="carlist-interface"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="urlKey" value="activity-list"/>
                 <userDefinedRuntimeAttribute type="string" keyPath="dataKey" value="posts"/>
             </userDefinedRuntimeAttributes>
         </customObject>

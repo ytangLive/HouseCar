@@ -78,7 +78,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12月25-12月27日" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ClR-U6-TjR">
-                                <rect key="frame" x="179" y="271" width="131" height="20"/>
+                                <rect key="frame" x="76" y="271" width="234" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -115,12 +115,48 @@
         <customObject id="ReS-cK-8m0" customClass="VTDataOutletContainer">
             <connections>
                 <outletCollection property="dataOutlets" destination="If7-cS-DRO" id="GtI-ru-yYZ"/>
+                <outletCollection property="dataOutlets" destination="Hiq-sn-Deh" id="T0R-1a-dMT"/>
+                <outletCollection property="dataOutlets" destination="MgV-7v-5uM" id="iDY-Q4-2Ul"/>
+                <outletCollection property="dataOutlets" destination="ere-kD-T76" id="liK-9H-cqK"/>
             </connections>
+        </customObject>
+        <customObject id="MgV-7v-5uM" userLabel="title Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.title"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="Dbs-UX-qFh" id="qf8-ec-Qim"/>
+            </connections>
+        </customObject>
+        <customObject id="Hiq-sn-Deh" userLabel="activityDate Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.activityDate"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="ClR-U6-TjR" id="pWE-EC-YBD"/>
+            </connections>
+        </customObject>
+        <customObject id="ere-kD-T76" userLabel="destination Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.destination"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="oHt-eW-r1p" id="1eD-Gy-6rF"/>
+            </connections>
+        </customObject>
+        <customObject id="jiM-le-QFA" userLabel="activityType Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.activityType"/>
+            </userDefinedRuntimeAttributes>
         </customObject>
         <customObject id="If7-cS-DRO" userLabel="Imageview Outlet" customClass="VTDataOutlet">
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="src"/>
-                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.thumbnail_images.medium.url"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.imageUrl"/>
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="view" destination="iny-K3-4At" id="4eE-Pq-mlb"/>

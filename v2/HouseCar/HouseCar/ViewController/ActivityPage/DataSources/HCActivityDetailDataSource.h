@@ -7,8 +7,9 @@
 //
 
 #import <vTeam/vTeam.h>
+#import "HCBaseURLDataSource.h"
 
-@interface HCActivityDetailDataSource : VTURLDataSource
+@interface HCActivityDetailDataSource : HCBaseURLDataSource
 
 @property (nonatomic,strong)NSDictionary *headerViewDic;
 
