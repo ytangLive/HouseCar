@@ -9,12 +9,12 @@
 #import "HCViewController.h"
 #import "HCSearchBarView.h"
 #import "HCHomePageTableDataController.h"
-#import "HCTravelNotesDataSource.h"
+#import "HCCampListDataSources.h"
 #import "HCCityViewController.h"
 
 @interface HCHomePageViewController : HCViewController <VTTableDataControllerDelegate, HCHomePageTableDataDelegate ,HCSearchBarViewViewDelegate>
 
 @property (strong, nonatomic) IBOutlet HCHomePageTableDataController *tableDataController;
-@property (strong, nonatomic) IBOutlet HCTravelNotesDataSource *dataSource;
+@property (strong, nonatomic) IBOutlet HCCampListDataSources *dataSource;
 
 @end

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -63,9 +63,6 @@
                         <rect key="frame" x="25" y="170" width="76" height="13"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="rating" value="5"/>
-                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </tableViewCellContentView>
@@ -78,12 +75,38 @@
         <customObject id="ReS-cK-8m0" customClass="VTDataOutletContainer">
             <connections>
                 <outletCollection property="dataOutlets" destination="If7-cS-DRO" id="GtI-ru-yYZ"/>
+                <outletCollection property="dataOutlets" destination="8X5-n9-iPY" id="q3C-W7-xbb"/>
+                <outletCollection property="dataOutlets" destination="WKf-mw-i1x" id="Ikz-mI-HOc"/>
             </connections>
+        </customObject>
+        <customObject id="8X5-n9-iPY" userLabel="title Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.title"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="jgP-Gs-SK4" id="uiT-5g-zJR"/>
+            </connections>
+        </customObject>
+        <customObject id="WKf-mw-i1x" userLabel="campRate Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="rating"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.campRating"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="lVq-g1-myS" id="3BI-nJ-9bT"/>
+            </connections>
+        </customObject>
+        <customObject id="Yip-rT-qs8" userLabel="commentsNum Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.destination"/>
+            </userDefinedRuntimeAttributes>
         </customObject>
         <customObject id="If7-cS-DRO" userLabel="Imageview Outlet" customClass="VTDataOutlet">
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="src"/>
-                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.thumbnail_images.medium.url"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.imageUrl"/>
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="view" destination="iny-K3-4At" id="4eE-Pq-mlb"/>

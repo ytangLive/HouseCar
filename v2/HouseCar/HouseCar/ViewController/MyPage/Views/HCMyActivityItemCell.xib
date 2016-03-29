@@ -86,16 +86,52 @@
         </tableViewCell>
         <customObject id="ReS-cK-8m0" customClass="VTDataOutletContainer">
             <connections>
-                <outletCollection property="dataOutlets" destination="If7-cS-DRO" id="GtI-ru-yYZ"/>
+                <outletCollection property="dataOutlets" destination="3h2-6b-n5u" id="gwL-LT-fzV"/>
+                <outletCollection property="dataOutlets" destination="v4s-mD-UyZ" id="0Pg-zk-kig"/>
+                <outletCollection property="dataOutlets" destination="Z70-rc-Mo0" id="PYv-eq-hpJ"/>
+                <outletCollection property="dataOutlets" destination="baJ-pR-l0g" id="WH6-yD-G9R"/>
             </connections>
         </customObject>
-        <customObject id="If7-cS-DRO" userLabel="Imageview Outlet" customClass="VTDataOutlet">
+        <customObject id="3h2-6b-n5u" userLabel="Imageview Outlet" customClass="VTDataOutlet">
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="src"/>
-                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.thumbnail_images.medium.url"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.imageUrl"/>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="view" destination="iny-K3-4At" id="4eE-Pq-mlb"/>
+                <outlet property="view" destination="iny-K3-4At" id="f4X-An-K2q"/>
+            </connections>
+        </customObject>
+        <customObject id="bv4-ag-0se" userLabel="activityType Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.activityType"/>
+            </userDefinedRuntimeAttributes>
+        </customObject>
+        <customObject id="v4s-mD-UyZ" userLabel="activityDate Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.activityDate"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="ClR-U6-TjR" id="ln5-s6-J09"/>
+            </connections>
+        </customObject>
+        <customObject id="Z70-rc-Mo0" userLabel="title Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.title"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="Dbs-UX-qFh" id="epi-Pa-bLG"/>
+            </connections>
+        </customObject>
+        <customObject id="baJ-pR-l0g" userLabel="destination Outlet" customClass="VTDataOutlet">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="keyPath" value="text"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="stringKeyPath" value="dataItem.destination"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="view" destination="oHt-eW-r1p" id="w43-bk-SGN"/>
             </connections>
         </customObject>
     </objects>

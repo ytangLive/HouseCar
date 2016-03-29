@@ -18,13 +18,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    NSString *campID = [self.url.queryValues stringValueForKey:@"campID"];
+    
     [_tableDataController setContext:self.context];
     self.dataSource.delegate = self.tableDataController;
+    self.dataSource.campID = campID;
+    
     self.tableDataController.delegate = self;
     self.tableDataController.tableDatadelegate = self;
     self.tableDataController.tableView.rowHeight = 50;
     
-    self.tableDataController.dataUrlKey = @"carlist-interface";
+    self.tableDataController.dataUrlKey = @"camps-detail";
 }
 
 - (void)viewWillAppear:(BOOL)animated

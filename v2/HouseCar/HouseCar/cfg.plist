@@ -110,11 +110,17 @@
 				<string></string>
 			</dict>
 			<key>carlist-interface</key>
-			<string>http://elephantrv.cn-hangzhou.aliapp.com?json=1</string>
+			<string>http://elephantrv.cn-hangzhou.aliapp.com/?json=get_posts&amp;post_type=product</string>
+			<key>camps-list</key>
+			<string>http://elephantrv.cn-hangzhou.aliapp.com/?json=get_category_posts&amp;category_slug=camp&amp;count={pageSize}&amp;page={pageIndex}&amp;exclude=attachments</string>
+			<key>camps-detail</key>
+			<string>http://elephantrv.cn-hangzhou.aliapp.com/?json=get_post&amp;exclude=attachments</string>
 			<key>activity-list</key>
 			<string>http://elephantrv.cn-hangzhou.aliapp.com/?json=get_recent_posts&amp;count={pageSize}&amp;page={pageIndex}&amp;post_type=product&amp;exclude=attachments</string>
 			<key>activity-detail</key>
 			<string>http://elephantrv.cn-hangzhou.aliapp.com/category/camp/?json=1</string>
+			<key>my-activity</key>
+			<string>http://elephantrv.cn-hangzhou.aliapp.com/?json=get_posts&amp;post_type=product</string>
 		</dict>
 		<dict>
 			<key>class</key>

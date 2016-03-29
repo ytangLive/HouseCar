@@ -52,6 +52,10 @@
     self.focusController.view.frame = self.focusController.view.frame;
     
     self.focusController.dataSource.urlKey = self.dataUrlKey;
+    self.focusController.dataSource.dataKey = @"post";
+    if(((HCCampPlayDataSource *)self.dataSource).queryValues){
+        self.focusController.dataSource.queryValues = ((HCCampPlayDataSource *)self.dataSource).queryValues;
+    }
     [self.focusController reloadData];
 }
 

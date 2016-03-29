@@ -7,9 +7,11 @@
 //
 
 #import <vTeam/vTeam.h>
+#import "HCBaseURLDataSource.h"
 
-@interface HCCampPlayDataSource : VTDataSource
+@interface HCCampPlayDataSource : HCBaseURLDataSource
 
+@property(nonatomic)NSString *campID;
 @property(nonatomic, strong) NSMutableArray * contentArr;
 @property(nonatomic, strong) NSMutableArray * commentArr;
 

@@ -24,6 +24,7 @@
         for (int i = 0; i < [self.dataObjects count]; i++) {
             NSDictionary *dataObject = [self.dataObjects objectValueAtIndex:i];
             NSMutableDictionary *newDataObject = [dataObject mutableCopy];
+            NSString *activityID = [dataObject stringValueForKey:@"id"];
             NSString *title = [dataObject stringValueForKey:@"title"];
             NSString *activityDate = [self customFieldsDataForKey:dataObject fieldsSubKey:@"activity-date"];
             NSString *activityLocation = [self customFieldsDataForKey:dataObject fieldsSubKey:@"location"];
@@ -35,6 +36,7 @@
             }
             NSString *imageUrl = [dataObject stringValueForKeyPath:@"thumbnail_images.medium.url"];
            
+            [newDataObject setValue:activityID forKey:@"activityID"];
             [newDataObject setValue:title forKey:@"title"];
             [newDataObject setValue:activityDate forKey:@"activityDate"];
             [newDataObject setValue:activityLocation forKey:@"activityLocation"];

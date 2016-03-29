@@ -87,7 +87,13 @@
     NSDictionary *pageInfo = nil;
     if([actionName isEqualToString:@"allActivities"]){
         
-    }else{
+    }else  if([actionName isEqualToString:@"cellSelected"]){
+        id dataItem = ((VTTableViewCell *) cell).dataItem;
+      
+        NSString *campID = [dataItem stringValueForKey:@"campID"];
+        if(campID && [campID length] > 0){
+            pageInfo = @{@"campID":campID};
+        }
         
     }
     

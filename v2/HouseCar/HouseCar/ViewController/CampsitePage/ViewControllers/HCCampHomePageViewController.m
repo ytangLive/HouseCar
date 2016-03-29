@@ -91,8 +91,10 @@
             pageInfo = @{@"detailInfo":[VTJSON encodeObject:detailInfo],@"htmlContent" : [dataItem stringValueForKey:@"content"]};
             
         }else if([_pageType isEqualToString:@"campPlay"]){
-            
-            
+            NSString *campID = [dataItem stringValueForKey:@"campID"];
+            if(campID && [campID length] > 0){
+                pageInfo = @{@"campID":dataItem};
+            }
             
         }
         

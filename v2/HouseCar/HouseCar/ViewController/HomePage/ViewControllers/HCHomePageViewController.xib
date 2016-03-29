@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HCHomePageViewController">
             <connections>
                 <outlet property="cityLabel" destination="d94-L4-r9P" id="JcT-ty-9NW"/>
-                <outlet property="dataSource" destination="dCY-Pp-kZP" id="UTV-Rj-hvs"/>
+                <outlet property="dataSource" destination="dCY-Pp-kZP" id="Hbh-P0-Ozb"/>
                 <outlet property="searchBarView" destination="TgU-WK-Q5d" id="Cy4-vD-USt"/>
                 <outlet property="tableDataController" destination="m3m-i0-sXf" id="jUz-tL-sUn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -92,16 +92,16 @@
                 <userDefinedRuntimeAttribute type="string" keyPath="itemViewNib" value="HCHomePageItemCell"/>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="dataSource" destination="dCY-Pp-kZP" id="vN7-o9-V8r"/>
+                <outlet property="dataSource" destination="dCY-Pp-kZP" id="VtP-PJ-4SR"/>
                 <outlet property="hotActivitiesDataSource" destination="w8n-TO-bWP" id="6ZE-An-kFA"/>
                 <outlet property="tableView" destination="5nz-lT-cBf" id="zwd-hy-FGq"/>
                 <outletCollection property="sections" destination="PsT-KX-eSU" id="zLT-29-S3X"/>
                 <outletCollection property="sections" destination="UJQ-6S-6p8" id="ynl-UX-3TF"/>
             </connections>
         </customObject>
-        <customObject id="dCY-Pp-kZP" userLabel="Travel Notes DataSource" customClass="HCTravelNotesDataSource">
+        <customObject id="dCY-Pp-kZP" userLabel="Hot Camps DataSource" customClass="HCCampListDataSources">
             <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="string" keyPath="urlKey" value="carlist-interface"/>
+                <userDefinedRuntimeAttribute type="string" keyPath="urlKey" value="camps-list"/>
                 <userDefinedRuntimeAttribute type="string" keyPath="dataKey" value="posts"/>
             </userDefinedRuntimeAttributes>
         </customObject>
@@ -172,7 +172,7 @@
                 <outlet property="headerView" destination="zTA-Jo-7M9" id="8ly-3j-fiE"/>
             </connections>
         </customObject>
-        <customObject id="UJQ-6S-6p8" userLabel="Travel Notes Section" customClass="HCHomePageTableDataControllerSection">
+        <customObject id="UJQ-6S-6p8" userLabel="Hot Camps Section" customClass="HCHomePageTableDataControllerSection">
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="number" keyPath="index">
                     <integer key="value" value="1"/>
