@@ -91,8 +91,9 @@
         id dataItem = ((VTTableViewCell *) cell).dataItem;
       
         NSString *campID = [dataItem stringValueForKey:@"campID"];
+        NSString *campTitle = [dataItem stringValueForKey:@"title"];
         if(campID && [campID length] > 0){
-            pageInfo = @{@"campID":campID};
+            pageInfo = @{@"campID":campID, @"campTitle":campTitle};
         }
         
     }

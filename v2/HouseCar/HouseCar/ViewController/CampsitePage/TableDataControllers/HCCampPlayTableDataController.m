@@ -104,7 +104,7 @@
         }
     }else if (section == TableSectionTypeComment){
         if ([[(HCCampPlayDataSource *)self.dataSource commentArr] count] <= 0) {
-            return 0;
+            return _noCommentHeadView.frame.size.height;
         }
     }
     
@@ -119,9 +119,10 @@
         }
     }else if (section == TableSectionTypeComment){
         if ([[(HCCampPlayDataSource *)self.dataSource commentArr] count] <= 0) {
-            return nil;
+            return _noCommentHeadView;
         }
     }
+    
     return [[_sections objectAtIndex:section] headerView];
 }
 

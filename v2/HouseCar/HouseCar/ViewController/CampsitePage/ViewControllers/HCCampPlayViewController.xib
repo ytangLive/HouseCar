@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="dataSource" destination="MCy-xa-S6r" id="foj-cV-5fu"/>
                 <outlet property="tableDataController" destination="uCo-bx-540" id="VWT-To-Vjl"/>
+                <outlet property="titleLabel" destination="30w-dd-ODM" id="zV9-BD-RbD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -83,7 +84,7 @@
                             </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="string" keyPath="actionName" value="comment"/>
-                                <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value=""/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="userInfo" value="present://root/commentPage"/>
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="doAction:" destination="-1" eventType="touchUpInside" id="4mr-oW-E5v"/>
@@ -99,6 +100,7 @@
         <customObject id="uCo-bx-540" customClass="HCCampPlayTableDataController">
             <connections>
                 <outlet property="dataSource" destination="MCy-xa-S6r" id="DIt-Qc-pon"/>
+                <outlet property="noCommentHeadView" destination="R9b-y4-pI5" id="RuD-TT-97Z"/>
                 <outlet property="tableView" destination="zpD-Na-U13" id="kq4-Qr-Ola"/>
                 <outletCollection property="sections" destination="E2u-Ss-UFm" id="IHh-cW-wex"/>
                 <outletCollection property="sections" destination="oiZ-1M-AC9" id="RT5-lK-6ls"/>
@@ -141,6 +143,9 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" red="0.19904470220000001" green="0.73292859909999997" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="crC-vu-wg0" appends="YES" id="zQ5-Fm-io3"/>
+                    </connections>
                 </view>
                 <view contentMode="scaleToFill" id="IEg-Wd-ILq">
                     <rect key="frame" x="0.0" y="50" width="320" height="100"/>
@@ -291,6 +296,37 @@
                 <outlet property="headerView" destination="QP5-8C-3TL" id="4J9-9v-HOG"/>
             </connections>
         </customObject>
+        <tapGestureRecognizer id="crC-vu-wg0">
+            <connections>
+                <action selector="viewTapAction:" destination="-1" id="dK5-IC-1hv"/>
+            </connections>
+        </tapGestureRecognizer>
+        <view contentMode="scaleToFill" id="R9b-y4-pI5" userLabel="暂无评论headview">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="gLW-Us-1FQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qix-xv-hz4">
+                    <rect key="frame" x="8" y="13" width="60" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="line2.png" id="JiL-Ye-u86">
+                    <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="718" y="353"/>
+        </view>
     </objects>
     <resources>
         <image name="icon_back.png" width="44" height="44"/>

@@ -92,8 +92,9 @@
             
         }else if([_pageType isEqualToString:@"campPlay"]){
             NSString *campID = [dataItem stringValueForKey:@"campID"];
+            NSString *campTitle = [dataItem stringValueForKey:@"title"];
             if(campID && [campID length] > 0){
-                pageInfo = @{@"campID":dataItem};
+                pageInfo = @{@"campID":campID, @"campTitle":campTitle};
             }
             
         }

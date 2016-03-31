@@ -536,6 +536,33 @@
 		F6851C9C1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */; };
 		F6851C9D1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */; };
 		F6851C9E1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */; };
+		F68DAA501CAD0A1B00F672D8 /* HCBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA4E1CAD0A1B00F672D8 /* HCBrowserViewController.m */; };
+		F68DAA511CAD0A1B00F672D8 /* HCBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA4E1CAD0A1B00F672D8 /* HCBrowserViewController.m */; };
+		F68DAA521CAD0A1B00F672D8 /* HCBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA4E1CAD0A1B00F672D8 /* HCBrowserViewController.m */; };
+		F68DAA531CAD0A1B00F672D8 /* HCBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68DAA4F1CAD0A1B00F672D8 /* HCBrowserViewController.xib */; };
+		F68DAA541CAD0A1B00F672D8 /* HCBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68DAA4F1CAD0A1B00F672D8 /* HCBrowserViewController.xib */; };
+		F68DAA551CAD0A1B00F672D8 /* HCBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68DAA4F1CAD0A1B00F672D8 /* HCBrowserViewController.xib */; };
+		F68DAA5A1CAD1E9C00F672D8 /* HCCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA581CAD1E9C00F672D8 /* HCCommentViewController.m */; };
+		F68DAA5B1CAD1E9C00F672D8 /* HCCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA581CAD1E9C00F672D8 /* HCCommentViewController.m */; };
+		F68DAA5C1CAD1E9C00F672D8 /* HCCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA581CAD1E9C00F672D8 /* HCCommentViewController.m */; };
+		F68DAA5D1CAD1E9C00F672D8 /* HCCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68DAA591CAD1E9C00F672D8 /* HCCommentViewController.xib */; };
+		F68DAA5E1CAD1E9C00F672D8 /* HCCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68DAA591CAD1E9C00F672D8 /* HCCommentViewController.xib */; };
+		F68DAA5F1CAD1E9C00F672D8 /* HCCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F68DAA591CAD1E9C00F672D8 /* HCCommentViewController.xib */; };
+		F68DAA621CAD1EF300F672D8 /* HCAlertLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA611CAD1EF300F672D8 /* HCAlertLoadingView.m */; };
+		F68DAA631CAD1EF300F672D8 /* HCAlertLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA611CAD1EF300F672D8 /* HCAlertLoadingView.m */; };
+		F68DAA641CAD1EF300F672D8 /* HCAlertLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA611CAD1EF300F672D8 /* HCAlertLoadingView.m */; };
+		F68DAA671CAD235E00F672D8 /* HCCampCommentTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA661CAD235E00F672D8 /* HCCampCommentTask.m */; };
+		F68DAA681CAD235E00F672D8 /* HCCampCommentTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA661CAD235E00F672D8 /* HCCampCommentTask.m */; };
+		F68DAA691CAD235E00F672D8 /* HCCampCommentTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA661CAD235E00F672D8 /* HCCampCommentTask.m */; };
+		F68DAA6C1CAD26DC00F672D8 /* HCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA6B1CAD26DC00F672D8 /* HCAlertView.m */; };
+		F68DAA6D1CAD26DC00F672D8 /* HCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA6B1CAD26DC00F672D8 /* HCAlertView.m */; };
+		F68DAA6E1CAD26DC00F672D8 /* HCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA6B1CAD26DC00F672D8 /* HCAlertView.m */; };
+		F68DAA711CAD278C00F672D8 /* HCSendStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA701CAD278C00F672D8 /* HCSendStatusView.m */; };
+		F68DAA721CAD278C00F672D8 /* HCSendStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA701CAD278C00F672D8 /* HCSendStatusView.m */; };
+		F68DAA731CAD278C00F672D8 /* HCSendStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA701CAD278C00F672D8 /* HCSendStatusView.m */; };
+		F68DAA761CAD2F4E00F672D8 /* HCCommentService.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA751CAD2F4E00F672D8 /* HCCommentService.m */; };
+		F68DAA771CAD2F4E00F672D8 /* HCCommentService.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA751CAD2F4E00F672D8 /* HCCommentService.m */; };
+		F68DAA781CAD2F4E00F672D8 /* HCCommentService.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA751CAD2F4E00F672D8 /* HCCommentService.m */; };
 		F69022891CA8E10000614833 /* HCBaseURLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F69022881CA8E10000614833 /* HCBaseURLDataSource.m */; };
 		F690228A1CA8E10000614833 /* HCBaseURLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F69022881CA8E10000614833 /* HCBaseURLDataSource.m */; };
 		F690228B1CA8E10000614833 /* HCBaseURLDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F69022881CA8E10000614833 /* HCBaseURLDataSource.m */; };
@@ -1222,6 +1249,22 @@
 		F6851C961CA54170000F8FFB /* HCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSettingsViewController.h; sourceTree = "<group>"; };
 		F6851C971CA54170000F8FFB /* HCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSettingsViewController.m; sourceTree = "<group>"; };
 		F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCSettingsViewController.xib; sourceTree = "<group>"; };
+		F68DAA4D1CAD0A1B00F672D8 /* HCBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCBrowserViewController.h; sourceTree = "<group>"; };
+		F68DAA4E1CAD0A1B00F672D8 /* HCBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCBrowserViewController.m; sourceTree = "<group>"; };
+		F68DAA4F1CAD0A1B00F672D8 /* HCBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCBrowserViewController.xib; sourceTree = "<group>"; };
+		F68DAA571CAD1E9C00F672D8 /* HCCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCCommentViewController.h; sourceTree = "<group>"; };
+		F68DAA581CAD1E9C00F672D8 /* HCCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCCommentViewController.m; sourceTree = "<group>"; };
+		F68DAA591CAD1E9C00F672D8 /* HCCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCCommentViewController.xib; sourceTree = "<group>"; };
+		F68DAA601CAD1EF300F672D8 /* HCAlertLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCAlertLoadingView.h; sourceTree = "<group>"; };
+		F68DAA611CAD1EF300F672D8 /* HCAlertLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAlertLoadingView.m; sourceTree = "<group>"; };
+		F68DAA651CAD235E00F672D8 /* HCCampCommentTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCCampCommentTask.h; sourceTree = "<group>"; };
+		F68DAA661CAD235E00F672D8 /* HCCampCommentTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCCampCommentTask.m; sourceTree = "<group>"; };
+		F68DAA6A1CAD26DC00F672D8 /* HCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCAlertView.h; sourceTree = "<group>"; };
+		F68DAA6B1CAD26DC00F672D8 /* HCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCAlertView.m; sourceTree = "<group>"; };
+		F68DAA6F1CAD278C00F672D8 /* HCSendStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSendStatusView.h; sourceTree = "<group>"; };
+		F68DAA701CAD278C00F672D8 /* HCSendStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSendStatusView.m; sourceTree = "<group>"; };
+		F68DAA741CAD2F4E00F672D8 /* HCCommentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCCommentService.h; sourceTree = "<group>"; };
+		F68DAA751CAD2F4E00F672D8 /* HCCommentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCCommentService.m; sourceTree = "<group>"; };
 		F69022871CA8E10000614833 /* HCBaseURLDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCBaseURLDataSource.h; sourceTree = "<group>"; };
 		F69022881CA8E10000614833 /* HCBaseURLDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCBaseURLDataSource.m; sourceTree = "<group>"; };
 		F69022921CA94A8900614833 /* HCCampListDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCCampListDataSources.h; sourceTree = "<group>"; };
@@ -2195,6 +2238,12 @@
 				F6409DA91C0D85DE002AB471 /* HCJavaScriptCallBack.m */,
 				F69022871CA8E10000614833 /* HCBaseURLDataSource.h */,
 				F69022881CA8E10000614833 /* HCBaseURLDataSource.m */,
+				F68DAA601CAD1EF300F672D8 /* HCAlertLoadingView.h */,
+				F68DAA611CAD1EF300F672D8 /* HCAlertLoadingView.m */,
+				F68DAA6A1CAD26DC00F672D8 /* HCAlertView.h */,
+				F68DAA6B1CAD26DC00F672D8 /* HCAlertView.m */,
+				F68DAA6F1CAD278C00F672D8 /* HCSendStatusView.h */,
+				F68DAA701CAD278C00F672D8 /* HCSendStatusView.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -2298,6 +2347,8 @@
 			children = (
 				F6C4F43E1C2A548100561D56 /* HCHandleNativeDataService.h */,
 				F6C4F43F1C2A548100561D56 /* HCHandleNativeDataService.m */,
+				F68DAA741CAD2F4E00F672D8 /* HCCommentService.h */,
+				F68DAA751CAD2F4E00F672D8 /* HCCommentService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -2310,6 +2361,8 @@
 				F6C4F44E1C2A874A00561D56 /* HCHistorySearchGetTask.h */,
 				F6C4F44F1C2A874A00561D56 /* HCHistorySearchGetTask.m */,
 				F6C4F4531C2AA30700561D56 /* IHCHistorySearchClearTask.h */,
+				F68DAA651CAD235E00F672D8 /* HCCampCommentTask.h */,
+				F68DAA661CAD235E00F672D8 /* HCCampCommentTask.m */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -2349,6 +2402,12 @@
 				F6CB1DD91C0EE17D00718746 /* HCCardView.m */,
 				9C301D4F1C26F328002C69C9 /* HCRatingView.h */,
 				9C301D501C26F328002C69C9 /* HCRatingView.m */,
+				F68DAA4D1CAD0A1B00F672D8 /* HCBrowserViewController.h */,
+				F68DAA4E1CAD0A1B00F672D8 /* HCBrowserViewController.m */,
+				F68DAA4F1CAD0A1B00F672D8 /* HCBrowserViewController.xib */,
+				F68DAA571CAD1E9C00F672D8 /* HCCommentViewController.h */,
+				F68DAA581CAD1E9C00F672D8 /* HCCommentViewController.m */,
+				F68DAA591CAD1E9C00F672D8 /* HCCommentViewController.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -2675,6 +2734,7 @@
 				F6C299C51BF4C57800A88B5E /* tab_ico1_act@2x.png in Resources */,
 				F665261E1C1055B7008E18D4 /* Localizable.strings in Resources */,
 				F6C299EF1BF4C57800A88B5E /* tab_ico4.png in Resources */,
+				F68DAA5D1CAD1E9C00F672D8 /* HCCommentViewController.xib in Resources */,
 				F6DDD42B1C436E3C00AB985E /* loginbackground2@3x.png in Resources */,
 				F6AF52261C293E3F0064D099 /* icon_order@2x.png in Resources */,
 				F63EAD801C23F03E0070A26A /* ico_desc@2x.png in Resources */,
@@ -2686,6 +2746,7 @@
 				F6CB0D981C11393E0093BB38 /* icon_favorite_ white.png in Resources */,
 				F6C299F51BF4C57800A88B5E /* tab_ico4@3x.png in Resources */,
 				F63EAD9B1C23F03E0070A26A /* ico_rr@2x.png in Resources */,
+				F68DAA531CAD0A1B00F672D8 /* HCBrowserViewController.xib in Resources */,
 				F6C299CB1BF4C57800A88B5E /* tab_ico2.png in Resources */,
 				F63EAD2E1C23BAFD0070A26A /* HCCampPlayLocationItem.xib in Resources */,
 				F6DDD4581C43E0DD00AB985E /* selected_circle@2x.png in Resources */,
@@ -2870,6 +2931,7 @@
 				F6C299C61BF4C57800A88B5E /* tab_ico1_act@2x.png in Resources */,
 				F665261F1C1055B7008E18D4 /* Localizable.strings in Resources */,
 				F6C299F01BF4C57800A88B5E /* tab_ico4.png in Resources */,
+				F68DAA5E1CAD1E9C00F672D8 /* HCCommentViewController.xib in Resources */,
 				F6DDD42C1C436E3C00AB985E /* loginbackground2@3x.png in Resources */,
 				F6AF52271C293E3F0064D099 /* icon_order@2x.png in Resources */,
 				F63EAD811C23F03E0070A26A /* ico_desc@2x.png in Resources */,
@@ -2881,6 +2943,7 @@
 				F6CB0D991C11393E0093BB38 /* icon_favorite_ white.png in Resources */,
 				F6C299F61BF4C57800A88B5E /* tab_ico4@3x.png in Resources */,
 				F63EAD9C1C23F03E0070A26A /* ico_rr@2x.png in Resources */,
+				F68DAA541CAD0A1B00F672D8 /* HCBrowserViewController.xib in Resources */,
 				F6C299CC1BF4C57800A88B5E /* tab_ico2.png in Resources */,
 				F63EAD2F1C23BAFD0070A26A /* HCCampPlayLocationItem.xib in Resources */,
 				F6DDD4591C43E0DD00AB985E /* selected_circle@2x.png in Resources */,
@@ -3065,6 +3128,7 @@
 				F6C299C71BF4C57800A88B5E /* tab_ico1_act@2x.png in Resources */,
 				F66526201C1055B7008E18D4 /* Localizable.strings in Resources */,
 				F6C299F11BF4C57800A88B5E /* tab_ico4.png in Resources */,
+				F68DAA5F1CAD1E9C00F672D8 /* HCCommentViewController.xib in Resources */,
 				F6DDD42D1C436E3C00AB985E /* loginbackground2@3x.png in Resources */,
 				F6AF52281C293E3F0064D099 /* icon_order@2x.png in Resources */,
 				F63EAD821C23F03E0070A26A /* ico_desc@2x.png in Resources */,
@@ -3076,6 +3140,7 @@
 				F6CB0D9A1C11393E0093BB38 /* icon_favorite_ white.png in Resources */,
 				F6C299F71BF4C57800A88B5E /* tab_ico4@3x.png in Resources */,
 				F63EAD9D1C23F03E0070A26A /* ico_rr@2x.png in Resources */,
+				F68DAA551CAD0A1B00F672D8 /* HCBrowserViewController.xib in Resources */,
 				F6C299CD1BF4C57800A88B5E /* tab_ico2.png in Resources */,
 				F63EAD301C23BAFD0070A26A /* HCCampPlayLocationItem.xib in Resources */,
 				F6DDD45A1C43E0DD00AB985E /* selected_circle@2x.png in Resources */,
@@ -3215,6 +3280,7 @@
 				F62249701C059E5500F818B6 /* HCFilterMenusView.m in Sources */,
 				F69022891CA8E10000614833 /* HCBaseURLDataSource.m in Sources */,
 				F60910421C2BDA4500C61375 /* HCActivityDetailTableDataController.m in Sources */,
+				F68DAA5A1CAD1E9C00F672D8 /* HCCommentViewController.m in Sources */,
 				F66525911C10494A008E18D4 /* KalDataSource.m in Sources */,
 				F6C299A11BF4C57800A88B5E /* UIDevice+IPAddress.m in Sources */,
 				F651D2A91C3FEA440097362B /* HCActivityOrderItemCell.m in Sources */,
@@ -3226,6 +3292,7 @@
 				F66525881C10494A008E18D4 /* NSDate+Convenience.m in Sources */,
 				F619F9F31C3BAD0000A59133 /* HCActivityGuidelinesViewController.m in Sources */,
 				F6C299981BF4C57800A88B5E /* HCTabBar.m in Sources */,
+				F68DAA671CAD235E00F672D8 /* HCCampCommentTask.m in Sources */,
 				F6E41FC81C2CF3DE00800631 /* HCTableHeaderView.m in Sources */,
 				F6213CD81C48FFB000F94D79 /* HCTravelNotesEditViewController.m in Sources */,
 				F63EAD151C23B8A90070A26A /* HCCampHomePageViewController.m in Sources */,
@@ -3240,6 +3307,7 @@
 				F6409D911C0D8353002AB471 /* EasyJSDataFunction.m in Sources */,
 				F6C299951BF4C57800A88B5E /* HCMainWindow.m in Sources */,
 				F665259D1C10494A008E18D4 /* KalTileView.m in Sources */,
+				F68DAA761CAD2F4E00F672D8 /* HCCommentService.m in Sources */,
 				F6C29A191BF4C57800A88B5E /* HCNavigationController.m in Sources */,
 				F6C4F4501C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */,
 				F6213CC91C48E21C00F94D79 /* SVRadialGradientLayer.m in Sources */,
@@ -3257,6 +3325,7 @@
 				F6C2999B1BF4C57800A88B5E /* HCXMLParserHelper.m in Sources */,
 				F6C4F4461C2A771400561D56 /* HCHistorySearchAddTask.m in Sources */,
 				F6C2999E1BF4C57800A88B5E /* SNPageControl.m in Sources */,
+				F68DAA6C1CAD26DC00F672D8 /* HCAlertView.m in Sources */,
 				9C41D1F61C255DCB0038331B /* HCTravelNotesDataSource.m in Sources */,
 				F6D016351BFB54AB00ACCD33 /* HCImageView.m in Sources */,
 				F63EAD441C23E6B80070A26A /* HCCampPlayTableDataController.m in Sources */,
@@ -3291,6 +3360,7 @@
 				F625059F1C44F4EA00C692F4 /* HCActivityListViewController.m in Sources */,
 				F65DCEBB1C3D2FAF00F778EF /* HCActivityOrderViewController.m in Sources */,
 				F6C4F4401C2A548100561D56 /* HCHandleNativeDataService.m in Sources */,
+				F68DAA501CAD0A1B00F672D8 /* HCBrowserViewController.m in Sources */,
 				F60910471C2BDA8200C61375 /* HCActivityDetailDataSource.m in Sources */,
 				F6AB7E961C27AD470031D58D /* HCActivityTableDataController.m in Sources */,
 				F6FC337C1BF9B7A900B81B45 /* HCHomePageTableDataController.m in Sources */,
@@ -3302,8 +3372,10 @@
 				F6CB1DDF1C0F1CB000718746 /* HCCarOrderItemCell.m in Sources */,
 				F6DDD4481C43D5E700AB985E /* HCRegisterPageViewController.m in Sources */,
 				F622497E1C05B48500F818B6 /* UIView+Util.m in Sources */,
+				F68DAA621CAD1EF300F672D8 /* HCAlertLoadingView.m in Sources */,
 				F67487191C63597800DD56FC /* HCTravelNotesDetailDataSource.m in Sources */,
 				F62505A81C44F6A600C692F4 /* HCActivityListDataSource.m in Sources */,
+				F68DAA711CAD278C00F672D8 /* HCSendStatusView.m in Sources */,
 				F6213CC61C48E21C00F94D79 /* SVProgressHUD.m in Sources */,
 				F6498A271BF5F1C600AB2BF7 /* HCGuideImageViewFit.m in Sources */,
 				F63EAD3A1C23DE7D0070A26A /* HCCampPlayDataSource.m in Sources */,
@@ -3320,6 +3392,7 @@
 				F6C29A171BF4C57800A88B5E /* HCShell.m in Sources */,
 				F66525A11C10494A008E18D4 /* KalView.m in Sources */,
 				F6C4F4471C2A771400561D56 /* HCHistorySearchAddTask.m in Sources */,
+				F68DAA6D1CAD26DC00F672D8 /* HCAlertView.m in Sources */,
 				F64547201C5B589600DB69F3 /* HCTravelNotesTableDataController.m in Sources */,
 				F66525891C10494A008E18D4 /* NSDate+Convenience.m in Sources */,
 				F6578BF11C1AB64A00280453 /* HCSearchViewController.m in Sources */,
@@ -3330,6 +3403,7 @@
 				F63EAD161C23B8A90070A26A /* HCCampHomePageViewController.m in Sources */,
 				F6409DC81C0DB407002AB471 /* HCCarOrderTableDataController.m in Sources */,
 				F6C299901BF4C57800A88B5E /* NSString+URLCoding.m in Sources */,
+				F68DAA5B1CAD1E9C00F672D8 /* HCCommentViewController.m in Sources */,
 				F6498A391BF5F21200AB2BF7 /* HCFocusCell.m in Sources */,
 				F60910481C2BDA8200C61375 /* HCActivityDetailDataSource.m in Sources */,
 				F6409D981C0D8353002AB471 /* EasyJSWebViewProxyDelegate.m in Sources */,
@@ -3348,6 +3422,8 @@
 				F622497F1C05B48500F818B6 /* UIView+Util.m in Sources */,
 				F63EAD1F1C23BAD30070A26A /* HCCampPlayViewController.m in Sources */,
 				F665258C1C10494A008E18D4 /* NSDateAdditions.m in Sources */,
+				F68DAA721CAD278C00F672D8 /* HCSendStatusView.m in Sources */,
+				F68DAA681CAD235E00F672D8 /* HCCampCommentTask.m in Sources */,
 				F66526181C104CFD008E18D4 /* HCCalendarViewController.m in Sources */,
 				F6C4F4511C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */,
 				F6409DB61C0D8F7E002AB471 /* HCCarBaseDetailViewController.m in Sources */,
@@ -3357,6 +3433,7 @@
 				F6DDD4381C43BA8500AB985E /* HCLoginViewController.m in Sources */,
 				F6409D921C0D8353002AB471 /* EasyJSDataFunction.m in Sources */,
 				F6409DAB1C0D85DE002AB471 /* HCJavaScriptCallBack.m in Sources */,
+				F68DAA631CAD1EF300F672D8 /* HCAlertLoadingView.m in Sources */,
 				F63EAD451C23E6B80070A26A /* HCCampPlayTableDataController.m in Sources */,
 				F6AB7E971C27AD470031D58D /* HCActivityTableDataController.m in Sources */,
 				F63EAD3B1C23DE7D0070A26A /* HCCampPlayDataSource.m in Sources */,
@@ -3377,9 +3454,11 @@
 				F6851C9A1CA54170000F8FFB /* HCSettingsViewController.m in Sources */,
 				F61572FE1C16AD27002507AC /* HCMyPageViewController.m in Sources */,
 				F6578C011C1ABFCD00280453 /* HCSearchDataSource.m in Sources */,
+				F68DAA511CAD0A1B00F672D8 /* HCBrowserViewController.m in Sources */,
 				F6C2999C1BF4C57800A88B5E /* HCXMLParserHelper.m in Sources */,
 				F66525921C10494A008E18D4 /* KalDataSource.m in Sources */,
 				F6C2999F1BF4C57800A88B5E /* SNPageControl.m in Sources */,
+				F68DAA771CAD2F4E00F672D8 /* HCCommentService.m in Sources */,
 				F6D016361BFB54AB00ACCD33 /* HCImageView.m in Sources */,
 				F6D016431BFB5FB400ACCD33 /* HCCityViewController.m in Sources */,
 				F6E41FC91C2CF3DE00800631 /* HCTableHeaderView.m in Sources */,
@@ -3427,6 +3506,7 @@
 				F6C29A181BF4C57800A88B5E /* HCShell.m in Sources */,
 				F66525A21C10494A008E18D4 /* KalView.m in Sources */,
 				F6C4F4481C2A771400561D56 /* HCHistorySearchAddTask.m in Sources */,
+				F68DAA6E1CAD26DC00F672D8 /* HCAlertView.m in Sources */,
 				F64547211C5B589600DB69F3 /* HCTravelNotesTableDataController.m in Sources */,
 				F665258A1C10494A008E18D4 /* NSDate+Convenience.m in Sources */,
 				F6578BF21C1AB64A00280453 /* HCSearchViewController.m in Sources */,
@@ -3437,6 +3517,7 @@
 				F63EAD171C23B8A90070A26A /* HCCampHomePageViewController.m in Sources */,
 				F6409DC91C0DB407002AB471 /* HCCarOrderTableDataController.m in Sources */,
 				F6C299911BF4C57800A88B5E /* NSString+URLCoding.m in Sources */,
+				F68DAA5C1CAD1E9C00F672D8 /* HCCommentViewController.m in Sources */,
 				F6498A3A1BF5F21200AB2BF7 /* HCFocusCell.m in Sources */,
 				F60910491C2BDA8200C61375 /* HCActivityDetailDataSource.m in Sources */,
 				F6409D991C0D8353002AB471 /* EasyJSWebViewProxyDelegate.m in Sources */,
@@ -3455,6 +3536,8 @@
 				F62249801C05B48500F818B6 /* UIView+Util.m in Sources */,
 				F63EAD201C23BAD30070A26A /* HCCampPlayViewController.m in Sources */,
 				F665258D1C10494A008E18D4 /* NSDateAdditions.m in Sources */,
+				F68DAA731CAD278C00F672D8 /* HCSendStatusView.m in Sources */,
+				F68DAA691CAD235E00F672D8 /* HCCampCommentTask.m in Sources */,
 				F66526191C104CFD008E18D4 /* HCCalendarViewController.m in Sources */,
 				F6C4F4521C2A874A00561D56 /* HCHistorySearchGetTask.m in Sources */,
 				F6409DB71C0D8F7E002AB471 /* HCCarBaseDetailViewController.m in Sources */,
@@ -3464,6 +3547,7 @@
 				F6DDD4391C43BA8500AB985E /* HCLoginViewController.m in Sources */,
 				F6409D931C0D8353002AB471 /* EasyJSDataFunction.m in Sources */,
 				F6409DAC1C0D85DE002AB471 /* HCJavaScriptCallBack.m in Sources */,
+				F68DAA641CAD1EF300F672D8 /* HCAlertLoadingView.m in Sources */,
 				F63EAD461C23E6B80070A26A /* HCCampPlayTableDataController.m in Sources */,
 				F6AB7E981C27AD470031D58D /* HCActivityTableDataController.m in Sources */,
 				F63EAD3C1C23DE7D0070A26A /* HCCampPlayDataSource.m in Sources */,
@@ -3484,9 +3568,11 @@
 				F6851C9B1CA54170000F8FFB /* HCSettingsViewController.m in Sources */,
 				F61572FF1C16AD27002507AC /* HCMyPageViewController.m in Sources */,
 				F6578C021C1ABFCD00280453 /* HCSearchDataSource.m in Sources */,
+				F68DAA521CAD0A1B00F672D8 /* HCBrowserViewController.m in Sources */,
 				F6C2999D1BF4C57800A88B5E /* HCXMLParserHelper.m in Sources */,
 				F66525931C10494A008E18D4 /* KalDataSource.m in Sources */,
 				F6C299A01BF4C57800A88B5E /* SNPageControl.m in Sources */,
+				F68DAA781CAD2F4E00F672D8 /* HCCommentService.m in Sources */,
 				F6D016371BFB54AB00ACCD33 /* HCImageView.m in Sources */,
 				F6D016441BFB5FB400ACCD33 /* HCCityViewController.m in Sources */,
 				F6E41FCA1C2CF3DE00800631 /* HCTableHeaderView.m in Sources */,

@@ -132,6 +132,17 @@
 				<string>IHCHistorySearchClearTask</string>
 			</array>
 		</dict>
+		<dict>
+			<key>class</key>
+			<string>HCCommentService</string>
+			<key>taskTypes</key>
+			<array>
+				<string>IHCCampCommentTask</string>
+				<string>IVTAPIResponseTask</string>
+			</array>
+			<key>url</key>
+			<string>http://elephantrv.cn-hangzhou.aliapp.com/?json=submit_comment</string>
+		</dict>
 	</array>
 	<key>ui</key>
 	<dict>
@@ -220,6 +231,15 @@
 			<string>HCCampHomePageViewController</string>
 			<key>title</key>
 			<string>营地</string>
+		</dict>
+		<key>campPaly</key>
+		<dict>
+			<key>title</key>
+			<string>营地游玩</string>
+			<key>view</key>
+			<string>HCCampPlayViewController</string>
+			<key>class</key>
+			<string>HCCampPlayViewController</string>
 		</dict>
 		<key>activityPage</key>
 		<dict>
@@ -320,15 +340,6 @@
 			<key>class</key>
 			<string>HCCalendarViewController</string>
 		</dict>
-		<key>campPaly</key>
-		<dict>
-			<key>title</key>
-			<string>营地游玩</string>
-			<key>view</key>
-			<string>HCCampPlayViewController</string>
-			<key>class</key>
-			<string>HCCampPlayViewController</string>
-		</dict>
 		<key>searchpage</key>
 		<dict>
 			<key>title</key>
@@ -373,6 +384,24 @@
 			<string>HCRegisterPageViewController</string>
 			<key>class</key>
 			<string>HCRegisterPageViewController</string>
+		</dict>
+		<key>webBrowser</key>
+		<dict>
+			<key>title</key>
+			<string>web页面</string>
+			<key>view</key>
+			<string>HCBrowserViewController</string>
+			<key>class</key>
+			<string>HCBrowserViewController</string>
+		</dict>
+		<key>commentPage</key>
+		<dict>
+			<key>title</key>
+			<string>评论页面</string>
+			<key>view</key>
+			<string>HCCommentViewController</string>
+			<key>class</key>
+			<string>HCCommentViewController</string>
 		</dict>
 	</dict>
 	<key>app-db</key>

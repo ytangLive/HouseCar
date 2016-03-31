@@ -41,4 +41,6 @@ typedef NS_ENUM(NSInteger,TableSectionType){
 
 @property(nonatomic,retain) IBOutletCollection(HCCampPlayTableDataControllerSection) NSArray * sections;
 
+@property (nonatomic,strong) IBOutlet UIView *noCommentHeadView;
+
 @end
