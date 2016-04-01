@@ -14,7 +14,8 @@
 #import "SVProgressHUD.h"
 
 @interface HCCommentViewController ()
-@property(nonatomic,retain) HCAlertLoadingView * loadingView;
+@property(nonatomic,strong) HCAlertLoadingView * loadingView;
+@property(nonatomic,strong) HCSendStatusView *sendingStatusView;
 @end
 
 @implementation HCCommentViewController
@@ -65,6 +66,14 @@
     self.loadingView = nil;
 }
 
+- (HCSendStatusView *)sendingStatusView
+{
+    if(!_sendingStatusView){
+        _sendingStatusView = [[HCSendStatusView alloc] initWithImage:@"sending.png" title:@"正在发送..."];
+    }
+    return _sendingStatusView;
+}
+
 -(void) vtKeyboardController:(VTKeyboardController * )controller willChangedFrame:(CGRect) frame
 {
     [UIView beginAnimations:nil context:nil];
@@ -80,6 +89,11 @@
 {
     NSString *strContent = [_cmtTextView.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     if (strContent.length > 0) {
+        
+        [_loadingView closeAnimated:NO];
+        self.loadingView = [[HCAlertLoadingView alloc] init];
+        [_loadingView showAnimated:YES];
+        
         if (_commentType == HCCommentTypeCamp) {
             HCCampCommentTask * cmtTask = [[HCCampCommentTask alloc] init];
             [cmtTask setContent:strContent];
@@ -104,12 +118,11 @@
         }
         
         //[SVProgressHUD showProgress:1.2 status:@"正在发送..."];
-        
-        HCSendStatusView * statusView = [[HCSendStatusView alloc] initWithImage:@"sending.png" title:@"正在发送..."];
-        [statusView show:YES duration:1.2];
+
+        [self.sendingStatusView show:YES];
         
         [_cmtTextView resignFirstResponder];
-        [self openUrl:[NSURL URLWithString:@"." relativeToURL:self.url] animated:YES];
+        //[self openUrl:[NSURL URLWithString:@"." relativeToURL:self.url] animated:YES];
     }
     else {
         HCAlertView * alertView = [[HCAlertView alloc] initWithTitle:@"请检查评论内容"];
@@ -135,19 +148,21 @@
 -(void) vtUploadTask:(id<IVTUplinkTask>) uplinkTask didSuccessResults:(id) results forTaskType:(Protocol *) taskType
 {
     [_loadingView closeAnimated:YES];
+    [self.sendingStatusView close:YES];
     self.loadingView = nil;
     [_cmtTextView resignFirstResponder];
     HCAlertView * alertView = [[HCAlertView alloc] initWithTitle:@"评论已发布"];
-    [alertView showDuration:3.0];
+    [alertView showDuration:2.0];
     [self openUrl:[NSURL URLWithString:@"." relativeToURL:self.url] animated:YES];
 }
 
 -(void) vtUploadTask:(id<IVTUplinkTask>) uplinkTask didFailWithError:(NSError *)error forTaskType:(Protocol *)taskType
 {
     [_loadingView closeAnimated:YES];
+    [self.sendingStatusView close:YES];
     self.loadingView = nil;
     HCAlertView * alertView = [[HCAlertView alloc] initWithTitle:[NSString stringWithFormat:@"评论发布失败：%@",[error message]]];
-    [alertView showDuration:3.0];
+    [alertView showDuration:2.0];
 }
 
 @end

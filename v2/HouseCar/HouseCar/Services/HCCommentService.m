@@ -53,32 +53,39 @@
                 
                 NSLog(@"%@",[respTask error]);
                 
-                HCSendStatusView * statusView = [[HCSendStatusView alloc] initWithImage:@"sendfail.png" title:@"发送失败"];
-                [statusView show:YES duration:1.2];
-
+                //HCSendStatusView * statusView = [[HCSendStatusView alloc] initWithImage:@"sendfail.png" title:@"发送失败"];
+                //[statusView show:YES duration:1.2];
+                
+                [self vtUplinkTask:[respTask task] didFailWithError:[respTask error] forTaskType:@protocol(IHCCampCommentTask)];
             }
             else {
                 NSLog(@"%@",[respTask resultsData]);
                 
                 if (![[respTask resultsData] isKindOfClass:[NSDictionary class]]) {
-                    HCSendStatusView * statusView = [[HCSendStatusView alloc] initWithImage:@"sendfail.png" title:@"发送失败"];
-                    [statusView show:YES duration:1.2];
+                    //HCSendStatusView * statusView = [[HCSendStatusView alloc] initWithImage:@"sendfail.png" title:@"发送失败"];
+                    //[statusView show:YES duration:1.2];
                     
+                    [self vtUplinkTask:[respTask task] didFailWithError:nil forTaskType:@protocol(IHCCampCommentTask)];
                     return YES;
                 }
                 
                 if([[respTask resultsData] intValueForKeyPath:@"result.status.code"]== 0){
-                    HCSendStatusView * statusView = [[HCSendStatusView alloc] initWithImage:@"sendok.png" title:@"发送成功"];
-                    [statusView show:YES duration:1.2];
+                    //HCSendStatusView * statusView = [[HCSendStatusView alloc] initWithImage:@"sendok.png" title:@"发送成功"];
+                    //[statusView show:YES duration:1.2];
+                    
+                    [self vtUplinkTask:[respTask task] didSuccessResults:[[respTask resultsData] valueForKeyPath:@"result.data"] forTaskType:@protocol(IHCCampCommentTask)];
                 }
                 else{
-                    HCSendStatusView * statusView = [[HCSendStatusView alloc] initWithImage:@"sendfail.png" title:@"发送失败"];
-                    [statusView show:YES duration:1.2];
+                    //HCSendStatusView * statusView = [[HCSendStatusView alloc] initWithImage:@"sendfail.png" title:@"发送失败"];
+                    //[statusView show:YES duration:1.2];
+                    
+                    [self vtUplinkTask:[respTask task] didFailWithError:[NSError errorWithDomain:@"HCCommentService" code:[[[respTask resultsData] valueForKeyPath:@"result.status.code"] intValue] userInfo:[NSDictionary dictionaryWithObject:[[respTask resultsData] valueForKeyPath:@"result.status.msg"] forKey:NSLocalizedDescriptionKey]] forTaskType:@protocol(IHCCampCommentTask)];
                 }
                 
             }
             
             return YES;
+
         }
     }
     

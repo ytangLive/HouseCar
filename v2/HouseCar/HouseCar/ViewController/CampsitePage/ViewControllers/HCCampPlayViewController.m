@@ -43,7 +43,7 @@
 {
     [super viewWillAppear:animated];
     
-    if(![_tableDataController.dataSource isLoading] && ![_tableDataController.dataSource isLoaded]){
+    if(![_tableDataController.dataSource isLoading]){
         [_tableDataController reloadData];
     }else{
         [[_tableDataController tableView] reloadData];

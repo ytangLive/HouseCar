@@ -603,7 +603,7 @@ CGFloat SFBottomOffsetHeight = 0;
 }
 
 
-#pragma mark - 记录iOS7以后tabbarController点击event事件（iOS7以后SFTabViewController被弃用）
+#pragma mark - tabbarController点击event事件
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(nonnull UIViewController *)viewController
 {
     if ([tabBarController.viewControllers containsObject:viewController]) {
@@ -621,7 +621,9 @@ CGFloat SFBottomOffsetHeight = 0;
                 break;
             case 2:
             {
-                
+                [[self rootViewController] openUrl:[NSURL URLWithString:@"present://root/nav/loginHomePage"]
+                                                          animated:YES];
+                return NO;
                 
             }
                 break;
@@ -632,9 +634,7 @@ CGFloat SFBottomOffsetHeight = 0;
                 break;
             case 4:
             {
-//                [[self rootViewController] openUrl:[NSURL URLWithString:@"present://root/nav/loginHomePage"]
-//                                          animated:YES];
-                //return NO;
+
             }
                 break;
             default:

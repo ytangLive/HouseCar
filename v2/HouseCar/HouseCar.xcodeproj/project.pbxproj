@@ -536,6 +536,24 @@
 		F6851C9C1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */; };
 		F6851C9D1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */; };
 		F6851C9E1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */; };
+		F6876EC71CAE149600AF578B /* sendfail.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC11CAE149600AF578B /* sendfail.png */; };
+		F6876EC81CAE149600AF578B /* sendfail.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC11CAE149600AF578B /* sendfail.png */; };
+		F6876EC91CAE149600AF578B /* sendfail.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC11CAE149600AF578B /* sendfail.png */; };
+		F6876ECA1CAE149600AF578B /* sendfail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC21CAE149600AF578B /* sendfail@2x.png */; };
+		F6876ECB1CAE149600AF578B /* sendfail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC21CAE149600AF578B /* sendfail@2x.png */; };
+		F6876ECC1CAE149600AF578B /* sendfail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC21CAE149600AF578B /* sendfail@2x.png */; };
+		F6876ECD1CAE149600AF578B /* sending.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC31CAE149600AF578B /* sending.png */; };
+		F6876ECE1CAE149600AF578B /* sending.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC31CAE149600AF578B /* sending.png */; };
+		F6876ECF1CAE149600AF578B /* sending.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC31CAE149600AF578B /* sending.png */; };
+		F6876ED01CAE149600AF578B /* sending@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC41CAE149600AF578B /* sending@2x.png */; };
+		F6876ED11CAE149600AF578B /* sending@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC41CAE149600AF578B /* sending@2x.png */; };
+		F6876ED21CAE149600AF578B /* sending@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC41CAE149600AF578B /* sending@2x.png */; };
+		F6876ED31CAE149600AF578B /* sendok.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC51CAE149600AF578B /* sendok.png */; };
+		F6876ED41CAE149600AF578B /* sendok.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC51CAE149600AF578B /* sendok.png */; };
+		F6876ED51CAE149600AF578B /* sendok.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC51CAE149600AF578B /* sendok.png */; };
+		F6876ED61CAE149600AF578B /* sendok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC61CAE149600AF578B /* sendok@2x.png */; };
+		F6876ED71CAE149600AF578B /* sendok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC61CAE149600AF578B /* sendok@2x.png */; };
+		F6876ED81CAE149600AF578B /* sendok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6876EC61CAE149600AF578B /* sendok@2x.png */; };
 		F68DAA501CAD0A1B00F672D8 /* HCBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA4E1CAD0A1B00F672D8 /* HCBrowserViewController.m */; };
 		F68DAA511CAD0A1B00F672D8 /* HCBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA4E1CAD0A1B00F672D8 /* HCBrowserViewController.m */; };
 		F68DAA521CAD0A1B00F672D8 /* HCBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DAA4E1CAD0A1B00F672D8 /* HCBrowserViewController.m */; };
@@ -1249,6 +1267,12 @@
 		F6851C961CA54170000F8FFB /* HCSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSettingsViewController.h; sourceTree = "<group>"; };
 		F6851C971CA54170000F8FFB /* HCSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSettingsViewController.m; sourceTree = "<group>"; };
 		F6851C981CA54170000F8FFB /* HCSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCSettingsViewController.xib; sourceTree = "<group>"; };
+		F6876EC11CAE149600AF578B /* sendfail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendfail.png; sourceTree = "<group>"; };
+		F6876EC21CAE149600AF578B /* sendfail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sendfail@2x.png"; sourceTree = "<group>"; };
+		F6876EC31CAE149600AF578B /* sending.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending.png; sourceTree = "<group>"; };
+		F6876EC41CAE149600AF578B /* sending@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sending@2x.png"; sourceTree = "<group>"; };
+		F6876EC51CAE149600AF578B /* sendok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sendok.png; sourceTree = "<group>"; };
+		F6876EC61CAE149600AF578B /* sendok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sendok@2x.png"; sourceTree = "<group>"; };
 		F68DAA4D1CAD0A1B00F672D8 /* HCBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCBrowserViewController.h; sourceTree = "<group>"; };
 		F68DAA4E1CAD0A1B00F672D8 /* HCBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCBrowserViewController.m; sourceTree = "<group>"; };
 		F68DAA4F1CAD0A1B00F672D8 /* HCBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HCBrowserViewController.xib; sourceTree = "<group>"; };
@@ -2299,6 +2323,12 @@
 				F6CB0D961C11393E0093BB38 /* icon_slide.png */,
 				F6CB0D971C11393E0093BB38 /* position.png */,
 				9C7AE2E31C37A18600C18CBE /* flag-blue@2x.png */,
+				F6876EC11CAE149600AF578B /* sendfail.png */,
+				F6876EC21CAE149600AF578B /* sendfail@2x.png */,
+				F6876EC31CAE149600AF578B /* sending.png */,
+				F6876EC41CAE149600AF578B /* sending@2x.png */,
+				F6876EC51CAE149600AF578B /* sendok.png */,
+				F6876EC61CAE149600AF578B /* sendok@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -2689,6 +2719,7 @@
 				F63EAD831C23F03E0070A26A /* ico_dw.png in Resources */,
 				F63EADA71C23F03E0070A26A /* rightRow.png in Resources */,
 				F63EAD921C23F03E0070A26A /* ico_r.png in Resources */,
+				F6876EC71CAE149600AF578B /* sendfail.png in Resources */,
 				F6E06BED1C0313E900D95554 /* HCCarBookMenuCell.xib in Resources */,
 				F6653B5F1C3E893900F2F647 /* HCActivityOrderItemCell.xib in Resources */,
 				F61573001C16AD27002507AC /* HCMyPageViewController.xib in Resources */,
@@ -2708,6 +2739,7 @@
 				F6C29A101BF4C57800A88B5E /* tab_ico5_act@3x.png in Resources */,
 				F62119F31C19A618000C0DA1 /* UMShareEditViewControlleriPad.xib in Resources */,
 				F63EAD981C23F03E0070A26A /* ico_rr.png in Resources */,
+				F6876ED01CAE149600AF578B /* sending@2x.png in Resources */,
 				F6D5A4C21BFC5E70006CA72F /* icon_back@2x.png in Resources */,
 				F6C29A1C1BF4C57800A88B5E /* HCNavigationController.xib in Resources */,
 				F62119F01C19A618000C0DA1 /* UMShareEditViewController.xib in Resources */,
@@ -2727,6 +2759,7 @@
 				F62119F61C19A618000C0DA1 /* UMSLoginViewController.xib in Resources */,
 				F6CB0DA41C11393E0093BB38 /* icon_slide.png in Resources */,
 				F6C299DD1BF4C57800A88B5E /* tab_ico3.png in Resources */,
+				F6876ECA1CAE149600AF578B /* sendfail@2x.png in Resources */,
 				F6C29A251BF4C57800A88B5E /* HCTabViewController.xib in Resources */,
 				F6C299891BF4C57800A88B5E /* cfg.plist in Resources */,
 				F62119E71C19A618000C0DA1 /* UMSCommentDetailController.xib in Resources */,
@@ -2744,6 +2777,7 @@
 				F61F58F91BFAD5DA00698BBD /* HCHomePageMenuCell.xib in Resources */,
 				F6CB0DA71C11393E0093BB38 /* position.png in Resources */,
 				F6CB0D981C11393E0093BB38 /* icon_favorite_ white.png in Resources */,
+				F6876ED31CAE149600AF578B /* sendok.png in Resources */,
 				F6C299F51BF4C57800A88B5E /* tab_ico4@3x.png in Resources */,
 				F63EAD9B1C23F03E0070A26A /* ico_rr@2x.png in Resources */,
 				F68DAA531CAD0A1B00F672D8 /* HCBrowserViewController.xib in Resources */,
@@ -2816,6 +2850,7 @@
 				9C301D491C26F222002C69C9 /* icon_starUnselected@2x.png in Resources */,
 				F6001A451C06B4B100D83C88 /* split_line@2x.png in Resources */,
 				F61F59211BFAD8C800698BBD /* test8.png in Resources */,
+				F6876ED61CAE149600AF578B /* sendok@2x.png in Resources */,
 				F6409D7D1C0D5294002AB471 /* icon_filter@2x.png in Resources */,
 				F6C299D41BF4C57800A88B5E /* tab_ico2_act.png in Resources */,
 				F63EADA41C23F03E0070A26A /* ico_up@2x.png in Resources */,
@@ -2847,6 +2882,7 @@
 				F6E41FCD1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */,
 				F6D016491BFB5FCA00ACCD33 /* citydict.plist in Resources */,
 				F6AB7EBB1C27EC1D0031D58D /* HCRegionPageViewController.xib in Resources */,
+				F6876ECD1CAE149600AF578B /* sending.png in Resources */,
 				F6C299B61BF4C57800A88B5E /* tab_bg@2x.png in Resources */,
 				F6851C9C1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */,
 				F63EAD621C23F03E0070A26A /* ico_asc.png in Resources */,
@@ -2886,6 +2922,7 @@
 				F63EAD841C23F03E0070A26A /* ico_dw.png in Resources */,
 				F63EADA81C23F03E0070A26A /* rightRow.png in Resources */,
 				F63EAD931C23F03E0070A26A /* ico_r.png in Resources */,
+				F6876EC81CAE149600AF578B /* sendfail.png in Resources */,
 				F6E06BEE1C0313E900D95554 /* HCCarBookMenuCell.xib in Resources */,
 				F6653B601C3E893900F2F647 /* HCActivityOrderItemCell.xib in Resources */,
 				F61573011C16AD27002507AC /* HCMyPageViewController.xib in Resources */,
@@ -2905,6 +2942,7 @@
 				F6C29A111BF4C57800A88B5E /* tab_ico5_act@3x.png in Resources */,
 				F62119F41C19A618000C0DA1 /* UMShareEditViewControlleriPad.xib in Resources */,
 				F63EAD991C23F03E0070A26A /* ico_rr.png in Resources */,
+				F6876ED11CAE149600AF578B /* sending@2x.png in Resources */,
 				F6D5A4C31BFC5E70006CA72F /* icon_back@2x.png in Resources */,
 				F6C29A1D1BF4C57800A88B5E /* HCNavigationController.xib in Resources */,
 				F62119F11C19A618000C0DA1 /* UMShareEditViewController.xib in Resources */,
@@ -2924,6 +2962,7 @@
 				F62119F71C19A618000C0DA1 /* UMSLoginViewController.xib in Resources */,
 				F6CB0DA51C11393E0093BB38 /* icon_slide.png in Resources */,
 				F6C299DE1BF4C57800A88B5E /* tab_ico3.png in Resources */,
+				F6876ECB1CAE149600AF578B /* sendfail@2x.png in Resources */,
 				F6C29A261BF4C57800A88B5E /* HCTabViewController.xib in Resources */,
 				F6C2998A1BF4C57800A88B5E /* cfg.plist in Resources */,
 				F62119E81C19A618000C0DA1 /* UMSCommentDetailController.xib in Resources */,
@@ -2941,6 +2980,7 @@
 				F61F58FA1BFAD5DA00698BBD /* HCHomePageMenuCell.xib in Resources */,
 				F6CB0DA81C11393E0093BB38 /* position.png in Resources */,
 				F6CB0D991C11393E0093BB38 /* icon_favorite_ white.png in Resources */,
+				F6876ED41CAE149600AF578B /* sendok.png in Resources */,
 				F6C299F61BF4C57800A88B5E /* tab_ico4@3x.png in Resources */,
 				F63EAD9C1C23F03E0070A26A /* ico_rr@2x.png in Resources */,
 				F68DAA541CAD0A1B00F672D8 /* HCBrowserViewController.xib in Resources */,
@@ -3013,6 +3053,7 @@
 				9C301D4A1C26F222002C69C9 /* icon_starUnselected@2x.png in Resources */,
 				F6001A461C06B4B100D83C88 /* split_line@2x.png in Resources */,
 				F61F59221BFAD8C800698BBD /* test8.png in Resources */,
+				F6876ED71CAE149600AF578B /* sendok@2x.png in Resources */,
 				F6409D7E1C0D5294002AB471 /* icon_filter@2x.png in Resources */,
 				F6C299D51BF4C57800A88B5E /* tab_ico2_act.png in Resources */,
 				F63EADA51C23F03E0070A26A /* ico_up@2x.png in Resources */,
@@ -3044,6 +3085,7 @@
 				F6E41FCE1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */,
 				F6D0164A1BFB5FCA00ACCD33 /* citydict.plist in Resources */,
 				F6AB7EBC1C27EC1D0031D58D /* HCRegionPageViewController.xib in Resources */,
+				F6876ECE1CAE149600AF578B /* sending.png in Resources */,
 				F6C299B71BF4C57800A88B5E /* tab_bg@2x.png in Resources */,
 				F6851C9D1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */,
 				F63EAD631C23F03E0070A26A /* ico_asc.png in Resources */,
@@ -3083,6 +3125,7 @@
 				F63EAD851C23F03E0070A26A /* ico_dw.png in Resources */,
 				F63EADA91C23F03E0070A26A /* rightRow.png in Resources */,
 				F63EAD941C23F03E0070A26A /* ico_r.png in Resources */,
+				F6876EC91CAE149600AF578B /* sendfail.png in Resources */,
 				F6E06BEF1C0313E900D95554 /* HCCarBookMenuCell.xib in Resources */,
 				F6653B611C3E893900F2F647 /* HCActivityOrderItemCell.xib in Resources */,
 				F61573021C16AD27002507AC /* HCMyPageViewController.xib in Resources */,
@@ -3102,6 +3145,7 @@
 				F6C29A121BF4C57800A88B5E /* tab_ico5_act@3x.png in Resources */,
 				F62119F51C19A618000C0DA1 /* UMShareEditViewControlleriPad.xib in Resources */,
 				F63EAD9A1C23F03E0070A26A /* ico_rr.png in Resources */,
+				F6876ED21CAE149600AF578B /* sending@2x.png in Resources */,
 				F6D5A4C41BFC5E70006CA72F /* icon_back@2x.png in Resources */,
 				F6C29A1E1BF4C57800A88B5E /* HCNavigationController.xib in Resources */,
 				F62119F21C19A618000C0DA1 /* UMShareEditViewController.xib in Resources */,
@@ -3121,6 +3165,7 @@
 				F62119F81C19A618000C0DA1 /* UMSLoginViewController.xib in Resources */,
 				F6CB0DA61C11393E0093BB38 /* icon_slide.png in Resources */,
 				F6C299DF1BF4C57800A88B5E /* tab_ico3.png in Resources */,
+				F6876ECC1CAE149600AF578B /* sendfail@2x.png in Resources */,
 				F6C29A271BF4C57800A88B5E /* HCTabViewController.xib in Resources */,
 				F6C2998B1BF4C57800A88B5E /* cfg.plist in Resources */,
 				F62119E91C19A618000C0DA1 /* UMSCommentDetailController.xib in Resources */,
@@ -3138,6 +3183,7 @@
 				F61F58FB1BFAD5DA00698BBD /* HCHomePageMenuCell.xib in Resources */,
 				F6CB0DA91C11393E0093BB38 /* position.png in Resources */,
 				F6CB0D9A1C11393E0093BB38 /* icon_favorite_ white.png in Resources */,
+				F6876ED51CAE149600AF578B /* sendok.png in Resources */,
 				F6C299F71BF4C57800A88B5E /* tab_ico4@3x.png in Resources */,
 				F63EAD9D1C23F03E0070A26A /* ico_rr@2x.png in Resources */,
 				F68DAA551CAD0A1B00F672D8 /* HCBrowserViewController.xib in Resources */,
@@ -3210,6 +3256,7 @@
 				9C301D4B1C26F222002C69C9 /* icon_starUnselected@2x.png in Resources */,
 				F6001A471C06B4B100D83C88 /* split_line@2x.png in Resources */,
 				F61F59231BFAD8C800698BBD /* test8.png in Resources */,
+				F6876ED81CAE149600AF578B /* sendok@2x.png in Resources */,
 				F6409D7F1C0D5294002AB471 /* icon_filter@2x.png in Resources */,
 				F6C299D31BF4C57800A88B5E /* tab_ico2@3x.png in Resources */,
 				F63EADA61C23F03E0070A26A /* ico_up@2x.png in Resources */,
@@ -3241,6 +3288,7 @@
 				F6E41FCF1C2D16BC00800631 /* HCActivityDetailLocationCell.xib in Resources */,
 				F6D0164B1BFB5FCA00ACCD33 /* citydict.plist in Resources */,
 				F6AB7EBD1C27EC1D0031D58D /* HCRegionPageViewController.xib in Resources */,
+				F6876ECF1CAE149600AF578B /* sending.png in Resources */,
 				F6C299B81BF4C57800A88B5E /* tab_bg@2x.png in Resources */,
 				F6851C9E1CA54170000F8FFB /* HCSettingsViewController.xib in Resources */,
 				F63EAD641C23F03E0070A26A /* ico_asc.png in Resources */,
